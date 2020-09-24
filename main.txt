@@ -15,8 +15,6 @@
 - IP-CIDR,114.114.115.115/32,DIRECT
 - IP-CIDR,119.29.29.29/32,DIRECT
 - IP-CIDR,180.76.76.76/32,DIRECT
-# > Remote Desktop
-- DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # > Data Tansmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,internetworld.cloud,DIRECT
@@ -26,7 +24,10 @@
 - DOMAIN-SUFFIX,nenode.best,MAIN
 - DOMAIN-SUFFIX,amytele.com,MAIN
 - DOMAIN-SUFFIX,maying.co,MAIN
+- DOMAIN,emby.nexitally.com,UStream
 - DOMAIN-SUFFIX,nexitally.com,MAIN
+# > Remote Desktop
+- DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # > Domestic Content Delivery Network
 - DOMAIN-SUFFIX,ccgslb.com,DIRECT
 - DOMAIN-SUFFIX,ccgslb.net,DIRECT
@@ -64,6 +65,7 @@
 - DOMAIN-SUFFIX,com-qq.net,DIRECT
 - DOMAIN-SUFFIX,weidian.com,DIRECT
 # > Alibaba
+- DOMAIN-SUFFIX,alibabacloud.com,DIRECT
 - DOMAIN-SUFFIX,alibaba.com,DIRECT
 - DOMAIN-SUFFIX,alicdn.com,DIRECT
 - DOMAIN-SUFFIX,alikunlun.com,DIRECT
@@ -125,20 +127,20 @@
 - DOMAIN-SUFFIX,acfun.com,DIRECT
 - DOMAIN-SUFFIX,aixifan.com,DIRECT
 # > bilibili
-- DOMAIN-SUFFIX,acgvideo.com,DIRECT
-- DOMAIN-SUFFIX,bilibili.com,DIRECT
-- DOMAIN-SUFFIX,hdslb.com,DIRECT
-- DOMAIN-SUFFIX,biliapi.net,DIRECT
-- DOMAIN-SUFFIX,biliapi.com,DIRECT
-- DOMAIN-SUFFIX,bilibili.tv,DIRECT
-- DOMAIN-SUFFIX,bilivideo.com,DIRECT
-- DOMAIN-SUFFIX,biligame.com,DIRECT
-- DOMAIN-SUFFIX,acg.tv,DIRECT
+- DOMAIN-SUFFIX,acgvideo.com,B&I
+- DOMAIN-SUFFIX,bilibili.com,B&I
+- DOMAIN-SUFFIX,hdslb.com,B&I
+- DOMAIN-SUFFIX,biliapi.net,B&I
+- DOMAIN-SUFFIX,biliapi.com,B&I
+- DOMAIN-SUFFIX,bilibili.tv,B&I
+- DOMAIN-SUFFIX,bilivideo.com,B&I
+- DOMAIN-SUFFIX,biligame.com,B&I
+- DOMAIN-SUFFIX,acg.tv,B&I
 # > iQiyi
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
-- DOMAIN-SUFFIX,qy.net,DIRECT
-- DOMAIN-SUFFIX,71.am,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,B&I
+- DOMAIN-SUFFIX,iqiyipic.com,B&I
+- DOMAIN-SUFFIX,qy.net,B&I
+- DOMAIN-SUFFIX,71.am,B&I
 # > Youku
 - DOMAIN-SUFFIX,soku.com,DIRECT
 - DOMAIN-SUFFIX,youku.com,DIRECT
@@ -425,6 +427,7 @@
 - DOMAIN-KEYWORD,avoddashs,MAIN
 - DOMAIN-KEYWORD,amazon,MAIN
 # > Spotify
+- DOMAIN-SUFFIX,ap.spotify.com,DIRECT
 - DOMAIN-SUFFIX,pscdn.co,Spotify
 - DOMAIN-SUFFIX,scdn.co,Spotify
 - DOMAIN-SUFFIX,spotify.com,Spotify
