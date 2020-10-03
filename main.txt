@@ -28,6 +28,11 @@
 - DOMAIN-SUFFIX,nexitally.com,MAIN
 # > Remote Desktop
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+- IP-CIDR,109.239.140.0/24,DIRECT
+- IP-CIDR,139.220.243.27/32,DIRECT
+- IP-CIDR,172.16.102.56/32,DIRECT
+- IP-CIDR,185.188.32.1/28,DIRECT
+- IP-CIDR,221.226.128.146/32,DIRECT
 # > Domestic Content Delivery Network
 - DOMAIN-SUFFIX,ccgslb.com,DIRECT
 - DOMAIN-SUFFIX,ccgslb.net,DIRECT
@@ -41,6 +46,12 @@
 - DOMAIN-SUFFIX,qihucdn.com,DIRECT
 - DOMAIN-SUFFIX,tongdun.net,DIRECT
 # > Tencent
+- DOMAIN-SUFFIX,foxmail.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,smtcdns.com,DIRECT
+- DOMAIN-SUFFIX,smtcdns.net,DIRECT
+- DOMAIN-SUFFIX,soso.com,DIRECT
+- DOMAIN-SUFFIX,tencentmind.com,DIRECT
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
 - DOMAIN-SUFFIX,idqqimg.com,DIRECT
 - DOMAIN-SUFFIX,igamecj.com,DIRECT
@@ -58,6 +69,8 @@
 - DOMAIN-SUFFIX,wechat.com,DIRECT
 - DOMAIN-SUFFIX,weiyun.com,DIRECT
 - DOMAIN-SUFFIX,qqxzb-img.com,DIRECT
+- DOMAIN-SUFFIX,weixin.com,DIRECT
+- DOMAIN-SUFFIX,weiyun.com,DIRECT
 - DOMAIN-SUFFIX,weixinbridge.com,DIRECT
 - DOMAIN-SUFFIX,qcloudimg.com,DIRECT
 - DOMAIN-SUFFIX,qcloud.com,DIRECT
@@ -240,6 +253,12 @@
 - DOMAIN-SUFFIX,umengcloud.com,DIRECT
 # > Original IP
 - DOMAIN,scholar.google.com,Original
+# > Akacdn Filtering
+- DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Microsoft
+- DOMAIN-SUFFIX,aka.ms,Microsoft
+- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Steam
+  # Microsoft Apple
+- DOMAIN-SUFFIX,akadns.net,MAIN
 # > Apple
 - DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,Apple
@@ -258,6 +277,15 @@
 - DOMAIN-SUFFIX,mzstatic.com,Apple
 - DOMAIN-SUFFIX,comscoreresearch.com,Apple
 - IP-CIDR,17.0.0.0/8,Apple
+- IP-CIDR,63.92.224.0/19,Apple
+- IP-CIDR,65.199.22.0/23,Apple
+- IP-CIDR,139.178.128.0/18,Apple
+- IP-CIDR,144.178.0.0/19,Apple
+- IP-CIDR,144.178.36.0/22,Apple
+- IP-CIDR,144.178.48.0/20,Apple
+- IP-CIDR,192.35.50.0/24,Apple
+- IP-CIDR,198.183.17.0/24,Apple
+- IP-CIDR,205.180.175.0/24,Apple
 # > Google
 - DOMAIN-SUFFIX,app-measurement.com,Google
 - DOMAIN-SUFFIX,google.com,Google
@@ -334,13 +362,14 @@
 - DOMAIN-SUFFIX,googleapis.cn,Google
 - DOMAIN-KEYWORD,google,Google
 - DOMAIN-KEYWORD,blogspot,Google
+- IP-CIDR,74.125.0.0/16,Google
+- IP-CIDR,173.194.0.0/16,Google
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,Microsoft
 - DOMAIN-SUFFIX,1drv.ms,Microsoft
 - DOMAIN-SUFFIX,aadrm.com,Microsoft
 - DOMAIN-SUFFIX,acompli.com,Microsoft
 - DOMAIN-SUFFIX,acompli.net,Microsoft
-- DOMAIN-SUFFIX,aka.ms,Microsoft
 - DOMAIN-SUFFIX,aspnetcdn.com,Microsoft
 - DOMAIN-SUFFIX,assets-yammer.com,Microsoft
 - DOMAIN-SUFFIX,azure.com,Microsoft
@@ -426,6 +455,21 @@
 - DOMAIN-SUFFIX,cloudfront.net,MAIN
 - DOMAIN-KEYWORD,avoddashs,MAIN
 - DOMAIN-KEYWORD,amazon,MAIN
+- IP-CIDR,13.32.0.0/15,MAIN
+- IP-CIDR,13.35.0.0/17,MAIN
+- IP-CIDR,18.184.0.0/15,MAIN
+- IP-CIDR,18.194.0.0/15,MAIN
+- IP-CIDR,18.208.0.0/13,MAIN
+- IP-CIDR,18.232.0.0/14,MAIN
+- IP-CIDR,52.58.0.0/15,MAIN
+- IP-CIDR,52.74.0.0/16,MAIN
+- IP-CIDR,52.77.0.0/16,MAIN
+- IP-CIDR,52.84.0.0/15,MAIN
+- IP-CIDR,52.200.0.0/13,MAIN
+- IP-CIDR,54.93.0.0/16,MAIN
+- IP-CIDR,54.156.0.0/14,MAIN
+- IP-CIDR,54.226.0.0/15,MAIN
+- IP-CIDR,54.230.156.0/22,MAIN
 # > Spotify
 - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
 - DOMAIN-SUFFIX,pscdn.co,Spotify
@@ -478,12 +522,15 @@
 - DOMAIN-SUFFIX,twitchcdn.net,MAIN
 - DOMAIN-SUFFIX,ttvnw.net,MAIN
 - DOMAIN-SUFFIX,jtvnw.net,MAIN
+- DOMAIN-KEYWORD,ttvnw,MAIN
 # > Pornhub
 - DOMAIN-SUFFIX,phncdn.com,MAIN
 - DOMAIN-SUFFIX,phprcdn.com,MAIN
 - DOMAIN-SUFFIX,pornhub.com,MAIN
 - DOMAIN-SUFFIX,pornhubpremium.com,MAIN
 # > Steam
+- DOMAIN-SUFFIX,fanatical.com,Steam
+- DOMAIN-SUFFIX,humblebundle.com,Steam
 - DOMAIN-SUFFIX,steampowered.com,Steam
 - DOMAIN-SUFFIX,steam-chat.com,Steam
 - DOMAIN-SUFFIX,steamgames.com,Steam
@@ -491,9 +538,15 @@
 - DOMAIN-SUFFIX,steamcommunity.com,Steam
 - DOMAIN-SUFFIX,steamcontent.com,Steam
 - DOMAIN-SUFFIX,steamstatic.com,Steam
-- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Steam
 - DOMAIN-SUFFIX,steamstat.us,Steam
 - DOMAIN-SUFFIX,wmsjsteam.com,Steam
+- DOMAIN-SUFFIX,csgo.wmsj.cn,Steam
+- DOMAIN-SUFFIX,dl.steam.ksyna.com,Steam
+- DOMAIN-SUFFIX,dota2.wmsj.cn,Steam
+- DOMAIN-SUFFIX,st.dl.bscstorage.net,Steam
+- DOMAIN-SUFFIX,st.dl.eccdnx.com,Steam
+- DOMAIN-SUFFIX,st.dl.pinyuncloud.com,Steam
+- DOMAIN-SUFFIX,steampowered.com.8686c.com,Steam
 # > Epic Uplay and Others
 - DOMAIN-SUFFIX,epicgames.com,GAMES
 - DOMAIN-SUFFIX,unrealengine.com,GAMES
@@ -506,7 +559,7 @@
 - DOMAIN-SUFFIX,netspeedtestmaster.com,SpeedTest
 - DOMAIN-SUFFIX,macpaw.com,SpeedTest
 - DOMAIN-SUFFIX,speedtest,SpeedTest
-# > Facebook and Instagram
+# > Facebook Instagram Whatsapp
 - DOMAIN-SUFFIX,cdninstagram.com,MAIN
 - DOMAIN-SUFFIX,fb.com,MAIN
 - DOMAIN-SUFFIX,fb.me,MAIN
@@ -515,6 +568,7 @@
 - DOMAIN-SUFFIX,fbsbx.com,MAIN
 - DOMAIN-SUFFIX,fbworkmail.com,MAIN
 - DOMAIN-SUFFIX,instagram.com,MAIN
+- DOMAIN-SUFFIX,instagr.am,MAIN
 - DOMAIN-SUFFIX,m.me,MAIN
 - DOMAIN-SUFFIX,messenger.com,MAIN
 - DOMAIN-SUFFIX,oculus.com,MAIN
@@ -532,6 +586,21 @@
 - IP-CIDR,54.173.34.141/32,MAIN
 - IP-CIDR,54.235.23.242/32,MAIN
 - IP-CIDR,169.45.248.118/32,MAIN
+- IP-CIDR,18.194.0.0/15,MAIN
+- IP-CIDR,34.224.0.0/12,MAIN
+- IP-CIDR,54.242.0.0/15,MAIN
+- IP-CIDR,50.22.198.204/30,MAIN
+- IP-CIDR,208.43.122.128/27,MAIN
+- IP-CIDR,108.168.174.0/16,MAIN
+- IP-CIDR,173.192.231.32/27,MAIN
+- IP-CIDR,158.85.5.192/27,MAIN
+- IP-CIDR,174.37.243.0/16,MAIN
+- IP-CIDR,158.85.46.128/27,MAIN
+- IP-CIDR,173.192.222.160/27,MAIN
+- IP-CIDR,184.173.128.0/17,MAIN
+- IP-CIDR,158.85.224.160/27,MAIN
+- IP-CIDR,75.126.150.0/16,MAIN
+- IP-CIDR,69.171.235.0/16,MAIN
 # > Twitter
 - DOMAIN-SUFFIX,pscp.tv,MAIN
 - DOMAIN-SUFFIX,periscope.tv,MAIN
@@ -554,21 +623,40 @@
 - IP-CIDR,91.108.12.0/22,MAIN
 - IP-CIDR,91.108.16.0/22,MAIN
 - IP-CIDR,91.108.56.0/22,MAIN
+- IP-CIDR,91.108.0.0/16,MAIN
+- IP-CIDR,109.239.140.0/24,MAIN
 - IP-CIDR,149.154.160.0/20,MAIN
 # > Discord
+- DOMAIN-SUFFIX,discord.co,MAIN
+- DOMAIN-SUFFIX,discord.com,MAIN
+- DOMAIN-SUFFIX,discord.media,MAIN
 - DOMAIN-SUFFIX,discord.gg,MAIN
 - DOMAIN-SUFFIX,discordapp.com,MAIN
 - DOMAIN-SUFFIX,discordapp.net,MAIN
+# > TikTok
+- DOMAIN-KEYWORD,-tiktokcdn-com,MAIN
+- DOMAIN-SUFFIX,byteoversea.com,MAIN
+- DOMAIN-SUFFIX,ibytedtos.com,MAIN
+- DOMAIN-SUFFIX,ipstatp.com,MAIN
+- DOMAIN-SUFFIX,muscdn.com,MAIN
+- DOMAIN-SUFFIX,musical.ly,MAIN
+- DOMAIN-SUFFIX,tik-tokapi.com,MAIN
+- DOMAIN-SUFFIX,tiktok.com,MAIN
+- DOMAIN-SUFFIX,tiktokcdn.com,MAIN
+- DOMAIN-SUFFIX,tiktokv.com,MAIN
 # > Reddit
 - DOMAIN-SUFFIX,reddit.com,MAIN
 - DOMAIN-SUFFIX,redditmedia.com,MAIN
 - DOMAIN-SUFFIX,redditstatic.com,MAIN
 - DOMAIN-SUFFIX,redditlist.com,MAIN
 # > Line
+- DOMAIN-SUFFIX,lin.ee,MAIN
 - DOMAIN-SUFFIX,line.me,MAIN
+- DOMAIN-SUFFIX,line-cdn.net,MAIN
 - DOMAIN-SUFFIX,line-apps.com,MAIN
 - DOMAIN-SUFFIX,line-scdn.net,MAIN
 - DOMAIN-SUFFIX,naver.jp,MAIN
+- DOMAIN-SUFFIX,nhncorp.jp,MAIN
 - IP-CIDR,103.2.30.0/23,MAIN
 - IP-CIDR,125.209.208.0/20,MAIN
 - IP-CIDR,147.92.128.0/17,MAIN
@@ -577,6 +665,12 @@
 - DOMAIN-SUFFIX,paypal.com,MAIN
 - DOMAIN-SUFFIX,paypalobjects.com,MAIN
 - DOMAIN-KEYWORD,paypal,MAIN
+# > Dubox
+- DOMAIN-SUFFIX,dubox.com,MAIN
+- DOMAIN-SUFFIX,duboxcdn.com,MAIN
+# > Pixiv
+- DOMAIN-SUFFIX,pixiv.net,MAIN
+- DOMAIN-SUFFIX,pximg.net,MAIN
 # > Nintendo
 - DOMAIN-SUFFIX,nintendo.net,MAIN
 - DOMAIN-SUFFIX,nintendo.com,MAIN
@@ -584,6 +678,7 @@
 - DOMAIN-SUFFIX,github.com,MAIN
 - DOMAIN-SUFFIX,githubusercontent.com,MAIN
 - DOMAIN-SUFFIX,github.io,MAIN
+- DOMAIN-SUFFIX,githubapp.com,MAIN
 - DOMAIN-SUFFIX,gitbook.com,MAIN
 - DOMAIN-SUFFIX,gitbook.io,MAIN
 - DOMAIN-SUFFIX,githubassets.com,MAIN
@@ -681,8 +776,26 @@
 - DOMAIN-SUFFIX,wikipedia.org,MAIN
 - DOMAIN-SUFFIX,wikiquote.org,MAIN
 - DOMAIN-SUFFIX,wikiwand.com,MAIN
+- DOMAIN-SUFFIX,mediawiki.org,MAIN
+- DOMAIN-SUFFIX,wikibooks.org,MAIN
+- DOMAIN-SUFFIX,wikidata.org,MAIN
+- DOMAIN-SUFFIX,wikileaks.org,MAIN
+- DOMAIN-SUFFIX,wikinews.org,MAIN
+- DOMAIN-SUFFIX,wikisource.org,MAIN
+- DOMAIN-SUFFIX,wikiversity.org,MAIN
+- DOMAIN-SUFFIX,wikivoyage.org,MAIN
+- DOMAIN-SUFFIX,wiktionary.org,MAIN
 - DOMAIN-SUFFIX,yahoo.com,MAIN
 - DOMAIN-SUFFIX,aol.com,MAIN
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
 # > Remaining
+- DOMAIN-SUFFIX,eu,MAIN
+- DOMAIN-SUFFIX,hk,MAIN
+- DOMAIN-SUFFIX,jp,MAIN
+- DOMAIN-SUFFIX,kr,MAIN
+- DOMAIN-SUFFIX,sg,MAIN
+- DOMAIN-SUFFIX,tw,MAIN
+- DOMAIN-SUFFIX,uk,MAIN
+- DOMAIN-SUFFIX,us,MAIN
+
