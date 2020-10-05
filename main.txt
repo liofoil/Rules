@@ -231,7 +231,6 @@
 - DOMAIN-SUFFIX,mobike.com,DIRECT
 - DOMAIN-SUFFIX,qdaily.com,DIRECT
 - DOMAIN-SUFFIX,qidian.com,DIRECT
-- DOMAIN-SUFFIX,sm.ms,DIRECT
 - DOMAIN-SUFFIX,smzdm.com,DIRECT
 - DOMAIN-SUFFIX,didialift.com,DIRECT
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
@@ -253,12 +252,6 @@
 - DOMAIN-SUFFIX,umengcloud.com,DIRECT
 # > Original IP
 - DOMAIN,scholar.google.com,Original
-# > Akacdn Filtering
-- DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Microsoft
-- DOMAIN-SUFFIX,aka.ms,Microsoft
-- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Steam
-  # Microsoft Apple
-- DOMAIN-SUFFIX,akadns.net,MAIN
 # > Apple
 - DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,Apple
@@ -276,6 +269,14 @@
 - DOMAIN-SUFFIX,me.com,Apple
 - DOMAIN-SUFFIX,mzstatic.com,Apple
 - DOMAIN-SUFFIX,comscoreresearch.com,Apple
+- DOMAIN-SUFFIX,mwcname.com,Apple
+- DOMAIN-SUFFIX,apple-dns.net,Apple
+- DOMAIN-SUFFIX,omniture.cn,Apple
+- DOMAIN-SUFFIX,cdn20.com,Apple
+- DOMAIN-SUFFIX,mwcloudcdn.com,Apple
+- DOMAIN-KEYWORD,apple,Apple
+- DOMAIN-KEYWORD,icloud,Apple
+- DOMAIN-KEYWORD,mzstatic,Apple
 - IP-CIDR,17.0.0.0/8,Apple
 - IP-CIDR,63.92.224.0/19,Apple
 - IP-CIDR,65.199.22.0/23,Apple
@@ -318,6 +319,7 @@
 - DOMAIN-SUFFIX,debug.com,Google
 - DOMAIN-SUFFIX,deepmind.com,Google
 - DOMAIN-SUFFIX,dartsearch.net,Google
+- DOMAIN-SUFFIX,doubleclick.net,Google
 - DOMAIN-SUFFIX,firebaseio.com,Google
 - DOMAIN-SUFFIX,getmdl.io,Google
 - DOMAIN-SUFFIX,ggpht.com,Google
@@ -443,6 +445,8 @@
 - DOMAIN-SUFFIX,xboxlive.com,Microsoft
 - DOMAIN-SUFFIX,yammer.com,Microsoft
 - DOMAIN-SUFFIX,yammerusercontent.com,Microsoft
+- DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Microsoft
+- DOMAIN-SUFFIX,aka.ms,Microsoft
 - DOMAIN-KEYWORD,1drv,Microsoft
 - DOMAIN-KEYWORD,microsoft,Microsoft
 # > Amazon
@@ -547,6 +551,7 @@
 - DOMAIN-SUFFIX,st.dl.eccdnx.com,Steam
 - DOMAIN-SUFFIX,st.dl.pinyuncloud.com,Steam
 - DOMAIN-SUFFIX,steampowered.com.8686c.com,Steam
+- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Steam
 # > Epic Uplay and Others
 - DOMAIN-SUFFIX,epicgames.com,GAMES
 - DOMAIN-SUFFIX,unrealengine.com,GAMES
@@ -789,6 +794,13 @@
 - DOMAIN-SUFFIX,aol.com,MAIN
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
+# > Aka cdn Final
+- DOMAIN-SUFFIX,akadns.net,MAIN
+- DOMAIN-SUFFIX,akamaized.net,MAIN
+- DOMAIN-SUFFIX,akamaihd.net,MAIN
+- DOMAIN-SUFFIX,akamai.net,MAIN
+- DOMAIN-SUFFIX,akamaiedge.net,MAIN
+- DOMAIN-SUFFIX,akamaistream.net,MAIN
 # > Remaining
 - DOMAIN-SUFFIX,eu,MAIN
 - DOMAIN-SUFFIX,hk,MAIN
