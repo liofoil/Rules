@@ -235,6 +235,8 @@
 - DOMAIN-SUFFIX,digicert.com,MAIN
 - DOMAIN-SUFFIX,verisign.net,MAIN
 # > Amazon
+- DOMAIN-SUFFIX,amazon.cn,DIRECT
+- DOMAIN-SUFFIX,amazonaws.com.cn,DIRECT
 - DOMAIN-SUFFIX,amazon.com,MAIN
 - DOMAIN-SUFFIX,aiv-cdn.net,MAIN
 - DOMAIN-SUFFIX,aiv-delivery.net,MAIN
@@ -764,12 +766,13 @@
 - DOMAIN-SUFFIX,jstore.site,DIRECT
 - DOMAIN-SUFFIX,midway.run,DIRECT
 - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-KEYWORD,jellow,DIRECT
+- DOMAIN-KEYWORD,jike,DIRECT
 # > Zhihu
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,zhuihd.com,DIRECT
 # > Others
-- DOMAIN-SUFFIX,amazon.cn,DIRECT
 - DOMAIN-SUFFIX,vzan.com,DIRECT
 - DOMAIN-SUFFIX,vzuu.com,DIRECT
 - DOMAIN-SUFFIX,vzan.cc,DIRECT
