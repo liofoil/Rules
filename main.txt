@@ -277,6 +277,7 @@
 - DOMAIN-KEYWORD,apple,Apple
 - DOMAIN-KEYWORD,icloud,Apple
 - DOMAIN-KEYWORD,mzstatic,Apple
+- DOMAIN-KEYWORD,iosapps,Apple
 - IP-CIDR,17.0.0.0/8,Apple
 - IP-CIDR,63.92.224.0/19,Apple
 - IP-CIDR,65.199.22.0/23,Apple
@@ -449,6 +450,13 @@
 - DOMAIN-SUFFIX,aka.ms,Microsoft
 - DOMAIN-KEYWORD,1drv,Microsoft
 - DOMAIN-KEYWORD,microsoft,Microsoft
+# > ubuntu
+- DOMAIN-SUFFIX,ubuntu.com,MAIN
+- DOMAIN-KEYWORD,ubuntu,MAIN
+# > didital certificate
+- DOMAIN-SUFFIX,entrust.com,MAIN
+- DOMAIN-SUFFIX,digicert.com,MAIN
+- DOMAIN-SUFFIX,verisign.net,MAIN
 # > Amazon
 - DOMAIN-SUFFIX,amazon.com,MAIN
 - DOMAIN-SUFFIX,aiv-cdn.net,MAIN
