@@ -47,9 +47,9 @@
 - DOMAIN-SUFFIX,comscoreresearch.com,Apple
 - DOMAIN-SUFFIX,apple-dns.net,Apple
 - DOMAIN-SUFFIX,omniture.cn,Apple
-- DOMAIN-SUFFIX,apple.com.mwcname.com,REJECT
-- DOMAIN-SUFFIX,apple.com.mwcloudcdn.com,REJECT
-- DOMAIN-SUFFIX,apple.com.cdn20.com,REJECT
+- DOMAIN-SUFFIX,mwcname.com,Apple
+- DOMAIN-SUFFIX,mwcloudcdn.com,Apple
+- DOMAIN-SUFFIX,cdn20.com,Apple
 - DOMAIN,k128-mzstatic.gslb.ksyuncdn.com,REJECT
 - DOMAIN,k128-iosapps.gslb.ksyuncdn.com,REJECT
 - DOMAIN,k128.gslb.ksyuncdn.com,REJECT
