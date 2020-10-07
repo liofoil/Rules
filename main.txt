@@ -51,7 +51,7 @@
 - DOMAIN-SUFFIX,apple.com.mwcloudcdn.com,REJECT
 - DOMAIN-SUFFIX,apple.com.cdn20.com,REJECT
 - DOMAIN,k128-mzstatic.gslb.ksyuncdn.com,REJECT
-- DOAMIN,k128-iosapps.gslb.ksyuncdn.com,REJECT
+- DOMAIN,k128-iosapps.gslb.ksyuncdn.com,REJECT
 - DOMAIN,k128.gslb.ksyuncdn.com,REJECT
 - DOMAIN-SUFFIX,autonavi.com,REJECT
 - DOMAIN-KEYWORD,apple,Apple
