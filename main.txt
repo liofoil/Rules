@@ -50,10 +50,9 @@
 - DOMAIN-SUFFIX,mwcname.com,Apple
 - DOMAIN-SUFFIX,mwcloudcdn.com,Apple
 - DOMAIN-SUFFIX,cdn20.com,Apple
-- DOMAIN,k128-mzstatic.gslb.ksyuncdn.com,REJECT
-- DOMAIN,k128-iosapps.gslb.ksyuncdn.com,REJECT
-- DOMAIN,k128.gslb.ksyuncdn.com,REJECT
-- DOMAIN-SUFFIX,autonavi.com,REJECT
+- DOMAIN,k128-mzstatic.gslb.ksyuncdn.com,DIRECT
+- DOMAIN,k128-iosapps.gslb.ksyuncdn.com,DIRECT
+- DOMAIN,k128.gslb.ksyuncdn.com,DIRECT
 - DOMAIN-KEYWORD,apple,Apple
 - DOMAIN-KEYWORD,icloud,Apple
 - DOMAIN-KEYWORD,mzstatic,Apple
@@ -245,8 +244,8 @@
 - DOMAIN-SUFFIX,digicert.com,MAIN
 - DOMAIN-SUFFIX,verisign.net,MAIN
 # > Amazon
-- DOMAIN-SUFFIX,amazon.cn,DIRECT
-- DOMAIN-SUFFIX,amazonaws.com.cn,DIRECT
+- DOMAIN-SUFFIX,amazon.cn,MAIN
+- DOMAIN-SUFFIX,amazonaws.com.cn,MAIN
 - DOMAIN-SUFFIX,amazon.com,MAIN
 - DOMAIN-SUFFIX,aiv-cdn.net,MAIN
 - DOMAIN-SUFFIX,aiv-delivery.net,MAIN
@@ -605,6 +604,8 @@
 - IP-CIDR,172.16.102.56/32,DIRECT
 - IP-CIDR,185.188.32.1/28,DIRECT
 - IP-CIDR,221.226.128.146/32,DIRECT
+- DOMAIN-SUFFIX,oray.net,DIRECT
+- DOMAIN-KEYWORD,oray,DIRECT
 # > Domestic Content Delivery Network
 - DOMAIN-SUFFIX,ccgslb.com,DIRECT
 - DOMAIN-SUFFIX,ccgslb.net,DIRECT
@@ -617,14 +618,18 @@
 - DOMAIN-SUFFIX,jstucdn.co,DIRECT
 - DOMAIN-SUFFIX,qihucdn.com,DIRECT
 - DOMAIN-SUFFIX,tongdun.net,DIRECT
+- DOMAIN-SUFFIX,ksyuncdn.com,DIRECT
 # > Tencent
 - DOMAIN-SUFFIX,foxmail.com,DIRECT
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,dcloudstc.com,DIRECT
+- DOMAIN-SUFFIX,tdnsv6.com,DIRECT
 - DOMAIN-SUFFIX,smtcdns.com,DIRECT
 - DOMAIN-SUFFIX,smtcdns.net,DIRECT
 - DOMAIN-SUFFIX,soso.com,DIRECT
 - DOMAIN-SUFFIX,tencentmind.com,DIRECT
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,gtimg.cn,DIRECT
 - DOMAIN-SUFFIX,idqqimg.com,DIRECT
 - DOMAIN-SUFFIX,igamecj.com,DIRECT
 - DOMAIN-SUFFIX,myapp.com,DIRECT
@@ -635,6 +640,8 @@
 - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
 - DOMAIN-SUFFIX,tenpay.com,DIRECT
 - DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOAMIN-SUFFIX,qlogo.cn,DIRECT
 - DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
 - DOMAIN-SUFFIX,qqmail.com,DIRECT
 - DOMAIN-SUFFIX,oa.com,DIRECT
@@ -663,6 +670,7 @@
 - DOMAIN-SUFFIX,alibabadns.com,DIRECT
 - DOMAIN-SUFFIX,amap.com,DIRECT
 - DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-SUFFIX,aqyun.com,DIRECT
 - DOMAIN-SUFFIX,dingtalk.com,DIRECT
 - DOMAIN-SUFFIX,mxhichina.com,DIRECT
 - DOMAIN-SUFFIX,taobao.com,DIRECT
@@ -691,6 +699,7 @@
 - DOMAIN-SUFFIX,jd.com,DIRECT
 - DOMAIN-SUFFIX,jd.hk,DIRECT
 - DOMAIN-SUFFIX,jdpay.com,DIRECT
+- DOMAIN-SUFFIX,xdrig.com,DIRECT
 - DOMAIN-SUFFIX,360buyimg.com,DIRECT
 - DOMAIN-SUFFIX,jdcloud.com,DIRECT
 - DOMAIN-SUFFIX,jddebug.com,DIRECT
@@ -758,10 +767,14 @@
 - DOMAIN-SUFFIX,sohucs.com,DIRECT
 - DOMAIN-SUFFIX,sohu-inc.com,DIRECT
 # > Sina
+- DOAMIN-SUFFIX,sina.cn,DIRECT
+- DOMAIN-SUFFIX,weibo.cn,DIRECT
 - DOMAIN-SUFFIX,sina.com,DIRECT
 - DOMAIN-SUFFIX,sina.net,DIRECT
 - DOMAIN-SUFFIX,weibo.com,DIRECT
 - DOMAIN-SUFFIX,weibocdn.com,DIRECT
+- DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+- DOMAIN-SUFFIX,sinajs.cn,DIRECT
 # Kugou Kuwo Sogo
 - DOMAIN-SUFFIX,kugou.com,DIRECT
 - DOMAIN-SUFFIX,kuwo.cn,DIRECT
@@ -776,6 +789,7 @@
 - DOMAIN-SUFFIX,jstore.site,DIRECT
 - DOMAIN-SUFFIX,midway.run,DIRECT
 - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,wswebpic.com,DIRECT
 - DOMAIN-KEYWORD,jellow,DIRECT
 - DOMAIN-KEYWORD,jike,DIRECT
 # > Zhihu
@@ -789,22 +803,27 @@
 - DOMAIN-SUFFIX,jianshu.com,DIRECT
 - DOMAIN-SUFFIX,jianshu.io,DIRECT
 - DOMAIN-SUFFIX,jianshuapi.com,DIRECT
+- DOMAIN-SUFFIX,bdcom.com.cn,DIRECT
 - DOMAIN-SUFFIX,cnblogs.com,DIRECT
 - DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOAMIN-SUFFIX,cnki.net,DIRECT
 - DOMAIN-SUFFIX,mob.com,DIRECT
 - DOMAIN-SUFFIX,max-c.com,DIRECT
 - DOMAIN-SUFFIX,maxjia.com,DIRECT
+- DOAMIN-SUFFIX,xiaoheihe.cn,DIRECT
 - DOMAIN-SUFFIX,douban.com,DIRECT
 - DOMAIN-SUFFIX,doubanio.com,DIRECT
 - DOMAIN-SUFFIX,douyu.com,DIRECT
 - DOMAIN-SUFFIX,dytt8.net,DIRECT
 - DOMAIN-SUFFIX,linkedin.com,DIRECT
+- DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
 - DOMAIN-SUFFIX,meituan.com,DIRECT
 - DOMAIN-SUFFIX,meituan.net,DIRECT
 - DOMAIN-SUFFIX,mobike.com,DIRECT
 - DOMAIN-SUFFIX,qdaily.com,DIRECT
 - DOMAIN-SUFFIX,qidian.com,DIRECT
 - DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,hupu.com,DIRECT
 - DOMAIN-SUFFIX,didialift.com,DIRECT
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
 - DOMAIN-SUFFIX,udache.com,DIRECT
@@ -813,6 +832,9 @@
 - DOMAIN-SUFFIX,miui.com,DIRECT
 - DOMAIN-SUFFIX,miwifi.com,DIRECT
 - DOMAIN-SUFFIX,xiaomi.com,DIRECT
+- DOMAIN-SUFFIX,xiaomi.net,DIRECT
+- DOAMIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,baishan-cloud.com,DIRECT
 - DOMAIN-SUFFIX,cctv.com,DIRECT
 - DOMAIN-SUFFIX,cctvpic.com,DIRECT
 - DOMAIN-SUFFIX,livechina.com,DIRECT
@@ -823,6 +845,8 @@
 - DOMAIN-SUFFIX,sspai.com,DIRECT
 - DOMAIN-SUFFIX,umeng.com,DIRECT
 - DOMAIN-SUFFIX,umengcloud.com,DIRECT
+- DOMAIN-SUFFIX,uuhimalayanqm.com,DIRECT
+- DOMAIN-SUFFIX,kunlunno.com,DIRECT
 # > Remaining
 - DOMAIN-SUFFIX,eu,MAIN
 - DOMAIN-SUFFIX,hk,MAIN
