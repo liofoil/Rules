@@ -624,6 +624,7 @@
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
 - DOMAIN-SUFFIX,dcloudstc.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv6.com,DIRECT
+- DOMAIN-SUFFIX,tdnsv5.com,DIRECT
 - DOMAIN-SUFFIX,smtcdns.com,DIRECT
 - DOMAIN-SUFFIX,smtcdns.net,DIRECT
 - DOMAIN-SUFFIX,soso.com,DIRECT
@@ -729,6 +730,8 @@
 - DOMAIN-SUFFIX,bilibili.tv,B&I
 - DOMAIN-SUFFIX,bilivideo.com,B&I
 - DOMAIN-SUFFIX,biligame.com,B&I
+- DOMAIN-SUFFIX,biligame.net,B&I
+- DOMAIN-SUFFIX,bilibiligame.net,B&I
 - DOMAIN-SUFFIX,acg.tv,B&I
 # > iQiyi
 - DOMAIN-SUFFIX,iqiyi.com,B&I
@@ -796,6 +799,8 @@
 - DOMAIN-SUFFIX,zhihu.com,DIRECT
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,zhuihd.com,DIRECT
+- DOMAIN-SUFFIX,bsgslb.cn,DIRECT
+- DOMAIN-KEYWORD,zhihu,DIRECT
 # > Others
 - DOMAIN-SUFFIX,vzan.com,DIRECT
 - DOMAIN-SUFFIX,vzuu.com,DIRECT
@@ -847,6 +852,9 @@
 - DOMAIN-SUFFIX,umengcloud.com,DIRECT
 - DOMAIN-SUFFIX,uuhimalayanqm.com,DIRECT
 - DOMAIN-SUFFIX,kunlunno.com,DIRECT
+- DOMAIN-SUFFIX,jpush.cn,DIRECT
+- DOMAIN-SUFFIX,ucweb.com,DIRECT
+- DOMAIN-SUFFIX,edu.cn,DIRECT
 # > Remaining
 - DOMAIN-SUFFIX,eu,MAIN
 - DOMAIN-SUFFIX,hk,MAIN
