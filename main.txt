@@ -32,11 +32,13 @@
 - DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,Apple
 - DOMAIN-SUFFIX,apple.com,Apple
+- DOMAIN-SUFFIX,apple.cn,Apple
 - DOMAIN-SUFFIX,apple.com.cn,Apple
 - DOMAIN-SUFFIX,apple.news,Apple
 - DOMAIN-SUFFIX,apple-cloudkit.com,Apple
 - DOMAIN-SUFFIX,appstore.com,Apple
 - DOMAIN-SUFFIX,appsto.re,Apple
+- DOMAIN-SUFFIX,apple-mapkit.com,Apple
 - DOMAIN-SUFFIX,cdn-apple.com,Apple
 - DOMAIN-SUFFIX,crashlytics.com,Apple
 - DOMAIN-SUFFIX,icloud.com,Apple
@@ -236,9 +238,11 @@
 - DOMAIN-SUFFIX,ms,Microsoft
 - DOMAIN-KEYWORD,1drv,Microsoft
 - DOMAIN-KEYWORD,microsoft,Microsoft
-# > ubuntu
+# > Unix
 - DOMAIN-SUFFIX,ubuntu.com,MAIN
+- DOMAIN-SUFFIX,ntp.org,MAIN
 - DOMAIN-KEYWORD,ubuntu,MAIN
+- DOMAIN-KEYWORD,centos,MAIN
 # > didital certificate
 - DOMAIN-SUFFIX,entrust.com,MAIN
 - DOMAIN-SUFFIX,digicert.com,MAIN
@@ -253,6 +257,7 @@
 - DOMAIN-SUFFIX,primevideo.com,MAIN
 - DOMAIN-SUFFIX,amazonaws.com,MAIN
 - DOMAIN-SUFFIX,cloudfront.net,MAIN
+- DOMAIN-SUFFIX,geetest.com,MAIN
 - DOMAIN-KEYWORD,avoddashs,MAIN
 - DOMAIN-KEYWORD,amazon,MAIN
 - IP-CIDR,13.32.0.0/15,MAIN
@@ -622,6 +627,7 @@
 # > Tencent
 - DOMAIN-SUFFIX,foxmail.com,DIRECT
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,cdn-go.cn,DIRECT
 - DOMAIN-SUFFIX,dcloudstc.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv6.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv5.com,DIRECT
@@ -657,18 +663,25 @@
 - DOMAIN-SUFFIX,voovmeeting.com,DIRECT
 - DOMAIN-SUFFIX,com-qq.net,DIRECT
 - DOMAIN-SUFFIX,weidian.com,DIRECT
+- DOMAIN-SUFFIX,nexin.cn,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,sankuai.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
 # > Alibaba
 - DOMAIN-SUFFIX,alibabacloud.com,DIRECT
 - DOMAIN-SUFFIX,alibaba.com,DIRECT
 - DOMAIN-SUFFIX,alicdn.com,DIRECT
 - DOMAIN-SUFFIX,alikunlun.com,DIRECT
 - DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,alipay.cn,DIRECT
 - DOMAIN-SUFFIX,aliyun.com,DIRECT
 - DOMAIN-SUFFIX,aliapp.org,DIRECT
 - DOMAIN-SUFFIX,aliyun-inc.com,DIRECT
 - DOMAIN-SUFFIX,aligames.com,DIRECT
 - DOMAIN-SUFFIX,aliyuncs.com,DIRECT
 - DOMAIN-SUFFIX,alibabadns.com,DIRECT
+- DOMAIN-SUFFIX,hwwt8.com,DIRECT
+- DOMAIN-SUFFIX,gitee.com,DIRECT
 - DOMAIN-SUFFIX,amap.com,DIRECT
 - DOMAIN-SUFFIX,autonavi.com,DIRECT
 - DOMAIN-SUFFIX,aqyun.com,DIRECT
@@ -732,6 +745,8 @@
 - DOMAIN-SUFFIX,biligame.com,B&I
 - DOMAIN-SUFFIX,biligame.net,B&I
 - DOMAIN-SUFFIX,bilibiligame.net,B&I
+- DOMAIN-SUFFIX,bigfun.cn,B&I
+- DOMAIN-SUFFIX,bigfunapp.cn,B&I
 - DOMAIN-SUFFIX,acg.tv,B&I
 # > iQiyi
 - DOMAIN-SUFFIX,iqiyi.com,B&I
@@ -801,7 +816,19 @@
 - DOMAIN-SUFFIX,zhuihd.com,DIRECT
 - DOMAIN-SUFFIX,bsgslb.cn,DIRECT
 - DOMAIN-KEYWORD,zhihu,DIRECT
+# > Bank&Phone
+- DOMAIN-SUFFIX,189.cn,DIRECT
+- DOMAIN-SUFFIX,go189.cn,DIRECT
+- DOMAIN-SUFFIX,10086.cn,DIRECT
+- DOMAIN-SUFFIX,boc.cn,DIRECT
 # > Others
+- DOMAIN-SUFFIX,360.cn,DIRECT
+- DOMAIN-SUFFIX,firefoxchina.cn,DIRECT
+- DOMAIN-SUFFIX,firefox.com.cn,DIRECT
+- DOMAIN-SUFFIX,g-fox.cn,DIRECT
+- DOMAIN-SUFFIX,dcocsp.cn,DIRECT
+- DOMAIN-SUFFIX,flash.cn,DIRECT
+- DOMAIN-SUFFIX,ffnews.cn,DIRECT
 - DOMAIN-SUFFIX,vzan.com,DIRECT
 - DOMAIN-SUFFIX,vzuu.com,DIRECT
 - DOMAIN-SUFFIX,vzan.cc,DIRECT
@@ -810,7 +837,10 @@
 - DOMAIN-SUFFIX,jianshuapi.com,DIRECT
 - DOMAIN-SUFFIX,bdcom.com.cn,DIRECT
 - DOMAIN-SUFFIX,cnblogs.com,DIRECT
+- DOMAIN-SUFFIX,right.com.cn,DIRECT
+- DOMAIN-SUFFIX,pconline.com.cn,DIRECT
 - DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,csdnimg.cn,DIRECT
 - DOMAIN-SUFFIX,cnki.net,DIRECT
 - DOMAIN-SUFFIX,mob.com,DIRECT
 - DOMAIN-SUFFIX,max-c.com,DIRECT
@@ -828,6 +858,9 @@
 - DOMAIN-SUFFIX,qdaily.com,DIRECT
 - DOMAIN-SUFFIX,qidian.com,DIRECT
 - DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,wps.cn,DIRECT
+- DOMAIN-SUFFIX,wpscdn.cn,DIRECT
+- DOMAIN-SUFFIX,qwps.cn,DIRECT
 - DOMAIN-SUFFIX,hupu.com,DIRECT
 - DOMAIN-SUFFIX,didialift.com,DIRECT
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
@@ -839,6 +872,7 @@
 - DOMAIN-SUFFIX,xiaomi.com,DIRECT
 - DOMAIN-SUFFIX,xiaomi.net,DIRECT
 - DOMAIN-SUFFIX,hicloud.com,DIRECT
+- DOMAIN-SUFFIX,myhwclouds.com,DIRECT
 - DOMAIN-SUFFIX,baishan-cloud.com,DIRECT
 - DOMAIN-SUFFIX,cctv.com,DIRECT
 - DOMAIN-SUFFIX,cctvpic.com,DIRECT
@@ -854,7 +888,11 @@
 - DOMAIN-SUFFIX,kunlunno.com,DIRECT
 - DOMAIN-SUFFIX,jpush.cn,DIRECT
 - DOMAIN-SUFFIX,ucweb.com,DIRECT
+- DOMAIN-SUFFIX,uc.cn,DIRECT
 - DOMAIN-SUFFIX,edu.cn,DIRECT
+- DOMAIN-SUFFIX,kfc.com.cn,DIRECT
+- DOMAIN-SUFFIX,4008823823.com.cn,DIRECT
+- DOMAIN-SUFFIX,chinacloudapi.cn,DIRECT
 # > Remaining
 - DOMAIN-SUFFIX,eu,MAIN
 - DOMAIN-SUFFIX,hk,MAIN
