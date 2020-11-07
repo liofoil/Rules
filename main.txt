@@ -144,6 +144,7 @@
 - DOMAIN-SUFFIX,googleoptimize.com,Google
 - DOMAIN-SUFFIX,googletagmanager.com,Google
 - DOMAIN-SUFFIX,googletagservices.com,Google
+- DOMAIN-SUFFIX,googlesyndication.com,Google
 - DOMAIN-SUFFIX,oasisfeng.com,Google
 - DOMAIN-SUFFIX,2mdn.net,Google
 - DOMAIN-SUFFIX,meet,Google
@@ -280,6 +281,7 @@
 - DOMAIN-SUFFIX,pscdn.co,Spotify
 - DOMAIN-SUFFIX,scdn.co,Spotify
 - DOMAIN-SUFFIX,spotify.com,Spotify
+- DOMAIN-SUFFIX,spotifycdn.com,Spotify
 - DOMAIN-SUFFIX,spoti.fi,Spotify
 - DOMAIN-KEYWORD,spotify.com,Spotify
 - DOMAIN-KEYWORD,-spotify-com,Spotify
@@ -492,6 +494,9 @@
 # > Cloudflare
 - DOMAIN-SUFFIX,cloudflare.com,MAIN
 - DOMAIN-SUFFIX,videodelivery.net,MAIN
+- DOMAIN-SUFFIX,cloudflarestream.com,MAIN
+- DOMAIN-SUFFIX,hcaptcha.com,MAIN
+- DOMAIN-KEYWORD,cloudflare,MAIN
 - IP-CIDR,173.245.48.0/20,MAIN
 - IP-CIDR,103.21.244.0/22,MAIN
 - IP-CIDR,103.22.200.0/22,MAIN
@@ -571,6 +576,9 @@
 - DOMAIN-SUFFIX,nvidia.com,MAIN
 - DOMAIN-SUFFIX,bbc.com,MAIN
 - DOMAIN-SUFFIX,v2ex.com,MAIN
+- DOMAIN-SUFFIX,adobe.com,MAIN
+- DOMAIN-SUFFIX,flash.com,MAIN
+- DOMAIN-SUFFIX,typekit.net,MAIN
 - DOMAIN-SUFFIX,stackoverflow.com,MAIN
 - DOMAIN-SUFFIX,dropbox.com,MAIN
 - DOMAIN-SUFFIX,dropboxusercontent.com,MAIN
@@ -592,9 +600,13 @@
 - DOMAIN-SUFFIX,wikivoyage.org,MAIN
 - DOMAIN-SUFFIX,wiktionary.org,MAIN
 - DOMAIN-SUFFIX,yahoo.com,MAIN
+- DOMAIN-SUFFIX,kaggle,com,MAIN
+- DOMAIN-SUFFIX,kaggle.io,MAIN
+- DOMAIN-SUFFIX,cnzz.com,MAIN
 - DOMAIN-SUFFIX,aol.com,MAIN
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
+- DOMAIN-KEYWORD,protonmail,MAIN
 # > Aka cdn Final
 - DOMAIN-SUFFIX,akadns.net,MAIN
 - DOMAIN-SUFFIX,akamaized.net,MAIN
@@ -628,6 +640,7 @@
 - DOMAIN-SUFFIX,foxmail.com,DIRECT
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
 - DOMAIN-SUFFIX,cdn-go.cn,DIRECT
+- DOMAIN-SUFFIX,url.cn,DIRECT
 - DOMAIN-SUFFIX,dcloudstc.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv6.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv5.com,DIRECT
@@ -663,7 +676,7 @@
 - DOMAIN-SUFFIX,voovmeeting.com,DIRECT
 - DOMAIN-SUFFIX,com-qq.net,DIRECT
 - DOMAIN-SUFFIX,weidian.com,DIRECT
-- DOMAIN-SUFFIX,nexin.cn,DIRECT
+- DOMAIN-SUFFIX,neixin.cn,DIRECT
 - DOMAIN-SUFFIX,meituan.com,DIRECT
 - DOMAIN-SUFFIX,sankuai.com,DIRECT
 - DOMAIN-SUFFIX,dianping.com,DIRECT
@@ -698,6 +711,7 @@
 - DOMAIN-SUFFIX,alipayobjects.com,DIRECT
 - DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
 - DOMAIN-SUFFIX,laiwang.com,DIRECT
+- DOMAIN-SUFFIX,sm.cn,DIRECT
 - DOMAIN-SUFFIX,mmstat.com,DIRECT
 # > Baidu
 - DOMAIN-SUFFIX,qianqian.com,DIRECT
@@ -821,8 +835,10 @@
 - DOMAIN-SUFFIX,go189.cn,DIRECT
 - DOMAIN-SUFFIX,10086.cn,DIRECT
 - DOMAIN-SUFFIX,boc.cn,DIRECT
+- DOMAIN-SUFFIX,95516.com,DIRECT
 # > Others
 - DOMAIN-SUFFIX,360.cn,DIRECT
+- DOMAIN-SUFFIX,21cn.com,DIRECT
 - DOMAIN-SUFFIX,firefoxchina.cn,DIRECT
 - DOMAIN-SUFFIX,firefox.com.cn,DIRECT
 - DOMAIN-SUFFIX,g-fox.cn,DIRECT
@@ -866,6 +882,8 @@
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
 - DOMAIN-SUFFIX,udache.com,DIRECT
 - DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,migu.cn,DIRECT
+- DOMAIN-SUFFIX,migudm.cn,DIRECT
 - DOMAIN-SUFFIX,mi-img.com,DIRECT
 - DOMAIN-SUFFIX,miui.com,DIRECT
 - DOMAIN-SUFFIX,miwifi.com,DIRECT
