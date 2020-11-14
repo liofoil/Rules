@@ -605,7 +605,7 @@
 - DOMAIN-SUFFIX,wikivoyage.org,MAIN
 - DOMAIN-SUFFIX,wiktionary.org,MAIN
 - DOMAIN-SUFFIX,yahoo.com,MAIN
-- DOMAIN-SUFFIX,kaggle,com,MAIN
+- DOMAIN-SUFFIX,kaggle.com,MAIN
 - DOMAIN-SUFFIX,kaggle.io,MAIN
 - DOMAIN-SUFFIX,cnzz.com,MAIN
 - DOMAIN-SUFFIX,aol.com,MAIN
