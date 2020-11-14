@@ -189,6 +189,7 @@
 - DOMAIN-SUFFIX,msftidentity.com,Microsoft
 - DOMAIN-SUFFIX,msidentity.com,Microsoft
 - DOMAIN-SUFFIX,msn.com,Microsoft
+- DOMAIN-SUFFIX,msn.cn,Microsoft
 - DOMAIN-SUFFIX,msocdn.com,Microsoft
 - DOMAIN-SUFFIX,msocsp.com,Microsoft
 - DOMAIN-SUFFIX,mstea.ms,Microsoft
@@ -249,6 +250,9 @@
 - DOMAIN-SUFFIX,digicert.com,MAIN
 - DOMAIN-SUFFIX,verisign.net,MAIN
 # > Amazon
+- DOMAIN-SUFFIX,z.cn,MAIN
+- DOMAIN-SUFFIX,ssl-images-amazon.cn,MAIN
+- DOMAIN-SUFFIX,media-amazon.com,MAIN
 - DOMAIN-SUFFIX,amazon.cn,MAIN
 - DOMAIN-SUFFIX,amazonaws.com.cn,MAIN
 - DOMAIN-SUFFIX,amazon.com,MAIN
@@ -574,6 +578,7 @@
 # > Others
 - DOMAIN-SUFFIX,amd.com,MAIN
 - DOMAIN-SUFFIX,nvidia.com,MAIN
+- DOMAIN-SUFFIX,nvidia.cn,MAIN
 - DOMAIN-SUFFIX,bbc.com,MAIN
 - DOMAIN-SUFFIX,v2ex.com,MAIN
 - DOMAIN-SUFFIX,adobe.com,MAIN
@@ -756,6 +761,7 @@
 - DOMAIN-SUFFIX,biliapi.com,B&I
 - DOMAIN-SUFFIX,bilibili.tv,B&I
 - DOMAIN-SUFFIX,bilivideo.com,B&I
+- DOMAIN-SUFFIX,bilivideo.cn,B&I
 - DOMAIN-SUFFIX,biligame.com,B&I
 - DOMAIN-SUFFIX,biligame.net,B&I
 - DOMAIN-SUFFIX,bilibiligame.net,B&I
@@ -838,6 +844,7 @@
 - DOMAIN-SUFFIX,95516.com,DIRECT
 # > Others
 - DOMAIN-SUFFIX,360.cn,DIRECT
+- DOMAIN-SUFFIX,12306.cn,DIRECT
 - DOMAIN-SUFFIX,21cn.com,DIRECT
 - DOMAIN-SUFFIX,firefoxchina.cn,DIRECT
 - DOMAIN-SUFFIX,firefox.com.cn,DIRECT
