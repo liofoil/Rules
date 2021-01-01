@@ -57,11 +57,14 @@
 - DOMAIN,k128.gslb.ksyuncdn.com,DIRECT
 - DOMAIN-KEYWORD,apple,Apple
 - DOMAIN-KEYWORD,icloud,Apple
+- DOMAIN-KEYWORD,apple.com,Apple
+- DOMAIN-KEYWORD,icloud.com,Apple
 - DOMAIN-KEYWORD,mzstatic,Apple
 - DOMAIN-KEYWORD,iosapps,Apple
 - DOMAIN-KEYWORD,itunes,Apple
 - DOMAIN-KEYWORD,push-apple,Apple
 - DOMAIN-KEYWORD,origin-apple,Apple
+- DOMAIN-KEYWORD,itunes-apple,Apple
 - IP-CIDR,17.0.0.0/8,Apple
 - IP-CIDR,63.92.224.0/19,Apple
 - IP-CIDR,65.199.22.0/23,Apple
@@ -157,8 +160,18 @@
 - DOMAIN-KEYWORD,google,Google
 - DOMAIN-KEYWORD,blogspot,Google
 - DOMAIN-KEYWORD,gmail,Google
+- IP-CIDR,35.190.247.0/24,Google
+- IP-CIDR,64.233.160.0/19,Google
+- IP-CIDR,66.102.0.0/20,Google
+- IP-CIDR,66.249.80.0/20,Google
+- IP-CIDR,72.14.192.0/18,Google
 - IP-CIDR,74.125.0.0/16,Google
+- IP-CIDR,108.177.8.0/21,Google
+- IP-CIDR,172.217.0.0/16,Google
 - IP-CIDR,173.194.0.0/16,Google
+- IP-CIDR,209.85.128.0/17,Google
+- IP-CIDR,216.58.192.0/19,Google
+- IP-CIDR,216.239.32.0/19,Google
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,Microsoft
 - DOMAIN-SUFFIX,1drv.ms,Microsoft
@@ -351,6 +364,7 @@
 - DOMAIN-SUFFIX,bamgrid.com,UStream
 - DOMAIN-SUFFIX,disney-plus.net,UStream
 - DOMAIN-SUFFIX,disneyplus.com,UStream
+- DOMAIN-SUFFIX,disneystreaming.com,UStream
 - DOMAIN-SUFFIX,dssott.com,UStream
 - DOMAIN-SUFFIX,cdn.registerdisney.go.com,UStream
 - DOMAIN-SUFFIX,hulu.com,UStream
@@ -473,21 +487,32 @@
 - DOMAIN-SUFFIX,vine.co,MAIN
 - DOMAIN-SUFFIX,ads-twitter.com,MAIN
 - DOMAIN-KEYWORD,twitter,MAIN
+- DOMAIN-SUFFIX,69.195.160.0/19,MAIN
+- DOMAIN-SUFFIX,104.244.42.0/21,MAIN
+- DOMAIN-SUFFIX,192.133.76.0/22,MAIN
+- DOMAIN-SUFFIX,199.16.156.0/22,MAIN
+- DOMAIN-SUFFIX,199.59.148.0/22,MAIN
+- DOMAIN-SUFFIX,199.96.56.0/21,MAIN
+- DOMAIN-SUFFIX,202.160.128.0/22,MAIN
+- DOMAIN-SUFFIX,209.237.192.0/19,MAIN
 # > Telegram
-- DOMAIN-SUFFIX,t.me,MAIN
-- DOMAIN-SUFFIX,tdesktop.com,MAIN
-- DOMAIN-SUFFIX,telegra.ph,MAIN
-- DOMAIN-SUFFIX,telegram.me,MAIN
-- DOMAIN-SUFFIX,telegram.org,MAIN
-- DOMAIN-SUFFIX,telesco.pe,MAIN
-- IP-CIDR,91.108.4.0/22,MAIN
-- IP-CIDR,91.108.8.0/22,MAIN
-- IP-CIDR,91.108.12.0/22,MAIN
-- IP-CIDR,91.108.16.0/22,MAIN
-- IP-CIDR,91.108.56.0/22,MAIN
-- IP-CIDR,91.108.0.0/16,MAIN
-- IP-CIDR,109.239.140.0/24,MAIN
-- IP-CIDR,149.154.160.0/20,MAIN
+- DOMAIN-SUFFIX,t.me,TG
+- DOMAIN-SUFFIX,tdesktop.com,TG
+- DOMAIN-SUFFIX,telegra.ph,TG
+- DOMAIN-SUFFIX,telegram.me,TG
+- DOMAIN-SUFFIX,telegram.org,TG
+- DOMAIN-SUFFIX,telesco.pe,TG
+- IP-CIDR,91.108.4.0/22,TG
+- IP-CIDR,91.108.8.0/22,TG
+- IP-CIDR,91.108.12.0/22,TG
+- IP-CIDR,91.108.16.0/22,TG
+- IP-CIDR,91.108.56.0/22,TG
+- IP-CIDR,91.108.0.0/16,TG
+- IP-CIDR,109.239.140.0/24,TG
+- IP-CIDR,149.154.160.0/20,TG
+- IP-CIDR,149.154.164.0/22,TG
+- IP-CIDR,149.154.168.0/22,TG
+- IP-CIDR,149.154.172.0/22,TG
 # > Discord
 - DOMAIN-SUFFIX,discord.co,MAIN
 - DOMAIN-SUFFIX,discord.com,MAIN
@@ -530,9 +555,10 @@
 - IP-CIDR,147.92.128.0/17,MAIN
 - IP-CIDR,203.104.128.0/19,MAIN
 # > PayPal
-- DOMAIN-SUFFIX,paypal.com,MAIN
-- DOMAIN-SUFFIX,paypalobjects.com,MAIN
-- DOMAIN-KEYWORD,paypal,MAIN
+- DOMAIN-SUFFIX,paypal.com,PayPal
+- DOMAIN-SUFFIX,paypal.me,PayPal
+- DOMAIN-SUFFIX,paypalobjects.com,PayPal
+- DOMAIN-KEYWORD,paypal,PayPal
 # > Dubox
 - DOMAIN-SUFFIX,dubox.com,MAIN
 - DOMAIN-SUFFIX,duboxcdn.com,MAIN
@@ -580,6 +606,26 @@
 # > Deezer
 - DOMAIN-SUFFIX,deezer.com,MAIN
 - DOMAIN-SUFFIX,dzcdn.net,MAIN
+# > Wiki
+- DOMAIN-SUFFIX,wikimapia.org,MAIN
+- DOMAIN-SUFFIX,wikimedia.org,MAIN
+- DOMAIN-SUFFIX,wikipedia.org,MAIN
+- DOMAIN-SUFFIX,wikiquote.org,MAIN
+- DOMAIN-SUFFIX,wikiwand.com,MAIN
+- DOMAIN-SUFFIX,mediawiki.org,MAIN
+- DOMAIN-SUFFIX,wikibooks.org,MAIN
+- DOMAIN-SUFFIX,wikidata.org,MAIN
+- DOMAIN-SUFFIX,wikileaks.org,MAIN
+- DOMAIN-SUFFIX,wikinews.org,MAIN
+- DOMAIN-SUFFIX,wikisource.org,MAIN
+- DOMAIN-SUFFIX,wikiversity.org,MAIN
+- DOMAIN-SUFFIX,wikivoyage.org,MAIN
+- DOMAIN-SUFFIX,wiktionary.org,MAIN
+- DOMAIN-SUFFIX,91.198.174.0/24,MAIN
+- DOMAIN-SUFFIX,103.102.166.0/24,MAIN
+- DOMAIN-SUFFIX,185.15.56.0/22,MAIN
+- DOMAIN-SUFFIX,198.35.26.0/23,MAIN
+- DOMAIN-SUFFIX,208.80.152.0/22,MAIN
 # > Scholar
 - DOMAIN-SUFFIX,acm.org,MAIN
 - DOMAIN-SUFFIX,acs.org,MAIN
@@ -595,8 +641,13 @@
 - DOMAIN-SUFFIX,cambridge.org,MAIN
 - DOMAIN-SUFFIX,cas.org,MAIN
 - DOMAIN-SUFFIX,clarivate.com,MAIN
+- DOMAIN-SUFFIX,cas.org,MAIN
+- DOMAIN-SUFFIX,cell.com,MAIN
+- DOMAIN-SUFFIX,clarivate.com,MAIN
+- DOMAIN-SUFFIX,csiro.au,MAIN
 - DOMAIN-SUFFIX,ebscohost.com,MAIN
 - DOMAIN-SUFFIX,emerald.com,MAIN
+- DOMAIN-SUFFIX,endnote.com,MAIN
 - DOMAIN-SUFFIX,engineeringvillage.com,MAIN
 - DOMAIN-SUFFIX,icevirtuallibrary.com,MAIN
 - DOMAIN-SUFFIX,ieee.org,MAIN
@@ -624,6 +675,7 @@
 - DOMAIN-SUFFIX,sagepub.com,MAIN
 - DOMAIN-SUFFIX,sciencedirect.com,MAIN
 - DOMAIN-SUFFIX,sciencemag.org,MAIN
+- DOMAIN-SUFFIX,sci-hub.tw,MAIN
 - DOMAIN-SUFFIX,scopus.com,MAIN
 - DOMAIN-SUFFIX,siam.org,MAIN
 - DOMAIN-SUFFIX,spiedigitallibrary.org,MAIN
@@ -653,20 +705,6 @@
 - DOMAIN-SUFFIX,duckduckgo.com,MAIN
 - DOMAIN-SUFFIX,resilio.com,MAIN
 - DOMAIN-SUFFIX,textnow.me,MAIN
-- DOMAIN-SUFFIX,wikimapia.org,MAIN
-- DOMAIN-SUFFIX,wikimedia.org,MAIN
-- DOMAIN-SUFFIX,wikipedia.org,MAIN
-- DOMAIN-SUFFIX,wikiquote.org,MAIN
-- DOMAIN-SUFFIX,wikiwand.com,MAIN
-- DOMAIN-SUFFIX,mediawiki.org,MAIN
-- DOMAIN-SUFFIX,wikibooks.org,MAIN
-- DOMAIN-SUFFIX,wikidata.org,MAIN
-- DOMAIN-SUFFIX,wikileaks.org,MAIN
-- DOMAIN-SUFFIX,wikinews.org,MAIN
-- DOMAIN-SUFFIX,wikisource.org,MAIN
-- DOMAIN-SUFFIX,wikiversity.org,MAIN
-- DOMAIN-SUFFIX,wikivoyage.org,MAIN
-- DOMAIN-SUFFIX,wiktionary.org,MAIN
 - DOMAIN-SUFFIX,yahoo.com,MAIN
 - DOMAIN-SUFFIX,kaggle.com,MAIN
 - DOMAIN-SUFFIX,kaggle.io,MAIN
@@ -693,6 +731,9 @@
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
 - DOMAIN-KEYWORD,protonmail,MAIN
+# > Aka cdn fix
+## bilibili
+- DOMAIN,upos-hz-mirrorakam.akamaized.net,B&I
 # > Aka cdn Final
 - DOMAIN-SUFFIX,akadns.net,MAIN
 - DOMAIN-SUFFIX,akamaized.net,MAIN
@@ -750,6 +791,7 @@
 - DOMAIN-SUFFIX,qlogo.cn,DIRECT
 - DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
 - DOMAIN-SUFFIX,qqmail.com,DIRECT
+- DOMAIN-SUFFIX,tencentmusic.com,DIRECT
 - DOMAIN-SUFFIX,oa.com,DIRECT
 - DOMAIN-SUFFIX,wechat.com,DIRECT
 - DOMAIN-SUFFIX,weiyun.com,DIRECT
@@ -853,6 +895,7 @@
 - DOMAIN-SUFFIX,xiaomi.com,DIRECT
 - DOMAIN-SUFFIX,xiaomi.net,DIRECT
 - DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,dmhmusic.com,DIRECT
 # > JD
 - DOMAIN-SUFFIX,jd.com,DIRECT
 - DOMAIN-SUFFIX,jd.hk,DIRECT
@@ -939,11 +982,17 @@
 - DOMAIN-SUFFIX,qiyipic.com,B&I
 - DOMAIN-SUFFIX,iqiyi.com,B&I
 - DOMAIN-SUFFIX,iqiyipic.com,B&I
+- DOMAIN-SUFFIX,iq.com,B&I
 - DOMAIN-SUFFIX,qy.net,B&I
+- DOMAIN-SUFFIX,gitv.tv,B&I
 - DOMAIN-KEYWORD,qiyi,B&I
 - IP-CIDR,101.224.0.0/13,B&I
 - IP-CIDR,101.227.0.0/16,B&I
 - IP-CIDR,119.176.0.0/12,B&I
+- IP-CIDR,103.44.56.0/22,B&I
+- IP-CIDR,118.26.32.0/23,B&I
+- IP-CIDR,118.26.120.0/24,B&I
+- IP-CIDR,223.119.62.225/28,B&I
 # > PPTV
 - DOMAIN-SUFFIX,pplive.com,DIRECT
 - DOMAIN-SUFFIX,pptv.com,DIRECT
