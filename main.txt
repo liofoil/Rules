@@ -18,7 +18,7 @@
 # > Data Tansmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
-- DOAMIN,speedtest3.gd.chinamobile.com.prod.hosts.ooklaserver.net,DIRECT
+- DOMAIN,speedtest3.gd.chinamobile.com.prod.hosts.ooklaserver.net,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
