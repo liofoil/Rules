@@ -17,17 +17,19 @@
 - IP-CIDR,180.76.76.76/32,DIRECT
 # > Data Tansmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
-- DOMAIN-SUFFIX,internetworld.cloud,DIRECT
-- DOMAIN-SUFFIX,ssr.ac,MAIN
-- DOMAIN-SUFFIX,ssr.sh,MAIN
-- DOMAIN-SUFFIX,ssr.sx,MAIN
-- DOMAIN-SUFFIX,nenode.best,MAIN
-- DOMAIN-SUFFIX,amytele.com,MAIN
-- DOMAIN-SUFFIX,maying.co,MAIN
-- DOMAIN,emby.nexitally.com,UStream
-- DOMAIN-SUFFIX,nexitally.com,MAIN
-# > Original IP
-- DOMAIN,scholar.google.com,Original
+- DOMAIN-SUFFIX,globalacceleration.net,DIRECT
+- DOAMIN,speedtest3.gd.chinamobile.com.prod.hosts.ooklaserver.net,DIRECT
+- DOMAIN-SUFFIX,ssr.ac,MAYI
+- DOMAIN-SUFFIX,ssr.sh,MAYI
+- DOMAIN-SUFFIX,ssr.sx,MAYI
+- DOMAIN-SUFFIX,maying.io,MAYI
+- DOMAIN-SUFFIX,nenode.best,NEXI
+- DOMAIN-SUFFIX,amytele.com,NEXI
+- DOMAIN-SUFFIX,maying.co,MAYI
+- DOMAIN,emby.maying.club,MAYI
+- DOMAIN,emby.nexitally.com,NEXI
+- DOMAIN-SUFFIX,nexitally.com,NEXI
+- DOMAIN-SUFFIX,helptally.com,NEXI
 # > Apple
 - DOMAIN-SUFFIX,aaplimg.com,Apple
 - DOMAIN-SUFFIX,apple.co,Apple
@@ -267,39 +269,6 @@
 - DOMAIN-SUFFIX,entrust.com,MAIN
 - DOMAIN-SUFFIX,digicert.com,MAIN
 - DOMAIN-SUFFIX,verisign.net,MAIN
-# > Amazon
-- DOMAIN-SUFFIX,z.cn,MAIN
-- DOMAIN-SUFFIX,ssl-images-amazon.cn,MAIN
-- DOMAIN-SUFFIX,media-amazon.com,MAIN
-- DOMAIN-SUFFIX,llnwd.net,MAIN
-- DOMAIN-SUFFIX,amazon.cn,MAIN
-- DOMAIN-SUFFIX,amazonaws.com.cn,MAIN
-- DOMAIN-SUFFIX,amazonaws.co.uk,MAIN
-- DOMAIN-SUFFIX,amazon.com,MAIN
-- DOMAIN-SUFFIX,aiv-cdn.net,MAIN
-- DOMAIN-SUFFIX,aiv-delivery.net,MAIN
-- DOMAIN-SUFFIX,amazonvideo.com,MAIN
-- DOMAIN-SUFFIX,primevideo.com,MAIN
-- DOMAIN-SUFFIX,amazonaws.com,MAIN
-- DOMAIN-SUFFIX,cloudfront.net,MAIN
-- DOMAIN-SUFFIX,geetest.com,MAIN
-- DOMAIN-KEYWORD,avoddashs,MAIN
-- DOMAIN-KEYWORD,amazon,MAIN
-- IP-CIDR,13.32.0.0/15,MAIN
-- IP-CIDR,13.35.0.0/17,MAIN
-- IP-CIDR,18.184.0.0/15,MAIN
-- IP-CIDR,18.194.0.0/15,MAIN
-- IP-CIDR,18.208.0.0/13,MAIN
-- IP-CIDR,18.232.0.0/14,MAIN
-- IP-CIDR,52.58.0.0/15,MAIN
-- IP-CIDR,52.74.0.0/16,MAIN
-- IP-CIDR,52.77.0.0/16,MAIN
-- IP-CIDR,52.84.0.0/15,MAIN
-- IP-CIDR,52.200.0.0/13,MAIN
-- IP-CIDR,54.93.0.0/16,MAIN
-- IP-CIDR,54.156.0.0/14,MAIN
-- IP-CIDR,54.226.0.0/15,MAIN
-- IP-CIDR,54.230.156.0/22,MAIN
 # > Spotify
 - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
 - DOMAIN-SUFFIX,pscdn.co,Spotify
@@ -339,25 +308,15 @@
 - IP-CIDR,192.173.64.0/18,Netflix
 - IP-CIDR,198.38.96.0/19,Netflix
 - IP-CIDR,198.45.48.0/20,Netflix
-## added unverified
 - IP-CIDR,8.41.4.0/24,Netflix
-- IP-CIDR,23.246.0.0/18,Netflix
 - IP-CIDR,34.210.42.111/32,Netflix
-- IP-CIDR,37.77.184.0/21,Netflix
 - IP-CIDR,38.72.126.0/24,Netflix
-- IP-CIDR,45.57.0.0/17,Netflix
 - IP-CIDR,52.89.124.203/32,Netflix
 - IP-CIDR,54.148.37.5/32,Netflix
-- IP-CIDR,64.120.128.0/17,Netflix
-- IP-CIDR,66.197.128.0/17,Netflix
 - IP-CIDR,69.53.224.0/19,Netflix
 - IP-CIDR,103.87.204.0/22,Netflix
-- IP-CIDR,108.175.32.0/20,Netflix
 - IP-CIDR,185.2.220.0/22,Netflix
 - IP-CIDR,185.9.188.0/22,Netflix
-- IP-CIDR,192.173.64.0/18,Netflix
-- IP-CIDR,198.38.96.0/19,Netflix
-- IP-CIDR,198.45.48.0/20,Netflix
 - IP-CIDR,207.45.72.0/22,Netflix
 - IP-CIDR,208.75.76.0/22,Netflix
 # > Disney+ hulu hbo
@@ -418,6 +377,7 @@
 - DOMAIN-SUFFIX,netspeedtestmaster.com,SpeedTest
 - DOMAIN-SUFFIX,macpaw.com,SpeedTest
 - DOMAIN-SUFFIX,speedtest,SpeedTest
+- DOMAIN-SUFFIX,ookla.net,SpeedTest
 # > Facebook Instagram Whatsapp
 - DOMAIN-SUFFIX,cdninstagram.com,MAIN
 - DOMAIN-SUFFIX,fb.com,MAIN
@@ -514,12 +474,12 @@
 - IP-CIDR,149.154.168.0/22,TG
 - IP-CIDR,149.154.172.0/22,TG
 # > Discord
-- DOMAIN-SUFFIX,discord.co,MAIN
-- DOMAIN-SUFFIX,discord.com,MAIN
-- DOMAIN-SUFFIX,discord.media,MAIN
-- DOMAIN-SUFFIX,discord.gg,MAIN
-- DOMAIN-SUFFIX,discordapp.com,MAIN
-- DOMAIN-SUFFIX,discordapp.net,MAIN
+- DOMAIN-SUFFIX,discord.co,Discord
+- DOMAIN-SUFFIX,discord.com,Discord
+- DOMAIN-SUFFIX,discord.media,Discord
+- DOMAIN-SUFFIX,discord.gg,Discord
+- DOMAIN-SUFFIX,discordapp.com,Discord
+- DOMAIN-SUFFIX,discordapp.net,Discord
 # > TikTok
 - DOMAIN-KEYWORD,-tiktokcdn-com,MAIN
 - DOMAIN-SUFFIX,byteoversea.com,MAIN
@@ -583,26 +543,6 @@
 - DOMAIN-SUFFIX,gitbook.io,MAIN
 - DOMAIN-SUFFIX,githubassets.com,MAIN
 - DOMAIN-KEYWORD,github,MAIN
-# > Cloudflare
-- DOMAIN-SUFFIX,cloudflare.com,MAIN
-- DOMAIN-SUFFIX,videodelivery.net,MAIN
-- DOMAIN-SUFFIX,cloudflarestream.com,MAIN
-- DOMAIN-SUFFIX,hcaptcha.com,MAIN
-- DOMAIN-KEYWORD,cloudflare,MAIN
-- IP-CIDR,173.245.48.0/20,MAIN
-- IP-CIDR,103.21.244.0/22,MAIN
-- IP-CIDR,103.22.200.0/22,MAIN
-- IP-CIDR,103.31.4.0/22,MAIN
-- IP-CIDR,141.101.64.0/18,MAIN
-- IP-CIDR,108.162.192.0/18,MAIN
-- IP-CIDR,190.93.240.0/20,MAIN
-- IP-CIDR,188.114.96.0/20,MAIN
-- IP-CIDR,197.234.240.0/22,MAIN
-- IP-CIDR,198.41.128.0/17,MAIN
-- IP-CIDR,162.158.0.0/15,MAIN
-- IP-CIDR,104.16.0.0/12,MAIN
-- IP-CIDR,172.64.0.0/13,MAIN
-- IP-CIDR,131.0.72.0/22,MAIN
 # > Deezer
 - DOMAIN-SUFFIX,deezer.com,MAIN
 - DOMAIN-SUFFIX,dzcdn.net,MAIN
@@ -717,10 +657,13 @@
 - DOMAIN-SUFFIX,gcr.io,MAIN
 - DOMAIN-SUFFIX,gitlab.com,MAIN
 - DOMAIN-SUFFIX,gitlab.io,MAIN
+- DOMAIN-SUFFIX,globalsign.com,MAIN
+- DOMAIN-SUFFIX,goodnotes.email,MAIN
 - DOMAIN-SUFFIX,jitpack.io,MAIN
 - DOMAIN-SUFFIX,maven.org,MAIN
 - DOMAIN-SUFFIX,medium.com,MAIN
 - DOMAIN-SUFFIX,mvnrepository.com,MAIN
+- DOMAIN-SUFFIX,pndsn.com,MAIN
 - DOMAIN-SUFFIX,quay.io,MAIN
 - DOMAIN-SUFFIX,redhat.com,MAIN
 - DOMAIN-SUFFIX,sonatype.org,MAIN
@@ -731,6 +674,59 @@
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
 - DOMAIN-KEYWORD,protonmail,MAIN
+# > Cloudflare
+- DOMAIN-SUFFIX,cloudflare.com,MAIN
+- DOMAIN-SUFFIX,videodelivery.net,MAIN
+- DOMAIN-SUFFIX,cloudflarestream.com,MAIN
+- DOMAIN-SUFFIX,hcaptcha.com,MAIN
+- DOMAIN-KEYWORD,cloudflare,MAIN
+- IP-CIDR,173.245.48.0/20,MAIN
+- IP-CIDR,103.21.244.0/22,MAIN
+- IP-CIDR,103.22.200.0/22,MAIN
+- IP-CIDR,103.31.4.0/22,MAIN
+- IP-CIDR,141.101.64.0/18,MAIN
+- IP-CIDR,108.162.192.0/18,MAIN
+- IP-CIDR,190.93.240.0/20,MAIN
+- IP-CIDR,188.114.96.0/20,MAIN
+- IP-CIDR,197.234.240.0/22,MAIN
+- IP-CIDR,198.41.128.0/17,MAIN
+- IP-CIDR,162.158.0.0/15,MAIN
+- IP-CIDR,104.16.0.0/12,MAIN
+- IP-CIDR,172.64.0.0/13,MAIN
+- IP-CIDR,131.0.72.0/22,MAIN
+# > Amazon
+- DOMAIN-SUFFIX,z.cn,MAIN
+- DOMAIN-SUFFIX,ssl-images-amazon.cn,MAIN
+- DOMAIN-SUFFIX,media-amazon.com,MAIN
+- DOMAIN-SUFFIX,llnwd.net,MAIN
+- DOMAIN-SUFFIX,amazon.cn,MAIN
+- DOMAIN-SUFFIX,amazonaws.com.cn,MAIN
+- DOMAIN-SUFFIX,amazonaws.co.uk,MAIN
+- DOMAIN-SUFFIX,amazon.com,MAIN
+- DOMAIN-SUFFIX,aiv-cdn.net,MAIN
+- DOMAIN-SUFFIX,aiv-delivery.net,MAIN
+- DOMAIN-SUFFIX,amazonvideo.com,MAIN
+- DOMAIN-SUFFIX,primevideo.com,MAIN
+- DOMAIN-SUFFIX,amazonaws.com,MAIN
+- DOMAIN-SUFFIX,cloudfront.net,MAIN
+- DOMAIN-SUFFIX,geetest.com,MAIN
+- DOMAIN-KEYWORD,avoddashs,MAIN
+- DOMAIN-KEYWORD,amazon,MAIN
+- IP-CIDR,13.32.0.0/15,MAIN
+- IP-CIDR,13.35.0.0/17,MAIN
+- IP-CIDR,18.184.0.0/15,MAIN
+- IP-CIDR,18.194.0.0/15,MAIN
+- IP-CIDR,18.208.0.0/13,MAIN
+- IP-CIDR,18.232.0.0/14,MAIN
+- IP-CIDR,52.58.0.0/15,MAIN
+- IP-CIDR,52.74.0.0/16,MAIN
+- IP-CIDR,52.77.0.0/16,MAIN
+- IP-CIDR,52.84.0.0/15,MAIN
+- IP-CIDR,52.200.0.0/13,MAIN
+- IP-CIDR,54.93.0.0/16,MAIN
+- IP-CIDR,54.156.0.0/14,MAIN
+- IP-CIDR,54.226.0.0/15,MAIN
+- IP-CIDR,54.230.156.0/22,MAIN
 # > Aka cdn fix
 ## bilibili
 - DOMAIN,upos-hz-mirrorakam.akamaized.net,B&I
@@ -850,6 +846,7 @@
 - DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
 - DOMAIN-SUFFIX,laiwang.com,DIRECT
 - DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,elemecdn.com,DIRECT
 - DOMAIN-SUFFIX,xiami.com,DIRECT
 - DOMAIN-SUFFIX,xiami.net,DIRECT
 - DOMAIN-SUFFIX,sm.cn,DIRECT
@@ -948,6 +945,8 @@
 - DOMAIN-SUFFIX,b23.tv,B&I
 - DOMAIN-SUFFIX,im9.com,B&I
 - DOMAIN-SUFFIX,acg.tv,B&I
+- DOMAIN-SUFFIX,bilibilipay.com,B&I
+- DOMAIN-SUFFIX,bilibilipay.cn,B&I
 # > ByteDance
 - DOMAIN-SUFFIX,bytedance.com,DIRECT
 - DOMAIN-SUFFIX,bytedance.net,DIRECT
@@ -1125,6 +1124,7 @@
 - DOMAIN-SUFFIX,51cto.com,DIRECT
 - DOMAIN-SUFFIX,51job.com,DIRECT
 - DOMAIN-SUFFIX,51jobcdn.com,DIRECT
+- DOMAIN-SUFFIX,52pojie.cn,DIRECT
 - DOMAIN-SUFFIX,8686c.com,DIRECT
 - DOMAIN-SUFFIX,abchina.com,DIRECT
 - DOMAIN-SUFFIX,abercrombie.com,DIRECT
@@ -1195,6 +1195,7 @@
 - DOMAIN-SUFFIX,firefox.com.cn,DIRECT
 - DOMAIN-SUFFIX,frdic.com,DIRECT
 - DOMAIN-SUFFIX,fresh-ideas.cc,DIRECT
+- DOMAIN-SUFFIX,ftqq.com,DIRECT
 - DOMAIN-SUFFIX,g-fox.cn,DIRECT
 - DOMAIN-SUFFIX,ganji.com,DIRECT
 - DOMAIN-SUFFIX,ganjistatic1.com,DIRECT
@@ -1202,6 +1203,7 @@
 - DOMAIN-SUFFIX,geilicdn.com,DIRECT
 - DOMAIN-SUFFIX,ghpym.com,DIRECT
 - DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gov.cn,DIRECT
 - DOMAIN-SUFFIX,gravatar.com,DIRECT
 - DOMAIN-SUFFIX,guazi.com,DIRECT
 - DOMAIN-SUFFIX,gwdang.com,DIRECT
@@ -1215,6 +1217,7 @@
 - DOMAIN-SUFFIX,hoopchina.com.cn,DIRECT
 - DOMAIN-SUFFIX,huxiucdn.com,DIRECT
 - DOMAIN-SUFFIX,huya.com,DIRECT
+- DOMAIN-SUFFIX,hpplay.cn,DIRECT
 - DOMAIN-SUFFIX,ifeng.com,DIRECT
 - DOMAIN-SUFFIX,ifengimg.com,DIRECT
 - DOMAIN-SUFFIX,images-amazon.com,DIRECT
