@@ -1,14 +1,14 @@
-# > base rules
-- DOMAIN-SUFFIX,cloudflare-dns.com,MAIN
-- DOMAIN-SUFFIX,dns.google,MAIN
-- DOMAIN-SUFFIX,quad9.net,MAIN
+# > DNS
+- DOMAIN-SUFFIX,cloudflare-dns.com,DNS
+- DOMAIN-SUFFIX,dns.google,DNS
+- DOMAIN-SUFFIX,quad9.net,DNS
 - DOMAIN-SUFFIX,alidns.com,DIRECT
 - DOMAIN-SUFFIX,doh.pub,DIRECT
 - DOMAIN-SUFFIX,dns.pub,DIRECT
-- IP-CIDR,1.1.1.1/32,MAIN
-- IP-CIDR,1.0.0.1/32,MAIN
-- IP-CIDR,8.8.8.8/32,MAIN
-- IP-CIDR,8.8.4.4/32,MAIN
+- IP-CIDR,1.1.1.1/32,DNS
+- IP-CIDR,1.0.0.1/32,DNS
+- IP-CIDR,8.8.8.8/32,DNS
+- IP-CIDR,8.8.4.4/32,DNS
 - IP-CIDR,223.5.5.5/32,DIRECT
 - IP-CIDR,223.6.6.6/32,DIRECT
 - IP-CIDR,114.114.114.114/32,DIRECT
@@ -372,6 +372,9 @@
 - DOMAIN-SUFFIX,ubisoft.com,GAMES
 - DOMAIN-SUFFIX,ubi.com,GAMES
 - DOMAIN-SUFFIX,goqubit.com,GAMES
+- DOMAIN-SUFFIX,origin.com,GAMES
+- DOMAIN-SUFFIX,ea.com,GAMES
+- DOMAIN-SUFFIX,tnt-ea.com,GAMES
 # > SpeedTest
 - DOMAIN-SUFFIX,speedtest.net,SpeedTest
 - DOMAIN-SUFFIX,netspeedtestmaster.com,SpeedTest
@@ -379,6 +382,7 @@
 - DOMAIN-SUFFIX,speedtest,SpeedTest
 - DOMAIN-SUFFIX,ookla.net,SpeedTest
 # > Facebook Instagram Whatsapp
+- DOMAIN-SUFFIX,facebook.com,MAIN
 - DOMAIN-SUFFIX,cdninstagram.com,MAIN
 - DOMAIN-SUFFIX,fb.com,MAIN
 - DOMAIN-SUFFIX,fb.me,MAIN
@@ -1108,6 +1112,18 @@
 - DOMAIN-SUFFIX,douyu.com,DIRECT
 - DOMAIN-SUFFIX,douyu.tv,DIRECT
 - DOMAIN-SUFFIX,douyutv.com,DIRECT
+# > Other Video Websites
+- DOMAIN-SUFFIX,hanjutv2020.com,DIRECT
+- DOMAIN-SUFFIX,hanjutv.com,DIRECT
+- DOMAIN-SUFFIX,haitian91.com,DIRECT
+- DOMAIN-SUFFIX,obeello.com,DIRECT
+- DOMAIN-SUFFIX,kk2w.cc,DIRECT
+- DOMAIN-SUFFIX,kk2w2.com,DIRECT
+- DOMAIN-SUFFIX,kk2w1.com,DIRECT
+- DOMAIN-SUFFIX,cmdy2020.com,DIRECT
+- DOMAIN-SUFFIX,cmdy5.com,DIRECT
+- DOMAIN,cmdycss.shengtaiwenming.com.cn,DIRECT
+- DOMAIN,cmdycss.tjyjj.cn,DIRECT
 # > Others
 - DOMAIN-SUFFIX,58.com,DIRECT
 - DOMAIN-SUFFIX,12306.cn,DIRECT

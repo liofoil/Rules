@@ -1,0 +1,65 @@
+redir-port: 7892
+port: 7890
+socks-port: 7891
+ipv6: false
+mode: rule
+log-level: silent
+external-controller: 0.0.0.0:9090
+secret: '123456'
+allow-lan: true
+bind-address: "*"
+external-ui: "/usr/share/openclash/dashboard"
+tun: {}
+dns:
+  listen: 127.0.0.1:7874
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  # facebook instagram whatsapp
+  - "*.*.fbcdn.net"
+  - "*.*.facebook.com"
+  - "*.facebook.com"
+  - "*.cdninstagram.com"
+  - "*.fb.com"
+  - "*.fb.me"
+  - "*.fbaddins.com"
+  - "*.fbcdn.net"
+  - "*.fbcdn.com"
+  - "*.fbsbx.com"
+  - "*.fbworkmail.com"
+  - "*.instagram.com"
+  - "*.instagr.am"
+  - "*.m.me"
+  - "*.messenger.com"
+  - "*.oculus.com"
+  - "*.oculuscdn.com"
+  - "*.rocksdb.org"
+  - "*.whatsapp.com"
+  - "*.whatsapp.net"
+  # bilibili
+  - "*.*.bilivideo.cn"
+  - "*.*.bilivideo.com"
+  - "*.*.bilibili.com"
+  - "*.*.bilibili.cn"
+  - "*.*.bilibili.tv"
+  - "*.bilivideo.cn"
+  - "*.bilivideo.com"
+  - "*.bilibili.cn"
+  - "*.bilibili.com"
+  - "*.bilibili.tv"
+  - "*.biligame.com"
+  - "*.biligame.net"
+  - "*.bilibiligame.net"
+  - "*.bilibili.net"
+  - "*.acgvideo.com"
+  - "*.biliapi.com"
+  - "*.biliapi.net"
+  - "*.hdslb.com"
+  - upos-hz-mirrorakam.akamaized.net
+  - b23.tv
+  - acg.tv
+  - im9.com
+  - smtcdns.net
+  nameserver:
