@@ -18,8 +18,8 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   # facebook instagram whatsapp
-  -"*.*.*.facebook.com""
-  -"*.*.*.fbcdn.net"
+  - "*.*.*.facebook.com"
+  - "*.*.*.fbcdn.net"
   - "*.*.fbcdn.net"
   - "*.*.facebook.com"
   - "*.*.fbsbx.com"
