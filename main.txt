@@ -2,6 +2,7 @@
 - DOMAIN-SUFFIX,cloudflare-dns.com,DNS
 - DOMAIN-SUFFIX,dns.google,DNS
 - DOMAIN-SUFFIX,quad9.net,DNS
+- DOMAIN-SUFFIX,opendns.com,DNS
 - DOMAIN-SUFFIX,alidns.com,DIRECT
 - DOMAIN-SUFFIX,doh.pub,DIRECT
 - DOMAIN-SUFFIX,dns.pub,DIRECT
@@ -9,6 +10,10 @@
 - IP-CIDR,1.0.0.1/32,DNS,no-resolve
 - IP-CIDR,8.8.8.8/32,DNS,no-resolve
 - IP-CIDR,8.8.4.4/32,DNS,no-resolve
+- IP-CIDR,9.9.9.9/32,DNS,no-resolve
+- IP-CIDR,149.112.112.112,DNS,no-resolve
+- IP-CIDR,208.67.222.222,DNS,no-resolve
+- IP-CIDR,208.67.220.220,DNS,no-resolve
 - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
 - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
 - IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
@@ -19,7 +24,6 @@
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
 - DOMAIN,speedtest3.gd.chinamobile.com.prod.hosts.ooklaserver.net,DIRECT
-- DOMAIN-SUFFIX,imtmp.net,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
@@ -209,6 +213,16 @@
 - DOMAIN-SUFFIX,ttvnw.net,MAIN
 - DOMAIN-SUFFIX,jtvnw.net,MAIN
 - DOMAIN-KEYWORD,ttvnw,MAIN
+# > Odysee
+- DOMAIN-SUFFIX,odysee.com,MAIN
+- DOMAIN-SUFFIX,lbry.com,MAIN
+- DOMAIN-SUFFIX,vanwanet.com,MAIN
+- DOMAIN-SUFFIX,lbryplayer.xyz,MAIN
+- DOMAIN-SUFFIX,lbry.tv,MAIN
+- DOMAIN,lbry.com,MAIN
+- DOMAIN,odysee.com,MAIN
+- DOMAIN,spee.ch,MAIN
+- DOMAIN-KEYWORD,lbry,MAIN
 # > Pornhub
 - DOMAIN-SUFFIX,phncdn.com,MAIN
 - DOMAIN-SUFFIX,phprcdn.com,MAIN
@@ -611,6 +625,7 @@
 - DOMAIN-SUFFIX,gitlab.io,MAIN
 - DOMAIN-SUFFIX,globalsign.com,MAIN
 - DOMAIN-SUFFIX,goodnotes.email,MAIN
+- DOMAIN-SUFFIX,internetdownloadmanager.com,MAIN
 - DOMAIN-SUFFIX,jitpack.io,MAIN
 - DOMAIN-SUFFIX,maven.org,MAIN
 - DOMAIN-SUFFIX,medium.com,MAIN
@@ -761,6 +776,7 @@
 - DOMAIN-SUFFIX,google.cn,Google
 - DOMAIN-SUFFIX,googleapis.cn,Google
 - DOMAIN-SUFFIX,gstatic.cn,Google
+- DOMAIN-SUFFIX,google,Google
 - DOMAIN-KEYWORD,google,Google
 - DOMAIN-KEYWORD,blogspot,Google
 - DOMAIN-KEYWORD,gmail,Google
@@ -838,6 +854,7 @@
 - DOMAIN-SUFFIX,azure.net,Microsoft
 - DOMAIN-SUFFIX,azureedge.net,Microsoft
 - DOMAIN-SUFFIX,azurerms.com,Microsoft
+- DOMAIN-SUFFIX,azurewebsites.net,Microsoft
 - DOMAIN-SUFFIX,bing.com,Microsoft
 - DOMAIN-SUFFIX,cloudapp.net,Microsoft
 - DOMAIN-SUFFIX,cloudappsecurity.com,Microsoft
@@ -856,6 +873,8 @@
 - DOMAIN-SUFFIX,msedge.net,Microsoft
 - DOMAIN-SUFFIX,msft.net,Microsoft
 - DOMAIN-SUFFIX,msftauth.net,Microsoft
+- DOMAIN-SUFFIX,msftconnecttest.com,Microsoft
+- DOMAIN-SUFFIX,msftncsi.com,Microsoft
 - DOMAIN-SUFFIX,msftauthimages.net,Microsoft
 - DOMAIN-SUFFIX,msftidentity.com,Microsoft
 - DOMAIN-SUFFIX,msidentity.com,Microsoft
@@ -884,7 +903,6 @@
 - DOMAIN-SUFFIX,sfx.ms,Microsoft
 - DOMAIN-SUFFIX,sharepoint.com,Microsoft
 - DOMAIN-SUFFIX,sharepointonline.com,Microsoft
-- DOMAIN-KEYWORD,skydrive,Microsoft
 - DOMAIN-SUFFIX,skype.com,Microsoft
 - DOMAIN-SUFFIX,skypeassets.com,Microsoft
 - DOMAIN-SUFFIX,skypeforbusiness.com,Microsoft
@@ -910,6 +928,7 @@
 - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,Microsoft
 - DOMAIN-SUFFIX,aka.ms,Microsoft
 - DOMAIN-SUFFIX,ms,Microsoft
+- DOMAIN-KEYWORD,skydrive,Microsoft
 - DOMAIN-KEYWORD,1drv,Microsoft
 - DOMAIN-KEYWORD,microsoft,Microsoft
 - IP-CIDR,13.64.0.0/11,Microsoft,no-resolve
@@ -1405,6 +1424,8 @@
 - DOMAIN-SUFFIX,qihucdn.com,DIRECT
 - DOMAIN-SUFFIX,tongdun.net,DIRECT
 - DOMAIN-SUFFIX,ksyuncdn.com,DIRECT
+- DOMAIN-SUFFIX,xycdn.com,DIRECT
+- DOMAIN-SUFFIX,xycloud.com,DIRECT
 # > Tencent
 - DOMAIN-SUFFIX,foxmail.com,DIRECT
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
@@ -1452,6 +1473,8 @@
 - DOMAIN-SUFFIX,meituan.com,DIRECT
 - DOMAIN-SUFFIX,sankuai.com,DIRECT
 - DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,cdntips.net,DIRECT
+- DOMAIN-SUFFIX,imtmp.net,DIRECT
 # > Alibaba
 - DOMAIN-SUFFIX,1688.com,DIRECT
 - DOMAIN-SUFFIX,aliexpress.com,DIRECT
@@ -1465,6 +1488,7 @@
 - DOMAIN-SUFFIX,alipay.cn,DIRECT
 - DOMAIN-SUFFIX,aliyun.com,DIRECT
 - DOMAIN-SUFFIX,aliyuncdn.com,DIRECT
+- DOMAIN-SUFFIX,aliyundrive.com,DIRECT
 - DOMAIN-SUFFIX,aliyuncs.com,DIRECT
 - DOMAIN-SUFFIX,aliapp.org,DIRECT
 - DOMAIN-SUFFIX,aliyun-inc.com,DIRECT
@@ -1645,6 +1669,7 @@
 - DOMAIN-SUFFIX,pplive.com,DIRECT
 - DOMAIN-SUFFIX,pptv.com,DIRECT
 # > YYeTs&Video Websites
+- DOMAIN-SUFFIX,yyetss.com,DIRECT
 - DOMAIN-SUFFIX,jstucdn.com,DIRECT
 - DOMAIN-SUFFIX,ousns.net,DIRECT
 - DOMAIN-SUFFIX,rrysapp.com,DIRECT
@@ -1758,17 +1783,38 @@
 - DOMAIN-SUFFIX,douyu.tv,DIRECT
 - DOMAIN-SUFFIX,douyutv.com,DIRECT
 # > Other Video Websites
+- DOMAIN-SUFFIX,com-youku.net,DIRECT
+- DOMAIN,youku.com-www-163.com,DIRECT
+- DOMAIN,youku.cdn2-okzy.com,DIRECT
+
 - DOMAIN-SUFFIX,hanjutv2020.com,DIRECT
 - DOMAIN-SUFFIX,hanjutv.com,DIRECT
 - DOMAIN-SUFFIX,haitian91.com,DIRECT
 - DOMAIN-SUFFIX,obeello.com,DIRECT
+
 - DOMAIN-SUFFIX,kk2w.cc,DIRECT
 - DOMAIN-SUFFIX,kk2w2.com,DIRECT
 - DOMAIN-SUFFIX,kk2w1.com,DIRECT
+
 - DOMAIN-SUFFIX,cmdy2020.com,DIRECT
 - DOMAIN-SUFFIX,cmdy5.com,DIRECT
 - DOMAIN,cmdycss.shengtaiwenming.com.cn,DIRECT
 - DOMAIN,cmdycss.tjyjj.cn,DIRECT
+
+- DOMAIN-SUFFIX,wedubo.com,MAIN
+- DOMAIN-SUFFIX,dubutv.com,MAIN
+- DOMAIN-SUFFIX,duboku.tv,MAIN
+- DOMAIN-SUFFIX,zdubo.com,MAIN
+- DOMAIN-SUFFIX,tudu.site,MAIN
+- DOMAIN-SUFFIX,fanstui.com,MAIN
+- DOMAIN-SUFFIX,fboku.com,MAIN
+- DOMAIN-SUFFIX,dboku.com,MAIN
+
+- DOMAIN-SUFFIX,rising.com.cn,DIRECT
+- DOMAIN-SUFFIX,dplayer.tv,DIRECT
+
+- DOMAIN-SUFFIX,ammmi.com,DIRECT
+- DOMAIN-SUFFIX,tianshigege.com,DIRECT
 # > Others
 - DOMAIN-SUFFIX,58.com,DIRECT
 - DOMAIN-SUFFIX,12306.cn,DIRECT
@@ -1843,6 +1889,7 @@
 - DOMAIN-SUFFIX,easou.com,DIRECT
 - DOMAIN-SUFFIX,eastday.com,DIRECT
 - DOMAIN-SUFFIX,eastmoney.com,DIRECT
+- DOMAIN-SUFFIX,esdict.cn,DIRECT
 - DOMAIN-SUFFIX,ecitic.com,DIRECT
 - DOMAIN-SUFFIX,edu.cn,DIRECT
 - DOMAIN-SUFFIX,ewqcxz.com,DIRECT
