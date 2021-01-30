@@ -11,9 +11,9 @@
 - IP-CIDR,8.8.8.8/32,DNS,no-resolve
 - IP-CIDR,8.8.4.4/32,DNS,no-resolve
 - IP-CIDR,9.9.9.9/32,DNS,no-resolve
-- IP-CIDR,149.112.112.112,DNS,no-resolve
-- IP-CIDR,208.67.222.222,DNS,no-resolve
-- IP-CIDR,208.67.220.220,DNS,no-resolve
+- IP-CIDR,149.112.112.112/32,DNS,no-resolve
+- IP-CIDR,208.67.222.222/32,DNS,no-resolve
+- IP-CIDR,208.67.220.220/32,DNS,no-resolve
 - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
 - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
 - IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
