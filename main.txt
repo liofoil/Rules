@@ -2598,7 +2598,7 @@
 - DOMAIN-SUFFIX,qhres.com,DIRECT
 - DOMAIN-SUFFIX,qhstatic.com,DIRECT
 - DOMAIN-SUFFIX,qhupdate.com,DIRECT
-- DOMAIN-SUFFIX,so.com
+- DOMAIN-SUFFIX,so.com,DIRECT
 # > YYeTs&Video Websites
 - DOMAIN-SUFFIX,yyetss.com,DIRECT
 - DOMAIN-SUFFIX,jstucdn.com,DIRECT

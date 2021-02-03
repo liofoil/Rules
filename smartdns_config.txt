@@ -1,11 +1,27 @@
 
 domain-rules /nbclouds.co/ -speed-check-mode none
 domain-rules /globalacceleration.net/ -speed-check-mode none
+# > local network
+nameserver /ip6-localhost/serva
+nameserver /ip6-loopback/serva
+nameserver /local/serva
+nameserver /localhost/serva
+nameserver /router.asus.com/serva
+nameserver /hiwifi.com/serva
+nameserver /leike.cc/serva
+nameserver /miwifi.com/serva
+nameserver /my.router/serva
+nameserver /p.to/serva
+nameserver /peiluyou.com/serva
+nameserver /phicomm.me/serva
+nameserver /routerlogin.com/serva
+nameserver /tendawifi.com/serva
+nameserver /zte.home/serva
 # > DNS
-nameserver /cloudflare-dns.com/servb
-nameserver /dns.google/servb
-nameserver /quad9.net/servb
-nameserver /opendns.com/servb
+nameserver /cloudflare-dns.com/-
+nameserver /dns.google/-
+nameserver /quad9.net/-
+nameserver /opendns.com/-
 nameserver /alidns.com/serva
 nameserver /doh.pub/serva
 nameserver /dns.pub/serva
@@ -27,10 +43,13 @@ nameserver /helptally.com/main
 # > Unix
 nameserver /ubuntu.com/main
 nameserver /ntp.org/main
-# > didital certificate
+# > Global Services Shared
+nameserver /globalsign.com/main
 nameserver /entrust.com/main
-nameserver /digicert.com/main
 nameserver /verisign.net/main
+nameserver /omniroot.com/main
+nameserver /omniture.com/main
+nameserver /omniture.cn/main
 # > Spotify
 nameserver /ap.spotify.com/serva
 nameserver /pscdn.co/main
@@ -110,7 +129,13 @@ nameserver /st.dl.bscstorage.net/main
 nameserver /st.dl.eccdnx.com/main
 nameserver /st.dl.pinyuncloud.com/main
 nameserver /steampowered.com.8686c.com/main
+nameserver /steambroadcast.akamaized.net/main
 nameserver /steamcdn-a.akamaihd.net/main
+nameserver /steamcommunity-a.akamaihd.net/main
+nameserver /steamstore-a.akamaihd.net/main
+nameserver /steamusercontent-a.akamaihd.net/main
+nameserver /steamusercontent-a.akamaihd.net/main
+nameserver /steamuserimages-a.akamaihd.net/main
 # > Epic Uplay and Others
 nameserver /epicgames.com/main
 nameserver /unrealengine.com/main
@@ -131,7 +156,7 @@ nameserver /speedtest/main
 nameserver /ookla.net/main
 # > Facebook Instagram Whatsapp
 nameserver /facebook.com/-
-nameserver /cdninstagram.com/-
+nameserver /facebook.net/-
 nameserver /fb.com/-
 nameserver /fb.me/-
 nameserver /fbaddins.com/-
@@ -139,8 +164,10 @@ nameserver /fbcdn.net/-
 nameserver /fbcdn.com/-
 nameserver /fbsbx.com/-
 nameserver /fbworkmail.com/-
+nameserver /facebookmail.com/-
 nameserver /instagram.com/-
 nameserver /instagr.am/-
+nameserver /cdninstagram.com/-
 nameserver /m.me/-
 nameserver /messenger.com/-
 nameserver /oculus.com/-
@@ -148,6 +175,9 @@ nameserver /oculuscdn.com/-
 nameserver /rocksdb.org/-
 nameserver /whatsapp.com/-
 nameserver /whatsapp.net/-
+## whatsapp
+## facebook
+## facebook peer
 # > Twitter
 nameserver /pscp.tv/main
 nameserver /periscope.tv/main
@@ -156,6 +186,8 @@ nameserver /twimg.co/main
 nameserver /twimg.com/main
 nameserver /twimg.org/main
 nameserver /twitpic.com/main
+nameserver /twitter.com/main
+nameserver /twitter.jp/main
 nameserver /vine.co/main
 nameserver /ads-twitter.com/main
 # > Telegram
@@ -193,7 +225,7 @@ nameserver /line.me/main
 nameserver /line-cdn.net/main
 nameserver /line-apps.com/main
 nameserver /line-scdn.net/main
-nameserver /line.naver.jp/main
+nameserver /naver.jp/main
 nameserver /nhncorp.jp/main
 # > PayPal
 nameserver /paypal.com/main
@@ -225,6 +257,36 @@ nameserver /githubassets.com/main
 # > Deezer
 nameserver /deezer.com/main
 nameserver /dzcdn.net/main
+# > Adobe
+nameserver /adbemdigitalmediarebootprod2.112.2o7.net/main
+nameserver /cc-ext-prod-pkgs.s3.amazonaws.com/main
+nameserver /adobe.com/main
+nameserver /acrobat.com/main
+nameserver /adbecrsl.com/main
+nameserver /nr-data.net/main
+nameserver /behance.net/main
+nameserver /businesscatalyst.com/main
+nameserver /creativecloud.com/main
+nameserver /demandbase.com/main
+nameserver /demdex.net/main
+nameserver /digicert.com/main
+nameserver /echocdn.com/main
+nameserver /echosign.com/main
+nameserver /edgefonts.net/main
+nameserver /ftcdn.net/main
+nameserver /geotrust.com/main
+nameserver /godaddy.com/main
+nameserver /macromedia.com/main
+nameserver /newrelic.com/main
+nameserver /omtrdc.net/main
+nameserver /photoshop.com/main
+nameserver /symantec.com/main
+nameserver /symcb.com/main
+nameserver /symcd.com/main
+nameserver /thawte.com/main
+nameserver /typekit.com/main
+nameserver /typekit.net/main
+nameserver /worldsecuresystems.com/main
 # > Wiki
 nameserver /wikimapia.org/main
 nameserver /wikimedia.org/main
@@ -306,6 +368,9 @@ nameserver /worldscientific.com/main
 # > Others
 nameserver /in-addr.arpa/main
 nameserver /amd.com/main
+nameserver /asus.com/main
+nameserver /asus.com.cn/serva
+nameserver /asuscomm.com/main
 nameserver /nvidia.com/main
 nameserver /nvidia.cn/main
 nameserver /bbc.com/main
@@ -332,13 +397,14 @@ nameserver /elastic.com/main
 nameserver /gcr.io/main
 nameserver /gitlab.com/main
 nameserver /gitlab.io/main
-nameserver /globalsign.com/main
 nameserver /goodnotes.email/main
 nameserver /internetdownloadmanager.com/main
 nameserver /jitpack.io/main
 nameserver /maven.org/main
 nameserver /medium.com/main
 nameserver /mvnrepository.com/main
+nameserver /mozilla.com/main
+nameserver /noxinfluencer.com/main
 nameserver /pndsn.com/main
 nameserver /quay.io/main
 nameserver /redhat.com/main
@@ -346,6 +412,8 @@ nameserver /sonatype.org/main
 nameserver /sourcegraph.com/main
 nameserver /spring.io/main
 nameserver /spring.net/main
+nameserver /smartmailcloud.com/main
+nameserver /weebly.com/main
 nameserver /oracle.com/main
 # > Apple
 nameserver /aaplimg.com/main
@@ -367,7 +435,6 @@ nameserver /me.com/main
 nameserver /mzstatic.com/main
 nameserver /comscoreresearch.com/main
 nameserver /apple-dns.net/main
-nameserver /omniture.cn/main
 nameserver /mwcname.com/main
 nameserver /mwcloudcdn.com/main
 nameserver /cdn20.com/main
@@ -381,6 +448,7 @@ nameserver /googlevideo.com/main
 nameserver /youtube.com/main
 nameserver /youtube-nocookie.com/main
 nameserver /googleapis.com/main
+nameserver /advertisercommunity.com/main
 nameserver /ampproject.org/main
 nameserver /appspot.com/main
 nameserver /blogger.com/main
@@ -424,7 +492,6 @@ nameserver /itasoftware.com/main
 nameserver /madewithcode.com/main
 nameserver /material.io/main
 nameserver /polymer-project.org/main
-nameserver /recaptcha.net/main
 nameserver /recaptcha.net/main
 nameserver /shattered.io/main
 nameserver /synergyse.com/main
@@ -505,7 +572,6 @@ nameserver /office.com/main
 nameserver /office.net/main
 nameserver /office365.com/main
 nameserver /officeppe.net/main
-nameserver /omniroot.com/main
 nameserver /onedrive.com/main
 nameserver /onenote.com/main
 nameserver /onenote.net/main
@@ -556,6 +622,7 @@ nameserver /llnwd.net/main
 nameserver /amazon.cn/main
 nameserver /amazonaws.com.cn/main
 nameserver /amazonaws.co.uk/main
+nameserver /amazon.co.jp/main
 nameserver /amazon.com/main
 nameserver /aiv-cdn.net/main
 nameserver /aiv-delivery.net/main
@@ -690,6 +757,8 @@ nameserver /xiami.com/serva
 nameserver /xiami.net/serva
 nameserver /sm.cn/serva
 nameserver /mmstat.com/serva
+nameserver /ucweb.com/serva
+nameserver /uc.cn/serva
 # > Youku
 nameserver /soku.com/serva
 nameserver /youku.com/serva
@@ -697,6 +766,7 @@ nameserver /ykimg.com/serva
 # > Baidu
 nameserver /qianqian.com/serva
 nameserver /baidu.com/serva
+nameserver /baidupan.com/serva
 nameserver /baidubcr.com/serva
 nameserver /baidustatic.com/serva
 nameserver /bdstatic.com/serva
@@ -785,6 +855,7 @@ nameserver /im9.com/serva
 nameserver /acg.tv/serva
 nameserver /bilibilipay.com/serva
 nameserver /bilibilipay.cn/serva
+## for HK&TW Bilibili
 # > ByteDance
 nameserver /bytedance.com/serva
 nameserver /bytedance.net/serva
@@ -825,6 +896,18 @@ nameserver /gitv.tv/serva
 # > PPTV
 nameserver /pplive.com/serva
 nameserver /pptv.com/serva
+# > 360
+nameserver /360.com/serva
+nameserver /360.cn/serva
+nameserver /360doc.com/serva
+nameserver /360kuai.com/serva
+nameserver /360safe.com/serva
+nameserver /qhimg.com/serva
+nameserver /dhrest.com/serva
+nameserver /qhres.com/serva
+nameserver /qhstatic.com/serva
+nameserver /qhupdate.com/serva
+nameserver /so.com/serva
 # > YYeTs&Video Websites
 nameserver /yyetss.com/serva
 nameserver /jstucdn.com/serva
@@ -854,6 +937,7 @@ nameserver /zmzfile.com/serva
 # > Sohu
 nameserver /56.com/serva
 nameserver /sohu.com/serva
+nameserver /sohucs.com/serva
 nameserver /sohuno.com/serva
 nameserver /sohurdc.com/serva
 nameserver /sohu.com.cn/serva
@@ -927,6 +1011,9 @@ nameserver /p2cdn.com/serva
 nameserver /sandai.net/serva
 nameserver /thundercdn.com/serva
 nameserver /xunlei.com/serva
+# > Kingsoft
+nameserver /iciba.com/serva
+nameserver /ksosoft.com/serva
 # > Meitu
 nameserver /meitu.com/serva
 nameserver /meitudata.com/serva
@@ -965,6 +1052,8 @@ nameserver /ammmi.com/serva
 nameserver /tianshigege.com/serva
 # > Others
 nameserver /58.com/serva
+nameserver /99.com/serva
+nameserver /115.com/serva
 nameserver /12306.cn/serva
 nameserver /12306.com/serva
 nameserver /10010.com/serva
@@ -972,10 +1061,9 @@ nameserver /115.com/serva
 nameserver /17173.com/serva
 nameserver /178.com/serva
 nameserver /17k.com/serva
-nameserver /360.cn/serva
-nameserver /360doc.com/serva
 nameserver /36kr.com/serva
 nameserver /3dmgame.com/serva
+nameserver /51ym.me/serva
 nameserver /51cto.com/serva
 nameserver /51job.com/serva
 nameserver /51jobcdn.com/serva
@@ -983,20 +1071,27 @@ nameserver /52pojie.cn/serva
 nameserver /8686c.com/serva
 nameserver /abchina.com/serva
 nameserver /abercrombie.com/serva
+nameserver /accuweather.com/serva
+nameserver /aicoinstorge.com/serva
 nameserver /air-matters.com/serva
 nameserver /air-matters.io/serva
 nameserver /aixifan.com/serva
 nameserver /algocasts.io/serva
+nameserver /b612.net/serva
 nameserver /babytree.com/serva
 nameserver /babytreeimg.com/serva
 nameserver /baicizhan.com/serva
 nameserver /baidupan.com/serva
 nameserver /baike.com/serva
 nameserver /baishan-cloud.com/serva
+nameserver /bdatu.com/serva
 nameserver /bdcom.com.cn/serva
+nameserver /beitaichufang.com/serva
 nameserver /biqudu.com/serva
 nameserver /biquge.com/serva
 nameserver /bitauto.com/serva
+nameserver /booking.com/serva
+nameserver /bstatic.com/serva
 nameserver /c-ctrip.com/serva
 nameserver /camera360.com/serva
 nameserver /cdnmama.com/serva
@@ -1008,9 +1103,12 @@ nameserver /chinaz.com/serva
 nameserver /chinaz.net/serva
 nameserver /chinacloudapi.cn/serva
 nameserver /chuimg.com/serva
+nameserver /chunyu.mobi/serva
 nameserver /cibntv.net/serva
 nameserver /clouddn.com/serva
 nameserver /cloudxns.net/serva
+nameserver /cmbchina.com/serva
+nameserver /cmbimg.com/serva
 nameserver /cn163.net/serva
 nameserver /cnbeta.com/serva
 nameserver /cnbetacdn.com/serva
@@ -1027,6 +1125,7 @@ nameserver /dcocsp.cn/serva
 nameserver /dfcfw.com/serva
 nameserver /dianping.com/serva
 nameserver /dilidili.wang/serva
+nameserver /dji.net/serva
 nameserver /duokan.com/serva
 nameserver /douban.com/serva
 nameserver /doubanio.com/serva
@@ -1149,8 +1248,6 @@ nameserver /qcloud.com/serva
 nameserver /qcloudcdn.com/serva
 nameserver /qdaily.com/serva
 nameserver /qdmm.com/serva
-nameserver /qhimg.com/serva
-nameserver /qhres.com/serva
 nameserver /qianqian.com/serva
 nameserver /qidian.com/serva
 nameserver /qihucdn.com/serva
@@ -1192,8 +1289,6 @@ nameserver /ttmeiju.com/serva
 nameserver /tudou.com/serva
 nameserver /tuniu.com/serva
 nameserver /tuniucdn.com/serva
-nameserver /ucweb.com/serva
-nameserver /uc.cn/serva
 nameserver /umeng.com/serva
 nameserver /umengcloud.com/serva
 nameserver /upyun.com/serva
