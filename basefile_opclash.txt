@@ -20,30 +20,86 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   # facebook instagram whatsapp
-  - "*.*.*.facebook.com"
-  - "*.*.*.fbcdn.net"
-  - "*.*.fbcdn.net"
-  - "*.*.facebook.com"
-  - "*.*.fbsbx.com"
-  - "*.*.instagram.com"
+  - facebook.com
   - "*.facebook.com"
+  - "*.*.facebook.com"
+  - "*.*.*.facebook.com"
+  - facebook.net
+  - "*.facebook.net"
+  - "*.*.facebook.net"
+  - "*.*.*.facebook.net"
+  - cdninstagram.com
   - "*.cdninstagram.com"
+  - "*.*.cdninstagram.com"
+  - "*.*.*.cdninstagram.com"
+  - fb.com
   - "*.fb.com"
+  - "*.*.fb.com"
+  - "*.*.*.fb.com"
+  - fb.me
   - "*.fb.me"
+  - "*.*.fb.me"
+  - "*.*.*.fb.me"
+  - fbaddins.com
   - "*.fbaddins.com"
+  - "*.*.fbaddins.com"
+  - "*.*.*.fbaddins.com"
+  - fbcdn.net
   - "*.fbcdn.net"
+  - "*.*.fbcdn.net"
+  - "*.*.*.fbcdn.net"
+  - fbcdn.com
   - "*.fbcdn.com"
+  - "*.*.fbcdn.com"
+  - "*.*.*.fbcdn.com"
+  - fbsbx.com
   - "*.fbsbx.com"
+  - "*.*.fbsbx.com"
+  - "*.*.*.fbsbx.com"
+  - fbworkmail.com
   - "*.fbworkmail.com"
+  - "*.*.fbworkmail.com"
+  - "*.*.*.fbworkmail.com"
+  - facebookmail.com
+  - "*.facebookmail.com"
+  - "*.*.facebookmail.com"
+  - "*.*.*.facebookmail.com"
+  - instagram.com
   - "*.instagram.com"
+  - "*.*.instagram.com"
+  - "*.*.*.instagram.com"
+  - instagr.am
   - "*.instagr.am"
+  - "*.*.instagr.am"
+  - "*.*.*.instagr.am"
+  - m.me
   - "*.m.me"
+  - "*.*.m.me"
+  - "*.*.*.m.me"
+  - messenger.com
   - "*.messenger.com"
+  - "*.*.messenger.com"
+  - "*.*.*.messenger.com"
+  - oculus.com
   - "*.oculus.com"
+  - "*.*.oculus.com"
+  - "*.*.*.oculus.com"
+  - oculuscdn.com
   - "*.oculuscdn.com"
+  - "*.*.oculuscdn.com"
+  - "*.*.*.oculuscdn.com"
+  - rocksdb.org
   - "*.rocksdb.org"
+  - "*.*.rocksdb.org"
+  - "*.*.*.rocksdb.org"
+  - whatsapp.com
   - "*.whatsapp.com"
+  - "*.*.whatsapp.com"
+  - "*.*.*.whatsapp.com"
+  - whatsapp.net
   - "*.whatsapp.net"
+  - "*.*.whatsapp.net"
+  - "*.*.*.whatsapp.net"
   # bilibili
   - "*.*.bilivideo.cn"
   - "*.*.bilivideo.com"
