@@ -19,6 +19,23 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
+  # Base Services
+  - nbclouds.co
+  - "*.nbclouds.co"
+  - globalacceleration.net
+  - "*.globalacceleration.net"
+  # DNS Services
+  - cloudflare-dns.com
+  - dns.google
+  - quad9.net
+  - "*.quad9.net"
+  - opendns.com
+  - "*.opendns.com"
+  - alidns.com
+  - "*.alidns.com"
+  - doh.pub
+  - dot.pub
+  - dns.pub
   # facebook instagram whatsapp
   - facebook.com
   - "*.facebook.com"
@@ -101,27 +118,85 @@ dns:
   - "*.*.whatsapp.net"
   - "*.*.*.whatsapp.net"
   # bilibili
-  - "*.*.bilivideo.cn"
-  - "*.*.bilivideo.com"
-  - "*.*.bilibili.com"
-  - "*.*.bilibili.cn"
-  - "*.*.bilibili.tv"
-  - "*.bilivideo.cn"
-  - "*.bilivideo.com"
-  - "*.bilibili.cn"
-  - "*.bilibili.com"
-  - "*.bilibili.tv"
-  - "*.biligame.com"
-  - "*.biligame.net"
-  - "*.bilibiligame.net"
-  - "*.bilibili.net"
-  - "*.acgvideo.com"
-  - "*.biliapi.com"
-  - "*.biliapi.net"
-  - "*.hdslb.com"
   - upos-hz-mirrorakam.akamaized.net
-  - b23.tv
-  - acg.tv
-  - im9.com
   - smtcdns.net
+  - "*.smtcdns.net"
+  - "*.*.smtcdns.net"
+  - "*.*.*.smtcdns.net"
+  - acgvideo.com
+  - "*.acgvideo.com"
+  - "*.*.acgvideo.com"
+  - "*.*.*.acgvideo.com"
+  - bilibili.com
+  - "*.bilibili.com"
+  - "*.*.bilibili.com"
+  - "*.*.*.bilibili.com"
+  - bilibili.cn
+  - "*.bilibili.cn"
+  - "*.*.bilibili.cn"
+  - "*.*.*.bilibili.cn"
+  - hdslb.com
+  - "*.hdslb.com"
+  - "*.*.hdslb.com"
+  - "*.*.*.hdslb.com"
+  - biliapi.net
+  - "*.biliapi.net"
+  - "*.*.biliapi.net"
+  - "*.*.*.biliapi.net"
+  - biliapi.com
+  - "*.biliapi.com"
+  - "*.*.biliapi.com"
+  - "*.*.*.biliapi.com"
+  - bilibili.tv
+  - "*.bilibili.tv"
+  - "*.*.bilibili.tv"
+  - "*.*.*.bilibili.tv"
+  - bilivideo.com
+  - "*.bilivideo.com"
+  - "*.*.bilivideo.com"
+  - "*.*.*.bilivideo.com"
+  - bilivideo.cn
+  - "*.bilivideo.cn"
+  - "*.*.bilivideo.cn"
+  - "*.*.*.bilivideo.cn"
+  - biligame.com
+  - "*.biligame.com"
+  - "*.*.biligame.com"
+  - "*.*.*.biligame.com"
+  - biligame.net
+  - "*.biligame.net"
+  - "*.*.biligame.net"
+  - "*.*.*.biligame.net"
+  - bilibiligame.net
+  - "*.bilibiligame.net"
+  - "*.*.bilibiligame.net"
+  - "*.*.*.bilibiligame.net"
+  - bigfun.cn
+  - "*.bigfun.cn"
+  - "*.*.bigfun.cn"
+  - "*.*.*.bigfun.cn"
+  - bigfunapp.cn
+  - "*.bigfunapp.cn"
+  - "*.*.bigfunapp.cn"
+  - "*.*.*.bigfunapp.cn"
+  - b23.tv
+  - "*.b23.tv"
+  - "*.*.b23.tv"
+  - "*.*.*.b23.tv"
+  - im9.com
+  - "*.im9.com"
+  - "*.*.im9.com"
+  - "*.*.*.im9.com"
+  - acg.tv
+  - "*.acg.tv"
+  - "*.*.acg.tv"
+  - "*.*.*.acg.tv"
+  - bilibilipay.com
+  - "*.bilibilipay.com"
+  - "*.*.bilibilipay.com"
+  - "*.*.*.bilibilipay.com"
+  - bilibilipay.cn
+  - "*.bilibilipay.cn"
+  - "*.*.bilibilipay.cn"
+  - "*.*.*.bilibilipay.cn"
   nameserver:

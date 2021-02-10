@@ -1,29 +1,29 @@
 # > local network
-- DOMAIN-SUFFIX,ip6-localhost,DIRECT
-- DOMAIN-SUFFIX,ip6-loopback,DIRECT
-- DOMAIN-SUFFIX,local,DIRECT
-- DOMAIN-SUFFIX,localhost,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-- IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
-- IP-CIDR6,::1/128,DIRECT,no-resolve
-- IP-CIDR6,fc00::/7,DIRECT,no-resolve
-- IP-CIDR6,fe80::/10,DIRECT,no-resolve
-- IP-CIDR6,fd00::/8,DIRECT,no-resolve
-- DOMAIN,router.asus.com,DIRECT
-- DOMAIN-SUFFIX,hiwifi.com,DIRECT
-- DOMAIN-SUFFIX,leike.cc,DIRECT
-- DOMAIN-SUFFIX,miwifi.com,DIRECT
-- DOMAIN-SUFFIX,my.router,DIRECT
-- DOMAIN-SUFFIX,p.to,DIRECT
-- DOMAIN-SUFFIX,peiluyou.com,DIRECT
-- DOMAIN-SUFFIX,phicomm.me,DIRECT
-- DOMAIN-SUFFIX,routerlogin.com,DIRECT
-- DOMAIN-SUFFIX,tendawifi.com,DIRECT
-- DOMAIN-SUFFIX,zte.home,DIRECT
+# - DOMAIN-SUFFIX,ip6-localhost,DIRECT
+# - DOMAIN-SUFFIX,ip6-loopback,DIRECT
+# - DOMAIN-SUFFIX,local,DIRECT
+# - DOMAIN-SUFFIX,localhost,DIRECT
+# - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+# - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+# - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+# - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+# - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+# - IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+# - IP-CIDR6,::1/128,DIRECT,no-resolve
+# - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+# - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+# - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+# - DOMAIN,router.asus.com,DIRECT
+# - DOMAIN-SUFFIX,hiwifi.com,DIRECT
+# - DOMAIN-SUFFIX,leike.cc,DIRECT
+# - DOMAIN-SUFFIX,miwifi.com,DIRECT
+# - DOMAIN-SUFFIX,my.router,DIRECT
+# - DOMAIN-SUFFIX,p.to,DIRECT
+# - DOMAIN-SUFFIX,peiluyou.com,DIRECT
+# - DOMAIN-SUFFIX,phicomm.me,DIRECT
+# - DOMAIN-SUFFIX,routerlogin.com,DIRECT
+# - DOMAIN-SUFFIX,tendawifi.com,DIRECT
+# - DOMAIN-SUFFIX,zte.home,DIRECT
 # > DNS
 - DOMAIN-SUFFIX,cloudflare-dns.com,DNS
 - DOMAIN-SUFFIX,dns.google,DNS
@@ -31,6 +31,7 @@
 - DOMAIN-SUFFIX,opendns.com,DNS
 - DOMAIN-SUFFIX,alidns.com,DIRECT
 - DOMAIN-SUFFIX,doh.pub,DIRECT
+- DOMAIN-SUFFIX,dot.pub,DIRECT
 - DOMAIN-SUFFIX,dns.pub,DIRECT
 - IP-CIDR,1.1.1.1/32,DNS,no-resolve
 - IP-CIDR,1.0.0.1/32,DNS,no-resolve
@@ -40,6 +41,8 @@
 - IP-CIDR,149.112.112.112/32,DNS,no-resolve
 - IP-CIDR,208.67.222.222/32,DNS,no-resolve
 - IP-CIDR,208.67.220.220/32,DNS,no-resolve
+- IP-CIDR,4.2.2.1/32,DNS,no-resolve
+- IP-CIDR,4.2.2.2/32,DNS,no-resolve
 - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
 - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
 - IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
@@ -47,9 +50,8 @@
 - IP-CIDR,119.29.29.29/32,DIRECT,no-resolve
 - IP-CIDR,180.76.76.76/32,DIRECT,no-resolve
 # > Data Tansmission Services
-- DOMAIN-SUFFIX,nbclouds.co,DIRECT
-- DOMAIN-SUFFIX,globalacceleration.net,DIRECT
-- DOMAIN,speedtest3.gd.chinamobile.com.prod.hosts.ooklaserver.net,DIRECT
+# - DOMAIN-SUFFIX,nbclouds.co,DIRECT
+# - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
@@ -66,13 +68,6 @@
 - DOMAIN-SUFFIX,ntp.org,MAIN
 - DOMAIN-KEYWORD,ubuntu,MAIN
 - DOMAIN-KEYWORD,centos,MAIN
-# > Global Services Shared
-- DOMAIN-SUFFIX,globalsign.com,MAIN
-- DOMAIN-SUFFIX,entrust.com,MAIN
-- DOMAIN-SUFFIX,verisign.net,MAIN
-- DOMAIN-SUFFIX,omniroot.com,MAIN
-- DOMAIN-SUFFIX,omniture.com,MAIN
-- DOMAIN-SUFFIX,omniture.cn,MAIN
 # > Spotify
 - DOMAIN-SUFFIX,ap.spotify.com,DIRECT
 - DOMAIN-SUFFIX,pscdn.co,Spotify
@@ -291,6 +286,7 @@
 - DOMAIN-SUFFIX,helpshift.com,GAMES
 - DOMAIN-SUFFIX,paragon.com,GAMES
 - DOMAIN-SUFFIX,launchdarkly.com,GAMES
+- DOMAIN-KEYWORD,epic,GAMES
 - DOMAIN-SUFFIX,ubisoft.com,GAMES
 - DOMAIN-SUFFIX,ubi.com,GAMES
 - DOMAIN-SUFFIX,goqubit.com,GAMES
@@ -517,6 +513,7 @@
 - DOMAIN-SUFFIX,tiktokv.com,MAIN
 # > Reddit
 - DOMAIN-SUFFIX,reddit.com,MAIN
+- DOMAIN-SUFFIX,redd.it,MAIN
 - DOMAIN-SUFFIX,redditmedia.com,MAIN
 - DOMAIN-SUFFIX,redditstatic.com,MAIN
 - DOMAIN-SUFFIX,redditlist.com,MAIN
@@ -688,6 +685,8 @@
 # > Others
 - DOMAIN-SUFFIX,in-addr.arpa,MAIN
 - DOMAIN-SUFFIX,amd.com,MAIN
+- DOMAIN-SUFFIX,adtidy.org,MAIN
+- DOMAIN-SUFFIX,agoralab.co,MAIN
 - DOMAIN-SUFFIX,asus.com,MAIN
 - DOMAIN-SUFFIX,asus.com.cn,DIRECT
 - DOMAIN-SUFFIX,asuscomm.com,MAIN
@@ -724,15 +723,23 @@
 - DOMAIN-SUFFIX,medium.com,MAIN
 - DOMAIN-SUFFIX,mvnrepository.com,MAIN
 - DOMAIN-SUFFIX,mozilla.com,MAIN
+- DOMAIN-SUFFIX,mozaws.net,MAIN
 - DOMAIN-SUFFIX,noxinfluencer.com,MAIN
 - DOMAIN-SUFFIX,pndsn.com,MAIN
 - DOMAIN-SUFFIX,quay.io,MAIN
 - DOMAIN-SUFFIX,redhat.com,MAIN
+- DOMAIN-SUFFIX,scorecardresearch.com,MAIN
 - DOMAIN-SUFFIX,sonatype.org,MAIN
 - DOMAIN-SUFFIX,sourcegraph.com,MAIN
 - DOMAIN-SUFFIX,spring.io,MAIN
 - DOMAIN-SUFFIX,spring.net,MAIN
 - DOMAIN-SUFFIX,smartmailcloud.com,MAIN
+- DOMAIN-SUFFIX,sony.com,MAIN
+- DOMAIN-SUFFIX,sonymusic.com,MAIN
+- DOMAIN-SUFFIX,smehost.net,MAIN
+- DOMAIN-SUFFIX,ted.com,MAIN
+- DOMAIN-SUFFIX,ups.com,MAIN
+- DOMAIN-SUFFIX,tnt.com,MAIN
 - DOMAIN-SUFFIX,weebly.com,MAIN
 - DOMAIN-SUFFIX,oracle.com,MAIN
 - DOMAIN-KEYWORD,porn,MAIN
@@ -830,6 +837,7 @@
 - DOMAIN-SUFFIX,ggpht.com,Google
 - DOMAIN-SUFFIX,gmail.com,Google
 - DOMAIN-SUFFIX,gmodules.com,Google
+- DOMAIN-SUFFIX,google-analytics.com,Google
 - DOMAIN-SUFFIX,godoc.org,Google
 - DOMAIN-SUFFIX,golang.org,Google
 - DOMAIN-SUFFIX,gstatic.com,Google
@@ -954,7 +962,9 @@
 - DOMAIN-SUFFIX,bing.com,Microsoft
 - DOMAIN-SUFFIX,cloudapp.net,Microsoft
 - DOMAIN-SUFFIX,cloudappsecurity.com,Microsoft
+- DOMAIN-SUFFIX,ceipmsn.com,Microsoft
 - DOMAIN-SUFFIX,edgesuite.net,Microsoft
+- DOMAIN-SUFFIX,footprintdns.com,Microsoft
 - DOMAIN-SUFFIX,gfx.ms,Microsoft
 - DOMAIN-SUFFIX,hotmail.com,Microsoft
 - DOMAIN-SUFFIX,live.com,Microsoft
@@ -1016,6 +1026,7 @@
 - DOMAIN-SUFFIX,windows.net,Microsoft
 - DOMAIN-SUFFIX,windowsazure.com,Microsoft
 - DOMAIN-SUFFIX,windowsupdate.com,Microsoft
+- DOMAIN-SUFFIX,windowsbulletin.com,Microsoft
 - DOMAIN-SUFFIX,wunderlist.com,Microsoft
 - DOMAIN-SUFFIX,xboxlive.com,Microsoft
 - DOMAIN-SUFFIX,yammer.com,Microsoft
@@ -1228,6 +1239,107 @@
 - IP-CIDR,213.199.128.0/18,Microsoft,no-resolve
 - IP-CIDR,216.32.180.0/22,Microsoft,no-resolve
 - IP-CIDR,216.220.208.0/20,Microsoft,no-resolve
+# > opendns and cisco
+- IP-CIDR,146.112.102.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.102.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.103.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.104.0/22,MAIN,no-resolve
+- IP-CIDR,146.112.106.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.107.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.11.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.112.0/22,MAIN,no-resolve
+- IP-CIDR,146.112.112.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.112.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.113.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.114.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.116.0/22,MAIN,no-resolve
+- IP-CIDR,146.112.118.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.118.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.119.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.12.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.128.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.129.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.130.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.131.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.132.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.133.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.134.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.135.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.136.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.137.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.138.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.139.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.140.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.14.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.141.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.142.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.143.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.144.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.145.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.146.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.147.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.148.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.149.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.150.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.15.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.151.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.152.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.153.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.154.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.155.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.156.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.157.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.158.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.159.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.160.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.160.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.16.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.161.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.162.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.162.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.163.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.164.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.164.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.165.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.166.0/23,MAIN,no-resolve
+- IP-CIDR,146.112.166.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.167.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.168.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.169.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.170.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.17.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.171.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.172.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.173.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.176.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.177.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.178.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.179.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.18.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.184.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.185.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.186.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.187.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.188.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.190.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.191.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.192.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.193.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.194.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.195.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.196.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.197.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.198.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.199.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.200.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.201.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.203.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.204.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.205.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.206.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.207.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.208.0/24,MAIN,no-resolve
+- IP-CIDR,146.112.209.0/24,MAIN,no-resolve
 # > Cloudflare
 - DOMAIN-SUFFIX,cloudflare.com,MAIN
 - DOMAIN-SUFFIX,videodelivery.net,MAIN
@@ -2301,12 +2413,25 @@
 ## bilibili
 - DOMAIN,upos-hz-mirrorakam.akamaized.net,B&I
 # > Aka cdn Final
+- DOMAIN-SUFFIX,akstat.io,MAIN
 - DOMAIN-SUFFIX,akadns.net,MAIN
 - DOMAIN-SUFFIX,akamaized.net,MAIN
 - DOMAIN-SUFFIX,akamaihd.net,MAIN
 - DOMAIN-SUFFIX,akamai.net,MAIN
 - DOMAIN-SUFFIX,akamaiedge.net,MAIN
 - DOMAIN-SUFFIX,akamaistream.net,MAIN
+# > Global Services Shared
+- DOMAIN-SUFFIX,globalsign.com,MAIN
+- DOMAIN-SUFFIX,entrust.com,MAIN
+- DOMAIN-SUFFIX,verisign.net,MAIN
+- DOMAIN-SUFFIX,omniroot.com,MAIN
+- DOMAIN-SUFFIX,omniture.com,MAIN
+- DOMAIN-SUFFIX,omniture.cn,MAIN
+- DOMAIN-SUFFIX,jsdelivr.net,MAIN
+- DOMAIN-SUFFIX,disqus.com,MAIN
+- DOMAIN-SUFFIX,disquscdn.com,MAIN
+- DOMAIN-SUFFIX,comodoca.com,MAIN
+- DOMAIN-SUFFIX,arkoselabs.com,MAIN
 # > Remote Desktop
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 - IP-CIDR,109.239.140.0/24,DIRECT,no-resolve
@@ -2315,28 +2440,16 @@
 - IP-CIDR,185.188.32.1/28,DIRECT,no-resolve
 - IP-CIDR,221.226.128.146/32,DIRECT,no-resolve
 - DOMAIN-SUFFIX,oray.net,DIRECT
+- DOMAIN-SUFFIX,oray.com,DIRECT
 - DOMAIN-KEYWORD,oray,DIRECT
-# > Domestic Content Delivery Network
-- DOMAIN-SUFFIX,ccgslb.com,DIRECT
-- DOMAIN-SUFFIX,ccgslb.net,DIRECT
-- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
-- DOMAIN-SUFFIX,meixincdn.com,DIRECT
-- DOMAIN-SUFFIX,ourdvs.com,DIRECT
-- DOMAIN-SUFFIX,staticdn.net,DIRECT
-- DOMAIN-SUFFIX,wangsu.com,DIRECT
-- DOMAIN-SUFFIX,staticfile.org,DIRECT
-- DOMAIN-SUFFIX,jstucdn.co,DIRECT
-- DOMAIN-SUFFIX,qihucdn.com,DIRECT
-- DOMAIN-SUFFIX,tongdun.net,DIRECT
-- DOMAIN-SUFFIX,ksyuncdn.com,DIRECT
-- DOMAIN-SUFFIX,xycdn.com,DIRECT
-- DOMAIN-SUFFIX,xycloud.com,DIRECT
 # > Tencent
 - DOMAIN-SUFFIX,foxmail.com,DIRECT
 - DOMAIN-SUFFIX,qqurl.com,DIRECT
 - DOMAIN-SUFFIX,cdn-go.cn,DIRECT
 - DOMAIN-SUFFIX,url.cn,DIRECT
 - DOMAIN-SUFFIX,dcloudstc.com,DIRECT
+- DOMAIN-SUFFIX,dnspod.cn,DIRECT
+- DOMAIN-SUFFIX,dnspod.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv6.com,DIRECT
 - DOMAIN-SUFFIX,tdnsv5.com,DIRECT
 - DOMAIN-SUFFIX,smtcdns.com,DIRECT
@@ -2345,6 +2458,7 @@
 - DOMAIN-SUFFIX,tencentmind.com,DIRECT
 - DOMAIN-SUFFIX,gtimg.com,DIRECT
 - DOMAIN-SUFFIX,gtimg.cn,DIRECT
+- DOMAIN-SUFFIX,gdtimg.com,DIRECT
 - DOMAIN-SUFFIX,idqqimg.com,DIRECT
 - DOMAIN-SUFFIX,igamecj.com,DIRECT
 - DOMAIN-SUFFIX,myapp.com,DIRECT
@@ -2444,6 +2558,7 @@
 - DOMAIN-SUFFIX,baidustatic.com,DIRECT
 - DOMAIN-SUFFIX,bdstatic.com,DIRECT
 - DOMAIN-SUFFIX,bdurl.net,DIRECT
+- DOMAIN-SUFFIX,bdcloudapi.com,DIRECT
 - DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
 - DOMAIN-SUFFIX,hao123.com,DIRECT
 - DOMAIN-SUFFIX,hao123img.com,DIRECT
@@ -2686,6 +2801,7 @@
 - DOMAIN-SUFFIX,boc.cn,DIRECT
 - DOMAIN-SUFFIX,95516.com,DIRECT
 - DOMAIN-SUFFIX,wocloud.cn,DIRECT
+- DOMAIN-SUFFIX,95599.cn,DIRECT
 # > DiDi
 - DOMAIN-SUFFIX,didialift.com,DIRECT
 - DOMAIN-SUFFIX,didiglobal.com,DIRECT
@@ -2719,32 +2835,42 @@
 - DOMAIN-SUFFIX,douyu.tv,DIRECT
 - DOMAIN-SUFFIX,douyutv.com,DIRECT
 # > Other Video Websites
+## pirate websites youku cdn
 - DOMAIN-SUFFIX,com-youku.net,DIRECT
 - DOMAIN,youku.com-www-163.com,DIRECT
 - DOMAIN,youku.cdn2-okzy.com,DIRECT
-
+## hanjv
 - DOMAIN-SUFFIX,hanjutv2020.com,DIRECT
 - DOMAIN-SUFFIX,hanjutv.com,DIRECT
 - DOMAIN-SUFFIX,haitian91.com,DIRECT
 - DOMAIN-SUFFIX,obeello.com,DIRECT
-
+## kk2w
 - DOMAIN-SUFFIX,kk2w.cc,DIRECT
 - DOMAIN-SUFFIX,kk2w2.com,DIRECT
 - DOMAIN-SUFFIX,kk2w1.com,DIRECT
-
+## cmdy
 - DOMAIN-SUFFIX,cmdy2020.com,DIRECT
 - DOMAIN-SUFFIX,cmdy5.com,DIRECT
 - DOMAIN,cmdycss.shengtaiwenming.com.cn,DIRECT
 - DOMAIN,cmdycss.tjyjj.cn,DIRECT
-
-- DOMAIN-SUFFIX,wedubo.com,MAIN
+## buboku
 - DOMAIN-SUFFIX,dubutv.com,MAIN
 - DOMAIN-SUFFIX,duboku.tv,MAIN
-- DOMAIN-SUFFIX,zdubo.com,MAIN
+- DOMAIN-SUFFIX,duboku.com,MAIN
+- DOMAIN-SUFFIX,duboku.co,MAIN
+- DOMAIN-SUFFIX,duboku.net,MAIN
+- DOMAIN-SUFFIX,duboku.me,MAIN
 - DOMAIN-SUFFIX,tudu.site,MAIN
 - DOMAIN-SUFFIX,fanstui.com,MAIN
 - DOMAIN-SUFFIX,fboku.com,MAIN
 - DOMAIN-SUFFIX,dboku.com,MAIN
+- DOMAIN-SUFFIX,cboku.com,MAIN
+- DOMAIN-SUFFIX,xboku.com,MAIN
+- DOMAIN-SUFFIX,gboku.com,MAIN
+- DOMAIN-SUFFIX,nboku.com,MAIN
+- DOMAIN-SUFFIX,wedubo.com,MAIN
+- DOMAIN-SUFFIX,zdubo.com,MAIN
+- DOMAIN-SUFFIX,uhibo.com,MAIN
 
 - DOMAIN-SUFFIX,rising.com.cn,DIRECT
 - DOMAIN-SUFFIX,dplayer.tv,DIRECT
@@ -3039,6 +3165,22 @@
 - DOMAIN-SUFFIX,zhaopin.com,DIRECT
 - DOMAIN-SUFFIX,zhongsou.com,DIRECT
 - DOMAIN-SUFFIX,zhuihd.com,DIRECT
+# > Domestic Service Shared
+- DOMAIN-SUFFIX,ccgslb.com,DIRECT
+- DOMAIN-SUFFIX,ccgslb.net,DIRECT
+- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
+- DOMAIN-SUFFIX,meixincdn.com,DIRECT
+- DOMAIN-SUFFIX,ourdvs.com,DIRECT
+- DOMAIN-SUFFIX,staticdn.net,DIRECT
+- DOMAIN-SUFFIX,wangsu.com,DIRECT
+- DOMAIN-SUFFIX,staticfile.org,DIRECT
+- DOMAIN-SUFFIX,jstucdn.co,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,tongdun.net,DIRECT
+- DOMAIN-SUFFIX,ksyuncdn.com,DIRECT
+- DOMAIN-SUFFIX,xycdn.com,DIRECT
+- DOMAIN-SUFFIX,xycloud.com,DIRECT
+- DOMAIN-SUFFIX,bootcss.com,DIRECT
 # > Remaining
 - DOMAIN-SUFFIX,eu,MAIN
 - DOMAIN-SUFFIX,hk,MAIN
