@@ -50,8 +50,8 @@
 - IP-CIDR,119.29.29.29/32,DIRECT,no-resolve
 - IP-CIDR,180.76.76.76/32,DIRECT,no-resolve
 # > Data Tansmission Services
-# - DOMAIN-SUFFIX,nbclouds.co,DIRECT
-# - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
+- DOMAIN-SUFFIX,nbclouds.co,DIRECT
+- DOMAIN-SUFFIX,globalacceleration.net,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
