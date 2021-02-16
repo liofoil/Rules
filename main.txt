@@ -752,11 +752,11 @@
 - DOMAIN-SUFFIX,naver.jp,MAIN
 - DOMAIN-SUFFIX,nhncorp.jp,MAIN
 # > clubhouse
-- DOMAIN,clubhouse.pubnub.com
-- DOMAIN-SUFFIX,clubhouseapi.com
-- DOMAIN-SUFFIX,joinclubhouse.com
+- DOMAIN,clubhouse.pubnub.com,MAIN
+- DOMAIN-SUFFIX,clubhouseapi.com,MAIN
+- DOMAIN-SUFFIX,joinclubhouse.com,MAIN
 ## Shared cdn filter
-- DOMAIN,clubhouseprod.s3.amazonaws.com
+- DOMAIN,clubhouseprod.s3.amazonaws.com,MAIN
 # > PayPal
 - DOMAIN-SUFFIX,paypal.com,PayPal
 - DOMAIN-SUFFIX,paypal.me,PayPal
@@ -1186,7 +1186,7 @@
 - DOMAIN-SUFFIX,azure.cn,Microsoft
 - DOMAIN-SUFFIX,azure.com,Microsoft
 - DOMAIN-SUFFIX,azure.net,Microsoft
-- DOAMIN-SUFFIX,azure-apim.net,Microsoft
+- DOMAIN-SUFFIX,azure-apim.net,Microsoft
 - DOMAIN-SUFFIX,azureedge.net,Microsoft
 - DOMAIN-SUFFIX,azurerms.com,Microsoft
 - DOMAIN-SUFFIX,azurewebsites.net,Microsoft
@@ -1297,7 +1297,7 @@
 - DOMAIN-SUFFIX,xbox360.eu,Microsoft
 - DOMAIN-SUFFIX,xbox360.org,Microsoft
 - DOMAIN-SUFFIX,xboxab.com,Microsoft
-- DOAMIN-SUFFIX,xboxab.net,Microsoft
+- DOMAIN-SUFFIX,xboxab.net,Microsoft
 - DOMAIN-SUFFIX,xboxgamepass.com,Microsoft
 - DOMAIN-SUFFIX,xboxgamestudios.com,Microsoft
 - DOMAIN-SUFFIX,xboxlive.cn,Microsoft
