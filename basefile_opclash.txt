@@ -25,6 +25,7 @@ dns:
   - globalacceleration.net
   - "*.globalacceleration.net"
   # DNS Services
+  - one.one.one.one
   - cloudflare-dns.com
   - dns.google
   - quad9.net
@@ -41,136 +42,123 @@ dns:
   - "*.facebook.com"
   - "*.*.facebook.com"
   - "*.*.*.facebook.com"
+  - "*.*.*.*.facebook.com"
   - facebook.net
   - "*.facebook.net"
   - "*.*.facebook.net"
   - "*.*.*.facebook.net"
-  - cdninstagram.com
-  - "*.cdninstagram.com"
-  - "*.*.cdninstagram.com"
-  - "*.*.*.cdninstagram.com"
+  - "*.*.*.*.facebook.net"
   - fb.com
   - "*.fb.com"
   - "*.*.fb.com"
   - "*.*.*.fb.com"
+  - "*.*.*.*.fb.com"
   - fb.me
   - "*.fb.me"
   - "*.*.fb.me"
   - "*.*.*.fb.me"
+  - "*.*.*.*.fb.me"
   - fbaddins.com
   - "*.fbaddins.com"
   - "*.*.fbaddins.com"
   - "*.*.*.fbaddins.com"
+  - "*.*.*.*.fbaddins.com"
   - fbcdn.net
   - "*.fbcdn.net"
   - "*.*.fbcdn.net"
   - "*.*.*.fbcdn.net"
+  - "*.*.*.*.fbcdn.net"
   - fbcdn.com
   - "*.fbcdn.com"
   - "*.*.fbcdn.com"
   - "*.*.*.fbcdn.com"
+  - "*.*.*.*.fbcdn.com"
   - fbsbx.com
   - "*.fbsbx.com"
   - "*.*.fbsbx.com"
   - "*.*.*.fbsbx.com"
+  - "*.*.*.*.fbsbx.com"
   - fbworkmail.com
   - "*.fbworkmail.com"
   - "*.*.fbworkmail.com"
   - "*.*.*.fbworkmail.com"
+  - "*.*.*.*.fbworkmail.com"
   - facebookmail.com
   - "*.facebookmail.com"
   - "*.*.facebookmail.com"
   - "*.*.*.facebookmail.com"
+  - "*.*.*.*.facebookmail.com"
   - instagram.com
   - "*.instagram.com"
   - "*.*.instagram.com"
   - "*.*.*.instagram.com"
+  - "*.*.*.*.instagram.com"
   - instagr.am
   - "*.instagr.am"
   - "*.*.instagr.am"
   - "*.*.*.instagr.am"
+  - "*.*.*.*.instagr.am"
+  - cdninstagram.com
+  - "*.cdninstagram.com"
+  - "*.*.cdninstagram.com"
+  - "*.*.*.cdninstagram.com"
+  - "*.*.*.*.cdninstagram.com"
   - m.me
   - "*.m.me"
   - "*.*.m.me"
   - "*.*.*.m.me"
+  - "*.*.*.*.m.me"
   - messenger.com
   - "*.messenger.com"
   - "*.*.messenger.com"
   - "*.*.*.messenger.com"
+  - "*.*.*.*.messenger.com"
   - oculus.com
   - "*.oculus.com"
   - "*.*.oculus.com"
   - "*.*.*.oculus.com"
+  - "*.*.*.*.oculus.com"
   - oculuscdn.com
   - "*.oculuscdn.com"
   - "*.*.oculuscdn.com"
   - "*.*.*.oculuscdn.com"
+  - "*.*.*.*.oculuscdn.com"
   - rocksdb.org
   - "*.rocksdb.org"
   - "*.*.rocksdb.org"
   - "*.*.*.rocksdb.org"
+  - "*.*.*.*.rocksdb.org"
   - whatsapp.com
   - "*.whatsapp.com"
   - "*.*.whatsapp.com"
   - "*.*.*.whatsapp.com"
+  - "*.*.*.*.whatsapp.com"
   - whatsapp.net
   - "*.whatsapp.net"
   - "*.*.whatsapp.net"
   - "*.*.*.whatsapp.net"
+  - "*.*.*.*.whatsapp.net"
   # bilibili
   - upos-hz-mirrorakam.akamaized.net
-  - smtcdns.net
-  - "*.smtcdns.net"
-  - "*.*.smtcdns.net"
-  - "*.*.*.smtcdns.net"
+  - uposdash-302-bilivideo.yfcdn.net
+  - hdslb.com.w.kunlunhuf.com
+  - hdslb.com.w.kunlunpi.com
+  - acg.tv
+  - "*.acg.tv"
+  - "*.*.acg.tv"
+  - "*.*.*.acg.tv"
   - acgvideo.com
   - "*.acgvideo.com"
   - "*.*.acgvideo.com"
   - "*.*.*.acgvideo.com"
-  - bilibili.com
-  - "*.bilibili.com"
-  - "*.*.bilibili.com"
-  - "*.*.*.bilibili.com"
-  - bilibili.cn
-  - "*.bilibili.cn"
-  - "*.*.bilibili.cn"
-  - "*.*.*.bilibili.cn"
-  - hdslb.com
-  - "*.hdslb.com"
-  - "*.*.hdslb.com"
-  - "*.*.*.hdslb.com"
-  - biliapi.net
-  - "*.biliapi.net"
-  - "*.*.biliapi.net"
-  - "*.*.*.biliapi.net"
-  - biliapi.com
-  - "*.biliapi.com"
-  - "*.*.biliapi.com"
-  - "*.*.*.biliapi.com"
-  - bilibili.tv
-  - "*.bilibili.tv"
-  - "*.*.bilibili.tv"
-  - "*.*.*.bilibili.tv"
-  - bilivideo.com
-  - "*.bilivideo.com"
-  - "*.*.bilivideo.com"
-  - "*.*.*.bilivideo.com"
-  - bilivideo.cn
-  - "*.bilivideo.cn"
-  - "*.*.bilivideo.cn"
-  - "*.*.*.bilivideo.cn"
-  - biligame.com
-  - "*.biligame.com"
-  - "*.*.biligame.com"
-  - "*.*.*.biligame.com"
-  - biligame.net
-  - "*.biligame.net"
-  - "*.*.biligame.net"
-  - "*.*.*.biligame.net"
-  - bilibiligame.net
-  - "*.bilibiligame.net"
-  - "*.*.bilibiligame.net"
-  - "*.*.*.bilibiligame.net"
+  - b23.tv
+  - "*.b23.tv"
+  - "*.*.b23.tv"
+  - "*.*.*.b23.tv"
+  - baka.im
+  - "*.baka.im"
+  - "*.*.baka.im"
+  - "*.*.*.baka.im"
   - bigfun.cn
   - "*.bigfun.cn"
   - "*.*.bigfun.cn"
@@ -179,24 +167,136 @@ dns:
   - "*.bigfunapp.cn"
   - "*.*.bigfunapp.cn"
   - "*.*.*.bigfunapp.cn"
-  - b23.tv
-  - "*.b23.tv"
-  - "*.*.b23.tv"
-  - "*.*.*.b23.tv"
-  - im9.com
-  - "*.im9.com"
-  - "*.*.im9.com"
-  - "*.*.*.im9.com"
-  - acg.tv
-  - "*.acg.tv"
-  - "*.*.acg.tv"
-  - "*.*.*.acg.tv"
-  - bilibilipay.com
-  - "*.bilibilipay.com"
-  - "*.*.bilibilipay.com"
-  - "*.*.*.bilibilipay.com"
+  - bili22.cn
+  - "*.bili22.cn"
+  - "*.*.bili22.cn"
+  - "*.*.*.bili22.cn"
+  - bili2233.cn
+  - "*.bili2233.cn"
+  - "*.*.bili2233.cn"
+  - "*.*.*.bili2233.cn"
+  - bili23.cn
+  - "*.bili23.cn"
+  - "*.*.bili23.cn"
+  - "*.*.*.bili23.cn"
+  - bili33.cn
+  - "*.bili33.cn"
+  - "*.*.bili33.cn"
+  - "*.*.*.bili33.cn"
+  - biliapi.com
+  - "*.biliapi.com"
+  - "*.*.biliapi.com"
+  - "*.*.*.biliapi.com"
+  - biliapi.net
+  - "*.biliapi.net"
+  - "*.*.biliapi.net"
+  - "*.*.*.biliapi.net"
+  - bilibili.cc
+  - "*.bilibili.cc"
+  - "*.*.bilibili.cc"
+  - "*.*.*.bilibili.cc"
+  - bilibili.cn
+  - "*.bilibili.cn"
+  - "*.*.bilibili.cn"
+  - "*.*.*.bilibili.cn"
+  - bilibili.co
+  - "*.bilibili.co"
+  - "*.*.bilibili.co"
+  - "*.*.*.bilibili.co"
+  - bilibili.com
+  - "*.bilibili.com"
+  - "*.*.bilibili.com"
+  - "*.*.*.bilibili.com"
+  - bilibili.tv
+  - "*.bilibili.tv"
+  - "*.*.bilibili.tv"
+  - "*.*.*.bilibili.tv"
+  - bilibiligame.cn
+  - "*.bilibiligame.cn"
+  - "*.*.bilibiligame.cn"
+  - "*.*.*.bilibiligame.cn"
+  - bilibiligame.net
+  - "*.bilibiligame.net"
+  - "*.*.bilibiligame.net"
+  - "*.*.*.bilibiligame.net"
   - bilibilipay.cn
   - "*.bilibilipay.cn"
   - "*.*.bilibilipay.cn"
   - "*.*.*.bilibilipay.cn"
+  - bilibilipay.com
+  - "*.bilibilipay.com"
+  - "*.*.bilibilipay.com"
+  - "*.*.*.bilibilipay.com"
+  - biligame.cn
+  - "*.biligame.cn"
+  - "*.*.biligame.cn"
+  - "*.*.*.biligame.cn"
+  - biligame.com
+  - "*.biligame.com"
+  - "*.*.biligame.com"
+  - "*.*.*.biligame.com"
+  - biligame.net
+  - "*.biligame.net"
+  - "*.*.biligame.net"
+  - "*.*.*.biligame.net"
+  - biliplus.com
+  - "*.biliplus.com"
+  - "*.*.biliplus.com"
+  - "*.*.*.biliplus.com"
+  - bilivideo.cn
+  - "*.bilivideo.cn"
+  - "*.*.bilivideo.cn"
+  - "*.*.*.bilivideo.cn"
+  - bilivideo.com
+  - "*.bilivideo.com"
+  - "*.*.bilivideo.com"
+  - "*.*.*.bilivideo.com"
+  - bilivideo.net
+  - "*.bilivideo.net"
+  - "*.*.bilivideo.net"
+  - "*.*.*.bilivideo.net"
+  - corari.com
+  - "*.corari.com"
+  - "*.*.corari.com"
+  - "*.*.*.corari.com"
+  - dyhgames.com
+  - "*.dyhgames.com"
+  - "*.*.dyhgames.com"
+  - "*.*.*.dyhgames.com"
+  - hdslb.com
+  - "*.hdslb.com"
+  - "*.*.hdslb.com"
+  - "*.*.*.hdslb.com"
+  - hdslb.net
+  - "*.hdslb.net"
+  - "*.*.hdslb.net"
+  - "*.*.*.hdslb.net"
+  - hdslb.org
+  - "*.hdslb.org"
+  - "*.*.hdslb.org"
+  - "*.*.*.hdslb.org"
+  - im9.com
+  - "*.im9.com"
+  - "*.*.im9.com"
+  - "*.*.*.im9.com"
+  - mcbbs.net
+  - "*.mcbbs.net"
+  - "*.*.mcbbs.net"
+  - "*.*.*.mcbbs.net"
+  - mincdn.com
+  - "*.mincdn.com"
+  - "*.*.mincdn.com"
+  - "*.*.*.mincdn.com"
+  - sharejoytech.com
+  - "*.sharejoytech.com"
+  - "*.*.sharejoytech.com"
+  - "*.*.*.sharejoytech.com"
+  - smtcdns.net
+  - "*.smtcdns.net"
+  - "*.*.smtcdns.net"
+  - "*.*.*.smtcdns.net"
+  - yo9.com
+  - "*.yo9.com"
+  - "*.*.yo9.com"
+  - "*.*.*.yo9.com"
   nameserver:
