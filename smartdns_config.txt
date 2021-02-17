@@ -1,23 +1,8 @@
 
 domain-rules /nbclouds.co/ -speed-check-mode none
 domain-rules /globalacceleration.net/ -speed-check-mode none
-# > local network
-# - DOMAIN-SUFFIX,ip6-localhost,DIRECT
-# - DOMAIN-SUFFIX,ip6-loopback,DIRECT
-# - DOMAIN-SUFFIX,local,DIRECT
-# - DOMAIN-SUFFIX,localhost,DIRECT
-# - DOMAIN,router.asus.com,DIRECT
-# - DOMAIN-SUFFIX,hiwifi.com,DIRECT
-# - DOMAIN-SUFFIX,leike.cc,DIRECT
-# - DOMAIN-SUFFIX,miwifi.com,DIRECT
-# - DOMAIN-SUFFIX,my.router,DIRECT
-# - DOMAIN-SUFFIX,p.to,DIRECT
-# - DOMAIN-SUFFIX,peiluyou.com,DIRECT
-# - DOMAIN-SUFFIX,phicomm.me,DIRECT
-# - DOMAIN-SUFFIX,routerlogin.com,DIRECT
-# - DOMAIN-SUFFIX,tendawifi.com,DIRECT
-# - DOMAIN-SUFFIX,zte.home,DIRECT
-# > DNS
+# > Base
+nameserver //main
 nameserver /cloudflare-dns.com/servb
 nameserver /dns.google/servb
 nameserver /quad9.net/servb
@@ -26,9 +11,10 @@ nameserver /alidns.com/serva
 nameserver /doh.pub/serva
 nameserver /dot.pub/serva
 nameserver /dns.pub/serva
+nameserver /one.one.one.one/main
 # > Data Tansmission Services
-# - DOMAIN-SUFFIX,nbclouds.co,DIRECT
-# - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
+nameserver /nbclouds.co/direct
+nameserver /globalacceleration.net/direct
 nameserver /ssr.ac/main
 nameserver /ssr.sh/main
 nameserver /ssr.sx/main
@@ -45,12 +31,23 @@ nameserver /ubuntu.com/main
 nameserver /ntp.org/main
 # > Spotify
 nameserver /ap.spotify.com/serva
+nameserver /byspotify.com/main
 nameserver /pscdn.co/main
 nameserver /scdn.co/main
+nameserver /spoti.fi/main
+nameserver /spotify-everywhere.com/main
 nameserver /spotify.com/main
+nameserver /spotify.design/main
 nameserver /spotifycdn.com/main
 nameserver /spotifycdn.net/main
-nameserver /spoti.fi/main
+nameserver /spotifycharts.com/main
+nameserver /spotifycodes.com/main
+nameserver /spotifyforbrands.com/main
+nameserver /spotifyjobs.com/main
+nameserver /-spotify-com/main
+## shared cdn filter
+nameserver /spotify-com.akamaized.net/main
+nameserver /audio-ak-spotify-com.akamaized.net/main
 # > Netflix
 nameserver /netflix.com.edgesuite.net/main
 nameserver /fast.com/main
@@ -71,19 +68,228 @@ nameserver /netflixdnstest6.com/main
 nameserver /netflixdnstest7.com/main
 nameserver /netflixdnstest8.com/main
 nameserver /netflixdnstest9.com/main
-# > Disney+ hulu hbo
+# > Disney +
+nameserver /abc-studios.com/main
+nameserver /abc.com/main
+nameserver /adobedtm.com/main
+nameserver /adventuresbydisney.com/main
+nameserver /babble.com/main
+nameserver /babyzone.com/main
+nameserver /bam.nr-data.net/main
 nameserver /bamgrid.com/main
+nameserver /braze.com/main
+nameserver /conviva.com/main
+nameserver /d9.flashtalking.com/main
+nameserver /dilcdn.com/main
+nameserver /disney-asia.com/main
+nameserver /disney-discount.com/main
 nameserver /disney-plus.net/main
+nameserver /disney-studio.com/main
+nameserver /disney-studio.net/main
+nameserver /disney.be/main
+nameserver /disney.bg/main
+nameserver /disney.ca/main
+nameserver /disney.co.il/main
+nameserver /disney.co.th/main
+nameserver /disney.co.uk/main
+nameserver /disney.co.za/main
+nameserver /disney.com/main
+nameserver /disney.com.au/main
+nameserver /disney.com.br/main
+nameserver /disney.cz/main
+nameserver /disney.de/main
+nameserver /disney.demdex.net/main
+nameserver /disney.dk/main
+nameserver /disney.es/main
+nameserver /disney.fi/main
+nameserver /disney.fr/main
+nameserver /disney.gr/main
+nameserver /disney.hu/main
+nameserver /disney.id/main
+nameserver /disney.in/main
+nameserver /disney.io/main
+nameserver /disney.it/main
+nameserver /disney.my/main
+nameserver /disney.my.sentry.io/main
+nameserver /disney.nl/main
+nameserver /disney.no/main
+nameserver /disney.ph/main
+nameserver /disney.pl/main
+nameserver /disney.pt/main
+nameserver /disney.ro/main
+nameserver /disney.se/main
+nameserver /disney.sg/main
+nameserver /disneyadsales.com/main
+nameserver /disneyarena.com/main
+nameserver /disneyaulani.com/main
+nameserver /disneybaby.com/main
+nameserver /disneycareers.com/main
+nameserver /disneychannelonstage.com/main
+nameserver /disneychannelroadtrip.com/main
+nameserver /disneycruisebrasil.com/main
+nameserver /disneyenconcert.com/main
+nameserver /disneyiejobs.com/main
+nameserver /disneyinflight.com/main
+nameserver /disneyjunior.com/main
+nameserver /disneyjuniortreataday.com/main
+nameserver /disneylatino.com/main
+nameserver /disneymagicmoments.co.il/main
+nameserver /disneymagicmoments.co.uk/main
+nameserver /disneymagicmoments.co.za/main
+nameserver /disneymagicmoments.de/main
+nameserver /disneymagicmoments.es/main
+nameserver /disneymagicmoments.fr/main
+nameserver /disneymagicmoments.gen.tr/main
+nameserver /disneymagicmoments.gr/main
+nameserver /disneymagicmoments.it/main
+nameserver /disneymagicmoments.pl/main
+nameserver /disneyme.com/main
+nameserver /disneymeetingsandevents.com/main
+nameserver /disneymovieinsiders.com/main
+nameserver /disneymusicpromotion.com/main
+nameserver /disneynewseries.com/main
+nameserver /disneynow.com/main
+nameserver /disneypeoplesurveys.com/main
+nameserver /disneyplus.bn5x.net/main
 nameserver /disneyplus.com/main
+nameserver /disneyredirects.com/main
+nameserver /disneysrivieraresort.com/main
+nameserver /disneystore.com/main
 nameserver /disneystreaming.com/main
+nameserver /disneysubscription.com/main
+nameserver /disneyturkiye.com.tr/main
+nameserver /disneytvajobs.com/main
+nameserver /disneyworld-go.com/main
 nameserver /dssott.com/main
+nameserver /edgedatg.com/main
+nameserver /espn.com/main
+nameserver /espn.hb.omtrdc.net/main
+nameserver /espncdn.com/main
+nameserver /espndotcom.tt.omtrdc.net/main
+nameserver /go-disneyworldgo.com/main
+nameserver /go.com/main
+nameserver /js-agent.newrelic.com/main
+nameserver /marvel.com/main
+nameserver /marvel10thanniversary.com/main
+nameserver /marveldimensionofheroes.com/main
+nameserver /marvelparty.net/main
+nameserver /marvelpinball.com/main
+nameserver /marvelsdoubleagent.com/main
+nameserver /marvelspotlightplays.com/main
+nameserver /marvelsuperheroseptember.com/main
+nameserver /marvelsuperwar.com/main
+nameserver /mickey.tv/main
+nameserver /moviesanywhere.com/main
+nameserver /natgeomaps.com/main
+nameserver /nationalgeographic.com/main
+nameserver /nationalgeographicpartners.com/main
+nameserver /ngeo.com/main
+nameserver /playmation.com/main
+nameserver /shopdisney.com/main
+nameserver /shops-disney.com/main
+nameserver /sorcerersarena.com/main
+nameserver /spaindisney.com/main
+nameserver /starwars.com/main
+nameserver /starwarsgalacticstarcruiser.com/main
+nameserver /streamingdisney.net/main
+nameserver /themarvelexperiencetour.com/main
+nameserver /thestationbymaker.com/main
+nameserver /thisispolaris.com/main
+nameserver /watchdisneyfe.com/main
+nameserver /watchespn.com/main
+## Shared cdn filter
 nameserver /cdn.registerdisney.go.com/main
+nameserver /execute-api.us-east-1.amazonaws.com/main
+nameserver /disney-portal.my.onetrust.com/main
+nameserver /cdn.optimizely.com/main
+# > hulu
+nameserver /112263.com/main
+nameserver /callhulu.com/main
+nameserver /findyourlimits.com/main
+nameserver /freehulu.com/main
+nameserver /happyon.jp/main
+nameserver /hooloo.tv/main
+nameserver /hoolu.com/main
+nameserver /hoolu.tv/main
+nameserver /hu1u.com/main
+nameserver /huloo.cc/main
+nameserver /huloo.tv/main
 nameserver /hulu.com/main
+nameserver /hulu.jp/main
+nameserver /hulu.tv/main
+nameserver /hulu.us/main
+nameserver /huluaction.com/main
+nameserver /huluad.com/main
+nameserver /huluapp.com/main
+nameserver /huluasks.com/main
+nameserver /hulucall.com/main
+nameserver /hulufree.com/main
+nameserver /hulugans.com/main
+nameserver /hulugermany.com/main
+nameserver /hulugo.com/main
 nameserver /huluim.com/main
+nameserver /huluinstantmessenger.com/main
+nameserver /huluitaly.com/main
+nameserver /hulunet.com/main
+nameserver /hulunetwork.com/main
+nameserver /huluplus.com/main
+nameserver /hulupremium.com/main
+nameserver /hulupurchase.com/main
+nameserver /huluqa.com/main
+nameserver /hulurussia.com/main
+nameserver /huluspain.com/main
+nameserver /hulusports.com/main
 nameserver /hulustream.com/main
+nameserver /huluteam.com/main
+nameserver /hulutv.com/main
+nameserver /huluusa.com/main
+nameserver /joinmaidez.com/main
+nameserver /mushymush.tv/main
+nameserver /myhulu.com/main
+nameserver /originalhulu.com/main
+nameserver /payhulu.com/main
+nameserver /prod.hjholdings.tv/main
+nameserver /registerhulu.com/main
+nameserver /streaks.jp/main
+nameserver /thehulubraintrust.com/main
+nameserver /wwwhuluplus.com/main
+nameserver /yb.uncn.jp/main
+## Shared cdn filter
+nameserver /assetshuluimcom-a.akamaihd.net/main
+nameserver /hulu.hb.omtrdc.net/main
+nameserver /hulu.sc.omtrdc.net/main
+nameserver /cws-hulu.conviva.com/main
+# > hbo
+nameserver /cinemax.com/main
+nameserver /forthethrone.com/main
 nameserver /hbo.com/main
+nameserver /hboasia.com/main
 nameserver /hbogo.com/main
+nameserver /hbogoasia.com/main
+nameserver /hbogoasia.hk/main
+nameserver /hbomax.com/main
 nameserver /hbonow.com/main
+nameserver /maxgo.com/main
+nameserver /now-ashare.com/main
+nameserver /now-tv.com/main
+nameserver /now.com.hk/main
+nameserver /nowe.com/main
+nameserver /players.brightcove.net/main
+nameserver /youboranqs01.com/main
+## Shared cdn filter
+nameserver /cf-images.ap-southeast-1.prod.boltdns.net/main
+nameserver /manifest.prod.boltdns.net/main
+nameserver /hboasia1-i.akamaihd.net/main
+nameserver /hboasia2-i.akamaihd.net/main
+nameserver /hboasia3-i.akamaihd.net/main
+nameserver /hboasia4-i.akamaihd.net/main
+nameserver /hboasia5-i.akamaihd.net/main
+nameserver /bcbolthboa-a.akamaihd.net/main
+nameserver /dai3fd1oh325y.cloudfront.net/main
+nameserver /execute-api.ap-southeast-1.amazonaws.com/main
+nameserver /execute-api.us-east-1.amazonaws.com/main
+nameserver /s3-ap-southeast-1.amazonaws.com/main
+nameserver /hbogeo.cust.footprint.net/main
 # > Twitch
 nameserver /twitch.tv/main
 nameserver /twitchcdn.net/main
@@ -103,6 +309,136 @@ nameserver /phncdn.com/main
 nameserver /phprcdn.com/main
 nameserver /pornhub.com/main
 nameserver /pornhubpremium.com/main
+# > GAME Filters
+## minecraft servers
+nameserver /hivemc.com/main
+nameserver /minecraft.net/main
+nameserver /minecraftshop.com/main
+nameserver /mojang.com/main
+## nintendo
+nameserver /100classicbooks.com/main
+nameserver /ac-pocketcamp.com/main
+nameserver /amiibo.com/main
+nameserver /ayudanintendo.com/main
+nameserver /bowsersinsidestory.com/main
+nameserver /dialga.com/main
+nameserver /diddykongracing.com/main
+nameserver /dkr.com/main
+nameserver /donkeykongcountryreturns.com/main
+nameserver /drmario-world.com/main
+nameserver /excitebots.com/main
+nameserver /fire-emblem-heroes.com/main
+nameserver /fireemblemawakening.com/main
+nameserver /flipnotestudio.com/main
+nameserver /giratina.com/main
+nameserver /gloryofheracles.com/main
+nameserver /hackyourconsole.com/main
+nameserver /kirbysepicyarn.com/main
+nameserver /kirbysuperstarultra.com/main
+nameserver /kyurem.com/main
+nameserver /legendofzelda.cn/main
+nameserver /legendofzelda.com.cn/main
+nameserver /marioandluigidreamteam.com/main
+nameserver /mariobroswii.com/main
+nameserver /mariokart.cn/main
+nameserver /mariokart.com.cn/main
+nameserver /mariokart7.com/main
+nameserver /mariokart8.com/main
+nameserver /mariosupersluggers.com/main
+nameserver /miitomo.com/main
+nameserver /miitomo.com.cn/main
+nameserver /miiverse.com/main
+nameserver /nentindo.net/main
+nameserver /newsupermariobrosu.com/main
+nameserver /nintendo-europe-sales.com/main
+nameserver /nintendo-europe.com/main
+nameserver /nintendo.at/main
+nameserver /nintendo.be/main
+nameserver /nintendo.ch/main
+nameserver /nintendo.co.jp/main
+nameserver /nintendo.co.kr/main
+nameserver /nintendo.co.uk/main
+nameserver /nintendo.co.za/main
+nameserver /nintendo.com/main
+nameserver /nintendo.com.hk/main
+nameserver /nintendo.com.pt/main
+nameserver /nintendo.de/main
+nameserver /nintendo.dk/main
+nameserver /nintendo.es/main
+nameserver /nintendo.eu/main
+nameserver /nintendo.fi/main
+nameserver /nintendo.fr/main
+nameserver /nintendo.it/main
+nameserver /nintendo.net/main
+nameserver /nintendo.nl/main
+nameserver /nintendo.no/main
+nameserver /nintendo.pt/main
+nameserver /nintendo.ru/main
+nameserver /nintendo.se/main
+nameserver /nintendo.tw/main
+nameserver /nintendo3ds.com/main
+nameserver /nintendodsi.com/main
+nameserver /nintendoeurope.com/main
+nameserver /nintendolabo.cn/main
+nameserver /nintendonetwork.net/main
+nameserver /nintendonyc.com/main
+nameserver /nintendostore.com/main
+nameserver /nintendoswitch.com/main
+nameserver /nintendoswitch.net/main
+nameserver /nintendoswitchtogether.com/main
+nameserver /nintendowii.com/main
+nameserver /personaltrainermath.com/main
+nameserver /playnintendo.com/main
+nameserver /pokedex3d.com/main
+nameserver /pokemon-moon.com/main
+nameserver /pokemon-sun.com/main
+nameserver /pokemon-sunmoon.com/main
+nameserver /pokemon.com/main
+nameserver /pokemonbank.com/main
+nameserver /pokemonblackwhite.com/main
+nameserver /pokemonbw.com/main
+nameserver /pokemonchampionships.com/main
+nameserver /pokemongoldsilver.com/main
+nameserver /pokemonhome.com/main
+nameserver /pokemonletsgoeevee.com/main
+nameserver /pokemonletsgopikachu.com/main
+nameserver /pokemonmysterydungeon.com/main
+nameserver /pokemonpicross.com/main
+nameserver /pokemonplatinum.com/main
+nameserver /pokemonrubysapphire.com/main
+nameserver /pokemonsunmoon.com/main
+nameserver /pokemonswordshield.com/main
+nameserver /pokemonultrasunmoon.com/main
+nameserver /pokemonvgc.com/main
+nameserver /pokemonwifi.net/main
+nameserver /splatoon2tournament.com/main
+nameserver /starfox.com/main
+nameserver /supermario.com/main
+nameserver /supermario3dworld.com/main
+nameserver /supermariobros.com.cn/main
+nameserver /supermariogalaxy.com/main
+nameserver /supermariorun.com/main
+nameserver /superpapermario.com/main
+nameserver /supersmashbros.cn/main
+nameserver /supersmashbros.com.cn/main
+nameserver /thelegendarystarfy.com/main
+nameserver /thewonderful101.com/main
+nameserver /wariolandshakeit.com/main
+nameserver /wariowarediy.com/main
+nameserver /wii-u.com/main
+nameserver /wiifit.com/main
+nameserver /wiifitu.com/main
+nameserver /wiipartyu.com/main
+nameserver /wiisports.com/main
+nameserver /wiisportsresort.com/main
+nameserver /wiiugamepad.com/main
+nameserver /wiivc.net/main
+nameserver /xenoblade.com/main
+nameserver /xn--mts47c3w9b1qr.cn/main
+nameserver /xn--mts47c3w9b1qr.net/main
+nameserver /yoshisnewisland.com/main
+nameserver /神奇宝贝.cn/main
+nameserver /神奇宝贝.net/main
 # > Steam
 nameserver /fanatical.com/main
 nameserver /humblebundle.com/main
@@ -114,8 +450,11 @@ nameserver /steamcommunity.com/main
 nameserver /steamcontent.com/main
 nameserver /steamstatic.com/main
 nameserver /steamstat.us/main
+nameserver /steamunlocked.net/main
 nameserver /wmsjsteam.com/main
-nameserver /csgo.wmsj.cn/main
+nameserver /underlords.com/main
+nameserver /valvesoftware.com/main
+nameserver /wmsj.cn/main
 nameserver /dl.steam.ksyna.com/main
 nameserver /dota2.wmsj.cn/main
 nameserver /st.dl.bscstorage.net/main
@@ -129,19 +468,184 @@ nameserver /steamstore-a.akamaihd.net/main
 nameserver /steamusercontent-a.akamaihd.net/main
 nameserver /steamusercontent-a.akamaihd.net/main
 nameserver /steamuserimages-a.akamaihd.net/main
-# > Epic Uplay and Others
+# > Epic
 nameserver /epicgames.com/main
 nameserver /unrealengine.com/main
 nameserver /helpshift.com/main
 nameserver /paragon.com/main
 nameserver /launchdarkly.com/main
+# > Uplay
 nameserver /ubisoft.com/main
 nameserver /ubi.com/main
+nameserver /uplay.com/main
 nameserver /goqubit.com/main
-nameserver /origin.com/main
+nameserver /ubisoft-orbit-savegames.s3.amazonaws.com/main
+nameserver /ubisoft-uplay-savegames.s3.amazonaws.com/main
+# > EA
+nameserver /anthemgame.com/main
+nameserver /anthemthegame.com/main
+nameserver /apexlegends.com/main
+nameserver /awayoutgame.com/main
+nameserver /battlefield.com/main
+nameserver /battlefield1943.com/main
+nameserver /battlefield3.com/main
+nameserver /battlefield4.com/main
+nameserver /battlefield5.com/main
+nameserver /battlefieldbadcompany2.com/main
+nameserver /battlefieldheroes.com/main
+nameserver /battlefieldv.com/main
+nameserver /battlefront2.com/main
+nameserver /battlefrontii.com/main
+nameserver /battlelog.com/main
+nameserver /bejeweledstars.com/main
+nameserver /bejewled-stars.com/main
+nameserver /bioware.com/main
+nameserver /biowarestore.com/main
+nameserver /blackboxgames.com/main
+nameserver /camelot-europe.com/main
+nameserver /camelotherald.com/main
+nameserver /camelotherald.net/main
+nameserver /capitalgames.com/main
+nameserver /chillingo.com/main
+nameserver /cloudsync-prod.s3.amazonaws.com/main
+nameserver /cncrivals.com/main
+nameserver /commandandconquer.com/main
+nameserver /conquerwithcharacter.com/main
+nameserver /crysis.jp/main
+nameserver /daoc.net/main
+nameserver /darkageofcamelot.com/main
+nameserver /darkness-risen.com/main
+nameserver /dawngate.com/main
+nameserver /dawngatechronicles.com/main
+nameserver /deadspacegame.com/main
+nameserver /dice.se/main
+nameserver /dicela.com/main
+nameserver /dicela.net/main
+nameserver /dragonage.com/main
+nameserver /dragonagekeep.com/main
+nameserver /dragonagemovie.com/main
+nameserver /dungeonkeeper.cn/main
+nameserver /dungeonkeeper.com/main
+nameserver /dungeonkeeper.com.cn/main
+nameserver /ea-anz-press.com/main
 nameserver /ea.com/main
+nameserver /ea.tt.omtrdc.net/main
+nameserver /eaaccess.com/main
+nameserver /eaassets-a.akamaihd.net/main
+nameserver /eablackbox.com/main
+nameserver /eacashcard.com/main
+nameserver /eacodigos.com/main
+nameserver /eafootballworld.com/main
+nameserver /eakorea.co.kr/main
+nameserver /eamirrorsedge.com/main
+nameserver /eamobile.com/main
+nameserver /eamythic.com/main
+nameserver /eamythic.net/main
+nameserver /eanordic.com/main
+nameserver /eaplay.com/main
+nameserver /easports.com/main
+nameserver /easports.jp/main
+nameserver /easportsactive.com/main
+nameserver /easportsactiveonline.com/main
+nameserver /easportsfootball.com/main
+nameserver /easportsfootballclub.com/main
+nameserver /easportsmma.com/main
+nameserver /easportsworld.com/main
+nameserver /eastore.com/main
+nameserver /electronicarts.com/main
+nameserver /electronicarts.fr/main
+nameserver /fifastreet.com/main
+nameserver /fifastreet3.com/main
+nameserver /frostbite.com/main
+nameserver /futpromos.com/main
+nameserver /futunited.com/main
+nameserver /ghostgames.com/main
+nameserver /heroesofdragonage.com/main
+nameserver /hutpromos.com/main
+nameserver /industrialtoys.com/main
+nameserver /lordofultima.com/main
+nameserver /maddenchampionship.com/main
+nameserver /maddenrewards.com/main
+nameserver /maddenseason.info/main
+nameserver /maddenseason.net/main
+nameserver /maddenseason.org/main
+nameserver /masseffect.com/main
+nameserver /masseffectarchives.com/main
+nameserver /maxis.com/main
+nameserver /mirrorsedge.com/main
+nameserver /mirrorsedge.jp/main
+nameserver /mirrorsedge.net/main
+nameserver /mirrorsedge2.com/main
+nameserver /mirrorsedge2d.com/main
+nameserver /mysims.com/main
+nameserver /mysimsracing.com/main
+nameserver /mythicentertainment.com/main
+nameserver /mythicentertainment.net/main
+nameserver /mythicgames.com/main
+nameserver /needforspeed.com/main
+nameserver /needforspeedboost.com/main
+nameserver /needforspeeddriftkings.com/main
+nameserver /needforspeedeliminator.com/main
+nameserver /needforspeedlightning.com/main
+nameserver /needforspeedoverdrive.com/main
+nameserver /needforspeedproven.com/main
+nameserver /needforspeedredline.com/main
+nameserver /needforspeedshowdown.com/main
+nameserver /needforspeedstreetkings.com/main
+nameserver /needforspeedtakedown.com/main
+nameserver /needforspeedtherun.com/main
+nameserver /needforspeedtimeattack.com/main
+nameserver /needforspeedundergroundeast.com/main
+nameserver /nfsworld.com/main
+nameserver /origin-a.akamaihd.net/main
+nameserver /origin.com/main
+nameserver /origin.tv/main
+nameserver /plantsvszombies2.com/main
+nameserver /play4free.com/main
+nameserver /playapex.com/main
+nameserver /pogo.com/main
+nameserver /pogobeta.com/main
+nameserver /popcap.com/main
+nameserver /projectapex.com/main
+nameserver /pvzgw2.com/main
+nameserver /pvzheroes.com/main
+nameserver /seaofsolitude.com/main
+nameserver /simcity-buildit.com/main
+nameserver /simcity.com/main
+nameserver /skate2.com/main
+nameserver /spearhead.kr/main
+nameserver /speedhunters.com/main
+nameserver /spore.com/main
+nameserver /ssx3.com/main
+nameserver /starwarsbattlefront.com/main
+nameserver /starwarsbattlefront2.com/main
+nameserver /starwarsfallenorder.com/main
+nameserver /starwarsjedifallenorder.com/main
+nameserver /starwarstheoldrepublic.com/main
+nameserver /swjedifallenorder.com/main
+nameserver /swjfo.com/main
+nameserver /swtor.com/main
+nameserver /swtor.net/main
+nameserver /teamneedforspeed.com/main
+nameserver /thedreadwolfrises.com/main
+nameserver /thesims.com/main
+nameserver /thesims3.com/main
+nameserver /thesims4.com/main
+nameserver /thesimssocial.com/main
+nameserver /tiberiumalliances.com/main
+nameserver /tiburon.com/main
+nameserver /titanfall.com/main
 nameserver /tnt-ea.com/main
-nameserver //main
+nameserver /ultimaforever.com/main
+nameserver /ultimaonline.com/main
+nameserver /unravel2.com/main
+nameserver /unraveltwo.com/main
+nameserver /uo.com/main
+nameserver /uoherald.com/main
+nameserver /visceralgames.com/main
+nameserver /xdsummit.com/main
+nameserver /yogify.com/main
+# > SpeedTest
 nameserver /speedtest.net/main
 nameserver /netspeedtestmaster.com/main
 nameserver /macpaw.com/main
@@ -168,9 +672,6 @@ nameserver /oculuscdn.com/main
 nameserver /rocksdb.org/main
 nameserver /whatsapp.com/main
 nameserver /whatsapp.net/main
-## whatsapp
-## facebook
-## facebook peer
 # > Twitter
 nameserver /pscp.tv/main
 nameserver /periscope.tv/main
@@ -221,6 +722,12 @@ nameserver /line-apps.com/main
 nameserver /line-scdn.net/main
 nameserver /naver.jp/main
 nameserver /nhncorp.jp/main
+# > clubhouse
+nameserver /clubhouse.pubnub.com/main
+nameserver /clubhouseapi.com/main
+nameserver /joinclubhouse.com/main
+## Shared cdn filter
+nameserver /clubhouseprod.s3.amazonaws.com/main
 # > PayPal
 nameserver /paypal.com/main
 nameserver /paypal.me/main
@@ -231,15 +738,13 @@ nameserver /duboxcdn.com/main
 # > Pixiv
 nameserver /pixiv.net/main
 nameserver /pximg.net/main
-# > Nintendo
-nameserver /nintendo.net/main
-nameserver /nintendo.com/main
 # > Sony
 nameserver /playstation.com/main
 nameserver /playstation.net/main
 nameserver /playstationnetwork.com/main
 nameserver /sony.com/main
 nameserver /sonyentertainmentnetwork.com/main
+nameserver /sonymusic.com/main
 # > Github and Gitbook
 nameserver /github.com/main
 nameserver /githubusercontent.com/main
@@ -281,6 +786,38 @@ nameserver /thawte.com/main
 nameserver /typekit.com/main
 nameserver /typekit.net/main
 nameserver /worldsecuresystems.com/main
+# > BBC
+nameserver /bbc.co/main
+nameserver /bbc.co.uk/main
+nameserver /bbc.com/main
+nameserver /bbc.in/main
+nameserver /bbcchinese.com/main
+nameserver /bbcfmt.hs.llnwd.net/main
+nameserver /bbci.co/main
+nameserver /bbci.co.uk/main
+nameserver /bbcfmt/main
+nameserver /uk-live/main
+## Shared cdn filter
+nameserver /aod-dash-uk-live.akamaized.net/main
+nameserver /aod-hls-uk-live.akamaized.net/main
+nameserver /vod-dash-uk-live.akamaized.net/main
+nameserver /vod-thumb-uk-live.akamaized.net/main
+nameserver /vod-dash-uk-live.bbcfmt.hs.llnwd.net/main
+nameserver /vod-thumb-uk-live.bbcfmt.hs.llnwd.net/main
+# > AppleDaily
+nameserver /appledaily.com/main
+nameserver /appledaily.com.hk/main
+nameserver /appledaily.com.tw/main
+nameserver /appledaily.hk/main
+nameserver /atnext.com/main
+nameserver /eracom.com.tw/main
+nameserver /next.hk/main
+nameserver /nextdigital.com.hk/main
+nameserver /nextmag.com.tw/main
+nameserver /nextmedia.com/main
+nameserver /nextmgz.com/main
+nameserver /nexttv.com.tw/main
+nameserver /sharpdaily.tw/main
 # > Wiki
 nameserver /wikimapia.org/main
 nameserver /wikimedia.org/main
@@ -369,7 +906,7 @@ nameserver /asus.com.cn/serva
 nameserver /asuscomm.com/main
 nameserver /nvidia.com/main
 nameserver /nvidia.cn/main
-nameserver /bbc.com/main
+nameserver /nvidiagrid.net/main
 nameserver /v2ex.com/main
 nameserver /adobe.com/main
 nameserver /flash.com/main
@@ -377,11 +914,13 @@ nameserver /flash.cn/main
 nameserver /typekit.net/main
 nameserver /stackoverflow.com/main
 nameserver /dropbox.com/main
+nameserver /dropboxapi.com/main
 nameserver /dropboxusercontent.com/main
 nameserver /duckduckgo.com/main
 nameserver /resilio.com/main
 nameserver /textnow.me/main
 nameserver /yahoo.com/main
+nameserver /yahooapis.com/main
 nameserver /kaggle.com/main
 nameserver /kaggle.io/main
 nameserver /cnzz.com/main
@@ -411,12 +950,12 @@ nameserver /sourcegraph.com/main
 nameserver /spring.io/main
 nameserver /spring.net/main
 nameserver /smartmailcloud.com/main
-nameserver /sony.com/main
-nameserver /sonymusic.com/main
 nameserver /smehost.net/main
+nameserver /shuziyimin.org/main
 nameserver /ted.com/main
 nameserver /ups.com/main
 nameserver /tnt.com/main
+nameserver /dhl.com/main
 nameserver /weebly.com/main
 nameserver /oracle.com/main
 # > Apple
@@ -426,22 +965,71 @@ nameserver /apple.com/main
 nameserver /apple.cn/main
 nameserver /apple.com.cn/main
 nameserver /apple.news/main
-nameserver /apple-cloudkit.com/main
 nameserver /appstore.com/main
 nameserver /appsto.re/main
-nameserver /apple-mapkit.com/main
 nameserver /cdn-apple.com/main
-nameserver /crashlytics.com/main
-nameserver /icloud.com/main
-nameserver /icloud.com.cn/main
-nameserver /icloud-content.com/main
-nameserver /me.com/main
 nameserver /mzstatic.com/main
 nameserver /comscoreresearch.com/main
+nameserver /apple-mapkit.com/main
+nameserver /apple-livephotoskit.com/main
 nameserver /apple-dns.net/main
-nameserver /mwcname.com/main
-nameserver /mwcloudcdn.com/main
-nameserver /cdn20.com/main
+nameserver /apple-cloudkit.com/main
+nameserver /apple-icloud.cn/main
+nameserver /appleicloud.cn/main
+nameserver /applemx-icloud.com/main
+nameserver /icloud-apple.cn/main
+nameserver /icloud-content.com/main
+nameserver /icloud-isupport.com/main
+nameserver /icloud.ch/main
+nameserver /icloud.com/main
+nameserver /icloud.com.cn/main
+nameserver /icloud.de/main
+nameserver /icloud.ee/main
+nameserver /icloud.fi/main
+nameserver /icloud.fr/main
+nameserver /icloud.hu/main
+nameserver /icloud.ie/main
+nameserver /icloud.is/main
+nameserver /icloud.jp/main
+nameserver /icloud.lv/main
+nameserver /icloud.net.cn/main
+nameserver /icloud.om/main
+nameserver /icloud.org/main
+nameserver /icloud.pt/main
+nameserver /icloud.ro/main
+nameserver /icloud.se/main
+nameserver /icloud.si/main
+nameserver /icloud.sk/main
+nameserver /icloud.vn/main
+nameserver /icloudads.net/main
+nameserver /icloudapple.cn/main
+nameserver /icloudbox.net/main
+nameserver /icloudbrowser.net/main
+nameserver /icloude.com/main
+nameserver /icloudhome.com/main
+nameserver /icloudmail.net/main
+nameserver /icloudmusic.net/main
+nameserver /icloudnet.net/main
+nameserver /icloudo.com/main
+nameserver /icloudo.de/main
+nameserver /icloudo.net/main
+nameserver /icloudos.de/main
+nameserver /icloudos.net/main
+nameserver /icloudpay.net/main
+nameserver /icloudsecure.net/main
+nameserver /icloudsetup.com/main
+nameserver /ios-icloud.com/main
+nameserver /myicloud.net/main
+nameserver /mylcloud.net/main
+nameserver /wwwicloud.com/main
+## Shared cdn filter
+nameserver /ls.apple.com.edgekey.net/main
+nameserver /apple.com.cdn20.com/main
+nameserver /apple.com.mwcloudcdn.com/main
+nameserver /apple.com.mwcname.com/main
+nameserver /www-cdn.icloud.com.akadns.net/main
+nameserver /apple.com.akadns.net/main
+nameserver /origin-apple.com.akadns.net/main
 nameserver /k128-mzstatic.gslb.ksyuncdn.com/serva
 nameserver /k128-iosapps.gslb.ksyuncdn.com/serva
 nameserver /k128.gslb.ksyuncdn.com/serva
@@ -457,6 +1045,7 @@ nameserver /ampproject.org/main
 nameserver /appspot.com/main
 nameserver /blogger.com/main
 nameserver /getoutline.org/main
+nameserver /gv.com/main
 nameserver /gvt0.com/main
 nameserver /gvt1.com/main
 nameserver /gvt2.com/main
@@ -467,6 +1056,7 @@ nameserver /xn--i2ru8q2qg.com/main
 nameserver /abc.xyz/main
 nameserver /android.com/main
 nameserver /androidify.com/main
+nameserver /admob.com/main
 nameserver /dialogflow.com/main
 nameserver /autodraw.com/main
 nameserver /capitalg.com/main
@@ -486,10 +1076,10 @@ nameserver /ggpht.com/main
 nameserver /gmail.com/main
 nameserver /gmodules.com/main
 nameserver /google-analytics.com/main
+nameserver /googledrive.com/main
 nameserver /godoc.org/main
 nameserver /golang.org/main
 nameserver /gstatic.com/main
-nameserver /gv.com/main
 nameserver /g.co/main
 nameserver /goo.gl/main
 nameserver /gwtproject.org/main
@@ -521,14 +1111,19 @@ nameserver /googleoptimize.com/main
 nameserver /googletagmanager.com/main
 nameserver /googletagservices.com/main
 nameserver /googlesyndication.com/main
+nameserver /googleusercontent.com/main
 nameserver /oasisfeng.com/main
+nameserver /265.com/main
 nameserver /2mdn.net/main
 nameserver /1e100.net/main
-nameserver /meet/main
 nameserver /google.cn/main
 nameserver /googleapis.cn/main
 nameserver /gstatic.cn/main
 nameserver /google/main
+nameserver /goog/main
+nameserver /meet/main
+nameserver /gstatic/main
+nameserver /www.google./main
 # > Microsoft
 nameserver /1drv.com/main
 nameserver /1drv.ms/main
@@ -537,24 +1132,36 @@ nameserver /acompli.com/main
 nameserver /acompli.net/main
 nameserver /aspnetcdn.com/main
 nameserver /assets-yammer.com/main
+nameserver /atdmt.com/main
+nameserver /azure.cn/main
 nameserver /azure.com/main
 nameserver /azure.net/main
+nameserver /azure-apim.net/main
 nameserver /azureedge.net/main
 nameserver /azurerms.com/main
 nameserver /azurewebsites.net/main
 nameserver /bing.com/main
+nameserver /bing.net/main
 nameserver /cloudapp.net/main
 nameserver /cloudappsecurity.com/main
+nameserver /cortana.ai/main
 nameserver /ceipmsn.com/main
+nameserver /docs.com/main
 nameserver /edgesuite.net/main
-nameserver /footprintdns.com/main
+nameserver /fabric.io/main
 nameserver /gfx.ms/main
+nameserver /getmicrosoftkey.com/main
 nameserver /hotmail.com/main
+nameserver /helpshift.com/main
 nameserver /live.com/main
 nameserver /live.net/main
 nameserver /livefilestore.com/main
 nameserver /lync.com/main
+nameserver /mesh.com/main
 nameserver /microsoft.com/main
+nameserver /microsoftonline.com/main
+nameserver /microsoftonline-p.com/main
+nameserver /microsoft-tst.com/main
 nameserver /msappproxy.net/main
 nameserver /msauth.net/main
 nameserver /msauthimages.net/main
@@ -567,7 +1174,6 @@ nameserver /msftncsi.com/main
 nameserver /msftauthimages.net/main
 nameserver /msftidentity.com/main
 nameserver /msidentity.com/main
-nameserver /msgamestudios.com/main
 nameserver /msn.com/main
 nameserver /msn.cn/main
 nameserver /msocdn.com/main
@@ -583,9 +1189,12 @@ nameserver /onedrive.com/main
 nameserver /onenote.com/main
 nameserver /onenote.net/main
 nameserver /onestore.ms/main
+nameserver /onmicrosoft.com/main
 nameserver /outlook.com/main
 nameserver /outlookmobile.com/main
+nameserver /outlookgroups.com/main
 nameserver /phonefactor.net/main
+nameserver /powerapps.com/main
 nameserver /public-trust.com/main
 nameserver /sfbassets.com/main
 nameserver /sfx.ms/main
@@ -601,6 +1210,7 @@ nameserver /sway-cdn.com/main
 nameserver /sway-extensions.com/main
 nameserver /sway.com/main
 nameserver /trafficmanager.net/main
+nameserver /tenor.com/main
 nameserver /uservoice.com/main
 nameserver /virtualearth.net/main
 nameserver /visualstudio.com/main
@@ -611,13 +1221,52 @@ nameserver /windowsazure.com/main
 nameserver /windowsupdate.com/main
 nameserver /windowsbulletin.com/main
 nameserver /wunderlist.com/main
-nameserver /xboxlive.com/main
 nameserver /yammer.com/main
 nameserver /yammerusercontent.com/main
-nameserver /spoprod-a.akamaihd.net/main
+## Xbox
+nameserver /beth.games/main
+nameserver /bethesda.net/main
+nameserver /bethesdagamestudios.com/main
+nameserver /bethsoft.com/main
+nameserver /callersbane.com/main
+nameserver /forzamotorsport.net/main
+nameserver /forzaracingchampionship.com/main
+nameserver /forzarc.com/main
+nameserver /gamepass.com/main
+nameserver /msgamestudios.com/main
+nameserver /orithegame.com/main
+nameserver /renovacionxboxlive.com/main
+nameserver /tellmewhygame.com/main
+nameserver /xbob.cn/main
+nameserver /xbox.co/main
+nameserver /xbox.com/main
+nameserver /xbox.eu/main
+nameserver /xbox.org/main
+nameserver /xbox360.co/main
+nameserver /xbox360.com/main
+nameserver /xbox360.eu/main
+nameserver /xbox360.org/main
+nameserver /xboxab.com/main
+nameserver /xboxab.net/main
+nameserver /xboxgamepass.com/main
+nameserver /xboxgamestudios.com/main
+nameserver /xboxlive.cn/main
+nameserver /xboxlive.com/main
+nameserver /xboxone.co/main
+nameserver /xboxone.com/main
+nameserver /xboxone.eu/main
+nameserver /xboxplayanywhere.com/main
+nameserver /xboxstudios.com/main
+nameserver /xbx.lv/main
+## Shared cdn filter
 nameserver /aka.ms/main
+nameserver /spoprod-a.akamaihd.net/main
+nameserver /xboxlive.com.akadns.net/main
+nameserver /officecdn-microsoft-com.akamaized.net/main
+nameserver /xboxlive.com.c.footprint.net/main
 nameserver /ms/main
 # > opendns and cisco
+nameserver /cisco.com/main
 # > Cloudflare
 nameserver /cloudflare.com/main
 nameserver /videodelivery.net/main
@@ -642,7 +1291,7 @@ nameserver /cloudfront.net/main
 nameserver /geetest.com/main
 # > Aka cdn fix
 ## bilibili
-nameserver /upos-hz-mirrorakam.akamaized.net/main
+nameserver /upos-hz-mirrorakam.akamaized.net/serva
 # > Aka cdn Final
 nameserver /akstat.io/main
 nameserver /akadns.net/main
@@ -655,16 +1304,24 @@ nameserver /akamaistream.net/main
 nameserver /globalsign.com/main
 nameserver /entrust.com/main
 nameserver /verisign.net/main
+nameserver /onetrust.com/main
 nameserver /omniroot.com/main
 nameserver /omniture.com/main
+nameserver /optimizely.com/main
 nameserver /omniture.cn/main
 nameserver /jsdelivr.net/main
 nameserver /disqus.com/main
 nameserver /disquscdn.com/main
 nameserver /comodoca.com/main
 nameserver /arkoselabs.com/main
-# > Remote Desktop
+nameserver /crashlytics.com/main
+nameserver /footprint.net/main
+nameserver /footprintdns.com/main
+nameserver /boltdns.net/main
+nameserver /conviva.com/main
+# > teamviewer
 nameserver /teamviewer.com/serva
+# > oray
 nameserver /oray.net/serva
 nameserver /oray.com/serva
 # > Tencent
@@ -729,7 +1386,18 @@ nameserver /aliimg.com/serva
 nameserver /alisoft.com/serva
 nameserver /alikunlun.com/serva
 nameserver /alipay.com/serva
+nameserver /alipaydev.com/serva
+nameserver /alipaydns.com/serva
+nameserver /alipayeshop.com/serva
+nameserver /alipaylog.com/serva
 nameserver /alipay.cn/serva
+nameserver /alipay/serva
+nameserver /alipay-corp.com/serva
+nameserver /alipay-eco.com/serva
+nameserver /alipay-inc.com/serva
+nameserver /alipayobjects.com/serva
+nameserver /ifaa.org.cn/serva
+nameserver /sinopayment.com.cn/serva
 nameserver /aliyun.com/serva
 nameserver /aliyuncdn.com/serva
 nameserver /aliyundrive.com/serva
@@ -751,6 +1419,7 @@ nameserver /mxhichina.com/serva
 nameserver /taobaocdn.com/serva
 nameserver /tbcache.com/serva
 nameserver /tbcdn.com/serva
+nameserver /tbcdn.cn/serva
 nameserver /taobao.com/serva
 nameserver /tmall.com/serva
 nameserver /tmall.hk/serva
@@ -759,7 +1428,6 @@ nameserver /xiami.net/serva
 nameserver /tanx.com/serva
 nameserver /umsns.com/serva
 nameserver /maxjia.com/serva
-nameserver /alipayobjects.com/serva
 nameserver /alibabausercontent.com/serva
 nameserver /laiwang.com/serva
 nameserver /ele.me/serva
@@ -841,33 +1509,58 @@ nameserver /youdao.com/serva
 nameserver /ydstatic.com/serva
 nameserver /icourse163.org/serva
 nameserver /kada.com/serva
+## Shared cdn filter
+nameserver /netease.ugcvideoss.ourdvs.com/serva
 # > AcFun
 nameserver /acfun.cn/serva
 nameserver /acfun.tv/serva
 nameserver /acfun.com/serva
 nameserver /aixifan.com/serva
 # > bilibili
-nameserver /smtcdns.net/main
-nameserver /acgvideo.com/main
-nameserver /bilibili.com/main
-nameserver /bilibili.cn/main
-nameserver /hdslb.com/main
-nameserver /biliapi.net/main
-nameserver /biliapi.com/main
-nameserver /bilibili.tv/main
-nameserver /bilivideo.com/main
-nameserver /bilivideo.cn/main
-nameserver /biligame.com/main
-nameserver /biligame.net/main
-nameserver /bilibiligame.net/main
-nameserver /bigfun.cn/main
-nameserver /bigfunapp.cn/main
-nameserver /b23.tv/main
-nameserver /im9.com/main
-nameserver /acg.tv/main
-nameserver /bilibilipay.com/main
-nameserver /bilibilipay.cn/main
-## for HK&TW Bilibili
+nameserver /acg.tv/serva
+nameserver /acgvideo.com/serva
+nameserver /b23.tv/serva
+nameserver /baka.im/serva
+nameserver /bigfun.cn/serva
+nameserver /bigfunapp.cn/serva
+nameserver /bili22.cn/serva
+nameserver /bili2233.cn/serva
+nameserver /bili23.cn/serva
+nameserver /bili33.cn/serva
+nameserver /biliapi.com/serva
+nameserver /biliapi.net/serva
+nameserver /bilibili.cc/serva
+nameserver /bilibili.cn/serva
+nameserver /bilibili.co/serva
+nameserver /bilibili.com/serva
+nameserver /bilibili.tv/serva
+nameserver /bilibiligame.cn/serva
+nameserver /bilibiligame.net/serva
+nameserver /bilibilipay.cn/serva
+nameserver /bilibilipay.com/serva
+nameserver /biligame.cn/serva
+nameserver /biligame.com/serva
+nameserver /biligame.net/serva
+nameserver /biliplus.com/serva
+nameserver /bilivideo.cn/serva
+nameserver /bilivideo.com/serva
+nameserver /bilivideo.net/serva
+nameserver /corari.com/serva
+nameserver /dyhgames.com/serva
+nameserver /hdslb.com/serva
+nameserver /hdslb.net/serva
+nameserver /hdslb.org/serva
+nameserver /im9.com/serva
+nameserver /mcbbs.net/serva
+nameserver /mincdn.com/serva
+nameserver /sharejoytech.com/serva
+nameserver /smtcdns.net/serva
+nameserver /yo9.com/serva
+## Shared cdn filter
+### aka in upper section
+nameserver /uposdash-302-bilivideo.yfcdn.net/serva
+nameserver /hdslb.com.w.kunlunhuf.com/serva
+nameserver /hdslb.com.w.kunlunpi.com/serva
 # > ByteDance
 nameserver /bytedance.com/serva
 nameserver /bytedance.net/serva
@@ -895,31 +1588,293 @@ nameserver /zijieimg.com/serva
 nameserver /zjbyte.com/serva
 nameserver /zjcdn.com/serva
 # > iQiyi
-nameserver /71.am/main
-nameserver /71edge.com/main
-nameserver /ppsimg.com/main
-nameserver /qiyi.com/main
-nameserver /qiyipic.com/main
-nameserver /iqiyi.com/main
-nameserver /iqiyipic.com/main
-nameserver /iq.com/main
-nameserver /qy.net/main
-nameserver /gitv.tv/main
+nameserver /71.am/serva
+nameserver /71edge.com/serva
+nameserver /ppsimg.com/serva
+nameserver /qiyi.com/serva
+nameserver /qiyipic.com/serva
+nameserver /iqiyi.com/serva
+nameserver /iqiyipic.com/serva
+nameserver /iq.com/serva
+nameserver /qy.net/serva
+nameserver /gitv.tv/serva
 # > PPTV
 nameserver /pplive.com/serva
 nameserver /pptv.com/serva
 # > 360
-nameserver /360.com/serva
+nameserver /0360.cn/serva
+nameserver /1360.cn/serva
+nameserver /1360.com/serva
+nameserver /3360.cn/serva
+nameserver /360-api.cn/serva
+nameserver /360-g.cn/serva
+nameserver /360-g.net/serva
+nameserver /360-game.net/serva
+nameserver /360-jr.com/serva
 nameserver /360.cn/serva
+nameserver /360.com/serva
+nameserver /3600.com/serva
+nameserver /360adlab.cn/serva
+nameserver /360adlab.com/serva
+nameserver /360adlab.net/serva
+nameserver /360adlab.org/serva
+nameserver /360cc.cn/serva
+nameserver /360cdn.cn/serva
+nameserver /360chou.cn/serva
+nameserver /360chou.com/serva
+nameserver /360daikuan.com/serva
+nameserver /360dlcdn.com/serva
 nameserver /360doc.com/serva
+nameserver /360doc.net/serva
+nameserver /360doc11.net/serva
+nameserver /360doc18.net/serva
+nameserver /360doc21.net/serva
+nameserver /360doc22.net/serva
+nameserver /360doc25.net/serva
+nameserver /360doc30.net/serva
+nameserver /360doc33.net/serva
+nameserver /360doc35.net/serva
+nameserver /360doc36.net/serva
+nameserver /360doc37.net/serva
+nameserver /360doc4.net/serva
+nameserver /360durl.cn/serva
+nameserver /360gtm.com/serva
+nameserver /360huzhubao.cn/serva
+nameserver /360huzhubao.com/serva
+nameserver /360huzhubao.com.cn/serva
+nameserver /360imgcdn.com/serva
+nameserver /360jie.com/serva
+nameserver /360jie.com.cn/serva
+nameserver /360jiekuan.com.cn/serva
+nameserver /360jinrong.net/serva
+nameserver /360jrjietiao.com/serva
+nameserver /360jrjietiao.com.cn/serva
+nameserver /360kan.com/serva
 nameserver /360kuai.com/serva
+nameserver /360os.com/serva
+nameserver /360panyun.cn/serva
+nameserver /360panyun.com/serva
+nameserver /360panyun.net/serva
+nameserver /360pay.cn/serva
+nameserver /360qhcdn.com/serva
+nameserver /360qurl.cn/serva
+nameserver /360qyaq.com/serva
 nameserver /360safe.com/serva
-nameserver /qhimg.com/serva
+nameserver /360shouji.com/serva
+nameserver /360shuke.com/serva
+nameserver /360sjyh.cn/serva
+nameserver /360so.com/serva
+nameserver /360so.net/serva
+nameserver /360sos.cn/serva
+nameserver /360sou.cn/serva
+nameserver /360sou.com/serva
+nameserver /360sou.com.cn/serva
+nameserver /360sou.net/serva
+nameserver /360src.cn/serva
+nameserver /360src.com/serva
+nameserver /360taojin.com/serva
+nameserver /360totalsecurity.com/serva
+nameserver /360tpcdn.cn/serva
+nameserver /360tpcdn.com/serva
+nameserver /360vcloud.com/serva
+nameserver /360vcloud.net/serva
+nameserver /360webcache.com/serva
+nameserver /360wzb.cn/serva
+nameserver /360wzb.com/serva
+nameserver /360xinyongka.com/serva
+nameserver /360xlab.cn/serva
+nameserver /360xlab.com/serva
+nameserver /360xlab.net/serva
+nameserver /360xlab.org/serva
+nameserver /360xyws.com/serva
+nameserver /360zhushou.com/serva
+nameserver /360zqaq.com/serva
+nameserver /50union.com/serva
+nameserver /6360.com/serva
+nameserver /7360.cn/serva
+nameserver /ad-diamond.cn/serva
+nameserver /ad-diamond.com/serva
+nameserver /aga21.cn/serva
+nameserver /aixinhaitun.cn/serva
+nameserver /aixinhaitun.com/serva
+nameserver /aixinhaitun.com.cn/serva
+nameserver /anquanke.com/serva
+nameserver /appjiagu.com/serva
+nameserver /as84e.cn/serva
+nameserver /b0xot.cn/serva
+nameserver /b1pnz.cn/serva
+nameserver /b8zey.cn/serva
+nameserver /bbm0v.cn/serva
+nameserver /bogg4.cn/serva
+nameserver /brmnq.com/serva
+nameserver /by0pq.cn/serva
+nameserver /c30tu.cn/serva
+nameserver /c4vxy.cn/serva
+nameserver /c8bjj.cn/serva
+nameserver /ccx4e.cn/serva
+nameserver /ciscon.org/serva
+nameserver /cmedia360.com/serva
+nameserver /cwvjg.cn/serva
+nameserver /czo66.cn/serva
+nameserver /d6uab.cn/serva
+nameserver /d768h.cn/serva
+nameserver /d78qi.cn/serva
+nameserver /da4bt.cn/serva
+nameserver /debiq.cn/serva
+nameserver /dgno3.cn/serva
 nameserver /dhrest.com/serva
+nameserver /dhrest2.com/serva
+nameserver /dj3ba.cn/serva
+nameserver /druqq.cn/serva
+nameserver /du6fk.cn/serva
+nameserver /dxson.cn/serva
+nameserver /dz0p8.cn/serva
+nameserver /dzpw1.cn/serva
+nameserver /e6dk1.cn/serva
+nameserver /ebjvu.cn/serva
+nameserver /edra5.cn/serva
+nameserver /eg8j4.cn/serva
+nameserver /eht48.cn/serva
+nameserver /ejull.cn/serva
+nameserver /ekcnu.cn/serva
+nameserver /em0bu.cn/serva
+nameserver /eqb2g.cn/serva
+nameserver /ez2q5.cn/serva
+nameserver /ez4q2.cn/serva
+nameserver /f1bbu.cn/serva
+nameserver /f3n0k.cn/serva
+nameserver /fc7eh.cn/serva
+nameserver /fie1i.cn/serva
+nameserver /fihlx.cn/serva
+nameserver /fm18l.cn/serva
+nameserver /fou2d.cn/serva
+nameserver /fu81q.cn/serva
+nameserver /g0ng7.cn/serva
+nameserver /g1awi.cn/serva
+nameserver /g4844.cn/serva
+nameserver /g9hc4.cn/serva
+nameserver /gamepack.cn/serva
+nameserver /haoso.com/serva
+nameserver /haosou.com/serva
+nameserver /haosou.com.cn/serva
+nameserver /haosou.net/serva
+nameserver /haosou360.com/serva
+nameserver /i360mall.com/serva
+nameserver /ics-sec.com/serva
+nameserver /igame360.cn/serva
+nameserver /ioage.com/serva
+nameserver /jkjiekuan.com/serva
+nameserver /jrdaikuan.com.cn/serva
+nameserver /jrjiekuan.com/serva
+nameserver /jrurl.cn/serva
+nameserver /kouxin.cn/serva
+nameserver /kouxin.com/serva
+nameserver /kouxin.net/serva
+nameserver /ludashi.com/serva
+nameserver /luyou360.cn/serva
+nameserver /mgamer.cn/serva
+nameserver /monidata.com/serva
+nameserver /ncfimg.com/serva
+nameserver /nelab-bdst.org.cn/serva
+nameserver /nicaifu.com/serva
+nameserver /nicaifu.net/serva
+nameserver /nzwgs.com/serva
+nameserver /os-lb.com/serva
+nameserver /passivedns.cn/serva
+nameserver /qftexpay.cn/serva
+nameserver /qh-cdn.com/serva
+nameserver /qh-dl.com/serva
+nameserver /qh-lb.com/serva
+nameserver /qhcdn-lb.com/serva
+nameserver /qhcdn.com/serva
+nameserver /qhdlcdn.com/serva
+nameserver /qhimg.com/serva
+nameserver /qhimgs.com/serva
+nameserver /qhimgs0.com/serva
+nameserver /qhimgs1.com/serva
+nameserver /qhimgs2.com/serva
+nameserver /qhimgs3.com/serva
+nameserver /qhimgs4.com/serva
+nameserver /qhimgs5.com/serva
+nameserver /qhimgs6.com/serva
+nameserver /qhmsg.cn/serva
+nameserver /qhmsg.com/serva
 nameserver /qhres.com/serva
+nameserver /qhres2.com/serva
+nameserver /qhsetup.cn/serva
+nameserver /qhsetup.com/serva
+nameserver /qhstatic.cn/serva
 nameserver /qhstatic.com/serva
+nameserver /qhtui.cn/serva
+nameserver /qhtui.com/serva
+nameserver /qhupdate.cn/serva
 nameserver /qhupdate.com/serva
+nameserver /qihoo.cn/serva
+nameserver /qihoo.com/serva
+nameserver /qihoo.com.cn/serva
+nameserver /qihoo.net/serva
+nameserver /qihu-lb.com/serva
+nameserver /qihu.com/serva
+nameserver /qihuapi.cn/serva
+nameserver /qihuapi.com/serva
+nameserver /qihucdn.cn/serva
+nameserver /qihucdn.com/serva
+nameserver /qikoo.com/serva
+nameserver /qiku.com/serva
+nameserver /qikucdn.com/serva
+nameserver /qiyuns3.cn/serva
+nameserver /qiyuns3.com/serva
+nameserver /qss-lb.com/serva
+nameserver /safe-lb.com/serva
+nameserver /securityinsight.com/serva
+nameserver /securityinsight.com.cn/serva
+nameserver /shanghaiqihu.cn/serva
+nameserver /shanghaiqihu.com/serva
 nameserver /so.com/serva
+nameserver /sou.cn/serva
+nameserver /sou.com/serva
+nameserver /syscan360.com/serva
+nameserver /syscan360.net/serva
+nameserver /syscan360.org/serva
+nameserver /theworld.cn/serva
+nameserver /urlqh.cn/serva
+nameserver /useso.com/serva
+nameserver /vcloudgtm.cn/serva
+nameserver /vcloudgtm.com/serva
+nameserver /vcloudgtm.net/serva
+nameserver /wggames.cn/serva
+nameserver /worldofship.cn/serva
+nameserver /worldoftank.cn/serva
+nameserver /wotgame.cn/serva
+nameserver /wowsgame.cn/serva
+nameserver /woxihuan.com/serva
+nameserver /wztsy.cn/serva
+nameserver /wztsy.com/serva
+nameserver /xianousiqi.com/serva
+nameserver /xiaoluyouxuan.com/serva
+nameserver /xiaoluzhidian.com/serva
+nameserver /xihuan.me/serva
+nameserver /xjietiao.com/serva
+nameserver /yiwanzhushou.com/serva
+nameserver /youhua.com/serva
+nameserver /your360loans.com/serva
+nameserver /yunpan.cn/serva
+nameserver /yunpan.com/serva
+nameserver /yunpan.com.cn/serva
+# > 4399
+nameserver /4399.cn/serva
+nameserver /4399.com/serva
+nameserver /4399.net/serva
+nameserver /4399api.com/serva
+nameserver /4399dmw.com/serva
+nameserver /4399pk.com/serva
+nameserver /4399sj.com/serva
+nameserver /5054399.com/serva
+nameserver /edu4399.com/serva
+nameserver /funnycore.com/serva
+nameserver /img4399.com/serva
+nameserver /qq163.com/serva
+nameserver /qq163.net/serva
 # > YYeTs&Video Websites
 nameserver /yyetss.com/serva
 nameserver /jstucdn.com/serva
@@ -996,6 +1951,27 @@ nameserver /zhihu.com/serva
 nameserver /zhimg.com/serva
 nameserver /zhuihd.com/serva
 nameserver /bsgslb.cn/serva
+# > csdn
+nameserver /csdn.com/serva
+nameserver /csdn.net/serva
+nameserver /csdn.net.cn/serva
+nameserver /csdnimg.cn/serva
+nameserver /csto.com/serva
+nameserver /iteye.com/serva
+nameserver /linuxpower.com.cn/serva
+nameserver /powerlinux.com.cn/serva
+nameserver /programmer.com.cn/serva
+nameserver /programmer.net.cn/serva
+nameserver /qualcomm-challenge.com/serva
+nameserver /tinymind.cn/serva
+nameserver /tinymind.com/serva
+nameserver /tinymind.com.cn/serva
+nameserver /topcto50.com/serva
+# > 12306
+nameserver /12306.cn/serva
+nameserver /12306.com/serva
+nameserver /95306.cn/serva
+nameserver /rails.cn/serva
 # > Bank&Phone
 nameserver /21cn.com/serva
 nameserver /189.cn/serva
@@ -1005,6 +1981,11 @@ nameserver /boc.cn/serva
 nameserver /95516.com/serva
 nameserver /wocloud.cn/serva
 nameserver /95599.cn/serva
+nameserver /abchina.com/serva
+nameserver /bscabank.com/serva
+nameserver /openaboc.cn/serva
+nameserver /openaboc.com/serva
+nameserver /openaboc.com.cn/serva
 # > DiDi
 nameserver /didialift.com/serva
 nameserver /didiglobal.com/serva
@@ -1081,8 +2062,6 @@ nameserver /tianshigege.com/serva
 nameserver /58.com/serva
 nameserver /99.com/serva
 nameserver /115.com/serva
-nameserver /12306.cn/serva
-nameserver /12306.com/serva
 nameserver /10010.com/serva
 nameserver /115.com/serva
 nameserver /17173.com/serva
@@ -1144,8 +2123,6 @@ nameserver /cnki.net/serva
 nameserver /cnmstl.net/serva
 nameserver /coolapk.com/serva
 nameserver /coolapkmarket.com/serva
-nameserver /csdn.net/serva
-nameserver /csdnimg.cn/serva
 nameserver /ctrip.com/serva
 nameserver /dangdang.com/serva
 nameserver /dcocsp.cn/serva
@@ -1390,10 +2367,32 @@ nameserver /sg/main
 nameserver /tw/main
 nameserver /uk/main
 nameserver /us/main
+# > Netflix
+# > Facebook Instagram Whatsapp
+## whatsapp
+## facebook
+## facebook peer
+# > Twitter
+# > Telegram
+# > Line
+# > clubhouse
+# > Wiki
+# > Apple
+# > Google
+# > Microsoft
+# > opendns and cisco
+# > Cloudflare
+# > Amazon
+# > teamviewer
+# > Youku
+# > bilibili
+# > iQiyi
+# > Domestic
 domain-rules /cloudflare-dns.com/ -speed-check-mode none
 domain-rules /dns.google/ -speed-check-mode none
 domain-rules /quad9.net/ -speed-check-mode none
 domain-rules /opendns.com/ -speed-check-mode none
+domain-rules /one.one.one.one/ -speed-check-mode none
 domain-rules /ssr.ac/ -speed-check-mode none
 domain-rules /ssr.sh/ -speed-check-mode none
 domain-rules /ssr.sx/ -speed-check-mode none
@@ -1405,12 +2404,22 @@ domain-rules /emby.maying.club/ -speed-check-mode none
 domain-rules /emby.nexitally.com/ -speed-check-mode none
 domain-rules /nexitally.com/ -speed-check-mode none
 domain-rules /helptally.com/ -speed-check-mode none
+domain-rules /byspotify.com/ -speed-check-mode none
 domain-rules /pscdn.co/ -speed-check-mode none
 domain-rules /scdn.co/ -speed-check-mode none
+domain-rules /spoti.fi/ -speed-check-mode none
+domain-rules /spotify-everywhere.com/ -speed-check-mode none
 domain-rules /spotify.com/ -speed-check-mode none
+domain-rules /spotify.design/ -speed-check-mode none
 domain-rules /spotifycdn.com/ -speed-check-mode none
 domain-rules /spotifycdn.net/ -speed-check-mode none
-domain-rules /spoti.fi/ -speed-check-mode none
+domain-rules /spotifycharts.com/ -speed-check-mode none
+domain-rules /spotifycodes.com/ -speed-check-mode none
+domain-rules /spotifyforbrands.com/ -speed-check-mode none
+domain-rules /spotifyjobs.com/ -speed-check-mode none
+domain-rules /-spotify-com/ -speed-check-mode none
+domain-rules /spotify-com.akamaized.net/ -speed-check-mode none
+domain-rules /audio-ak-spotify-com.akamaized.net/ -speed-check-mode none
 domain-rules /netflix.com.edgesuite.net/ -speed-check-mode none
 domain-rules /fast.com/ -speed-check-mode none
 domain-rules /netflix.com/ -speed-check-mode none
@@ -1430,18 +2439,349 @@ domain-rules /netflixdnstest6.com/ -speed-check-mode none
 domain-rules /netflixdnstest7.com/ -speed-check-mode none
 domain-rules /netflixdnstest8.com/ -speed-check-mode none
 domain-rules /netflixdnstest9.com/ -speed-check-mode none
+domain-rules /abc-studios.com/ -speed-check-mode none
+domain-rules /abc.com/ -speed-check-mode none
+domain-rules /adobedtm.com/ -speed-check-mode none
+domain-rules /adventuresbydisney.com/ -speed-check-mode none
+domain-rules /babble.com/ -speed-check-mode none
+domain-rules /babyzone.com/ -speed-check-mode none
+domain-rules /bam.nr-data.net/ -speed-check-mode none
 domain-rules /bamgrid.com/ -speed-check-mode none
+domain-rules /braze.com/ -speed-check-mode none
+domain-rules /conviva.com/ -speed-check-mode none
+domain-rules /d9.flashtalking.com/ -speed-check-mode none
+domain-rules /dilcdn.com/ -speed-check-mode none
+domain-rules /disney-asia.com/ -speed-check-mode none
+domain-rules /disney-discount.com/ -speed-check-mode none
 domain-rules /disney-plus.net/ -speed-check-mode none
+domain-rules /disney-studio.com/ -speed-check-mode none
+domain-rules /disney-studio.net/ -speed-check-mode none
+domain-rules /disney.be/ -speed-check-mode none
+domain-rules /disney.bg/ -speed-check-mode none
+domain-rules /disney.ca/ -speed-check-mode none
+domain-rules /disney.co.il/ -speed-check-mode none
+domain-rules /disney.co.th/ -speed-check-mode none
+domain-rules /disney.co.uk/ -speed-check-mode none
+domain-rules /disney.co.za/ -speed-check-mode none
+domain-rules /disney.com/ -speed-check-mode none
+domain-rules /disney.com.au/ -speed-check-mode none
+domain-rules /disney.com.br/ -speed-check-mode none
+domain-rules /disney.cz/ -speed-check-mode none
+domain-rules /disney.de/ -speed-check-mode none
+domain-rules /disney.demdex.net/ -speed-check-mode none
+domain-rules /disney.dk/ -speed-check-mode none
+domain-rules /disney.es/ -speed-check-mode none
+domain-rules /disney.fi/ -speed-check-mode none
+domain-rules /disney.fr/ -speed-check-mode none
+domain-rules /disney.gr/ -speed-check-mode none
+domain-rules /disney.hu/ -speed-check-mode none
+domain-rules /disney.id/ -speed-check-mode none
+domain-rules /disney.in/ -speed-check-mode none
+domain-rules /disney.io/ -speed-check-mode none
+domain-rules /disney.it/ -speed-check-mode none
+domain-rules /disney.my/ -speed-check-mode none
+domain-rules /disney.my.sentry.io/ -speed-check-mode none
+domain-rules /disney.nl/ -speed-check-mode none
+domain-rules /disney.no/ -speed-check-mode none
+domain-rules /disney.ph/ -speed-check-mode none
+domain-rules /disney.pl/ -speed-check-mode none
+domain-rules /disney.pt/ -speed-check-mode none
+domain-rules /disney.ro/ -speed-check-mode none
+domain-rules /disney.se/ -speed-check-mode none
+domain-rules /disney.sg/ -speed-check-mode none
+domain-rules /disneyadsales.com/ -speed-check-mode none
+domain-rules /disneyarena.com/ -speed-check-mode none
+domain-rules /disneyaulani.com/ -speed-check-mode none
+domain-rules /disneybaby.com/ -speed-check-mode none
+domain-rules /disneycareers.com/ -speed-check-mode none
+domain-rules /disneychannelonstage.com/ -speed-check-mode none
+domain-rules /disneychannelroadtrip.com/ -speed-check-mode none
+domain-rules /disneycruisebrasil.com/ -speed-check-mode none
+domain-rules /disneyenconcert.com/ -speed-check-mode none
+domain-rules /disneyiejobs.com/ -speed-check-mode none
+domain-rules /disneyinflight.com/ -speed-check-mode none
+domain-rules /disneyjunior.com/ -speed-check-mode none
+domain-rules /disneyjuniortreataday.com/ -speed-check-mode none
+domain-rules /disneylatino.com/ -speed-check-mode none
+domain-rules /disneymagicmoments.co.il/ -speed-check-mode none
+domain-rules /disneymagicmoments.co.uk/ -speed-check-mode none
+domain-rules /disneymagicmoments.co.za/ -speed-check-mode none
+domain-rules /disneymagicmoments.de/ -speed-check-mode none
+domain-rules /disneymagicmoments.es/ -speed-check-mode none
+domain-rules /disneymagicmoments.fr/ -speed-check-mode none
+domain-rules /disneymagicmoments.gen.tr/ -speed-check-mode none
+domain-rules /disneymagicmoments.gr/ -speed-check-mode none
+domain-rules /disneymagicmoments.it/ -speed-check-mode none
+domain-rules /disneymagicmoments.pl/ -speed-check-mode none
+domain-rules /disneyme.com/ -speed-check-mode none
+domain-rules /disneymeetingsandevents.com/ -speed-check-mode none
+domain-rules /disneymovieinsiders.com/ -speed-check-mode none
+domain-rules /disneymusicpromotion.com/ -speed-check-mode none
+domain-rules /disneynewseries.com/ -speed-check-mode none
+domain-rules /disneynow.com/ -speed-check-mode none
+domain-rules /disneypeoplesurveys.com/ -speed-check-mode none
+domain-rules /disneyplus.bn5x.net/ -speed-check-mode none
 domain-rules /disneyplus.com/ -speed-check-mode none
+domain-rules /disneyredirects.com/ -speed-check-mode none
+domain-rules /disneysrivieraresort.com/ -speed-check-mode none
+domain-rules /disneystore.com/ -speed-check-mode none
 domain-rules /disneystreaming.com/ -speed-check-mode none
+domain-rules /disneysubscription.com/ -speed-check-mode none
+domain-rules /disneyturkiye.com.tr/ -speed-check-mode none
+domain-rules /disneytvajobs.com/ -speed-check-mode none
+domain-rules /disneyworld-go.com/ -speed-check-mode none
 domain-rules /dssott.com/ -speed-check-mode none
+domain-rules /edgedatg.com/ -speed-check-mode none
+domain-rules /espn.com/ -speed-check-mode none
+domain-rules /espn.hb.omtrdc.net/ -speed-check-mode none
+domain-rules /espncdn.com/ -speed-check-mode none
+domain-rules /espndotcom.tt.omtrdc.net/ -speed-check-mode none
+domain-rules /go-disneyworldgo.com/ -speed-check-mode none
+domain-rules /go.com/ -speed-check-mode none
+domain-rules /js-agent.newrelic.com/ -speed-check-mode none
+domain-rules /marvel.com/ -speed-check-mode none
+domain-rules /marvel10thanniversary.com/ -speed-check-mode none
+domain-rules /marveldimensionofheroes.com/ -speed-check-mode none
+domain-rules /marvelparty.net/ -speed-check-mode none
+domain-rules /marvelpinball.com/ -speed-check-mode none
+domain-rules /marvelsdoubleagent.com/ -speed-check-mode none
+domain-rules /marvelspotlightplays.com/ -speed-check-mode none
+domain-rules /marvelsuperheroseptember.com/ -speed-check-mode none
+domain-rules /marvelsuperwar.com/ -speed-check-mode none
+domain-rules /mickey.tv/ -speed-check-mode none
+domain-rules /moviesanywhere.com/ -speed-check-mode none
+domain-rules /natgeomaps.com/ -speed-check-mode none
+domain-rules /nationalgeographic.com/ -speed-check-mode none
+domain-rules /nationalgeographicpartners.com/ -speed-check-mode none
+domain-rules /ngeo.com/ -speed-check-mode none
+domain-rules /playmation.com/ -speed-check-mode none
+domain-rules /shopdisney.com/ -speed-check-mode none
+domain-rules /shops-disney.com/ -speed-check-mode none
+domain-rules /sorcerersarena.com/ -speed-check-mode none
+domain-rules /spaindisney.com/ -speed-check-mode none
+domain-rules /starwars.com/ -speed-check-mode none
+domain-rules /starwarsgalacticstarcruiser.com/ -speed-check-mode none
+domain-rules /streamingdisney.net/ -speed-check-mode none
+domain-rules /themarvelexperiencetour.com/ -speed-check-mode none
+domain-rules /thestationbymaker.com/ -speed-check-mode none
+domain-rules /thisispolaris.com/ -speed-check-mode none
+domain-rules /watchdisneyfe.com/ -speed-check-mode none
+domain-rules /watchespn.com/ -speed-check-mode none
 domain-rules /cdn.registerdisney.go.com/ -speed-check-mode none
+domain-rules /execute-api.us-east-1.amazonaws.com/ -speed-check-mode none
+domain-rules /disney-portal.my.onetrust.com/ -speed-check-mode none
+domain-rules /cdn.optimizely.com/ -speed-check-mode none
+domain-rules /112263.com/ -speed-check-mode none
+domain-rules /callhulu.com/ -speed-check-mode none
+domain-rules /findyourlimits.com/ -speed-check-mode none
+domain-rules /freehulu.com/ -speed-check-mode none
+domain-rules /happyon.jp/ -speed-check-mode none
+domain-rules /hooloo.tv/ -speed-check-mode none
+domain-rules /hoolu.com/ -speed-check-mode none
+domain-rules /hoolu.tv/ -speed-check-mode none
+domain-rules /hu1u.com/ -speed-check-mode none
+domain-rules /huloo.cc/ -speed-check-mode none
+domain-rules /huloo.tv/ -speed-check-mode none
 domain-rules /hulu.com/ -speed-check-mode none
+domain-rules /hulu.jp/ -speed-check-mode none
+domain-rules /hulu.tv/ -speed-check-mode none
+domain-rules /hulu.us/ -speed-check-mode none
+domain-rules /huluaction.com/ -speed-check-mode none
+domain-rules /huluad.com/ -speed-check-mode none
+domain-rules /huluapp.com/ -speed-check-mode none
+domain-rules /huluasks.com/ -speed-check-mode none
+domain-rules /hulucall.com/ -speed-check-mode none
+domain-rules /hulufree.com/ -speed-check-mode none
+domain-rules /hulugans.com/ -speed-check-mode none
+domain-rules /hulugermany.com/ -speed-check-mode none
+domain-rules /hulugo.com/ -speed-check-mode none
 domain-rules /huluim.com/ -speed-check-mode none
+domain-rules /huluinstantmessenger.com/ -speed-check-mode none
+domain-rules /huluitaly.com/ -speed-check-mode none
+domain-rules /hulunet.com/ -speed-check-mode none
+domain-rules /hulunetwork.com/ -speed-check-mode none
+domain-rules /huluplus.com/ -speed-check-mode none
+domain-rules /hulupremium.com/ -speed-check-mode none
+domain-rules /hulupurchase.com/ -speed-check-mode none
+domain-rules /huluqa.com/ -speed-check-mode none
+domain-rules /hulurussia.com/ -speed-check-mode none
+domain-rules /huluspain.com/ -speed-check-mode none
+domain-rules /hulusports.com/ -speed-check-mode none
 domain-rules /hulustream.com/ -speed-check-mode none
+domain-rules /huluteam.com/ -speed-check-mode none
+domain-rules /hulutv.com/ -speed-check-mode none
+domain-rules /huluusa.com/ -speed-check-mode none
+domain-rules /joinmaidez.com/ -speed-check-mode none
+domain-rules /mushymush.tv/ -speed-check-mode none
+domain-rules /myhulu.com/ -speed-check-mode none
+domain-rules /originalhulu.com/ -speed-check-mode none
+domain-rules /payhulu.com/ -speed-check-mode none
+domain-rules /prod.hjholdings.tv/ -speed-check-mode none
+domain-rules /registerhulu.com/ -speed-check-mode none
+domain-rules /streaks.jp/ -speed-check-mode none
+domain-rules /thehulubraintrust.com/ -speed-check-mode none
+domain-rules /wwwhuluplus.com/ -speed-check-mode none
+domain-rules /yb.uncn.jp/ -speed-check-mode none
+domain-rules /assetshuluimcom-a.akamaihd.net/ -speed-check-mode none
+domain-rules /hulu.hb.omtrdc.net/ -speed-check-mode none
+domain-rules /hulu.sc.omtrdc.net/ -speed-check-mode none
+domain-rules /cws-hulu.conviva.com/ -speed-check-mode none
+domain-rules /cinemax.com/ -speed-check-mode none
+domain-rules /forthethrone.com/ -speed-check-mode none
 domain-rules /hbo.com/ -speed-check-mode none
+domain-rules /hboasia.com/ -speed-check-mode none
 domain-rules /hbogo.com/ -speed-check-mode none
+domain-rules /hbogoasia.com/ -speed-check-mode none
+domain-rules /hbogoasia.hk/ -speed-check-mode none
+domain-rules /hbomax.com/ -speed-check-mode none
 domain-rules /hbonow.com/ -speed-check-mode none
+domain-rules /maxgo.com/ -speed-check-mode none
+domain-rules /now-ashare.com/ -speed-check-mode none
+domain-rules /now-tv.com/ -speed-check-mode none
+domain-rules /now.com.hk/ -speed-check-mode none
+domain-rules /nowe.com/ -speed-check-mode none
+domain-rules /players.brightcove.net/ -speed-check-mode none
+domain-rules /youboranqs01.com/ -speed-check-mode none
+domain-rules /cf-images.ap-southeast-1.prod.boltdns.net/ -speed-check-mode none
+domain-rules /manifest.prod.boltdns.net/ -speed-check-mode none
+domain-rules /hboasia1-i.akamaihd.net/ -speed-check-mode none
+domain-rules /hboasia2-i.akamaihd.net/ -speed-check-mode none
+domain-rules /hboasia3-i.akamaihd.net/ -speed-check-mode none
+domain-rules /hboasia4-i.akamaihd.net/ -speed-check-mode none
+domain-rules /hboasia5-i.akamaihd.net/ -speed-check-mode none
+domain-rules /bcbolthboa-a.akamaihd.net/ -speed-check-mode none
+domain-rules /dai3fd1oh325y.cloudfront.net/ -speed-check-mode none
+domain-rules /execute-api.ap-southeast-1.amazonaws.com/ -speed-check-mode none
+domain-rules /execute-api.us-east-1.amazonaws.com/ -speed-check-mode none
+domain-rules /s3-ap-southeast-1.amazonaws.com/ -speed-check-mode none
+domain-rules /hbogeo.cust.footprint.net/ -speed-check-mode none
+domain-rules /hivemc.com/ -speed-check-mode none
+domain-rules /minecraft.net/ -speed-check-mode none
+domain-rules /minecraftshop.com/ -speed-check-mode none
+domain-rules /mojang.com/ -speed-check-mode none
+domain-rules /100classicbooks.com/ -speed-check-mode none
+domain-rules /ac-pocketcamp.com/ -speed-check-mode none
+domain-rules /amiibo.com/ -speed-check-mode none
+domain-rules /ayudanintendo.com/ -speed-check-mode none
+domain-rules /bowsersinsidestory.com/ -speed-check-mode none
+domain-rules /dialga.com/ -speed-check-mode none
+domain-rules /diddykongracing.com/ -speed-check-mode none
+domain-rules /dkr.com/ -speed-check-mode none
+domain-rules /donkeykongcountryreturns.com/ -speed-check-mode none
+domain-rules /drmario-world.com/ -speed-check-mode none
+domain-rules /excitebots.com/ -speed-check-mode none
+domain-rules /fire-emblem-heroes.com/ -speed-check-mode none
+domain-rules /fireemblemawakening.com/ -speed-check-mode none
+domain-rules /flipnotestudio.com/ -speed-check-mode none
+domain-rules /giratina.com/ -speed-check-mode none
+domain-rules /gloryofheracles.com/ -speed-check-mode none
+domain-rules /hackyourconsole.com/ -speed-check-mode none
+domain-rules /kirbysepicyarn.com/ -speed-check-mode none
+domain-rules /kirbysuperstarultra.com/ -speed-check-mode none
+domain-rules /kyurem.com/ -speed-check-mode none
+domain-rules /legendofzelda.cn/ -speed-check-mode none
+domain-rules /legendofzelda.com.cn/ -speed-check-mode none
+domain-rules /marioandluigidreamteam.com/ -speed-check-mode none
+domain-rules /mariobroswii.com/ -speed-check-mode none
+domain-rules /mariokart.cn/ -speed-check-mode none
+domain-rules /mariokart.com.cn/ -speed-check-mode none
+domain-rules /mariokart7.com/ -speed-check-mode none
+domain-rules /mariokart8.com/ -speed-check-mode none
+domain-rules /mariosupersluggers.com/ -speed-check-mode none
+domain-rules /miitomo.com/ -speed-check-mode none
+domain-rules /miitomo.com.cn/ -speed-check-mode none
+domain-rules /miiverse.com/ -speed-check-mode none
+domain-rules /nentindo.net/ -speed-check-mode none
+domain-rules /newsupermariobrosu.com/ -speed-check-mode none
+domain-rules /nintendo-europe-sales.com/ -speed-check-mode none
+domain-rules /nintendo-europe.com/ -speed-check-mode none
+domain-rules /nintendo.at/ -speed-check-mode none
+domain-rules /nintendo.be/ -speed-check-mode none
+domain-rules /nintendo.ch/ -speed-check-mode none
+domain-rules /nintendo.co.jp/ -speed-check-mode none
+domain-rules /nintendo.co.kr/ -speed-check-mode none
+domain-rules /nintendo.co.uk/ -speed-check-mode none
+domain-rules /nintendo.co.za/ -speed-check-mode none
+domain-rules /nintendo.com/ -speed-check-mode none
+domain-rules /nintendo.com.hk/ -speed-check-mode none
+domain-rules /nintendo.com.pt/ -speed-check-mode none
+domain-rules /nintendo.de/ -speed-check-mode none
+domain-rules /nintendo.dk/ -speed-check-mode none
+domain-rules /nintendo.es/ -speed-check-mode none
+domain-rules /nintendo.eu/ -speed-check-mode none
+domain-rules /nintendo.fi/ -speed-check-mode none
+domain-rules /nintendo.fr/ -speed-check-mode none
+domain-rules /nintendo.it/ -speed-check-mode none
+domain-rules /nintendo.net/ -speed-check-mode none
+domain-rules /nintendo.nl/ -speed-check-mode none
+domain-rules /nintendo.no/ -speed-check-mode none
+domain-rules /nintendo.pt/ -speed-check-mode none
+domain-rules /nintendo.ru/ -speed-check-mode none
+domain-rules /nintendo.se/ -speed-check-mode none
+domain-rules /nintendo.tw/ -speed-check-mode none
+domain-rules /nintendo3ds.com/ -speed-check-mode none
+domain-rules /nintendodsi.com/ -speed-check-mode none
+domain-rules /nintendoeurope.com/ -speed-check-mode none
+domain-rules /nintendolabo.cn/ -speed-check-mode none
+domain-rules /nintendonetwork.net/ -speed-check-mode none
+domain-rules /nintendonyc.com/ -speed-check-mode none
+domain-rules /nintendostore.com/ -speed-check-mode none
+domain-rules /nintendoswitch.com/ -speed-check-mode none
+domain-rules /nintendoswitch.net/ -speed-check-mode none
+domain-rules /nintendoswitchtogether.com/ -speed-check-mode none
+domain-rules /nintendowii.com/ -speed-check-mode none
+domain-rules /personaltrainermath.com/ -speed-check-mode none
+domain-rules /playnintendo.com/ -speed-check-mode none
+domain-rules /pokedex3d.com/ -speed-check-mode none
+domain-rules /pokemon-moon.com/ -speed-check-mode none
+domain-rules /pokemon-sun.com/ -speed-check-mode none
+domain-rules /pokemon-sunmoon.com/ -speed-check-mode none
+domain-rules /pokemon.com/ -speed-check-mode none
+domain-rules /pokemonbank.com/ -speed-check-mode none
+domain-rules /pokemonblackwhite.com/ -speed-check-mode none
+domain-rules /pokemonbw.com/ -speed-check-mode none
+domain-rules /pokemonchampionships.com/ -speed-check-mode none
+domain-rules /pokemongoldsilver.com/ -speed-check-mode none
+domain-rules /pokemonhome.com/ -speed-check-mode none
+domain-rules /pokemonletsgoeevee.com/ -speed-check-mode none
+domain-rules /pokemonletsgopikachu.com/ -speed-check-mode none
+domain-rules /pokemonmysterydungeon.com/ -speed-check-mode none
+domain-rules /pokemonpicross.com/ -speed-check-mode none
+domain-rules /pokemonplatinum.com/ -speed-check-mode none
+domain-rules /pokemonrubysapphire.com/ -speed-check-mode none
+domain-rules /pokemonsunmoon.com/ -speed-check-mode none
+domain-rules /pokemonswordshield.com/ -speed-check-mode none
+domain-rules /pokemonultrasunmoon.com/ -speed-check-mode none
+domain-rules /pokemonvgc.com/ -speed-check-mode none
+domain-rules /pokemonwifi.net/ -speed-check-mode none
+domain-rules /splatoon2tournament.com/ -speed-check-mode none
+domain-rules /starfox.com/ -speed-check-mode none
+domain-rules /supermario.com/ -speed-check-mode none
+domain-rules /supermario3dworld.com/ -speed-check-mode none
+domain-rules /supermariobros.com.cn/ -speed-check-mode none
+domain-rules /supermariogalaxy.com/ -speed-check-mode none
+domain-rules /supermariorun.com/ -speed-check-mode none
+domain-rules /superpapermario.com/ -speed-check-mode none
+domain-rules /supersmashbros.cn/ -speed-check-mode none
+domain-rules /supersmashbros.com.cn/ -speed-check-mode none
+domain-rules /thelegendarystarfy.com/ -speed-check-mode none
+domain-rules /thewonderful101.com/ -speed-check-mode none
+domain-rules /wariolandshakeit.com/ -speed-check-mode none
+domain-rules /wariowarediy.com/ -speed-check-mode none
+domain-rules /wii-u.com/ -speed-check-mode none
+domain-rules /wiifit.com/ -speed-check-mode none
+domain-rules /wiifitu.com/ -speed-check-mode none
+domain-rules /wiipartyu.com/ -speed-check-mode none
+domain-rules /wiisports.com/ -speed-check-mode none
+domain-rules /wiisportsresort.com/ -speed-check-mode none
+domain-rules /wiiugamepad.com/ -speed-check-mode none
+domain-rules /wiivc.net/ -speed-check-mode none
+domain-rules /xenoblade.com/ -speed-check-mode none
+domain-rules /xn--mts47c3w9b1qr.cn/ -speed-check-mode none
+domain-rules /xn--mts47c3w9b1qr.net/ -speed-check-mode none
+domain-rules /yoshisnewisland.com/ -speed-check-mode none
+domain-rules /神奇宝贝.cn/ -speed-check-mode none
+domain-rules /神奇宝贝.net/ -speed-check-mode none
 domain-rules /fanatical.com/ -speed-check-mode none
 domain-rules /humblebundle.com/ -speed-check-mode none
 domain-rules /steampowered.com/ -speed-check-mode none
@@ -1452,8 +2792,11 @@ domain-rules /steamcommunity.com/ -speed-check-mode none
 domain-rules /steamcontent.com/ -speed-check-mode none
 domain-rules /steamstatic.com/ -speed-check-mode none
 domain-rules /steamstat.us/ -speed-check-mode none
+domain-rules /steamunlocked.net/ -speed-check-mode none
 domain-rules /wmsjsteam.com/ -speed-check-mode none
-domain-rules /csgo.wmsj.cn/ -speed-check-mode none
+domain-rules /underlords.com/ -speed-check-mode none
+domain-rules /valvesoftware.com/ -speed-check-mode none
+domain-rules /wmsj.cn/ -speed-check-mode none
 domain-rules /dl.steam.ksyna.com/ -speed-check-mode none
 domain-rules /dota2.wmsj.cn/ -speed-check-mode none
 domain-rules /st.dl.bscstorage.net/ -speed-check-mode none
@@ -1474,16 +2817,173 @@ domain-rules /paragon.com/ -speed-check-mode none
 domain-rules /launchdarkly.com/ -speed-check-mode none
 domain-rules /ubisoft.com/ -speed-check-mode none
 domain-rules /ubi.com/ -speed-check-mode none
+domain-rules /uplay.com/ -speed-check-mode none
 domain-rules /goqubit.com/ -speed-check-mode none
-domain-rules /origin.com/ -speed-check-mode none
+domain-rules /ubisoft-orbit-savegames.s3.amazonaws.com/ -speed-check-mode none
+domain-rules /ubisoft-uplay-savegames.s3.amazonaws.com/ -speed-check-mode none
+domain-rules /anthemgame.com/ -speed-check-mode none
+domain-rules /anthemthegame.com/ -speed-check-mode none
+domain-rules /apexlegends.com/ -speed-check-mode none
+domain-rules /awayoutgame.com/ -speed-check-mode none
+domain-rules /battlefield.com/ -speed-check-mode none
+domain-rules /battlefield1943.com/ -speed-check-mode none
+domain-rules /battlefield3.com/ -speed-check-mode none
+domain-rules /battlefield4.com/ -speed-check-mode none
+domain-rules /battlefield5.com/ -speed-check-mode none
+domain-rules /battlefieldbadcompany2.com/ -speed-check-mode none
+domain-rules /battlefieldheroes.com/ -speed-check-mode none
+domain-rules /battlefieldv.com/ -speed-check-mode none
+domain-rules /battlefront2.com/ -speed-check-mode none
+domain-rules /battlefrontii.com/ -speed-check-mode none
+domain-rules /battlelog.com/ -speed-check-mode none
+domain-rules /bejeweledstars.com/ -speed-check-mode none
+domain-rules /bejewled-stars.com/ -speed-check-mode none
+domain-rules /bioware.com/ -speed-check-mode none
+domain-rules /biowarestore.com/ -speed-check-mode none
+domain-rules /blackboxgames.com/ -speed-check-mode none
+domain-rules /camelot-europe.com/ -speed-check-mode none
+domain-rules /camelotherald.com/ -speed-check-mode none
+domain-rules /camelotherald.net/ -speed-check-mode none
+domain-rules /capitalgames.com/ -speed-check-mode none
+domain-rules /chillingo.com/ -speed-check-mode none
+domain-rules /cloudsync-prod.s3.amazonaws.com/ -speed-check-mode none
+domain-rules /cncrivals.com/ -speed-check-mode none
+domain-rules /commandandconquer.com/ -speed-check-mode none
+domain-rules /conquerwithcharacter.com/ -speed-check-mode none
+domain-rules /crysis.jp/ -speed-check-mode none
+domain-rules /daoc.net/ -speed-check-mode none
+domain-rules /darkageofcamelot.com/ -speed-check-mode none
+domain-rules /darkness-risen.com/ -speed-check-mode none
+domain-rules /dawngate.com/ -speed-check-mode none
+domain-rules /dawngatechronicles.com/ -speed-check-mode none
+domain-rules /deadspacegame.com/ -speed-check-mode none
+domain-rules /dice.se/ -speed-check-mode none
+domain-rules /dicela.com/ -speed-check-mode none
+domain-rules /dicela.net/ -speed-check-mode none
+domain-rules /dragonage.com/ -speed-check-mode none
+domain-rules /dragonagekeep.com/ -speed-check-mode none
+domain-rules /dragonagemovie.com/ -speed-check-mode none
+domain-rules /dungeonkeeper.cn/ -speed-check-mode none
+domain-rules /dungeonkeeper.com/ -speed-check-mode none
+domain-rules /dungeonkeeper.com.cn/ -speed-check-mode none
+domain-rules /ea-anz-press.com/ -speed-check-mode none
 domain-rules /ea.com/ -speed-check-mode none
+domain-rules /ea.tt.omtrdc.net/ -speed-check-mode none
+domain-rules /eaaccess.com/ -speed-check-mode none
+domain-rules /eaassets-a.akamaihd.net/ -speed-check-mode none
+domain-rules /eablackbox.com/ -speed-check-mode none
+domain-rules /eacashcard.com/ -speed-check-mode none
+domain-rules /eacodigos.com/ -speed-check-mode none
+domain-rules /eafootballworld.com/ -speed-check-mode none
+domain-rules /eakorea.co.kr/ -speed-check-mode none
+domain-rules /eamirrorsedge.com/ -speed-check-mode none
+domain-rules /eamobile.com/ -speed-check-mode none
+domain-rules /eamythic.com/ -speed-check-mode none
+domain-rules /eamythic.net/ -speed-check-mode none
+domain-rules /eanordic.com/ -speed-check-mode none
+domain-rules /eaplay.com/ -speed-check-mode none
+domain-rules /easports.com/ -speed-check-mode none
+domain-rules /easports.jp/ -speed-check-mode none
+domain-rules /easportsactive.com/ -speed-check-mode none
+domain-rules /easportsactiveonline.com/ -speed-check-mode none
+domain-rules /easportsfootball.com/ -speed-check-mode none
+domain-rules /easportsfootballclub.com/ -speed-check-mode none
+domain-rules /easportsmma.com/ -speed-check-mode none
+domain-rules /easportsworld.com/ -speed-check-mode none
+domain-rules /eastore.com/ -speed-check-mode none
+domain-rules /electronicarts.com/ -speed-check-mode none
+domain-rules /electronicarts.fr/ -speed-check-mode none
+domain-rules /fifastreet.com/ -speed-check-mode none
+domain-rules /fifastreet3.com/ -speed-check-mode none
+domain-rules /frostbite.com/ -speed-check-mode none
+domain-rules /futpromos.com/ -speed-check-mode none
+domain-rules /futunited.com/ -speed-check-mode none
+domain-rules /ghostgames.com/ -speed-check-mode none
+domain-rules /heroesofdragonage.com/ -speed-check-mode none
+domain-rules /hutpromos.com/ -speed-check-mode none
+domain-rules /industrialtoys.com/ -speed-check-mode none
+domain-rules /lordofultima.com/ -speed-check-mode none
+domain-rules /maddenchampionship.com/ -speed-check-mode none
+domain-rules /maddenrewards.com/ -speed-check-mode none
+domain-rules /maddenseason.info/ -speed-check-mode none
+domain-rules /maddenseason.net/ -speed-check-mode none
+domain-rules /maddenseason.org/ -speed-check-mode none
+domain-rules /masseffect.com/ -speed-check-mode none
+domain-rules /masseffectarchives.com/ -speed-check-mode none
+domain-rules /maxis.com/ -speed-check-mode none
+domain-rules /mirrorsedge.com/ -speed-check-mode none
+domain-rules /mirrorsedge.jp/ -speed-check-mode none
+domain-rules /mirrorsedge.net/ -speed-check-mode none
+domain-rules /mirrorsedge2.com/ -speed-check-mode none
+domain-rules /mirrorsedge2d.com/ -speed-check-mode none
+domain-rules /mysims.com/ -speed-check-mode none
+domain-rules /mysimsracing.com/ -speed-check-mode none
+domain-rules /mythicentertainment.com/ -speed-check-mode none
+domain-rules /mythicentertainment.net/ -speed-check-mode none
+domain-rules /mythicgames.com/ -speed-check-mode none
+domain-rules /needforspeed.com/ -speed-check-mode none
+domain-rules /needforspeedboost.com/ -speed-check-mode none
+domain-rules /needforspeeddriftkings.com/ -speed-check-mode none
+domain-rules /needforspeedeliminator.com/ -speed-check-mode none
+domain-rules /needforspeedlightning.com/ -speed-check-mode none
+domain-rules /needforspeedoverdrive.com/ -speed-check-mode none
+domain-rules /needforspeedproven.com/ -speed-check-mode none
+domain-rules /needforspeedredline.com/ -speed-check-mode none
+domain-rules /needforspeedshowdown.com/ -speed-check-mode none
+domain-rules /needforspeedstreetkings.com/ -speed-check-mode none
+domain-rules /needforspeedtakedown.com/ -speed-check-mode none
+domain-rules /needforspeedtherun.com/ -speed-check-mode none
+domain-rules /needforspeedtimeattack.com/ -speed-check-mode none
+domain-rules /needforspeedundergroundeast.com/ -speed-check-mode none
+domain-rules /nfsworld.com/ -speed-check-mode none
+domain-rules /origin-a.akamaihd.net/ -speed-check-mode none
+domain-rules /origin.com/ -speed-check-mode none
+domain-rules /origin.tv/ -speed-check-mode none
+domain-rules /plantsvszombies2.com/ -speed-check-mode none
+domain-rules /play4free.com/ -speed-check-mode none
+domain-rules /playapex.com/ -speed-check-mode none
+domain-rules /pogo.com/ -speed-check-mode none
+domain-rules /pogobeta.com/ -speed-check-mode none
+domain-rules /popcap.com/ -speed-check-mode none
+domain-rules /projectapex.com/ -speed-check-mode none
+domain-rules /pvzgw2.com/ -speed-check-mode none
+domain-rules /pvzheroes.com/ -speed-check-mode none
+domain-rules /seaofsolitude.com/ -speed-check-mode none
+domain-rules /simcity-buildit.com/ -speed-check-mode none
+domain-rules /simcity.com/ -speed-check-mode none
+domain-rules /skate2.com/ -speed-check-mode none
+domain-rules /spearhead.kr/ -speed-check-mode none
+domain-rules /speedhunters.com/ -speed-check-mode none
+domain-rules /spore.com/ -speed-check-mode none
+domain-rules /ssx3.com/ -speed-check-mode none
+domain-rules /starwarsbattlefront.com/ -speed-check-mode none
+domain-rules /starwarsbattlefront2.com/ -speed-check-mode none
+domain-rules /starwarsfallenorder.com/ -speed-check-mode none
+domain-rules /starwarsjedifallenorder.com/ -speed-check-mode none
+domain-rules /starwarstheoldrepublic.com/ -speed-check-mode none
+domain-rules /swjedifallenorder.com/ -speed-check-mode none
+domain-rules /swjfo.com/ -speed-check-mode none
+domain-rules /swtor.com/ -speed-check-mode none
+domain-rules /swtor.net/ -speed-check-mode none
+domain-rules /teamneedforspeed.com/ -speed-check-mode none
+domain-rules /thedreadwolfrises.com/ -speed-check-mode none
+domain-rules /thesims.com/ -speed-check-mode none
+domain-rules /thesims3.com/ -speed-check-mode none
+domain-rules /thesims4.com/ -speed-check-mode none
+domain-rules /thesimssocial.com/ -speed-check-mode none
+domain-rules /tiberiumalliances.com/ -speed-check-mode none
+domain-rules /tiburon.com/ -speed-check-mode none
+domain-rules /titanfall.com/ -speed-check-mode none
 domain-rules /tnt-ea.com/ -speed-check-mode none
-domain-rules // -speed-check-mode none
-domain-rules /speedtest.net/ -speed-check-mode none
-domain-rules /netspeedtestmaster.com/ -speed-check-mode none
-domain-rules /macpaw.com/ -speed-check-mode none
-domain-rules /speedtest/ -speed-check-mode none
-domain-rules /ookla.net/ -speed-check-mode none
+domain-rules /ultimaforever.com/ -speed-check-mode none
+domain-rules /ultimaonline.com/ -speed-check-mode none
+domain-rules /unravel2.com/ -speed-check-mode none
+domain-rules /unraveltwo.com/ -speed-check-mode none
+domain-rules /uo.com/ -speed-check-mode none
+domain-rules /uoherald.com/ -speed-check-mode none
+domain-rules /visceralgames.com/ -speed-check-mode none
+domain-rules /xdsummit.com/ -speed-check-mode none
+domain-rules /yogify.com/ -speed-check-mode none
 domain-rules /facebook.com/ -speed-check-mode none
 domain-rules /facebook.net/ -speed-check-mode none
 domain-rules /fb.com/ -speed-check-mode none
@@ -1519,28 +3019,77 @@ domain-rules /discordapp.net/ -speed-check-mode none
 domain-rules /paypal.com/ -speed-check-mode none
 domain-rules /paypal.me/ -speed-check-mode none
 domain-rules /paypalobjects.com/ -speed-check-mode none
+domain-rules /in-addr.arpa/ -speed-check-mode none
 domain-rules /aaplimg.com/ -speed-check-mode none
 domain-rules /apple.co/ -speed-check-mode none
 domain-rules /apple.com/ -speed-check-mode none
 domain-rules /apple.cn/ -speed-check-mode none
 domain-rules /apple.com.cn/ -speed-check-mode none
 domain-rules /apple.news/ -speed-check-mode none
-domain-rules /apple-cloudkit.com/ -speed-check-mode none
 domain-rules /appstore.com/ -speed-check-mode none
 domain-rules /appsto.re/ -speed-check-mode none
-domain-rules /apple-mapkit.com/ -speed-check-mode none
 domain-rules /cdn-apple.com/ -speed-check-mode none
-domain-rules /crashlytics.com/ -speed-check-mode none
-domain-rules /icloud.com/ -speed-check-mode none
-domain-rules /icloud.com.cn/ -speed-check-mode none
-domain-rules /icloud-content.com/ -speed-check-mode none
-domain-rules /me.com/ -speed-check-mode none
 domain-rules /mzstatic.com/ -speed-check-mode none
 domain-rules /comscoreresearch.com/ -speed-check-mode none
+domain-rules /apple-mapkit.com/ -speed-check-mode none
+domain-rules /apple-livephotoskit.com/ -speed-check-mode none
 domain-rules /apple-dns.net/ -speed-check-mode none
-domain-rules /mwcname.com/ -speed-check-mode none
-domain-rules /mwcloudcdn.com/ -speed-check-mode none
-domain-rules /cdn20.com/ -speed-check-mode none
+domain-rules /apple-cloudkit.com/ -speed-check-mode none
+domain-rules /apple-icloud.cn/ -speed-check-mode none
+domain-rules /appleicloud.cn/ -speed-check-mode none
+domain-rules /applemx-icloud.com/ -speed-check-mode none
+domain-rules /icloud-apple.cn/ -speed-check-mode none
+domain-rules /icloud-content.com/ -speed-check-mode none
+domain-rules /icloud-isupport.com/ -speed-check-mode none
+domain-rules /icloud.ch/ -speed-check-mode none
+domain-rules /icloud.com/ -speed-check-mode none
+domain-rules /icloud.com.cn/ -speed-check-mode none
+domain-rules /icloud.de/ -speed-check-mode none
+domain-rules /icloud.ee/ -speed-check-mode none
+domain-rules /icloud.fi/ -speed-check-mode none
+domain-rules /icloud.fr/ -speed-check-mode none
+domain-rules /icloud.hu/ -speed-check-mode none
+domain-rules /icloud.ie/ -speed-check-mode none
+domain-rules /icloud.is/ -speed-check-mode none
+domain-rules /icloud.jp/ -speed-check-mode none
+domain-rules /icloud.lv/ -speed-check-mode none
+domain-rules /icloud.net.cn/ -speed-check-mode none
+domain-rules /icloud.om/ -speed-check-mode none
+domain-rules /icloud.org/ -speed-check-mode none
+domain-rules /icloud.pt/ -speed-check-mode none
+domain-rules /icloud.ro/ -speed-check-mode none
+domain-rules /icloud.se/ -speed-check-mode none
+domain-rules /icloud.si/ -speed-check-mode none
+domain-rules /icloud.sk/ -speed-check-mode none
+domain-rules /icloud.vn/ -speed-check-mode none
+domain-rules /icloudads.net/ -speed-check-mode none
+domain-rules /icloudapple.cn/ -speed-check-mode none
+domain-rules /icloudbox.net/ -speed-check-mode none
+domain-rules /icloudbrowser.net/ -speed-check-mode none
+domain-rules /icloude.com/ -speed-check-mode none
+domain-rules /icloudhome.com/ -speed-check-mode none
+domain-rules /icloudmail.net/ -speed-check-mode none
+domain-rules /icloudmusic.net/ -speed-check-mode none
+domain-rules /icloudnet.net/ -speed-check-mode none
+domain-rules /icloudo.com/ -speed-check-mode none
+domain-rules /icloudo.de/ -speed-check-mode none
+domain-rules /icloudo.net/ -speed-check-mode none
+domain-rules /icloudos.de/ -speed-check-mode none
+domain-rules /icloudos.net/ -speed-check-mode none
+domain-rules /icloudpay.net/ -speed-check-mode none
+domain-rules /icloudsecure.net/ -speed-check-mode none
+domain-rules /icloudsetup.com/ -speed-check-mode none
+domain-rules /ios-icloud.com/ -speed-check-mode none
+domain-rules /myicloud.net/ -speed-check-mode none
+domain-rules /mylcloud.net/ -speed-check-mode none
+domain-rules /wwwicloud.com/ -speed-check-mode none
+domain-rules /ls.apple.com.edgekey.net/ -speed-check-mode none
+domain-rules /apple.com.cdn20.com/ -speed-check-mode none
+domain-rules /apple.com.mwcloudcdn.com/ -speed-check-mode none
+domain-rules /apple.com.mwcname.com/ -speed-check-mode none
+domain-rules /www-cdn.icloud.com.akadns.net/ -speed-check-mode none
+domain-rules /apple.com.akadns.net/ -speed-check-mode none
+domain-rules /origin-apple.com.akadns.net/ -speed-check-mode none
 domain-rules /app-measurement.com/ -speed-check-mode none
 domain-rules /google.com/ -speed-check-mode none
 domain-rules /googlevideo.com/ -speed-check-mode none
@@ -1552,6 +3101,7 @@ domain-rules /ampproject.org/ -speed-check-mode none
 domain-rules /appspot.com/ -speed-check-mode none
 domain-rules /blogger.com/ -speed-check-mode none
 domain-rules /getoutline.org/ -speed-check-mode none
+domain-rules /gv.com/ -speed-check-mode none
 domain-rules /gvt0.com/ -speed-check-mode none
 domain-rules /gvt1.com/ -speed-check-mode none
 domain-rules /gvt2.com/ -speed-check-mode none
@@ -1562,6 +3112,7 @@ domain-rules /xn--i2ru8q2qg.com/ -speed-check-mode none
 domain-rules /abc.xyz/ -speed-check-mode none
 domain-rules /android.com/ -speed-check-mode none
 domain-rules /androidify.com/ -speed-check-mode none
+domain-rules /admob.com/ -speed-check-mode none
 domain-rules /dialogflow.com/ -speed-check-mode none
 domain-rules /autodraw.com/ -speed-check-mode none
 domain-rules /capitalg.com/ -speed-check-mode none
@@ -1581,10 +3132,10 @@ domain-rules /ggpht.com/ -speed-check-mode none
 domain-rules /gmail.com/ -speed-check-mode none
 domain-rules /gmodules.com/ -speed-check-mode none
 domain-rules /google-analytics.com/ -speed-check-mode none
+domain-rules /googledrive.com/ -speed-check-mode none
 domain-rules /godoc.org/ -speed-check-mode none
 domain-rules /golang.org/ -speed-check-mode none
 domain-rules /gstatic.com/ -speed-check-mode none
-domain-rules /gv.com/ -speed-check-mode none
 domain-rules /g.co/ -speed-check-mode none
 domain-rules /goo.gl/ -speed-check-mode none
 domain-rules /gwtproject.org/ -speed-check-mode none
@@ -1616,14 +3167,19 @@ domain-rules /googleoptimize.com/ -speed-check-mode none
 domain-rules /googletagmanager.com/ -speed-check-mode none
 domain-rules /googletagservices.com/ -speed-check-mode none
 domain-rules /googlesyndication.com/ -speed-check-mode none
+domain-rules /googleusercontent.com/ -speed-check-mode none
 domain-rules /oasisfeng.com/ -speed-check-mode none
+domain-rules /265.com/ -speed-check-mode none
 domain-rules /2mdn.net/ -speed-check-mode none
 domain-rules /1e100.net/ -speed-check-mode none
-domain-rules /meet/ -speed-check-mode none
 domain-rules /google.cn/ -speed-check-mode none
 domain-rules /googleapis.cn/ -speed-check-mode none
 domain-rules /gstatic.cn/ -speed-check-mode none
 domain-rules /google/ -speed-check-mode none
+domain-rules /goog/ -speed-check-mode none
+domain-rules /meet/ -speed-check-mode none
+domain-rules /gstatic/ -speed-check-mode none
+domain-rules /www.google./ -speed-check-mode none
 domain-rules /1drv.com/ -speed-check-mode none
 domain-rules /1drv.ms/ -speed-check-mode none
 domain-rules /aadrm.com/ -speed-check-mode none
@@ -1631,24 +3187,36 @@ domain-rules /acompli.com/ -speed-check-mode none
 domain-rules /acompli.net/ -speed-check-mode none
 domain-rules /aspnetcdn.com/ -speed-check-mode none
 domain-rules /assets-yammer.com/ -speed-check-mode none
+domain-rules /atdmt.com/ -speed-check-mode none
+domain-rules /azure.cn/ -speed-check-mode none
 domain-rules /azure.com/ -speed-check-mode none
 domain-rules /azure.net/ -speed-check-mode none
+domain-rules /azure-apim.net/ -speed-check-mode none
 domain-rules /azureedge.net/ -speed-check-mode none
 domain-rules /azurerms.com/ -speed-check-mode none
 domain-rules /azurewebsites.net/ -speed-check-mode none
 domain-rules /bing.com/ -speed-check-mode none
+domain-rules /bing.net/ -speed-check-mode none
 domain-rules /cloudapp.net/ -speed-check-mode none
 domain-rules /cloudappsecurity.com/ -speed-check-mode none
+domain-rules /cortana.ai/ -speed-check-mode none
 domain-rules /ceipmsn.com/ -speed-check-mode none
+domain-rules /docs.com/ -speed-check-mode none
 domain-rules /edgesuite.net/ -speed-check-mode none
-domain-rules /footprintdns.com/ -speed-check-mode none
+domain-rules /fabric.io/ -speed-check-mode none
 domain-rules /gfx.ms/ -speed-check-mode none
+domain-rules /getmicrosoftkey.com/ -speed-check-mode none
 domain-rules /hotmail.com/ -speed-check-mode none
+domain-rules /helpshift.com/ -speed-check-mode none
 domain-rules /live.com/ -speed-check-mode none
 domain-rules /live.net/ -speed-check-mode none
 domain-rules /livefilestore.com/ -speed-check-mode none
 domain-rules /lync.com/ -speed-check-mode none
+domain-rules /mesh.com/ -speed-check-mode none
 domain-rules /microsoft.com/ -speed-check-mode none
+domain-rules /microsoftonline.com/ -speed-check-mode none
+domain-rules /microsoftonline-p.com/ -speed-check-mode none
+domain-rules /microsoft-tst.com/ -speed-check-mode none
 domain-rules /msappproxy.net/ -speed-check-mode none
 domain-rules /msauth.net/ -speed-check-mode none
 domain-rules /msauthimages.net/ -speed-check-mode none
@@ -1661,7 +3229,6 @@ domain-rules /msftncsi.com/ -speed-check-mode none
 domain-rules /msftauthimages.net/ -speed-check-mode none
 domain-rules /msftidentity.com/ -speed-check-mode none
 domain-rules /msidentity.com/ -speed-check-mode none
-domain-rules /msgamestudios.com/ -speed-check-mode none
 domain-rules /msn.com/ -speed-check-mode none
 domain-rules /msn.cn/ -speed-check-mode none
 domain-rules /msocdn.com/ -speed-check-mode none
@@ -1677,9 +3244,12 @@ domain-rules /onedrive.com/ -speed-check-mode none
 domain-rules /onenote.com/ -speed-check-mode none
 domain-rules /onenote.net/ -speed-check-mode none
 domain-rules /onestore.ms/ -speed-check-mode none
+domain-rules /onmicrosoft.com/ -speed-check-mode none
 domain-rules /outlook.com/ -speed-check-mode none
 domain-rules /outlookmobile.com/ -speed-check-mode none
+domain-rules /outlookgroups.com/ -speed-check-mode none
 domain-rules /phonefactor.net/ -speed-check-mode none
+domain-rules /powerapps.com/ -speed-check-mode none
 domain-rules /public-trust.com/ -speed-check-mode none
 domain-rules /sfbassets.com/ -speed-check-mode none
 domain-rules /sfx.ms/ -speed-check-mode none
@@ -1695,6 +3265,7 @@ domain-rules /sway-cdn.com/ -speed-check-mode none
 domain-rules /sway-extensions.com/ -speed-check-mode none
 domain-rules /sway.com/ -speed-check-mode none
 domain-rules /trafficmanager.net/ -speed-check-mode none
+domain-rules /tenor.com/ -speed-check-mode none
 domain-rules /uservoice.com/ -speed-check-mode none
 domain-rules /virtualearth.net/ -speed-check-mode none
 domain-rules /visualstudio.com/ -speed-check-mode none
@@ -1705,11 +3276,47 @@ domain-rules /windowsazure.com/ -speed-check-mode none
 domain-rules /windowsupdate.com/ -speed-check-mode none
 domain-rules /windowsbulletin.com/ -speed-check-mode none
 domain-rules /wunderlist.com/ -speed-check-mode none
-domain-rules /xboxlive.com/ -speed-check-mode none
 domain-rules /yammer.com/ -speed-check-mode none
 domain-rules /yammerusercontent.com/ -speed-check-mode none
-domain-rules /spoprod-a.akamaihd.net/ -speed-check-mode none
+domain-rules /beth.games/ -speed-check-mode none
+domain-rules /bethesda.net/ -speed-check-mode none
+domain-rules /bethesdagamestudios.com/ -speed-check-mode none
+domain-rules /bethsoft.com/ -speed-check-mode none
+domain-rules /callersbane.com/ -speed-check-mode none
+domain-rules /forzamotorsport.net/ -speed-check-mode none
+domain-rules /forzaracingchampionship.com/ -speed-check-mode none
+domain-rules /forzarc.com/ -speed-check-mode none
+domain-rules /gamepass.com/ -speed-check-mode none
+domain-rules /msgamestudios.com/ -speed-check-mode none
+domain-rules /orithegame.com/ -speed-check-mode none
+domain-rules /renovacionxboxlive.com/ -speed-check-mode none
+domain-rules /tellmewhygame.com/ -speed-check-mode none
+domain-rules /xbob.cn/ -speed-check-mode none
+domain-rules /xbox.co/ -speed-check-mode none
+domain-rules /xbox.com/ -speed-check-mode none
+domain-rules /xbox.eu/ -speed-check-mode none
+domain-rules /xbox.org/ -speed-check-mode none
+domain-rules /xbox360.co/ -speed-check-mode none
+domain-rules /xbox360.com/ -speed-check-mode none
+domain-rules /xbox360.eu/ -speed-check-mode none
+domain-rules /xbox360.org/ -speed-check-mode none
+domain-rules /xboxab.com/ -speed-check-mode none
+domain-rules /xboxab.net/ -speed-check-mode none
+domain-rules /xboxgamepass.com/ -speed-check-mode none
+domain-rules /xboxgamestudios.com/ -speed-check-mode none
+domain-rules /xboxlive.cn/ -speed-check-mode none
+domain-rules /xboxlive.com/ -speed-check-mode none
+domain-rules /xboxone.co/ -speed-check-mode none
+domain-rules /xboxone.com/ -speed-check-mode none
+domain-rules /xboxone.eu/ -speed-check-mode none
+domain-rules /xboxplayanywhere.com/ -speed-check-mode none
+domain-rules /xboxstudios.com/ -speed-check-mode none
+domain-rules /xbx.lv/ -speed-check-mode none
 domain-rules /aka.ms/ -speed-check-mode none
+domain-rules /spoprod-a.akamaihd.net/ -speed-check-mode none
+domain-rules /xboxlive.com.akadns.net/ -speed-check-mode none
+domain-rules /officecdn-microsoft-com.akamaized.net/ -speed-check-mode none
+domain-rules /xboxlive.com.c.footprint.net/ -speed-check-mode none
 domain-rules /ms/ -speed-check-mode none
 domain-rules /z.cn/ -speed-check-mode none
 domain-rules /ssl-images-amazon.cn/ -speed-check-mode none
@@ -1727,34 +3334,3 @@ domain-rules /primevideo.com/ -speed-check-mode none
 domain-rules /amazonaws.com/ -speed-check-mode none
 domain-rules /cloudfront.net/ -speed-check-mode none
 domain-rules /geetest.com/ -speed-check-mode none
-domain-rules /upos-hz-mirrorakam.akamaized.net/ -speed-check-mode none
-domain-rules /smtcdns.net/ -speed-check-mode none
-domain-rules /acgvideo.com/ -speed-check-mode none
-domain-rules /bilibili.com/ -speed-check-mode none
-domain-rules /bilibili.cn/ -speed-check-mode none
-domain-rules /hdslb.com/ -speed-check-mode none
-domain-rules /biliapi.net/ -speed-check-mode none
-domain-rules /biliapi.com/ -speed-check-mode none
-domain-rules /bilibili.tv/ -speed-check-mode none
-domain-rules /bilivideo.com/ -speed-check-mode none
-domain-rules /bilivideo.cn/ -speed-check-mode none
-domain-rules /biligame.com/ -speed-check-mode none
-domain-rules /biligame.net/ -speed-check-mode none
-domain-rules /bilibiligame.net/ -speed-check-mode none
-domain-rules /bigfun.cn/ -speed-check-mode none
-domain-rules /bigfunapp.cn/ -speed-check-mode none
-domain-rules /b23.tv/ -speed-check-mode none
-domain-rules /im9.com/ -speed-check-mode none
-domain-rules /acg.tv/ -speed-check-mode none
-domain-rules /bilibilipay.com/ -speed-check-mode none
-domain-rules /bilibilipay.cn/ -speed-check-mode none
-domain-rules /71.am/ -speed-check-mode none
-domain-rules /71edge.com/ -speed-check-mode none
-domain-rules /ppsimg.com/ -speed-check-mode none
-domain-rules /qiyi.com/ -speed-check-mode none
-domain-rules /qiyipic.com/ -speed-check-mode none
-domain-rules /iqiyi.com/ -speed-check-mode none
-domain-rules /iqiyipic.com/ -speed-check-mode none
-domain-rules /iq.com/ -speed-check-mode none
-domain-rules /qy.net/ -speed-check-mode none
-domain-rules /gitv.tv/ -speed-check-mode none
