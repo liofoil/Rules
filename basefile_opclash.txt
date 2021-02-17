@@ -38,7 +38,7 @@ dns:
   - dot.pub
   - dns.pub
   # facebook instagram whatsapp
-  - facebook.com
+    - facebook.com
   - "*.facebook.com"
   - "*.*.facebook.com"
   - "*.*.*.facebook.com"
@@ -138,165 +138,345 @@ dns:
   - "*.*.whatsapp.net"
   - "*.*.*.whatsapp.net"
   - "*.*.*.*.whatsapp.net"
+  - whatsapp.biz
+  - "*.whatsapp.biz"
+  - "*.*.whatsapp.biz"
+  - "*.*.*.whatsapp.biz"
+  - "*.*.*.*.whatsapp.biz"
+  - bintray.com
+  - "*.bintray.com"
+  - "*.*.bintray.com"
+  - "*.*.*.bintray.com"
+  - "*.*.*.*.bintray.com"
   # bilibili
   - upos-hz-mirrorakam.akamaized.net
+  - hdslb.com.cdn20.com
+  - "*.hdslb.com.cdn20.com"
+  - "*.*.hdslb.com.cdn20.com"
   - uposdash-302-bilivideo.yfcdn.net
+  - "*.uposdash-302-bilivideo.yfcdn.net"
+  - "*.*.uposdash-302-bilivideo.yfcdn.net"
+  - k1-biligame.gslb.ksyuncdn.com
+  - "*.k1-biligame.gslb.ksyuncdn.com"
+  - "*.*.k1-biligame.gslb.ksyuncdn.com"
+  - hdslb.com.w.kunlunar.com
+  - "*.hdslb.com.w.kunlunar.com"
+  - "*.*.hdslb.com.w.kunlunar.com"
   - hdslb.com.w.kunlunhuf.com
+  - "*.hdslb.com.w.kunlunhuf.com"
+  - "*.*.hdslb.com.w.kunlunhuf.com"
   - hdslb.com.w.kunlunpi.com
+  - "*.hdslb.com.w.kunlunpi.com"
+  - "*.*.hdslb.com.w.kunlunpi.com"
   - acg.tv
   - "*.acg.tv"
   - "*.*.acg.tv"
   - "*.*.*.acg.tv"
+  - "*.*.*.*.acg.tv"
   - acgvideo.com
   - "*.acgvideo.com"
   - "*.*.acgvideo.com"
   - "*.*.*.acgvideo.com"
+  - "*.*.*.*.acgvideo.com"
   - b23.tv
   - "*.b23.tv"
   - "*.*.b23.tv"
   - "*.*.*.b23.tv"
+  - "*.*.*.*.b23.tv"
   - baka.im
   - "*.baka.im"
   - "*.*.baka.im"
   - "*.*.*.baka.im"
+  - "*.*.*.*.baka.im"
   - bigfun.cn
   - "*.bigfun.cn"
   - "*.*.bigfun.cn"
   - "*.*.*.bigfun.cn"
+  - "*.*.*.*.bigfun.cn"
   - bigfunapp.cn
   - "*.bigfunapp.cn"
   - "*.*.bigfunapp.cn"
   - "*.*.*.bigfunapp.cn"
+  - "*.*.*.*.bigfunapp.cn"
   - bili22.cn
   - "*.bili22.cn"
   - "*.*.bili22.cn"
   - "*.*.*.bili22.cn"
+  - "*.*.*.*.bili22.cn"
   - bili2233.cn
   - "*.bili2233.cn"
   - "*.*.bili2233.cn"
   - "*.*.*.bili2233.cn"
+  - "*.*.*.*.bili2233.cn"
   - bili23.cn
   - "*.bili23.cn"
   - "*.*.bili23.cn"
   - "*.*.*.bili23.cn"
+  - "*.*.*.*.bili23.cn"
   - bili33.cn
   - "*.bili33.cn"
   - "*.*.bili33.cn"
   - "*.*.*.bili33.cn"
+  - "*.*.*.*.bili33.cn"
   - biliapi.com
   - "*.biliapi.com"
   - "*.*.biliapi.com"
   - "*.*.*.biliapi.com"
+  - "*.*.*.*.biliapi.com"
   - biliapi.net
   - "*.biliapi.net"
   - "*.*.biliapi.net"
   - "*.*.*.biliapi.net"
+  - "*.*.*.*.biliapi.net"
+  - bilicdn2.com
+  - "*.bilicdn2.com"
+  - "*.*.bilicdn2.com"
+  - "*.*.*.bilicdn2.com"
+  - "*.*.*.*.bilicdn2.com"
   - bilibili.cc
   - "*.bilibili.cc"
   - "*.*.bilibili.cc"
   - "*.*.*.bilibili.cc"
+  - "*.*.*.*.bilibili.cc"
   - bilibili.cn
   - "*.bilibili.cn"
   - "*.*.bilibili.cn"
   - "*.*.*.bilibili.cn"
+  - "*.*.*.*.bilibili.cn"
   - bilibili.co
   - "*.bilibili.co"
   - "*.*.bilibili.co"
   - "*.*.*.bilibili.co"
+  - "*.*.*.*.bilibili.co"
   - bilibili.com
   - "*.bilibili.com"
   - "*.*.bilibili.com"
   - "*.*.*.bilibili.com"
+  - "*.*.*.*.bilibili.com"
   - bilibili.tv
   - "*.bilibili.tv"
   - "*.*.bilibili.tv"
   - "*.*.*.bilibili.tv"
+  - "*.*.*.*.bilibili.tv"
   - bilibiligame.cn
   - "*.bilibiligame.cn"
   - "*.*.bilibiligame.cn"
   - "*.*.*.bilibiligame.cn"
+  - "*.*.*.*.bilibiligame.cn"
   - bilibiligame.net
   - "*.bilibiligame.net"
   - "*.*.bilibiligame.net"
   - "*.*.*.bilibiligame.net"
+  - "*.*.*.*.bilibiligame.net"
   - bilibilipay.cn
   - "*.bilibilipay.cn"
   - "*.*.bilibilipay.cn"
   - "*.*.*.bilibilipay.cn"
+  - "*.*.*.*.bilibilipay.cn"
   - bilibilipay.com
   - "*.bilibilipay.com"
   - "*.*.bilibilipay.com"
   - "*.*.*.bilibilipay.com"
+  - "*.*.*.*.bilibilipay.com"
   - biligame.cn
   - "*.biligame.cn"
   - "*.*.biligame.cn"
   - "*.*.*.biligame.cn"
+  - "*.*.*.*.biligame.cn"
   - biligame.com
   - "*.biligame.com"
   - "*.*.biligame.com"
   - "*.*.*.biligame.com"
+  - "*.*.*.*.biligame.com"
   - biligame.net
   - "*.biligame.net"
   - "*.*.biligame.net"
   - "*.*.*.biligame.net"
+  - "*.*.*.*.biligame.net"
   - biliplus.com
   - "*.biliplus.com"
   - "*.*.biliplus.com"
   - "*.*.*.biliplus.com"
+  - "*.*.*.*.biliplus.com"
   - bilivideo.cn
   - "*.bilivideo.cn"
   - "*.*.bilivideo.cn"
   - "*.*.*.bilivideo.cn"
+  - "*.*.*.*.bilivideo.cn"
   - bilivideo.com
   - "*.bilivideo.com"
   - "*.*.bilivideo.com"
   - "*.*.*.bilivideo.com"
+  - "*.*.*.*.bilivideo.com"
   - bilivideo.net
   - "*.bilivideo.net"
   - "*.*.bilivideo.net"
   - "*.*.*.bilivideo.net"
+  - "*.*.*.*.bilivideo.net"
   - corari.com
   - "*.corari.com"
   - "*.*.corari.com"
   - "*.*.*.corari.com"
+  - "*.*.*.*.corari.com"
   - dyhgames.com
   - "*.dyhgames.com"
   - "*.*.dyhgames.com"
   - "*.*.*.dyhgames.com"
+  - "*.*.*.*.dyhgames.com"
   - hdslb.com
   - "*.hdslb.com"
   - "*.*.hdslb.com"
   - "*.*.*.hdslb.com"
+  - "*.*.*.*.hdslb.com"
   - hdslb.net
   - "*.hdslb.net"
   - "*.*.hdslb.net"
   - "*.*.*.hdslb.net"
+  - "*.*.*.*.hdslb.net"
   - hdslb.org
   - "*.hdslb.org"
   - "*.*.hdslb.org"
   - "*.*.*.hdslb.org"
+  - "*.*.*.*.hdslb.org"
   - im9.com
   - "*.im9.com"
   - "*.*.im9.com"
   - "*.*.*.im9.com"
+  - "*.*.*.*.im9.com"
   - mcbbs.net
   - "*.mcbbs.net"
   - "*.*.mcbbs.net"
   - "*.*.*.mcbbs.net"
+  - "*.*.*.*.mcbbs.net"
   - mincdn.com
   - "*.mincdn.com"
   - "*.*.mincdn.com"
   - "*.*.*.mincdn.com"
+  - "*.*.*.*.mincdn.com"
   - sharejoytech.com
   - "*.sharejoytech.com"
   - "*.*.sharejoytech.com"
   - "*.*.*.sharejoytech.com"
+  - "*.*.*.*.sharejoytech.com"
   - smtcdns.net
   - "*.smtcdns.net"
   - "*.*.smtcdns.net"
   - "*.*.*.smtcdns.net"
+  - "*.*.*.*.smtcdns.net"
   - yo9.com
   - "*.yo9.com"
   - "*.*.yo9.com"
   - "*.*.*.yo9.com"
+  - "*.*.*.*.yo9.com"
+  # xbox
+  - pfmsqosprod.westus.cloudapp.azure.com
+  - microsoft.com
+  - "*.microsoft.com"
+  - "*.*.microsoft.com"
+  - "*.*.*.microsoft.com"
+  - msgamestudios.com
+  - "*.msgamestudios.com"
+  - "*.*.msgamestudios.com"
+  - "*.*.*.msgamestudios.com"
+  - xbob.cn
+  - "*.xbob.cn"
+  - "*.*.xbob.cn"
+  - "*.*.*.xbob.cn"
+  - xbox.co
+  - "*.xbox.co"
+  - "*.*.xbox.co"
+  - "*.*.*.xbox.co"
+  - xbox.com
+  - "*.xbox.com"
+  - "*.*.xbox.com"
+  - "*.*.*.xbox.com"
+  - xbox.eu
+  - "*.xbox.eu"
+  - "*.*.xbox.eu"
+  - "*.*.*.xbox.eu"
+  - xbox.org
+  - "*.xbox.org"
+  - "*.*.xbox.org"
+  - "*.*.*.xbox.org"
+  - xbox360.co
+  - "*.xbox360.co"
+  - "*.*.xbox360.co"
+  - "*.*.*.xbox360.co"
+  - xbox360.com
+  - "*.xbox360.com"
+  - "*.*.xbox360.com"
+  - "*.*.*.xbox360.com"
+  - xbox360.eu
+  - "*.xbox360.eu"
+  - "*.*.xbox360.eu"
+  - "*.*.*.xbox360.eu"
+  - xbox360.org
+  - "*.xbox360.org"
+  - "*.*.xbox360.org"
+  - "*.*.*.xbox360.org"
+  - xboxab.com
+  - "*.xboxab.com"
+  - "*.*.xboxab.com"
+  - "*.*.*.xboxab.com"
+  - xboxab.net
+  - "*.xboxab.net"
+  - "*.*.xboxab.net"
+  - "*.*.*.xboxab.net"
+  - xboxgamepass.com
+  - "*.xboxgamepass.com"
+  - "*.*.xboxgamepass.com"
+  - "*.*.*.xboxgamepass.com"
+  - xboxgamestudios.com
+  - "*.xboxgamestudios.com"
+  - "*.*.xboxgamestudios.com"
+  - "*.*.*.xboxgamestudios.com"
+  - xboxlive.cn
+  - "*.xboxlive.cn"
+  - "*.*.xboxlive.cn"
+  - "*.*.*.xboxlive.cn"
+  - xboxlive.com
+  - "*.xboxlive.com"
+  - "*.*.xboxlive.com"
+  - "*.*.*.xboxlive.com"
+  - xboxone.co
+  - "*.xboxone.co"
+  - "*.*.xboxone.co"
+  - "*.*.*.xboxone.co"
+  - xboxone.com
+  - "*.xboxone.com"
+  - "*.*.xboxone.com"
+  - "*.*.*.xboxone.com"
+  - xboxone.eu
+  - "*.xboxone.eu"
+  - "*.*.xboxone.eu"
+  - "*.*.*.xboxone.eu"
+  - xboxplayanywhere.com
+  - "*.xboxplayanywhere.com"
+  - "*.*.xboxplayanywhere.com"
+  - "*.*.*.xboxplayanywhere.com"
+  - xboxstudios.com
+  - "*.xboxstudios.com"
+  - "*.*.xboxstudios.com"
+  - "*.*.*.xboxstudios.com"
+  - xbx.lv
+  - "*.xbx.lv"
+  - "*.*.xbx.lv"
+  - "*.*.*.xbx.lv"
+  # Minecraft
+  - hivemc.com
+  - "*.hivemc.com"
+  - "*.*.hivemc.com"
+  - "*.*.*.hivemc.com"
+  - minecraft.net
+  - "*.minecraft.net"
+  - "*.*.minecraft.net"
+  - "*.*.*.minecraft.net"
+  - minecraftshop.com
+  - "*.minecraftshop.com"
+  - "*.*.minecraftshop.com"
+  - "*.*.*.minecraftshop.com"
+  - mojang.com
+  - "*.mojang.com"
+  - "*.*.mojang.com"
+  - "*.*.*.mojang.com"
   nameserver:

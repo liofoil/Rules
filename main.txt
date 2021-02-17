@@ -466,8 +466,6 @@
 - DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn,Games
 - DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net,Games
 - DOMAIN-SUFFIX,yoshisnewisland.com,Games
-- DOMAIN-SUFFIX,神奇宝贝.cn,Games
-- DOMAIN-SUFFIX,神奇宝贝.net,Games
 # > Steam
 - DOMAIN-SUFFIX,fanatical.com,Steam
 - DOMAIN-SUFFIX,humblebundle.com,Steam
@@ -983,6 +981,7 @@
 - DOMAIN-SUFFIX,goodnotes.email,MAIN
 - DOMAIN-SUFFIX,hostloc.com,MAIN
 - DOMAIN-SUFFIX,internetdownloadmanager.com,MAIN
+- DOMAIN-SUFFIX,imgur.com,MAIN
 - DOMAIN-SUFFIX,jetbrains.com,MAIN
 - DOMAIN-SUFFIX,jitpack.io,MAIN
 - DOMAIN-SUFFIX,lencr.org,MAIN
@@ -1010,6 +1009,8 @@
 - DOMAIN-SUFFIX,ups.com,MAIN
 - DOMAIN-SUFFIX,v2ex.com,MAIN
 - DOMAIN-SUFFIX,weebly.com,MAIN
+- DOMAIN-SUFFIX,wordpress.com,MAIN
+- DOMAIN-SUFFIX,wp.com,MAIN
 - DOMAIN-SUFFIX,xrite.com,MAIN
 - DOMAIN-KEYWORD,porn,MAIN
 - DOMAIN-KEYWORD,wikileaks,MAIN
@@ -1334,6 +1335,8 @@
 - DOMAIN,spoprod-a.akamaihd.net,Microsoft
 - DOMAIN,xboxlive.com.akadns.net,Microsoft
 - DOMAIN,officecdn-microsoft-com.akamaized.net,Microsoft
+- DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net,Microsoft
+- DOMAIN-SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net,Microsoft
 - DOMAIN-SUFFIX,xboxlive.com.c.footprint.net,Microsoft
 - DOMAIN-SUFFIX,ms,Microsoft
 - DOMAIN-KEYWORD,xbox,Microsoft
@@ -1412,7 +1415,6 @@
 - DOMAIN-SUFFIX,oray.net,DIRECT
 - DOMAIN-SUFFIX,oray.com,DIRECT
 - DOMAIN-KEYWORD,oray,DIRECT
-
 # > Youku
 - DOMAIN-SUFFIX,0co3geye.cn,DIRECT
 - DOMAIN-SUFFIX,2isbbess.cn,DIRECT
@@ -2651,6 +2653,7 @@
 - DOMAIN-SUFFIX,chuimg.com,DIRECT
 - DOMAIN-SUFFIX,chunyu.mobi,DIRECT
 - DOMAIN-SUFFIX,cibntv.net,DIRECT
+- DOMAIN-SUFFIX,clang.cn,DIRECT
 - DOMAIN-SUFFIX,cl2009.com,DIRECT
 - DOMAIN-SUFFIX,clouddn.com,DIRECT
 - DOMAIN-SUFFIX,cloudxns.net,DIRECT
@@ -4212,6 +4215,8 @@
 - DOMAIN-SUFFIX,staticfile.org,DIRECT
 - DOMAIN-SUFFIX,jstucdn.co,DIRECT
 - DOMAIN-SUFFIX,tongdun.net,DIRECT
+- DOMAIN-SUFFIX,ucloud.cn,DIRECT
+- DOMAIN-SUFFIX,ucloud.com.cn,DIRECT
 - DOMAIN-SUFFIX,xycdn.com,DIRECT
 - DOMAIN-SUFFIX,xycloud.com,DIRECT
 - DOMAIN-SUFFIX,bootcss.com,DIRECT
