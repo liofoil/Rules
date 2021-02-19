@@ -8,6 +8,7 @@
 - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
 - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
 - DOMAIN-SUFFIX,in-addr.arpa,DNS
+- DOMAIN-SUFFIX,arpa,DNS
 - DOMAIN-SUFFIX,cloudflare-dns.com,DNS
 - DOMAIN-SUFFIX,dns.google,DNS
 - DOMAIN-SUFFIX,quad9.net,DNS
@@ -728,7 +729,7 @@
 - DOMAIN-SUFFIX,telegram.me,TG
 - DOMAIN-SUFFIX,telegram.org,TG
 - DOMAIN-SUFFIX,telesco.pe,TG
-- DOMAIN-SUFFIX,nicegram.app,TGdouble
+- DOMAIN-SUFFIX,nicegram.app,TG
 # > Discord
 - DOMAIN-SUFFIX,discord.co,Discord
 - DOMAIN-SUFFIX,discord.com,Discord
@@ -801,7 +802,7 @@
 # > Deezer
 - DOMAIN-SUFFIX,deezer.com,MAIN
 - DOMAIN-SUFFIX,dzcdn.net,MAIN
-- > NVIDIA
+# > NVIDIA
 - DOMAIN-SUFFIX,geforce.com,MAIN
 - DOMAIN-SUFFIX,nvidia.com,MAIN
 - DOMAIN-SUFFIX,nvidia.cn,MAIN
@@ -875,6 +876,16 @@
 - DOMAIN-SUFFIX,textnow.com,MAIN
 - DOMAIN-SUFFIX,emb-api.com,MAIN
 - DOMAIN-SUFFIX,oath.com,MAIN
+# > TED
+- DOMAIN-SUFFIX,ted.com,MAIN
+- DOMAIN-SUFFIX,tedcdn.com,MAIN
+- DOMAIN-SUFFIX,litix.io,MAIN
+- DOMAIN-SUFFIX,media.net,MAIN
+# > Coding
+- DOMAIN-SUFFIX,jetbrains.com,MAIN
+- DOMAIN-SUFFIX,python.org,MAIN
+- DOMAIN-SUFFIX,pypi.org,MAIN
+- DOMAIN-SUFFIX,anaconda.org,MAIN
 # > Wiki
 - DOMAIN-SUFFIX,wikimapia.org,MAIN
 - DOMAIN-SUFFIX,wikimedia.org,MAIN
@@ -982,7 +993,6 @@
 - DOMAIN-SUFFIX,hostloc.com,MAIN
 - DOMAIN-SUFFIX,internetdownloadmanager.com,MAIN
 - DOMAIN-SUFFIX,imgur.com,MAIN
-- DOMAIN-SUFFIX,jetbrains.com,MAIN
 - DOMAIN-SUFFIX,jitpack.io,MAIN
 - DOMAIN-SUFFIX,lencr.org,MAIN
 - DOMAIN-SUFFIX,maven.org,MAIN
@@ -1003,7 +1013,6 @@
 - DOMAIN-SUFFIX,smehost.net,MAIN
 - DOMAIN-SUFFIX,shuziyimin.org,MAIN
 - DOMAIN-SUFFIX,stackoverflow.com,MAIN
-- DOMAIN-SUFFIX,ted.com,MAIN
 - DOMAIN-SUFFIX,tnt.com,MAIN
 - DOMAIN-SUFFIX,typekit.net,MAIN
 - DOMAIN-SUFFIX,ups.com,MAIN
@@ -1185,17 +1194,20 @@
 - DOMAIN-SUFFIX,265.com,Google
 - DOMAIN-SUFFIX,2mdn.net,Google
 - DOMAIN-SUFFIX,1e100.net,Google
-- DOMAIN-SUFFIX,google.cn,Google
-- DOMAIN-SUFFIX,googleapis.cn,Google
-- DOMAIN-SUFFIX,gstatic.cn,Google
 - DOMAIN-SUFFIX,google,Google
 - DOMAIN-SUFFIX,goog,Google
 - DOMAIN-SUFFIX,meet,Google
+## regional supplement
+- DOMAIN-SUFFIX,google.co.jp,Google
+- DOMAIN-SUFFIX,google.com.hk,Google
+- DOMAIN-SUFFIX,google.cn,Google
+- DOMAIN-SUFFIX,googleapis.cn,Google
+- DOMAIN-SUFFIX,gstatic.cn,Google
 - DOMAIN-KEYWORD,google,Google
 - DOMAIN-KEYWORD,blogspot,Google
 - DOMAIN-KEYWORD,gmail,Google
-- DOMAIN-SUFFIX,gstatic,Google
-- DOMAIN-SUFFIX,www.google.,Google
+- DOMAIN-KEYWORD,gstatic,Google
+- DOMAIN-KEYWORD,www.google.,Google
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,Microsoft
 - DOMAIN-SUFFIX,1drv.ms,Microsoft
@@ -1370,45 +1382,6 @@
 - DOMAIN-SUFFIX,geetest.com,Amazon
 - DOMAIN-KEYWORD,avoddashs,Amazon
 - DOMAIN-KEYWORD,amazon,Amazon
-# > Aka cdn fix
-## bilibili
-- DOMAIN,upos-hz-mirrorakam.akamaized.net,B&I
-# > Aka cdn Final
-- DOMAIN-SUFFIX,akstat.io,MAIN
-- DOMAIN-SUFFIX,akadns.net,MAIN
-- DOMAIN-SUFFIX,akamaized.net,MAIN
-- DOMAIN-SUFFIX,akamaihd.net,MAIN
-- DOMAIN-SUFFIX,akamai.net,MAIN
-- DOMAIN-SUFFIX,akamaiedge.net,MAIN
-- DOMAIN-SUFFIX,akamaistream.net,MAIN
-# > Global Services Shared
-- DOMAIN-SUFFIX,branch.io,MAIN
-- DOMAIN-SUFFIX,globalsign.com,MAIN
-- DOMAIN-SUFFIX,digicert.com,MAIN
-- DOMAIN-SUFFIX,digitalcertvalidation.com,MAIN
-- DOMAIN-SUFFIX,entrust.com,MAIN
-- DOMAIN-SUFFIX,verisign.net,MAIN
-- DOMAIN-SUFFIX,onetrust.com,MAIN
-- DOMAIN-SUFFIX,omniroot.com,MAIN
-- DOMAIN-SUFFIX,omniture.com,MAIN
-- DOMAIN-SUFFIX,optimizely.com,MAIN
-- DOMAIN-SUFFIX,omniture.cn,MAIN
-- DOMAIN-SUFFIX,jsdelivr.net,MAIN
-- DOMAIN-SUFFIX,jquery.com,MAIN
-- DOMAIN-SUFFIX,disqus.com,MAIN
-- DOMAIN-SUFFIX,disquscdn.com,MAIN
-- DOMAIN-SUFFIX,comodoca.com,MAIN
-- DOMAIN-SUFFIX,arkoselabs.com,MAIN
-- DOMAIN-SUFFIX,crashlytics.com,MAIN
-- DOMAIN-SUFFIX,footprint.net,MAIN
-- DOMAIN-SUFFIX,footprintdns.com,MAIN
-- DOMAIN-SUFFIX,boltdns.net,MAIN
-- DOMAIN-SUFFIX,conviva.com,MAIN
-- DOMAIN-SUFFIX,scorecardresearch.com,MAIN
-- DOMAIN-SUFFIX,adjust.net.in,MAIN
-- DOMAIN-SUFFIX,adjust.com,MAIN
-- DOMAIN-SUFFIX,instabug.com,MAIN
-- DOMAIN-SUFFIX,doubleverify.com,MAIN
 # > teamviewer
 - DOMAIN-SUFFIX,teamviewer.com,DIRECT
 # > oray
@@ -1495,7 +1468,6 @@
 - DOMAIN-SUFFIX,baiducloudapi.com,DIRECT
 - DOMAIN-SUFFIX,baiducontent.com,DIRECT
 - DOMAIN-SUFFIX,baiduhui.com,DIRECT
-- DOMAIN-SUFFIX,baidupan.com,DIRECT
 - DOMAIN-SUFFIX,baidupcs.cn,DIRECT
 - DOMAIN-SUFFIX,baidupcs.com,DIRECT
 - DOMAIN-SUFFIX,baidupcs.com.cn,DIRECT
@@ -1854,7 +1826,7 @@
 - DOMAIN-SUFFIX,smtcdns.net,B&I
 - DOMAIN-SUFFIX,yo9.com,B&I
 ## Shared cdn filter
-### aka in upper section
+- DOMAIN,upos-hz-mirrorakam.akamaized.net,B&I
 - DOMAIN-SUFFIX,hdslb.com.cdn20.com,B&I
 - DOMAIN-SUFFIX,uposdash-302-bilivideo.yfcdn.net,B&I
 - DOMAIN-SUFFIX,k1-biligame.gslb.ksyuncdn.com,B&I
@@ -2562,38 +2534,55 @@
 - DOMAIN-SUFFIX,com-youku.net,DIRECT
 - DOMAIN,youku.com-www-163.com,DIRECT
 - DOMAIN,youku.cdn2-okzy.com,DIRECT
+- DOMAIN,youku.cdn31-okzy.com,DIRECT
+- DOMAIN-KEYWORD,youku.cdn,DIRECT
 ## hanjv
 - DOMAIN-SUFFIX,hanjutv2020.com,DIRECT
 - DOMAIN-SUFFIX,hanjutv.com,DIRECT
+- DOMAIN-SUFFIX,hanju.wwee789.com,DIRECT
 - DOMAIN-SUFFIX,haitian91.com,DIRECT
 - DOMAIN-SUFFIX,obeello.com,DIRECT
-## kk2w
-- DOMAIN-SUFFIX,kk2w.cc,DIRECT
-- DOMAIN-SUFFIX,kk2w2.com,DIRECT
-- DOMAIN-SUFFIX,kk2w1.com,DIRECT
+###doubted hanjv picture websites
+- DOMAIN-SUFFIX,511.la,DIRECT
+- DOMAIN-SUFFIX,qixingcdn.com,DIRECT
+- DOMAIN-SUFFIX,qishenga.com,DIRECT
+- DOMAIN-SUFFIX,cnliken.com,DIRECT
 ## cmdy
 - DOMAIN-SUFFIX,cmdy2020.com,DIRECT
 - DOMAIN-SUFFIX,cmdy5.com,DIRECT
 - DOMAIN,cmdycss.shengtaiwenming.com.cn,DIRECT
 - DOMAIN,cmdycss.tjyjj.cn,DIRECT
 ## buboku
-- DOMAIN-SUFFIX,dubutv.com,MAIN
-- DOMAIN-SUFFIX,duboku.tv,MAIN
-- DOMAIN-SUFFIX,duboku.com,MAIN
-- DOMAIN-SUFFIX,duboku.co,MAIN
-- DOMAIN-SUFFIX,duboku.net,MAIN
-- DOMAIN-SUFFIX,duboku.me,MAIN
-- DOMAIN-SUFFIX,tudu.site,MAIN
-- DOMAIN-SUFFIX,fanstui.com,MAIN
-- DOMAIN-SUFFIX,fboku.com,MAIN
-- DOMAIN-SUFFIX,dboku.com,MAIN
-- DOMAIN-SUFFIX,cboku.com,MAIN
-- DOMAIN-SUFFIX,xboku.com,MAIN
-- DOMAIN-SUFFIX,gboku.com,MAIN
-- DOMAIN-SUFFIX,nboku.com,MAIN
-- DOMAIN-SUFFIX,wedubo.com,MAIN
-- DOMAIN-SUFFIX,zdubo.com,MAIN
-- DOMAIN-SUFFIX,uhibo.com,MAIN
+- DOMAIN-SUFFIX,dubutv.com,Special
+- DOMAIN-SUFFIX,duboku.tv,Special
+- DOMAIN-SUFFIX,duboku.com,Special
+- DOMAIN-SUFFIX,duboku.co,Special
+- DOMAIN-SUFFIX,duboku.net,Special
+- DOMAIN-SUFFIX,duboku.me,Special
+- DOMAIN-SUFFIX,duboku.su,Special
+- DOMAIN-SUFFIX,tudu.site,Special
+- DOMAIN-SUFFIX,fanstui.com,Special
+- DOMAIN-SUFFIX,fboku.com,Special
+- DOMAIN-SUFFIX,dboku.com,Special
+- DOMAIN-SUFFIX,cboku.com,Special
+- DOMAIN-SUFFIX,xboku.com,Special
+- DOMAIN-SUFFIX,gboku.com,Special
+- DOMAIN-SUFFIX,nboku.com,Special
+- DOMAIN-SUFFIX,wedubo.com,Special
+- DOMAIN-SUFFIX,zdubo.com,Special
+- DOMAIN-SUFFIX,uhibo.com,Special
+## dramasq
+- DOMAIN-SUFFIX,dramasq.com,Special
+- DOMAIN-SUFFIX,dramaq.com.tw,Special
+- DOMAIN-SUFFIX,dramasq.cc,Special
+- DOMAIN-SUFFIX,bugulin.net,Special
+- DOMAIN-SUFFIX,dramasq.biz,Special
+- DOMAIN,dramaqq.com.atlaq.com,Special
+- DOMAIN-SUFFIX,atlaq.com,Special
+- DOMAIN,dramaq.com.tw.testednet.com,Special
+- DOMAIN-KEYWORD,drama,Special
+- DOMAIN-KEYWORD,rama,Special
+
 
 - DOMAIN-SUFFIX,rising.com.cn,DIRECT
 - DOMAIN-SUFFIX,dplayer.tv,DIRECT
@@ -2630,7 +2619,6 @@
 - DOMAIN-SUFFIX,babytreeimg.com,DIRECT
 - DOMAIN-SUFFIX,baicizhan.com,DIRECT
 - DOMAIN-SUFFIX,baidupan.com,DIRECT
-- DOMAIN-SUFFIX,baike.com,DIRECT
 - DOMAIN-SUFFIX,baishan-cloud.com,DIRECT
 - DOMAIN-SUFFIX,bdatu.com,DIRECT
 - DOMAIN-SUFFIX,bdcom.com.cn,DIRECT
@@ -2641,6 +2629,7 @@
 - DOMAIN-SUFFIX,booking.com,DIRECT
 - DOMAIN-SUFFIX,bstatic.com,DIRECT
 - DOMAIN-SUFFIX,c-ctrip.com,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
 - DOMAIN-SUFFIX,camera360.com,DIRECT
 - DOMAIN-SUFFIX,cdnmama.com,DIRECT
 - DOMAIN-SUFFIX,chaoxing.com,DIRECT
@@ -2666,7 +2655,6 @@
 - DOMAIN-SUFFIX,cnmstl.net,DIRECT
 - DOMAIN-SUFFIX,coolapk.com,DIRECT
 - DOMAIN-SUFFIX,coolapkmarket.com,DIRECT
-- DOMAIN-SUFFIX,ctrip.com,DIRECT
 - DOMAIN-SUFFIX,dangdang.com,DIRECT
 - DOMAIN-SUFFIX,dcocsp.cn,DIRECT
 - DOMAIN-SUFFIX,dfcfw.com,DIRECT
@@ -2784,8 +2772,6 @@
 - DOMAIN-SUFFIX,pconline.com.cn,DIRECT
 - DOMAIN-SUFFIX,polyv.net,DIRECT
 - DOMAIN-SUFFIX,qbox.me,DIRECT
-- DOMAIN-SUFFIX,qcloud.com,DIRECT
-- DOMAIN-SUFFIX,qcloudcdn.com,DIRECT
 - DOMAIN-SUFFIX,qdaily.com,DIRECT
 - DOMAIN-SUFFIX,qdmm.com,DIRECT
 - DOMAIN-SUFFIX,qianqian.com,DIRECT
@@ -2843,8 +2829,6 @@
 - DOMAIN-SUFFIX,weiphone.net,DIRECT
 - DOMAIN-SUFFIX,womai.com,DIRECT
 - DOMAIN-SUFFIX,wscdns.com,DIRECT
-- DOMAIN-SUFFIX,wps.cn,DIRECT
-- DOMAIN-SUFFIX,wpscdn.cn,DIRECT
 - DOMAIN-SUFFIX,qwps.cn,DIRECT
 - DOMAIN-SUFFIX,xdrig.com,DIRECT
 - DOMAIN-SUFFIX,xhscdn.com,DIRECT
@@ -4012,6 +3996,7 @@
 - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
 - DOMAIN-SUFFIX,tenpay.com,DIRECT
 - DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qcloudcdn.com,DIRECT
 - DOMAIN-SUFFIX,qpic.cn,DIRECT
 - DOMAIN-SUFFIX,qlogo.cn,DIRECT
 - DOMAIN-SUFFIX,ugcimg.cn,DIRECT
@@ -4203,6 +4188,44 @@
 - DOMAIN-SUFFIX,zjbuc.cn,DIRECT
 - DOMAIN-SUFFIX,zjbuc.com,DIRECT
 - DOMAIN-SUFFIX,zjbuc.com.cn,DIRECT
+# > Global Services Shared
+## Akamai
+- DOMAIN-SUFFIX,akstat.io,MAIN
+- DOMAIN-SUFFIX,akadns.net,MAIN
+- DOMAIN-SUFFIX,akamaized.net,MAIN
+- DOMAIN-SUFFIX,akamaihd.net,MAIN
+- DOMAIN-SUFFIX,akamai.net,MAIN
+- DOMAIN-SUFFIX,akamaiedge.net,MAIN
+- DOMAIN-SUFFIX,akamaistream.net,MAIN
+## Other Services
+- DOMAIN-SUFFIX,branch.io,MAIN
+- DOMAIN-SUFFIX,globalsign.com,MAIN
+- DOMAIN-SUFFIX,digicert.com,MAIN
+- DOMAIN-SUFFIX,digitalcertvalidation.com,MAIN
+- DOMAIN-SUFFIX,entrust.com,MAIN
+- DOMAIN-SUFFIX,verisign.net,MAIN
+- DOMAIN-SUFFIX,onetrust.com,MAIN
+- DOMAIN-SUFFIX,omniroot.com,MAIN
+- DOMAIN-SUFFIX,omniture.com,MAIN
+- DOMAIN-SUFFIX,optimizely.com,MAIN
+- DOMAIN-SUFFIX,omniture.cn,MAIN
+- DOMAIN-SUFFIX,jsdelivr.net,MAIN
+- DOMAIN-SUFFIX,jquery.com,MAIN
+- DOMAIN-SUFFIX,disqus.com,MAIN
+- DOMAIN-SUFFIX,disquscdn.com,MAIN
+- DOMAIN-SUFFIX,comodoca.com,MAIN
+- DOMAIN-SUFFIX,arkoselabs.com,MAIN
+- DOMAIN-SUFFIX,crashlytics.com,MAIN
+- DOMAIN-SUFFIX,footprint.net,MAIN
+- DOMAIN-SUFFIX,footprintdns.com,MAIN
+- DOMAIN-SUFFIX,boltdns.net,MAIN
+- DOMAIN-SUFFIX,conviva.com,MAIN
+- DOMAIN-SUFFIX,scorecardresearch.com,MAIN
+- DOMAIN-SUFFIX,adjust.net.in,MAIN
+- DOMAIN-SUFFIX,adjust.com,MAIN
+- DOMAIN-SUFFIX,instabug.com,MAIN
+- DOMAIN-SUFFIX,doubleverify.com,MAIN
+- DOMAIN-SUFFIX,sectigo.com,MAIN
 # > Domestic Service Shared
 - DOMAIN-SUFFIX,cdn20.com,DIRECT
 - DOMAIN-SUFFIX,ccgslb.com,DIRECT
@@ -6042,7 +6065,6 @@
 # > bilibili
 - IP-CIDR,106.75.74.76/32,B&I
 - IP-CIDR,111.206.25.147/32,B&I
-- IP-CIDR,119.29.29.29/32,B&I
 - IP-CIDR,119.3.238.64/32,B&I
 - IP-CIDR,120.92.108.182/32,B&I
 - IP-CIDR,120.92.113.99/32,B&I
