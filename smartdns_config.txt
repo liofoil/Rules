@@ -1146,7 +1146,7 @@ nameserver /goog/main
 nameserver /meet/main
 ## regional supplement
 nameserver /google.co.jp/main
-nameserver //main
+nameserver /google.com.hk/main
 nameserver /google.cn/main
 nameserver /googleapis.cn/main
 nameserver /gstatic.cn/main
@@ -1317,46 +1317,6 @@ nameserver /primevideo.com/main
 nameserver /amazonaws.com/main
 nameserver /cloudfront.net/main
 nameserver /geetest.com/main
-# > Aka cdn fix
-## bilibili
-nameserver /upos-hz-mirrorakam.akamaized.net/serva
-# > Aka cdn Final
-nameserver /akstat.io/main
-nameserver /akadns.net/main
-nameserver /akamaized.net/main
-nameserver /akamaihd.net/main
-nameserver /akamai.net/main
-nameserver /akamaiedge.net/main
-nameserver /akamaistream.net/main
-# > Global Services Shared
-nameserver /branch.io/main
-nameserver /globalsign.com/main
-nameserver /digicert.com/main
-nameserver /digitalcertvalidation.com/main
-nameserver /entrust.com/main
-nameserver /verisign.net/main
-nameserver /onetrust.com/main
-nameserver /omniroot.com/main
-nameserver /omniture.com/main
-nameserver /optimizely.com/main
-nameserver /omniture.cn/main
-nameserver /jsdelivr.net/main
-nameserver /jquery.com/main
-nameserver /disqus.com/main
-nameserver /disquscdn.com/main
-nameserver /comodoca.com/main
-nameserver /arkoselabs.com/main
-nameserver /crashlytics.com/main
-nameserver /footprint.net/main
-nameserver /footprintdns.com/main
-nameserver /boltdns.net/main
-nameserver /conviva.com/main
-nameserver /scorecardresearch.com/main
-nameserver /adjust.net.in/main
-nameserver /adjust.com/main
-nameserver /instabug.com/main
-nameserver /doubleverify.com/main
-nameserver /sectigo.com/main
 # > teamviewer
 nameserver /teamviewer.com/serva
 # > oray
@@ -1800,7 +1760,7 @@ nameserver /sharejoytech.com/serva
 nameserver /smtcdns.net/serva
 nameserver /yo9.com/serva
 ## Shared cdn filter
-### aka in upper section
+nameserver /upos-hz-mirrorakam.akamaized.net/serva
 nameserver /hdslb.com.cdn20.com/serva
 nameserver /uposdash-302-bilivideo.yfcdn.net/serva
 nameserver /k1-biligame.gslb.ksyuncdn.com/serva
@@ -2502,6 +2462,7 @@ nameserver /zhidemai.com/serva
 nameserver /com-youku.net/serva
 nameserver /youku.com-www-163.com/serva
 nameserver /youku.cdn2-okzy.com/serva
+nameserver /youku.cdn31-okzy.com/serva
 ## hanjv
 nameserver /hanjutv2020.com/serva
 nameserver /hanjutv.com/serva
@@ -2513,10 +2474,6 @@ nameserver /511.la/serva
 nameserver /qixingcdn.com/serva
 nameserver /qishenga.com/serva
 nameserver /cnliken.com/serva
-## kk2w
-nameserver /kk2w.cc/serva
-nameserver /kk2w2.com/serva
-nameserver /kk2w1.com/serva
 ## cmdy
 nameserver /cmdy2020.com/serva
 nameserver /cmdy5.com/serva
@@ -2545,6 +2502,8 @@ nameserver /uhibo.com/main
 nameserver /dramasq.com/main
 nameserver /dramaq.com.tw/main
 nameserver /dramasq.cc/main
+nameserver /bugulin.net/main
+nameserver /dramasq.biz/main
 nameserver /dramaqq.com.atlaq.com/main
 nameserver /atlaq.com/main
 nameserver /dramaq.com.tw.testednet.com/main
@@ -2592,6 +2551,7 @@ nameserver /bitauto.com/serva
 nameserver /booking.com/serva
 nameserver /bstatic.com/serva
 nameserver /c-ctrip.com/serva
+nameserver /ctrip.com/serva
 nameserver /camera360.com/serva
 nameserver /cdnmama.com/serva
 nameserver /chaoxing.com/serva
@@ -2617,7 +2577,6 @@ nameserver /cnblogs.com/serva
 nameserver /cnmstl.net/serva
 nameserver /coolapk.com/serva
 nameserver /coolapkmarket.com/serva
-nameserver /ctrip.com/serva
 nameserver /dangdang.com/serva
 nameserver /dcocsp.cn/serva
 nameserver /dfcfw.com/serva
@@ -2735,8 +2694,6 @@ nameserver /openstorage.cn/serva
 nameserver /pconline.com.cn/serva
 nameserver /polyv.net/serva
 nameserver /qbox.me/serva
-nameserver /qcloud.com/serva
-nameserver /qcloudcdn.com/serva
 nameserver /qdaily.com/serva
 nameserver /qdmm.com/serva
 nameserver /qianqian.com/serva
@@ -2794,8 +2751,6 @@ nameserver /weiphone.com/serva
 nameserver /weiphone.net/serva
 nameserver /womai.com/serva
 nameserver /wscdns.com/serva
-nameserver /wps.cn/serva
-nameserver /wpscdn.cn/serva
 nameserver /qwps.cn/serva
 nameserver /xdrig.com/serva
 nameserver /xhscdn.com/serva
@@ -3963,6 +3918,7 @@ nameserver /tencent.com/serva
 nameserver /tencent-cloud.net/serva
 nameserver /tenpay.com/serva
 nameserver /qcloud.com/serva
+nameserver /qcloudcdn.com/serva
 nameserver /qpic.cn/serva
 nameserver /qlogo.cn/serva
 nameserver /ugcimg.cn/serva
@@ -4154,6 +4110,44 @@ nameserver /yun.cn/serva
 nameserver /zjbuc.cn/serva
 nameserver /zjbuc.com/serva
 nameserver /zjbuc.com.cn/serva
+# > Global Services Shared
+## Akamai
+nameserver /akstat.io/main
+nameserver /akadns.net/main
+nameserver /akamaized.net/main
+nameserver /akamaihd.net/main
+nameserver /akamai.net/main
+nameserver /akamaiedge.net/main
+nameserver /akamaistream.net/main
+## Other Services
+nameserver /branch.io/main
+nameserver /globalsign.com/main
+nameserver /digicert.com/main
+nameserver /digitalcertvalidation.com/main
+nameserver /entrust.com/main
+nameserver /verisign.net/main
+nameserver /onetrust.com/main
+nameserver /omniroot.com/main
+nameserver /omniture.com/main
+nameserver /optimizely.com/main
+nameserver /omniture.cn/main
+nameserver /jsdelivr.net/main
+nameserver /jquery.com/main
+nameserver /disqus.com/main
+nameserver /disquscdn.com/main
+nameserver /comodoca.com/main
+nameserver /arkoselabs.com/main
+nameserver /crashlytics.com/main
+nameserver /footprint.net/main
+nameserver /footprintdns.com/main
+nameserver /boltdns.net/main
+nameserver /conviva.com/main
+nameserver /scorecardresearch.com/main
+nameserver /adjust.net.in/main
+nameserver /adjust.com/main
+nameserver /instabug.com/main
+nameserver /doubleverify.com/main
+nameserver /sectigo.com/main
 # > Domestic Service Shared
 nameserver /cdn20.com/serva
 nameserver /ccgslb.com/serva
@@ -5001,6 +4995,7 @@ domain-rules /google/ -speed-check-mode none
 domain-rules /goog/ -speed-check-mode none
 domain-rules /meet/ -speed-check-mode none
 domain-rules /google.co.jp/ -speed-check-mode none
+domain-rules /google.com.hk/ -speed-check-mode none
 domain-rules /google.cn/ -speed-check-mode none
 domain-rules /googleapis.cn/ -speed-check-mode none
 domain-rules /gstatic.cn/ -speed-check-mode none
@@ -5160,7 +5155,6 @@ domain-rules /primevideo.com/ -speed-check-mode none
 domain-rules /amazonaws.com/ -speed-check-mode none
 domain-rules /cloudfront.net/ -speed-check-mode none
 domain-rules /geetest.com/ -speed-check-mode none
-domain-rules /upos-hz-mirrorakam.akamaized.net/ -speed-check-mode none
 domain-rules /acg.tv/ -speed-check-mode none
 domain-rules /acgvideo.com/ -speed-check-mode none
 domain-rules /b23.tv/ -speed-check-mode none
@@ -5201,6 +5195,7 @@ domain-rules /mincdn.com/ -speed-check-mode none
 domain-rules /sharejoytech.com/ -speed-check-mode none
 domain-rules /smtcdns.net/ -speed-check-mode none
 domain-rules /yo9.com/ -speed-check-mode none
+domain-rules /upos-hz-mirrorakam.akamaized.net/ -speed-check-mode none
 domain-rules /hdslb.com.cdn20.com/ -speed-check-mode none
 domain-rules /uposdash-302-bilivideo.yfcdn.net/ -speed-check-mode none
 domain-rules /k1-biligame.gslb.ksyuncdn.com/ -speed-check-mode none
