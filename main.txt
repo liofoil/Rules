@@ -70,7 +70,6 @@
 - DOMAIN-SUFFIX,spotifyjobs.com,Spotify
 - DOMAIN-SUFFIX,-spotify-com,Spotify
 ## shared cdn filter
-- DOMAIN-SUFFIX,spotify-com.akamaized.net,Spotify
 - DOMAIN,audio-ak-spotify-com.akamaized.net,Spotify
 - DOMAIN-KEYWORD,spotify.com,Spotify
 - DOMAIN-KEYWORD,-spotify-com,Spotify
@@ -1347,6 +1346,9 @@
 - DOMAIN,spoprod-a.akamaihd.net,Microsoft
 - DOMAIN,xboxlive.com.akadns.net,Microsoft
 - DOMAIN,officecdn-microsoft-com.akamaized.net,Microsoft
+- DOMAIN,www.microsoft.com-c-3.edgekey.net,Microsoft
+- DOMAIN,www.microsoft.com-c-3.edgekey.net.globalredir.akadns.net,Microsoft
+- DOMAIN,e13678.dscb.akamaiedge.net,Microsoft
 - DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net,Microsoft
 - DOMAIN-SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net,Microsoft
 - DOMAIN-SUFFIX,xboxlive.com.c.footprint.net,Microsoft
@@ -2580,6 +2582,8 @@
 - DOMAIN,dramaqq.com.atlaq.com,Special
 - DOMAIN-SUFFIX,atlaq.com,Special
 - DOMAIN,dramaq.com.tw.testednet.com,Special
+- DOMAIN,xigua-cdn.haima-zuida.com,Special
+- DOMAIN,douban.donghongzuida.com,Special
 - DOMAIN-KEYWORD,drama,Special
 - DOMAIN-KEYWORD,rama,Special
 
@@ -4197,6 +4201,7 @@
 - DOMAIN-SUFFIX,akamai.net,MAIN
 - DOMAIN-SUFFIX,akamaiedge.net,MAIN
 - DOMAIN-SUFFIX,akamaistream.net,MAIN
+- DOMAIN-SUFFIX,edgekey.net,MAIN
 ## Other Services
 - DOMAIN-SUFFIX,branch.io,MAIN
 - DOMAIN-SUFFIX,globalsign.com,MAIN
