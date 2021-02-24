@@ -2,7 +2,8 @@ interface-name: pppoe-wan
 port: 7890
 socks-port: 7891
 redir-port: 7892
-mixed-port: 7893
+tproxy-port: 7893
+mixed-port: 7896
 ipv6: false
 mode: rule
 log-level: warning
@@ -11,7 +12,6 @@ secret: '123456'
 allow-lan: true
 bind-address: "*"
 external-ui: "/usr/share/openclash/dashboard"
-tun: {}
 dns:
   listen: 127.0.0.1:7874
   enable: true
@@ -99,7 +99,9 @@ dns:
   - dot.pub
   - dns.pub
   # Minecraft
+  - "+.playhive.com"
   - "+.hivemc.com"
+  - "+.lbsg.net"
   - "+.minecraft.net"
   - "+.minecraftshop.com"
   - "+.mojang.com"
@@ -323,25 +325,4 @@ dns:
   - "+.ms"
   nameserver:
   - tcp://127.0.0.1:9999
-  fallback:
-  - tcp://127.0.0.1:8888
-  fallback-filter:
-    geoip: false
-    ipcidr:
-    - 0.0.0.0/8
-    - 10.0.0.0/8
-    - 100.64.0.0/10
-    - 127.0.0.0/8
-    - 169.254.0.0/16
-    - 172.16.0.0/12
-    - 192.0.0.0/24
-    - 192.0.2.0/24
-    - 192.88.99.0/24
-    - 192.168.0.0/16
-    - 198.18.0.0/15
-    - 198.51.100.0/24
-    - 203.0.113.0/24
-    - 224.0.0.0/4
-    - 240.0.0.0/4
-    - 255.255.255.255/32
-    domain:
+tun: {}

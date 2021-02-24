@@ -341,6 +341,9 @@
 # > GAME Filters
 ## minecraft servers
 - DOMAIN-SUFFIX,hivemc.com,Games
+- DOMAIN-SUFFIX,playhive.com,Games
+- DOMAIN-SUFFIX,hivebedrock.network,Games
+- DOMAIN-SUFFIX,lbsg.net,Games
 - DOMAIN-SUFFIX,minecraft.net,Games
 - DOMAIN-SUFFIX,minecraftshop.com,Games
 - DOMAIN-SUFFIX,mojang.com,Games
@@ -880,6 +883,11 @@
 - DOMAIN-SUFFIX,tedcdn.com,MAIN
 - DOMAIN-SUFFIX,litix.io,MAIN
 - DOMAIN-SUFFIX,media.net,MAIN
+# > Yahoo
+- DOMAIN-SUFFIX,yahoo.com,MAIN
+- DOMAIN-SUFFIX,yahooapis.com,MAIN
+- DOMAIN-SUFFIX,yahoodns.net,MAIN
+- DOMAIN-SUFFIX,yahoo.co.jp,MAIN
 # > Coding
 - DOMAIN-SUFFIX,jetbrains.com,MAIN
 - DOMAIN-SUFFIX,python.org,MAIN
@@ -975,8 +983,6 @@
 - DOMAIN-SUFFIX,dhl.com,MAIN
 - DOMAIN-SUFFIX,duckduckgo.com,MAIN
 - DOMAIN-SUFFIX,resilio.com,MAIN
-- DOMAIN-SUFFIX,yahoo.com,MAIN
-- DOMAIN-SUFFIX,yahooapis.com,MAIN
 - DOMAIN-SUFFIX,kaggle.com,MAIN
 - DOMAIN-SUFFIX,kaggle.io,MAIN
 - DOMAIN-SUFFIX,cnzz.com,MAIN
@@ -1012,6 +1018,7 @@
 - DOMAIN-SUFFIX,smehost.net,MAIN
 - DOMAIN-SUFFIX,shuziyimin.org,MAIN
 - DOMAIN-SUFFIX,stackoverflow.com,MAIN
+- DOMAIN-SUFFIX,thetvdb.com,MAIN
 - DOMAIN-SUFFIX,tnt.com,MAIN
 - DOMAIN-SUFFIX,typekit.net,MAIN
 - DOMAIN-SUFFIX,ups.com,MAIN
@@ -2562,6 +2569,7 @@
 - DOMAIN-SUFFIX,duboku.net,Special
 - DOMAIN-SUFFIX,duboku.me,Special
 - DOMAIN-SUFFIX,duboku.su,Special
+- DOMAIN-SUFFIX,duboku.fun,Special
 - DOMAIN-SUFFIX,tudu.site,Special
 - DOMAIN-SUFFIX,fanstui.com,Special
 - DOMAIN-SUFFIX,fboku.com,Special
@@ -2575,17 +2583,22 @@
 - DOMAIN-SUFFIX,uhibo.com,Special
 ## dramasq
 - DOMAIN-SUFFIX,dramasq.com,Special
-- DOMAIN-SUFFIX,dramaq.com.tw,Special
 - DOMAIN-SUFFIX,dramasq.cc,Special
+- DOMAIN-SUFFIX,dramasq.de,Special
+- DOMAIN-SUFFIX,drama.org,Special
 - DOMAIN-SUFFIX,bugulin.net,Special
 - DOMAIN-SUFFIX,dramasq.biz,Special
-- DOMAIN,dramaqq.com.atlaq.com,Special
 - DOMAIN-SUFFIX,atlaq.com,Special
+- DOMAIN-SUFFIX,zuidaziyuan.com,Special
+- DOMAIN,dramasq.disqus.com,Special
+- DOMAIN,dramasq.com.atlaq.com,Special
+- DOMAIN,dramaq.img-ix.net,Special
 - DOMAIN,dramaq.com.tw.testednet.com,Special
 - DOMAIN,xigua-cdn.haima-zuida.com,Special
+- DOMAIN,qingxi.xi-zuida.com,Special
 - DOMAIN,douban.donghongzuida.com,Special
 - DOMAIN-KEYWORD,drama,Special
-- DOMAIN-KEYWORD,rama,Special
+- DOMAIN-KEYWORD,zuida,Special
 
 
 - DOMAIN-SUFFIX,rising.com.cn,DIRECT
@@ -4390,6 +4403,11 @@
 - IP-CIDR,18.194.0.0/15,Facebook
 - IP-CIDR,34.224.0.0/12,Facebook
 - IP-CIDR,50.22.198.204/30,Facebook
+- IP-CIDR,66.111.48.0/22,Facebook
+- IP-CIDR,66.111.48.0/24,Facebook
+- IP-CIDR,66.111.49.0/24,Facebook
+- IP-CIDR,66.111.50.0/24,Facebook
+- IP-CIDR,66.111.51.0/24,Facebook
 - IP-CIDR,54.242.0.0/15,Facebook
 - IP-CIDR,69.171.235.0/16,Facebook
 - IP-CIDR,75.126.150.0/16,Facebook
@@ -4530,6 +4548,12 @@
 - IP-CIDR,157.240.222.0/24,Facebook
 - IP-CIDR,157.240.223.0/24,Facebook
 - IP-CIDR,157.240.224.0/24,Facebook
+- IP-CIDR,163.114.128.0/20,Facebook
+- IP-CIDR,163.114.128.0/24,Facebook
+- IP-CIDR,163.114.130.0/24,Facebook
+- IP-CIDR,163.114.131.0/24,Facebook
+- IP-CIDR,163.114.132.0/24,Facebook
+- IP-CIDR,163.114.133.0/24,Facebook
 - IP-CIDR,173.252.64.0/18,Facebook
 - IP-CIDR,173.252.88.0/21,Facebook
 - IP-CIDR,173.252.96.0/19,Facebook
@@ -4543,6 +4567,9 @@
 - IP-CIDR,185.89.218.0/23,Facebook
 - IP-CIDR,185.89.218.0/24,Facebook
 - IP-CIDR,185.89.219.0/24,Facebook
+- IP-CIDR,199.201.64.0/22,Facebook
+- IP-CIDR,199.201.66.0/24,Facebook
+- IP-CIDR,199.201.67.0/24,Facebook
 - IP-CIDR,204.15.20.0/22,Facebook
 - IP-CIDR,31.13.24.0/21,Facebook
 - IP-CIDR,31.13.64.0/18,Facebook
