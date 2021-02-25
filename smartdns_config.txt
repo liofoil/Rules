@@ -1,18 +1,17 @@
-
 # > Global DNS Routing
 ## Regional
 ### HK
 ### US
 ### SG
-nameserver /doh.opendns.com/MNS
 ### Backup
-nameserver /cloudflare-dns.com/MNS
 ## MAIN
+nameserver /opendns.com/MNS
 nameserver /one.one.one.one/MNS
-nameserver /arpa/MNS
+nameserver /cloudflare-dns.com/MNS
 nameserver /dns.google/MNS
 nameserver /dns.google.com/MNS
 nameserver /dns.quad9.net/MNS
+nameserver /arpa/MNS
 # > CN DNS
 nameserver /dns.alidns.com/CNS
 nameserver /doh.pub/CNS
@@ -2485,6 +2484,7 @@ nameserver /cmdy5.com/CNS
 nameserver /cmdycss.shengtaiwenming.com.cn/CNS
 nameserver /cmdycss.tjyjj.cn/CNS
 ## kk2w
+nameserver /kk2w.net/CNS
 nameserver /kk2w.com/CNS
 nameserver /kk2w1.com/CNS
 nameserver /kk2w2.com/CNS
@@ -2495,6 +2495,8 @@ nameserver /xiao301.net/CNS
 nameserver /xiao302.net/CNS
 nameserver /xiao301.cc/CNS
 nameserver /xiao302.cc/CNS
+nameserver /cdn1888.com/CNS
+nameserver /67cdn.com/CNS
 nameserver /sl.ink/CNS
 ## buboku
 nameserver /dubutv.com/SECA
@@ -4368,6 +4370,7 @@ domain-rules /cmdy2020.com/ -speed-check-mode tcp:443
 domain-rules /cmdy5.com/ -speed-check-mode tcp:443
 domain-rules /cmdycss.shengtaiwenming.com.cn/ -speed-check-mode tcp:443
 domain-rules /cmdycss.tjyjj.cn/ -speed-check-mode tcp:443
+domain-rules /kk2w.net/ -speed-check-mode tcp:443
 domain-rules /kk2w.com/ -speed-check-mode tcp:443
 domain-rules /kk2w1.com/ -speed-check-mode tcp:443
 domain-rules /kk2w2.com/ -speed-check-mode tcp:443
@@ -4378,6 +4381,8 @@ domain-rules /xiao301.net/ -speed-check-mode tcp:443
 domain-rules /xiao302.net/ -speed-check-mode tcp:443
 domain-rules /xiao301.cc/ -speed-check-mode tcp:443
 domain-rules /xiao302.cc/ -speed-check-mode tcp:443
+domain-rules /cdn1888.com/ -speed-check-mode tcp:443
+domain-rules /67cdn.com/ -speed-check-mode tcp:443
 domain-rules /sl.ink/ -speed-check-mode tcp:443
 domain-rules /rising.com.cn/ -speed-check-mode tcp:443
 domain-rules /dplayer.tv/ -speed-check-mode tcp:443

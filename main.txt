@@ -2,26 +2,26 @@
 ## Regional
 ### HK
 - IP-CIDR,1.0.0.1/32,SECA,no-resolve
-- IP-CIDR,149.112.112.11/32,SECA,no-resolve
 ### US
-- IP-CIDR,8.8.4.4/32,SECB,no-resolve
+# - IP-CIDR,103.247.37.37/32,SECB,no-resolve
+- IP-CIDR,149.112.112.11/32,SECB,no-resolve
 ### SG
 - IP-CIDR,149.112.112.112/32,SECC,no-resolve
-- DOMAIN,doh.opendns.com,SECC
 ### Backup
+- IP-CIDR,8.8.4.4/32,SECD,no-resolve
 - IP-CIDR,9.9.9.11/32,SECD,no-resolve
-- DOMAIN,cloudflare-dns.com,SECD
 ## MAIN
+# - IP-CIDR,103.247.36.36/32,MNS,no-resolve
 - IP-CIDR,1.1.1.1/32,MNS,no-resolve
-- DOMAIN,one.one.one.one,MNS
 - IP-CIDR,8.8.8.8/32,MNS,no-resolve
 - IP-CIDR,9.9.9.9/32,MNS,no-resolve
-- IP-CIDR,208.67.222.222/32,MNS,no-resolve
-- IP-CIDR,208.67.220.220/32,MNS,no-resolve
-- DOMAIN-SUFFIX,arpa,MNS
+- DOMAIN-SUFFIX,opendns.com,MNS
+- DOMAIN,one.one.one.one,MNS
+- DOMAIN,cloudflare-dns.com,MNS
 - DOMAIN,dns.google,MNS
 - DOMAIN,dns.google.com,MNS
 - DOMAIN,dns.quad9.net,MNS
+- DOMAIN-SUFFIX,arpa,MNS
 # > CN DNS
 - IP-CIDR,223.5.5.5/32,CNS,no-resolve
 - IP-CIDR,223.6.6.6/32,CNS,no-resolve
@@ -2554,6 +2554,7 @@
 - DOMAIN-SUFFIX,cmdycss.shengtaiwenming.com.cn,CNS
 - DOMAIN-SUFFIX,cmdycss.tjyjj.cn,CNS
 ## kk2w
+- DOMAIN-SUFFIX,kk2w.net,CNS
 - DOMAIN-SUFFIX,kk2w.com,CNS
 - DOMAIN-SUFFIX,kk2w1.com,CNS
 - DOMAIN-SUFFIX,kk2w2.com,CNS
@@ -2564,6 +2565,8 @@
 - DOMAIN-SUFFIX,xiao302.net,CNS
 - DOMAIN-SUFFIX,xiao301.cc,CNS
 - DOMAIN-SUFFIX,xiao302.cc,CNS
+- DOMAIN-SUFFIX,cdn1888.com,CNS
+- DOMAIN-SUFFIX,67cdn.com,CNS
 - DOMAIN-SUFFIX,sl.ink,CNS
 ## buboku
 - DOMAIN-SUFFIX,dubutv.com,Special
