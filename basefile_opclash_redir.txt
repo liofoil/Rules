@@ -21,9 +21,4 @@ dns:
   enhanced-mode: redir-host
   nameserver:
   - tcp://127.0.0.1:9999
-  fallback:
-  - 127.0.0.1:9999
-  fallback-filter:
-    geoip: false
-    ipcidr:
 tun: {}
