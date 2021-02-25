@@ -1,23 +1,15 @@
 # > Base Settings
-- DOMAIN-SUFFIX,lan,DIRECT
-- DOMAIN-SUFFIX,local,DIRECT
-- DOMAIN-SUFFIX,localhost,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-- DOMAIN-SUFFIX,in-addr.arpa,DNS
 - DOMAIN-SUFFIX,arpa,DNS
-- DOMAIN-SUFFIX,cloudflare-dns.com,DNS
-- DOMAIN-SUFFIX,dns.google,DNS
-- DOMAIN-SUFFIX,quad9.net,DNS
-- DOMAIN-SUFFIX,opendns.com,DNS
-- DOMAIN-SUFFIX,alidns.com,DIRECT
-- DOMAIN-SUFFIX,doh.pub,DIRECT
-- DOMAIN-SUFFIX,dot.pub,DIRECT
-- DOMAIN-SUFFIX,dns.pub,DIRECT
+- DOMAIN,cloudflare-dns.com,DNS
 - DOMAIN,one.one.one.one,DNS
+- DOMAIN,dns.google,DNS
+- DOMAIN,dns.google.com,DNS
+- DOMAIN,dns.quad9.net,DNS
+- DOMAIN,dns.opendns.com,DNS
+- DOMAIN,dns.alidns.com,DIRECT
+- DOMAIN,doh.pub,DIRECT
+- DOMAIN,dot.pub,DIRECT
+- DOMAIN,dns.pub,DIRECT
 - IP-CIDR,1.1.1.1/32,DNS,no-resolve
 - IP-CIDR,1.0.0.1/32,DNS,no-resolve
 - IP-CIDR,8.8.8.8/32,DNS,no-resolve
@@ -26,8 +18,6 @@
 - IP-CIDR,149.112.112.112/32,DNS,no-resolve
 - IP-CIDR,208.67.222.222/32,DNS,no-resolve
 - IP-CIDR,208.67.220.220/32,DNS,no-resolve
-- IP-CIDR,4.2.2.1/32,DNS,no-resolve
-- IP-CIDR,4.2.2.2/32,DNS,no-resolve
 - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
 - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
 - IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
@@ -1216,7 +1206,6 @@
 - DOMAIN-KEYWORD,www.google.,Google
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,Microsoft
-- DOMAIN-SUFFIX,1drv.ms,Microsoft
 - DOMAIN-SUFFIX,aadrm.com,Microsoft
 - DOMAIN-SUFFIX,acompli.com,Microsoft
 - DOMAIN-SUFFIX,acompli.net,Microsoft
@@ -1239,7 +1228,6 @@
 - DOMAIN-SUFFIX,docs.com,Microsoft
 - DOMAIN-SUFFIX,edgesuite.net,Microsoft
 - DOMAIN-SUFFIX,fabric.io,Microsoft
-- DOMAIN-SUFFIX,gfx.ms,Microsoft
 - DOMAIN-SUFFIX,getmicrosoftkey.com,Microsoft
 - DOMAIN-SUFFIX,hotmail.com,Microsoft
 - DOMAIN-SUFFIX,helpshift.com,Microsoft
@@ -1268,7 +1256,6 @@
 - DOMAIN-SUFFIX,msn.cn,Microsoft
 - DOMAIN-SUFFIX,msocdn.com,Microsoft
 - DOMAIN-SUFFIX,msocsp.com,Microsoft
-- DOMAIN-SUFFIX,mstea.ms,Microsoft
 - DOMAIN-SUFFIX,o365weve.com,Microsoft
 - DOMAIN-SUFFIX,oaspapps.com,Microsoft
 - DOMAIN-SUFFIX,office.com,Microsoft
@@ -1278,7 +1265,6 @@
 - DOMAIN-SUFFIX,onedrive.com,Microsoft
 - DOMAIN-SUFFIX,onenote.com,Microsoft
 - DOMAIN-SUFFIX,onenote.net,Microsoft
-- DOMAIN-SUFFIX,onestore.ms,Microsoft
 - DOMAIN-SUFFIX,onmicrosoft.com,Microsoft
 - DOMAIN-SUFFIX,outlook.com,Microsoft
 - DOMAIN-SUFFIX,outlookmobile.com,Microsoft
@@ -1287,15 +1273,12 @@
 - DOMAIN-SUFFIX,powerapps.com,Microsoft
 - DOMAIN-SUFFIX,public-trust.com,Microsoft
 - DOMAIN-SUFFIX,sfbassets.com,Microsoft
-- DOMAIN-SUFFIX,sfx.ms,Microsoft
 - DOMAIN-SUFFIX,sharepoint.com,Microsoft
 - DOMAIN-SUFFIX,sharepointonline.com,Microsoft
 - DOMAIN-SUFFIX,skype.com,Microsoft
 - DOMAIN-SUFFIX,skypeassets.com,Microsoft
 - DOMAIN-SUFFIX,skypeforbusiness.com,Microsoft
 - DOMAIN-SUFFIX,s-microsoft.com,Microsoft
-- DOMAIN-SUFFIX,staffhub.ms,Microsoft
-- DOMAIN-SUFFIX,svc.ms,Microsoft
 - DOMAIN-SUFFIX,sway-cdn.com,Microsoft
 - DOMAIN-SUFFIX,sway-extensions.com,Microsoft
 - DOMAIN-SUFFIX,sway.com,Microsoft
@@ -1349,7 +1332,6 @@
 - DOMAIN-SUFFIX,xboxstudios.com,Microsoft
 - DOMAIN-SUFFIX,xbx.lv,Microsoft
 ## Shared cdn filter
-- DOMAIN,aka.ms,Microsoft
 - DOMAIN,spoprod-a.akamaihd.net,Microsoft
 - DOMAIN,xboxlive.com.akadns.net,Microsoft
 - DOMAIN,officecdn-microsoft-com.akamaized.net,Microsoft
@@ -2561,6 +2543,11 @@
 - DOMAIN-SUFFIX,cmdy5.com,DIRECT
 - DOMAIN,cmdycss.shengtaiwenming.com.cn,DIRECT
 - DOMAIN,cmdycss.tjyjj.cn,DIRECT
+## kk2w
+- DOMAIN-SUFFIX,kk2w1.com,DIRECT
+- DOMAIN-SUFFIX,kk2w2.com,DIRECT
+- DOMAIN-SUFFIX,kk2w.cc,DIRECT
+- DOMAIN-SUFFIX,xiao301.net,DIRECT
 ## buboku
 - DOMAIN-SUFFIX,dubutv.com,Special
 - DOMAIN-SUFFIX,duboku.tv,Special
@@ -2586,6 +2573,7 @@
 - DOMAIN-SUFFIX,dramasq.cc,Special
 - DOMAIN-SUFFIX,dramasq.de,Special
 - DOMAIN-SUFFIX,drama.org,Special
+- DOMAIN-SUFFIX,carnewsgo.com,Special
 - DOMAIN-SUFFIX,bugulin.net,Special
 - DOMAIN-SUFFIX,dramasq.biz,Special
 - DOMAIN-SUFFIX,atlaq.com,Special
@@ -2669,6 +2657,7 @@
 - DOMAIN-SUFFIX,cnbeta.com,DIRECT
 - DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
 - DOMAIN-SUFFIX,cnblogs.com,DIRECT
+- DOMAIN-SUFFIX,cnblogse.com,DIRECT
 - DOMAIN-SUFFIX,cnmstl.net,DIRECT
 - DOMAIN-SUFFIX,coolapk.com,DIRECT
 - DOMAIN-SUFFIX,coolapkmarket.com,DIRECT

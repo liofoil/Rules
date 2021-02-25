@@ -50,7 +50,6 @@ nameserver /spotifyforbrands.com/main
 nameserver /spotifyjobs.com/main
 nameserver /-spotify-com/main
 ## shared cdn filter
-nameserver /spotify-com.akamaized.net/main
 nameserver /audio-ak-spotify-com.akamaized.net/main
 # > Netflix
 nameserver /netflix.com.edgesuite.net/main
@@ -316,6 +315,9 @@ nameserver /pornhubpremium.com/main
 # > GAME Filters
 ## minecraft servers
 nameserver /hivemc.com/main
+nameserver /playhive.com/main
+nameserver /hivebedrock.network/main
+nameserver /lbsg.net/main
 nameserver /minecraft.net/main
 nameserver /minecraftshop.com/main
 nameserver /mojang.com/main
@@ -843,6 +845,11 @@ nameserver /ted.com/main
 nameserver /tedcdn.com/main
 nameserver /litix.io/main
 nameserver /media.net/main
+# > Yahoo
+nameserver /yahoo.com/main
+nameserver /yahooapis.com/main
+nameserver /yahoodns.net/main
+nameserver /yahoo.co.jp/main
 # > Coding
 nameserver /jetbrains.com/main
 nameserver /python.org/main
@@ -938,8 +945,6 @@ nameserver /crisp.chat/main
 nameserver /dhl.com/main
 nameserver /duckduckgo.com/main
 nameserver /resilio.com/main
-nameserver /yahoo.com/main
-nameserver /yahooapis.com/main
 nameserver /kaggle.com/main
 nameserver /kaggle.io/main
 nameserver /cnzz.com/main
@@ -975,6 +980,7 @@ nameserver /smartmailcloud.com/main
 nameserver /smehost.net/main
 nameserver /shuziyimin.org/main
 nameserver /stackoverflow.com/main
+nameserver /thetvdb.com/main
 nameserver /tnt.com/main
 nameserver /typekit.net/main
 nameserver /ups.com/main
@@ -1289,6 +1295,9 @@ nameserver /aka.ms/main
 nameserver /spoprod-a.akamaihd.net/main
 nameserver /xboxlive.com.akadns.net/main
 nameserver /officecdn-microsoft-com.akamaized.net/main
+nameserver /www.microsoft.com-c-3.edgekey.net/main
+nameserver /www.microsoft.com-c-3.edgekey.net.globalredir.akadns.net/main
+nameserver /e13678.dscb.akamaiedge.net/main
 nameserver /img-prod-cms-rt-microsoft-com.akamaized.net/main
 nameserver /statics-marketingsites-wcus-ms-com.akamaized.net/main
 nameserver /xboxlive.com.c.footprint.net/main
@@ -2487,6 +2496,7 @@ nameserver /duboku.co/main
 nameserver /duboku.net/main
 nameserver /duboku.me/main
 nameserver /duboku.su/main
+nameserver /duboku.fun/main
 nameserver /tudu.site/main
 nameserver /fanstui.com/main
 nameserver /fboku.com/main
@@ -2500,13 +2510,20 @@ nameserver /zdubo.com/main
 nameserver /uhibo.com/main
 ## dramasq
 nameserver /dramasq.com/main
-nameserver /dramaq.com.tw/main
 nameserver /dramasq.cc/main
+nameserver /dramasq.de/main
+nameserver /drama.org/main
 nameserver /bugulin.net/main
 nameserver /dramasq.biz/main
-nameserver /dramaqq.com.atlaq.com/main
 nameserver /atlaq.com/main
+nameserver /zuidaziyuan.com/main
+nameserver /dramasq.disqus.com/main
+nameserver /dramasq.com.atlaq.com/main
+nameserver /dramaq.img-ix.net/main
 nameserver /dramaq.com.tw.testednet.com/main
+nameserver /xigua-cdn.haima-zuida.com/main
+nameserver /qingxi.xi-zuida.com/main
+nameserver /douban.donghongzuida.com/main
 nameserver /rising.com.cn/serva
 nameserver /dplayer.tv/serva
 nameserver /ammmi.com/serva
@@ -4119,6 +4136,7 @@ nameserver /akamaihd.net/main
 nameserver /akamai.net/main
 nameserver /akamaiedge.net/main
 nameserver /akamaistream.net/main
+nameserver /edgekey.net/main
 ## Other Services
 nameserver /branch.io/main
 nameserver /globalsign.com/main
@@ -4237,7 +4255,6 @@ domain-rules /spotifycodes.com/ -speed-check-mode none
 domain-rules /spotifyforbrands.com/ -speed-check-mode none
 domain-rules /spotifyjobs.com/ -speed-check-mode none
 domain-rules /-spotify-com/ -speed-check-mode none
-domain-rules /spotify-com.akamaized.net/ -speed-check-mode none
 domain-rules /audio-ak-spotify-com.akamaized.net/ -speed-check-mode none
 domain-rules /netflix.com.edgesuite.net/ -speed-check-mode none
 domain-rules /fast.com/ -speed-check-mode none
@@ -4475,6 +4492,9 @@ domain-rules /execute-api.us-east-1.amazonaws.com/ -speed-check-mode none
 domain-rules /s3-ap-southeast-1.amazonaws.com/ -speed-check-mode none
 domain-rules /hbogeo.cust.footprint.net/ -speed-check-mode none
 domain-rules /hivemc.com/ -speed-check-mode none
+domain-rules /playhive.com/ -speed-check-mode none
+domain-rules /hivebedrock.network/ -speed-check-mode none
+domain-rules /lbsg.net/ -speed-check-mode none
 domain-rules /minecraft.net/ -speed-check-mode none
 domain-rules /minecraftshop.com/ -speed-check-mode none
 domain-rules /mojang.com/ -speed-check-mode none
@@ -5135,6 +5155,9 @@ domain-rules /aka.ms/ -speed-check-mode none
 domain-rules /spoprod-a.akamaihd.net/ -speed-check-mode none
 domain-rules /xboxlive.com.akadns.net/ -speed-check-mode none
 domain-rules /officecdn-microsoft-com.akamaized.net/ -speed-check-mode none
+domain-rules /www.microsoft.com-c-3.edgekey.net/ -speed-check-mode none
+domain-rules /www.microsoft.com-c-3.edgekey.net.globalredir.akadns.net/ -speed-check-mode none
+domain-rules /e13678.dscb.akamaiedge.net/ -speed-check-mode none
 domain-rules /img-prod-cms-rt-microsoft-com.akamaized.net/ -speed-check-mode none
 domain-rules /statics-marketingsites-wcus-ms-com.akamaized.net/ -speed-check-mode none
 domain-rules /xboxlive.com.c.footprint.net/ -speed-check-mode none
