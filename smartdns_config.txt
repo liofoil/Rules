@@ -2,9 +2,12 @@
 ## Regional
 ### HK
 ### US
+nameserver /dns2.dnsfilter.com/SECB
 ### SG
 ### Backup
 ## MAIN
+nameserver /dns1.dnsfilter.com/MNS
+nameserver /dnsfilter.com/MNS
 nameserver /opendns.com/MNS
 nameserver /one.one.one.one/MNS
 nameserver /cloudflare-dns.com/MNS
@@ -17,9 +20,10 @@ nameserver /dns.alidns.com/CNS
 nameserver /doh.pub/CNS
 nameserver /dot.pub/CNS
 nameserver /dns.pub/CNS
-# > Data Tansmission Services
+# > Data Transmission Services
 nameserver /nbclouds.co/DIRECT
 nameserver /globalacceleration.net/DIRECT
+nameserver /internetworld.cloud/DIRECT
 nameserver /ssr.ac/SECB
 nameserver /ssr.sh/SECB
 nameserver /ssr.sx/SECB
@@ -986,6 +990,7 @@ nameserver /tnt.com/MNS
 nameserver /typekit.net/MNS
 nameserver /ups.com/MNS
 nameserver /v2ex.com/MNS
+nameserver /v2ex.co/MNS
 nameserver /weebly.com/MNS
 nameserver /wordpress.com/MNS
 nameserver /wp.com/MNS
@@ -1170,6 +1175,7 @@ nameserver /azure.cn/MNS
 nameserver /azure.com/MNS
 nameserver /azure.net/MNS
 nameserver /azure-apim.net/MNS
+nameserver /azurefd.net/MNS
 nameserver /azureedge.net/MNS
 nameserver /azurerms.com/MNS
 nameserver /azurewebsites.net/MNS

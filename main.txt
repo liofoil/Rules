@@ -3,21 +3,25 @@
 ### HK
 - IP-CIDR,1.0.0.1/32,SECA,no-resolve
 ### US
-# - IP-CIDR,103.247.37.37/32,SECB,no-resolve
+- DOMAIN,dns2.dnsfilter.com,SECB
+- IP-CIDR,103.247.37.37/32,SECB,no-resolve
 - IP-CIDR,149.112.112.11/32,SECB,no-resolve
 ### SG
 - IP-CIDR,149.112.112.112/32,SECC,no-resolve
-### Backup
+### Backup TW
+- IP-CIDR,101.101.101.101/32,SECD,no-resolve
 - IP-CIDR,8.8.4.4/32,SECD,no-resolve
 - IP-CIDR,9.9.9.11/32,SECD,no-resolve
 ## MAIN
-# - IP-CIDR,103.247.36.36/32,MNS,no-resolve
+- DOMAIN,dns1.dnsfilter.com,MNS
+- IP-CIDR,103.247.36.36/32,MNS,no-resolve
 - IP-CIDR,1.1.1.1/32,MNS,no-resolve
 - IP-CIDR,8.8.8.8/32,MNS,no-resolve
 - IP-CIDR,9.9.9.9/32,MNS,no-resolve
+- DOMAIN-SUFFIX,dnsfilter.com,MNS
 - DOMAIN-SUFFIX,opendns.com,MNS
 - DOMAIN,one.one.one.one,MNS
-- DOMAIN,cloudflare-dns.com,MNS
+- DOMAIN-SUFFIX,cloudflare-dns.com,MNS
 - DOMAIN,dns.google,MNS
 - DOMAIN,dns.google.com,MNS
 - DOMAIN,dns.quad9.net,MNS
@@ -29,13 +33,15 @@
 - IP-CIDR,114.114.115.115/32,CNS,no-resolve
 - IP-CIDR,119.29.29.29/32,CNS,no-resolve
 - IP-CIDR,180.76.76.76/32,CNS,no-resolve
+- DOMAIN-SUFFIX,global-idc.net,CNS
 - DOMAIN,dns.alidns.com,CNS
 - DOMAIN,doh.pub,CNS
 - DOMAIN,dot.pub,CNS
 - DOMAIN,dns.pub,CNS
-# > Data Tansmission Services
+# > Data Transmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
+- DOMAIN-SUFFIX,internetworld.cloud,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
@@ -781,6 +787,31 @@
 - DOMAIN-SUFFIX,dropbox.com,MAIN
 - DOMAIN-SUFFIX,dropboxapi.com,MAIN
 - DOMAIN-SUFFIX,dropboxusercontent.com,MAIN
+# > TWS
+## donghuafeng
+- DOMAIN,gamer-cds.cdn.hinet.net,TWS
+- DOMAIN,gamer2-cds.cdn.hinet.net,TWS
+- DOMAIN-SUFFIX,bahamut.com.tw,TWS
+- DOMAIN-SUFFIX,gamer.com.tw,TWS
+## TaiwanGood
+- DOMAIN,hamifans.emome.net,TWS
+- DOMAIN-SUFFIX,skyking.com.tw,TWS
+## TVB
+# > HKS
+- DOMAIN-SUFFIX,bigbigchannel.com.hk,HKS
+- DOMAIN-SUFFIX,bigbigshop.com,HKS
+- DOMAIN-SUFFIX,mytvsuper.com,HKS
+- DOMAIN-SUFFIX,mytvsuperlimited.hb.omtrdc.net,HKS
+- DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net,HKS
+- DOMAIN-SUFFIX,tvb.com,HKS
+- DOMAIN-SUFFIX,tvb.com.au,HKS
+- DOMAIN-SUFFIX,tvbanywhere.com,HKS
+- DOMAIN-SUFFIX,tvbanywhere.com.sg,HKS
+- DOMAIN-SUFFIX,tvbc.com.cn,HKS
+- DOMAIN-SUFFIX,tvbeventpower.com.hk,HKS
+- DOMAIN-SUFFIX,tvbusa.com,HKS
+- DOMAIN-SUFFIX,tvbweekly.com,HKS
+- DOMAIN-SUFFIX,tvmedia.net.au,HKS
 # > Pixiv
 - DOMAIN-SUFFIX,pixiv.net,MAIN
 - DOMAIN-SUFFIX,pximg.net,MAIN
@@ -876,6 +907,7 @@
 - DOMAIN-SUFFIX,textnow.me,MAIN
 - DOMAIN-SUFFIX,textnow.com,MAIN
 - DOMAIN-SUFFIX,emb-api.com,MAIN
+- DOMAIN-SUFFIX,1news.io,MAIN
 - DOMAIN-SUFFIX,oath.com,MAIN
 # > TED
 - DOMAIN-SUFFIX,ted.com,MAIN
@@ -887,11 +919,37 @@
 - DOMAIN-SUFFIX,yahooapis.com,MAIN
 - DOMAIN-SUFFIX,yahoodns.net,MAIN
 - DOMAIN-SUFFIX,yahoo.co.jp,MAIN
+# > V2EX
+- DOMAIN-SUFFIX,v2ex.com,MAIN
+- DOMAIN-SUFFIX,v2ex.co,MAIN
 # > Coding
-- DOMAIN-SUFFIX,jetbrains.com,MAIN
-- DOMAIN-SUFFIX,python.org,MAIN
-- DOMAIN-SUFFIX,pypi.org,MAIN
 - DOMAIN-SUFFIX,anaconda.org,MAIN
+- DOMAIN-SUFFIX,apache.org,MAIN
+- DOMAIN-SUFFIX,atlassian.com,MAIN
+- DOMAIN-SUFFIX,docker.com,MAIN
+- DOMAIN-SUFFIX,elastic.co,MAIN
+- DOMAIN-SUFFIX,elastic.com,MAIN
+- DOMAIN-SUFFIX,fontawesome.com,MAIN
+- DOMAIN-SUFFIX,gcr.io,MAIN
+- DOMAIN-SUFFIX,gitlab.com,MAIN
+- DOMAIN-SUFFIX,gitlab.io,MAIN
+- DOMAIN-SUFFIX,jetbrains.com,MAIN
+- DOMAIN-SUFFIX,jitpack.io,MAIN
+- DOMAIN-SUFFIX,kaggle.com,MAIN
+- DOMAIN-SUFFIX,kaggle.io,MAIN
+- DOMAIN-SUFFIX,maven.org,MAIN
+- DOMAIN-SUFFIX,medium.com,MAIN
+- DOMAIN-SUFFIX,mvnrepository.com,MAIN
+- DOMAIN-SUFFIX,postman-echo.com,MAIN
+- DOMAIN-SUFFIX,pypi.org,MAIN
+- DOMAIN-SUFFIX,python.org,MAIN
+- DOMAIN-SUFFIX,pythonhosted.org,MAIN
+- DOMAIN-SUFFIX,quay.io,MAIN
+- DOMAIN-SUFFIX,redhat.com,MAIN
+- DOMAIN-SUFFIX,sonatype.org,MAIN
+- DOMAIN-SUFFIX,sourcegraph.com,MAIN
+- DOMAIN-SUFFIX,spring.io,MAIN
+- DOMAIN-SUFFIX,spring.net,MAIN
 # > Wiki
 - DOMAIN-SUFFIX,wikimapia.org,MAIN
 - DOMAIN-SUFFIX,wikimedia.org,MAIN
@@ -914,6 +972,7 @@
 - DOMAIN-SUFFIX,ams.org,MAIN
 - DOMAIN-SUFFIX,annualreviews.org,MAIN
 - DOMAIN-SUFFIX,aps.org,MAIN
+- DOMAIN-SUFFIX,arxiv.org,MAIN
 - DOMAIN-SUFFIX,ascelibrary.org,MAIN
 - DOMAIN-SUFFIX,asm.org,MAIN
 - DOMAIN-SUFFIX,asme.org,MAIN
@@ -978,50 +1037,34 @@
 - DOMAIN-SUFFIX,asus.com.cn,DIRECT
 - DOMAIN-SUFFIX,asuscomm.com,MAIN
 - DOMAIN-SUFFIX,airserver.com,MAIN
+- DOMAIN-SUFFIX,aol.com,MAIN
+- DOMAIN-SUFFIX,apache.org,MAIN
+- DOMAIN-SUFFIX,cnzz.com,MAIN
 - DOMAIN-SUFFIX,crisp.chat,MAIN
 - DOMAIN-SUFFIX,dhl.com,MAIN
 - DOMAIN-SUFFIX,duckduckgo.com,MAIN
-- DOMAIN-SUFFIX,resilio.com,MAIN
-- DOMAIN-SUFFIX,kaggle.com,MAIN
-- DOMAIN-SUFFIX,kaggle.io,MAIN
-- DOMAIN-SUFFIX,cnzz.com,MAIN
-- DOMAIN-SUFFIX,aol.com,MAIN
-- DOMAIN-SUFFIX,apache.org,MAIN
-- DOMAIN-SUFFIX,docker.com,MAIN
 - DOMAIN-SUFFIX,elastic.co,MAIN
 - DOMAIN-SUFFIX,elastic.com,MAIN
 - DOMAIN-SUFFIX,gcr.io,MAIN
-- DOMAIN-SUFFIX,gitlab.com,MAIN
-- DOMAIN-SUFFIX,gitlab.io,MAIN
 - DOMAIN-SUFFIX,goodnotes.email,MAIN
 - DOMAIN-SUFFIX,hostloc.com,MAIN
 - DOMAIN-SUFFIX,internetdownloadmanager.com,MAIN
 - DOMAIN-SUFFIX,imgur.com,MAIN
-- DOMAIN-SUFFIX,jitpack.io,MAIN
 - DOMAIN-SUFFIX,lencr.org,MAIN
-- DOMAIN-SUFFIX,maven.org,MAIN
-- DOMAIN-SUFFIX,medium.com,MAIN
 - DOMAIN-SUFFIX,mvnrepository.com,MAIN
 - DOMAIN-SUFFIX,mozilla.com,MAIN
 - DOMAIN-SUFFIX,mozaws.net,MAIN
 - DOMAIN-SUFFIX,noxinfluencer.com,MAIN
 - DOMAIN-SUFFIX,oracle.com,MAIN
 - DOMAIN-SUFFIX,pndsn.com,MAIN
-- DOMAIN-SUFFIX,quay.io,MAIN
-- DOMAIN-SUFFIX,redhat.com,MAIN
-- DOMAIN-SUFFIX,sonatype.org,MAIN
-- DOMAIN-SUFFIX,sourcegraph.com,MAIN
-- DOMAIN-SUFFIX,spring.io,MAIN
-- DOMAIN-SUFFIX,spring.net,MAIN
+- DOMAIN-SUFFIX,resilio.com,MAIN
 - DOMAIN-SUFFIX,smartmailcloud.com,MAIN
 - DOMAIN-SUFFIX,smehost.net,MAIN
 - DOMAIN-SUFFIX,shuziyimin.org,MAIN
-- DOMAIN-SUFFIX,stackoverflow.com,MAIN
 - DOMAIN-SUFFIX,thetvdb.com,MAIN
 - DOMAIN-SUFFIX,tnt.com,MAIN
 - DOMAIN-SUFFIX,typekit.net,MAIN
 - DOMAIN-SUFFIX,ups.com,MAIN
-- DOMAIN-SUFFIX,v2ex.com,MAIN
 - DOMAIN-SUFFIX,weebly.com,MAIN
 - DOMAIN-SUFFIX,wordpress.com,MAIN
 - DOMAIN-SUFFIX,wp.com,MAIN
@@ -1091,6 +1134,8 @@
 - DOMAIN-SUFFIX,icloudsecure.net,Apple
 - DOMAIN-SUFFIX,icloudsetup.com,Apple
 - DOMAIN-SUFFIX,ios-icloud.com,Apple
+- DOMAIN-SUFFIX,itunes-nocookie.com,Apple
+- DOMAIN-SUFFIX,me.com,Apple
 - DOMAIN-SUFFIX,myicloud.net,Apple
 - DOMAIN-SUFFIX,mylcloud.net,Apple
 - DOMAIN-SUFFIX,wwwicloud.com,Apple
@@ -1124,6 +1169,7 @@
 - DOMAIN-SUFFIX,youtube.com,Google
 - DOMAIN-SUFFIX,youtube-nocookie.com,Google
 - DOMAIN-SUFFIX,googleapis.com,Google
+- DOMAIN-SUFFIX,googleadservices.com,Google
 - DOMAIN-SUFFIX,advertisercommunity.com,Google
 - DOMAIN-SUFFIX,ampproject.org,Google
 - DOMAIN-SUFFIX,appspot.com,Google
@@ -1226,6 +1272,7 @@
 - DOMAIN-SUFFIX,azure.com,Microsoft
 - DOMAIN-SUFFIX,azure.net,Microsoft
 - DOMAIN-SUFFIX,azure-apim.net,Microsoft
+- DOMAIN-SUFFIX,azurefd.net,Microsoft
 - DOMAIN-SUFFIX,azureedge.net,Microsoft
 - DOMAIN-SUFFIX,azurerms.com,Microsoft
 - DOMAIN-SUFFIX,azurewebsites.net,Microsoft
@@ -1237,6 +1284,7 @@
 - DOMAIN-SUFFIX,ceipmsn.com,Microsoft
 - DOMAIN-SUFFIX,docs.com,Microsoft
 - DOMAIN-SUFFIX,edgesuite.net,Microsoft
+- DOMAIN-SUFFIX,e-msedge.net,Microsoft
 - DOMAIN-SUFFIX,fabric.io,Microsoft
 - DOMAIN-SUFFIX,getmicrosoftkey.com,Microsoft
 - DOMAIN-SUFFIX,hotmail.com,Microsoft
@@ -1250,6 +1298,7 @@
 - DOMAIN-SUFFIX,microsoftonline.com,Microsoft
 - DOMAIN-SUFFIX,microsoftonline-p.com,Microsoft
 - DOMAIN-SUFFIX,microsoft-tst.com,Microsoft
+- DOMAIN-SUFFIX,microsoftcrmportals.com,Microsoft
 - DOMAIN-SUFFIX,msappproxy.net,Microsoft
 - DOMAIN-SUFFIX,msauth.net,Microsoft
 - DOMAIN-SUFFIX,msauthimages.net,Microsoft
@@ -1374,6 +1423,7 @@
 - DOMAIN-SUFFIX,amazonaws.co.uk,Amazon
 - DOMAIN-SUFFIX,amazon.co.jp,Amazon
 - DOMAIN-SUFFIX,amazon.com,Amazon
+- DOMAIN-SUFFIX,amazontrust.com,Amazon
 - DOMAIN-SUFFIX,aiv-cdn.net,Amazon
 - DOMAIN-SUFFIX,aiv-delivery.net,Amazon
 - DOMAIN-SUFFIX,amazonvideo.com,Amazon
@@ -1381,6 +1431,7 @@
 - DOMAIN-SUFFIX,amazonaws.com,Amazon
 - DOMAIN-SUFFIX,cloudfront.net,Amazon
 - DOMAIN-SUFFIX,geetest.com,Amazon
+- DOMAIN-SUFFIX,fastly.net,Amazon
 - DOMAIN-KEYWORD,avoddashs,Amazon
 - DOMAIN-KEYWORD,amazon,Amazon
 # > teamviewer
@@ -1864,6 +1915,7 @@
 - DOMAIN-SUFFIX,bytesmanager.com,DIRECT
 - DOMAIN-SUFFIX,cdndns1.com,DIRECT
 - DOMAIN-SUFFIX,cdndns2.com,DIRECT
+- DOMAIN-SUFFIX,ctobsnssdk.com,DIRECT
 - DOMAIN-SUFFIX,douyin.com,DIRECT
 - DOMAIN-SUFFIX,douyinact.com,DIRECT
 - DOMAIN-SUFFIX,douyinact.net,DIRECT
@@ -2795,6 +2847,7 @@
 - DOMAIN-SUFFIX,overcast.fm,CNS
 - DOMAIN-SUFFIX,openstorage.cn,CNS
 - DOMAIN-SUFFIX,pconline.com.cn,CNS
+- DOMAIN-SUFFIX,people.com.cn,CNS
 - DOMAIN-SUFFIX,polyv.net,CNS
 - DOMAIN-SUFFIX,qbox.me,CNS
 - DOMAIN-SUFFIX,qdaily.com,CNS
@@ -2818,6 +2871,7 @@
 - DOMAIN-SUFFIX,segmentfault.com,CNS
 - DOMAIN-SUFFIX,shumilou.net,CNS
 - DOMAIN-SUFFIX,shuidichou.com,CNS
+- DOMAIN-SUFFIX,shuzilm.cn,CNS
 - DOMAIN-SUFFIX,simplecd.me,CNS
 - DOMAIN-SUFFIX,snwx.com,CNS
 - DOMAIN-SUFFIX,soufunimg.com,CNS
@@ -2985,6 +3039,7 @@
 - DOMAIN-SUFFIX,cmvideo.cn,CNS
 - DOMAIN-SUFFIX,fetion-portal.com,CNS
 - DOMAIN-SUFFIX,fetionpic.com,CNS
+- DOMAIN-SUFFIX,komect.com,CNS
 - DOMAIN-SUFFIX,lovev.cn,CNS
 - DOMAIN-SUFFIX,lovev.com,CNS
 - DOMAIN-SUFFIX,migu.cn,CNS
@@ -4025,6 +4080,7 @@
 - DOMAIN-SUFFIX,qpic.cn,DIRECT
 - DOMAIN-SUFFIX,qlogo.cn,DIRECT
 - DOMAIN-SUFFIX,ugcimg.cn,DIRECT
+- DOMAIN-SUFFIX,ugdtimg.com,DIRECT
 - DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
 - DOMAIN-SUFFIX,qqmail.com,DIRECT
 - DOMAIN-SUFFIX,tencentmusic.com,DIRECT
@@ -4043,6 +4099,7 @@
 - DOMAIN-SUFFIX,voovmeeting.com,DIRECT
 - DOMAIN-SUFFIX,com-qq.net,DIRECT
 - DOMAIN-SUFFIX,cdntips.net,DIRECT
+- DOMAIN-SUFFIX,cdntip.com,DIRECT
 - DOMAIN-SUFFIX,imtmp.net,DIRECT
 ## meituan
 - DOMAIN-SUFFIX,dianping.com,DIRECT
@@ -4114,6 +4171,8 @@
 - DOMAIN-SUFFIX,kunlunar.com,DIRECT
 - DOMAIN-SUFFIX,kunlunhuf.com,DIRECT
 - DOMAIN-SUFFIX,kunlunpi.com,DIRECT
+- DOMAIN-SUFFIX,cdngslb.com,DIRECT
+- DOMAIN-SUFFIX,num1dns.com,DIRECT
 ## Cainiao
 - DOMAIN-SUFFIX,56che.com,DIRECT
 - DOMAIN-SUFFIX,cainiao-inc.cn,DIRECT
@@ -4224,6 +4283,8 @@
 - DOMAIN-SUFFIX,akamaistream.net,MAIN
 - DOMAIN-SUFFIX,edgekey.net,MAIN
 ## Other Services
+- DOMAIN-SUFFIX,psicdn.net,MAIN
+- DOMAIN-SUFFIX,edgecastcdn.net,MAIN
 - DOMAIN-SUFFIX,branch.io,MAIN
 - DOMAIN-SUFFIX,globalsign.com,MAIN
 - DOMAIN-SUFFIX,digicert.com,MAIN
@@ -4235,6 +4296,9 @@
 - DOMAIN-SUFFIX,omniture.com,MAIN
 - DOMAIN-SUFFIX,optimizely.com,MAIN
 - DOMAIN-SUFFIX,omniture.cn,MAIN
+- DOMAIN-SUFFIX,hotjar.com,MAIN
+- DOMAIN-SUFFIX,hotjar.io,MAIN
+- DOMAIN-SUFFIX,airfind.com,MAIN
 - DOMAIN-SUFFIX,jsdelivr.net,MAIN
 - DOMAIN-SUFFIX,jquery.com,MAIN
 - DOMAIN-SUFFIX,disqus.com,MAIN
