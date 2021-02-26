@@ -20,8 +20,10 @@ server-tls 1.0.0.1 -group SECA -exclude-default-group
 server-tls 149.112.112.11 -group SECB -exclude-default-group
 ## SG
 server-tls 149.112.112.112 -group SECC -exclude-default-group
+server-tls 8.8.4.4 -group SECD -exclude-default-group
 ## backup
 server-tls 9.9.9.11 -group SECD -exclude-default-group
-server-tls 8.8.4.4 -group SECD -exclude-default-group
+server-tls 101.101.101.101 -group SECD -exclude-default-group
 ## mixed
 server 127.0.0.1:9988 -group geomixed
+server-tls 223.6.6.6 -group geomixed

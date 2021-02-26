@@ -4,7 +4,7 @@
 ### US
 nameserver /dns2.dnsfilter.com/SECB
 ### SG
-### Backup
+### Backup TW
 ## MAIN
 nameserver /dns1.dnsfilter.com/MNS
 nameserver /dnsfilter.com/MNS
@@ -16,6 +16,7 @@ nameserver /dns.google.com/MNS
 nameserver /dns.quad9.net/MNS
 nameserver /arpa/MNS
 # > CN DNS
+nameserver /global-idc.net/CNS
 nameserver /dns.alidns.com/CNS
 nameserver /doh.pub/CNS
 nameserver /dot.pub/CNS
@@ -751,6 +752,31 @@ nameserver /duboxcdn.com/MNS
 nameserver /dropbox.com/MNS
 nameserver /dropboxapi.com/MNS
 nameserver /dropboxusercontent.com/MNS
+# > TWS
+## donghuafeng
+nameserver /gamer-cds.cdn.hinet.net/SECD
+nameserver /gamer2-cds.cdn.hinet.net/SECD
+nameserver /bahamut.com.tw/SECD
+nameserver /gamer.com.tw/SECD
+## TaiwanGood
+nameserver /hamifans.emome.net/SECD
+nameserver /skyking.com.tw/SECD
+## TVB
+# > HKS
+nameserver /bigbigchannel.com.hk/SECA
+nameserver /bigbigshop.com/SECA
+nameserver /mytvsuper.com/SECA
+nameserver /mytvsuperlimited.hb.omtrdc.net/SECA
+nameserver /mytvsuperlimited.sc.omtrdc.net/SECA
+nameserver /tvb.com/SECA
+nameserver /tvb.com.au/SECA
+nameserver /tvbanywhere.com/SECA
+nameserver /tvbanywhere.com.sg/SECA
+nameserver /tvbc.com.cn/SECA
+nameserver /tvbeventpower.com.hk/SECA
+nameserver /tvbusa.com/SECA
+nameserver /tvbweekly.com/SECA
+nameserver /tvmedia.net.au/SECA
 # > Pixiv
 nameserver /pixiv.net/MNS
 nameserver /pximg.net/MNS
@@ -844,6 +870,7 @@ nameserver /sharpdaily.tw/MNS
 nameserver /textnow.me/MNS
 nameserver /textnow.com/MNS
 nameserver /emb-api.com/MNS
+nameserver /1news.io/MNS
 nameserver /oath.com/MNS
 # > TED
 nameserver /ted.com/MNS
@@ -855,11 +882,37 @@ nameserver /yahoo.com/MNS
 nameserver /yahooapis.com/MNS
 nameserver /yahoodns.net/MNS
 nameserver /yahoo.co.jp/MNS
+# > V2EX
+nameserver /v2ex.com/MNS
+nameserver /v2ex.co/MNS
 # > Coding
-nameserver /jetbrains.com/MNS
-nameserver /python.org/MNS
-nameserver /pypi.org/MNS
 nameserver /anaconda.org/MNS
+nameserver /apache.org/MNS
+nameserver /atlassian.com/MNS
+nameserver /docker.com/MNS
+nameserver /elastic.co/MNS
+nameserver /elastic.com/MNS
+nameserver /fontawesome.com/MNS
+nameserver /gcr.io/MNS
+nameserver /gitlab.com/MNS
+nameserver /gitlab.io/MNS
+nameserver /jetbrains.com/MNS
+nameserver /jitpack.io/MNS
+nameserver /kaggle.com/MNS
+nameserver /kaggle.io/MNS
+nameserver /maven.org/MNS
+nameserver /medium.com/MNS
+nameserver /mvnrepository.com/MNS
+nameserver /postman-echo.com/MNS
+nameserver /pypi.org/MNS
+nameserver /python.org/MNS
+nameserver /pythonhosted.org/MNS
+nameserver /quay.io/MNS
+nameserver /redhat.com/MNS
+nameserver /sonatype.org/MNS
+nameserver /sourcegraph.com/MNS
+nameserver /spring.io/MNS
+nameserver /spring.net/MNS
 # > Wiki
 nameserver /wikimapia.org/MNS
 nameserver /wikimedia.org/MNS
@@ -882,6 +935,7 @@ nameserver /aip.org/MNS
 nameserver /ams.org/MNS
 nameserver /annualreviews.org/MNS
 nameserver /aps.org/MNS
+nameserver /arxiv.org/MNS
 nameserver /ascelibrary.org/MNS
 nameserver /asm.org/MNS
 nameserver /asme.org/MNS
@@ -946,51 +1000,34 @@ nameserver /asus.com/MNS
 nameserver /asus.com.cn/DIRECT
 nameserver /asuscomm.com/MNS
 nameserver /airserver.com/MNS
+nameserver /aol.com/MNS
+nameserver /apache.org/MNS
+nameserver /cnzz.com/MNS
 nameserver /crisp.chat/MNS
 nameserver /dhl.com/MNS
 nameserver /duckduckgo.com/MNS
-nameserver /resilio.com/MNS
-nameserver /kaggle.com/MNS
-nameserver /kaggle.io/MNS
-nameserver /cnzz.com/MNS
-nameserver /aol.com/MNS
-nameserver /apache.org/MNS
-nameserver /docker.com/MNS
 nameserver /elastic.co/MNS
 nameserver /elastic.com/MNS
 nameserver /gcr.io/MNS
-nameserver /gitlab.com/MNS
-nameserver /gitlab.io/MNS
 nameserver /goodnotes.email/MNS
 nameserver /hostloc.com/MNS
 nameserver /internetdownloadmanager.com/MNS
 nameserver /imgur.com/MNS
-nameserver /jitpack.io/MNS
 nameserver /lencr.org/MNS
-nameserver /maven.org/MNS
-nameserver /medium.com/MNS
 nameserver /mvnrepository.com/MNS
 nameserver /mozilla.com/MNS
 nameserver /mozaws.net/MNS
 nameserver /noxinfluencer.com/MNS
 nameserver /oracle.com/MNS
 nameserver /pndsn.com/MNS
-nameserver /quay.io/MNS
-nameserver /redhat.com/MNS
-nameserver /sonatype.org/MNS
-nameserver /sourcegraph.com/MNS
-nameserver /spring.io/MNS
-nameserver /spring.net/MNS
+nameserver /resilio.com/MNS
 nameserver /smartmailcloud.com/MNS
 nameserver /smehost.net/MNS
 nameserver /shuziyimin.org/MNS
-nameserver /stackoverflow.com/MNS
 nameserver /thetvdb.com/MNS
 nameserver /tnt.com/MNS
 nameserver /typekit.net/MNS
 nameserver /ups.com/MNS
-nameserver /v2ex.com/MNS
-nameserver /v2ex.co/MNS
 nameserver /weebly.com/MNS
 nameserver /wordpress.com/MNS
 nameserver /wp.com/MNS
@@ -1057,6 +1094,8 @@ nameserver /icloudpay.net/MNS
 nameserver /icloudsecure.net/MNS
 nameserver /icloudsetup.com/MNS
 nameserver /ios-icloud.com/MNS
+nameserver /itunes-nocookie.com/MNS
+nameserver /me.com/MNS
 nameserver /myicloud.net/MNS
 nameserver /mylcloud.net/MNS
 nameserver /wwwicloud.com/MNS
@@ -1078,6 +1117,7 @@ nameserver /googlevideo.com/MNS
 nameserver /youtube.com/MNS
 nameserver /youtube-nocookie.com/MNS
 nameserver /googleapis.com/MNS
+nameserver /googleadservices.com/MNS
 nameserver /advertisercommunity.com/MNS
 nameserver /ampproject.org/MNS
 nameserver /appspot.com/MNS
@@ -1187,6 +1227,7 @@ nameserver /cortana.ai/MNS
 nameserver /ceipmsn.com/MNS
 nameserver /docs.com/MNS
 nameserver /edgesuite.net/MNS
+nameserver /e-msedge.net/MNS
 nameserver /fabric.io/MNS
 nameserver /getmicrosoftkey.com/MNS
 nameserver /hotmail.com/MNS
@@ -1200,6 +1241,7 @@ nameserver /microsoft.com/MNS
 nameserver /microsoftonline.com/MNS
 nameserver /microsoftonline-p.com/MNS
 nameserver /microsoft-tst.com/MNS
+nameserver /microsoftcrmportals.com/MNS
 nameserver /msappproxy.net/MNS
 nameserver /msauth.net/MNS
 nameserver /msauthimages.net/MNS
@@ -1319,6 +1361,7 @@ nameserver /amazonaws.com.cn/MNS
 nameserver /amazonaws.co.uk/MNS
 nameserver /amazon.co.jp/MNS
 nameserver /amazon.com/MNS
+nameserver /amazontrust.com/MNS
 nameserver /aiv-cdn.net/MNS
 nameserver /aiv-delivery.net/MNS
 nameserver /amazonvideo.com/MNS
@@ -1326,6 +1369,7 @@ nameserver /primevideo.com/MNS
 nameserver /amazonaws.com/MNS
 nameserver /cloudfront.net/MNS
 nameserver /geetest.com/MNS
+nameserver /fastly.net/MNS
 # > teamviewer
 nameserver /teamviewer.com/DIRECT
 # > oray
@@ -1806,6 +1850,7 @@ nameserver /bytesfield.com/DIRECT
 nameserver /bytesmanager.com/DIRECT
 nameserver /cdndns1.com/DIRECT
 nameserver /cdndns2.com/DIRECT
+nameserver /ctobsnssdk.com/DIRECT
 nameserver /douyin.com/DIRECT
 nameserver /douyinact.com/DIRECT
 nameserver /douyinact.net/DIRECT
@@ -2726,6 +2771,7 @@ nameserver /ourdvs.com/CNS
 nameserver /overcast.fm/CNS
 nameserver /openstorage.cn/CNS
 nameserver /pconline.com.cn/CNS
+nameserver /people.com.cn/CNS
 nameserver /polyv.net/CNS
 nameserver /qbox.me/CNS
 nameserver /qdaily.com/CNS
@@ -2749,6 +2795,7 @@ nameserver /samsclub.cn/CNS
 nameserver /segmentfault.com/CNS
 nameserver /shumilou.net/CNS
 nameserver /shuidichou.com/CNS
+nameserver /shuzilm.cn/CNS
 nameserver /simplecd.me/CNS
 nameserver /snwx.com/CNS
 nameserver /soufunimg.com/CNS
@@ -2916,6 +2963,7 @@ nameserver /cmpassport.com/CNS
 nameserver /cmvideo.cn/CNS
 nameserver /fetion-portal.com/CNS
 nameserver /fetionpic.com/CNS
+nameserver /komect.com/CNS
 nameserver /lovev.cn/CNS
 nameserver /lovev.com/CNS
 nameserver /migu.cn/CNS
@@ -3956,6 +4004,7 @@ nameserver /qcloudcdn.com/DIRECT
 nameserver /qpic.cn/DIRECT
 nameserver /qlogo.cn/DIRECT
 nameserver /ugcimg.cn/DIRECT
+nameserver /ugdtimg.com/DIRECT
 nameserver /tencent-cloud.com/DIRECT
 nameserver /qqmail.com/DIRECT
 nameserver /tencentmusic.com/DIRECT
@@ -3974,6 +4023,7 @@ nameserver /qzone.com/DIRECT
 nameserver /voovmeeting.com/DIRECT
 nameserver /com-qq.net/DIRECT
 nameserver /cdntips.net/DIRECT
+nameserver /cdntip.com/DIRECT
 nameserver /imtmp.net/DIRECT
 ## meituan
 nameserver /dianping.com/DIRECT
@@ -4045,6 +4095,8 @@ nameserver /kunlunno.com/DIRECT
 nameserver /kunlunar.com/DIRECT
 nameserver /kunlunhuf.com/DIRECT
 nameserver /kunlunpi.com/DIRECT
+nameserver /cdngslb.com/DIRECT
+nameserver /num1dns.com/DIRECT
 ## Cainiao
 nameserver /56che.com/DIRECT
 nameserver /cainiao-inc.cn/DIRECT
@@ -4155,6 +4207,8 @@ nameserver /akamaiedge.net/MNS
 nameserver /akamaistream.net/MNS
 nameserver /edgekey.net/MNS
 ## Other Services
+nameserver /psicdn.net/MNS
+nameserver /edgecastcdn.net/MNS
 nameserver /branch.io/MNS
 nameserver /globalsign.com/MNS
 nameserver /digicert.com/MNS
@@ -4166,6 +4220,9 @@ nameserver /omniroot.com/MNS
 nameserver /omniture.com/MNS
 nameserver /optimizely.com/MNS
 nameserver /omniture.cn/MNS
+nameserver /hotjar.com/MNS
+nameserver /hotjar.io/MNS
+nameserver /airfind.com/MNS
 nameserver /jsdelivr.net/MNS
 nameserver /jquery.com/MNS
 nameserver /disqus.com/MNS
@@ -4240,6 +4297,7 @@ nameserver /us/MNS
 # > Bank&Phone
 ## ChinaUnicom
 # > Domestic
+domain-rules /global-idc.net/ -speed-check-mode tcp:443
 domain-rules /pplive.com/ -speed-check-mode tcp:443
 domain-rules /pptv.com/ -speed-check-mode tcp:443
 domain-rules /huya.com/ -speed-check-mode tcp:443
@@ -4574,6 +4632,7 @@ domain-rules /ourdvs.com/ -speed-check-mode tcp:443
 domain-rules /overcast.fm/ -speed-check-mode tcp:443
 domain-rules /openstorage.cn/ -speed-check-mode tcp:443
 domain-rules /pconline.com.cn/ -speed-check-mode tcp:443
+domain-rules /people.com.cn/ -speed-check-mode tcp:443
 domain-rules /polyv.net/ -speed-check-mode tcp:443
 domain-rules /qbox.me/ -speed-check-mode tcp:443
 domain-rules /qdaily.com/ -speed-check-mode tcp:443
@@ -4597,6 +4656,7 @@ domain-rules /samsclub.cn/ -speed-check-mode tcp:443
 domain-rules /segmentfault.com/ -speed-check-mode tcp:443
 domain-rules /shumilou.net/ -speed-check-mode tcp:443
 domain-rules /shuidichou.com/ -speed-check-mode tcp:443
+domain-rules /shuzilm.cn/ -speed-check-mode tcp:443
 domain-rules /simplecd.me/ -speed-check-mode tcp:443
 domain-rules /snwx.com/ -speed-check-mode tcp:443
 domain-rules /soufunimg.com/ -speed-check-mode tcp:443
@@ -4761,6 +4821,7 @@ domain-rules /cmpassport.com/ -speed-check-mode tcp:443
 domain-rules /cmvideo.cn/ -speed-check-mode tcp:443
 domain-rules /fetion-portal.com/ -speed-check-mode tcp:443
 domain-rules /fetionpic.com/ -speed-check-mode tcp:443
+domain-rules /komect.com/ -speed-check-mode tcp:443
 domain-rules /lovev.cn/ -speed-check-mode tcp:443
 domain-rules /lovev.com/ -speed-check-mode tcp:443
 domain-rules /migu.cn/ -speed-check-mode tcp:443
