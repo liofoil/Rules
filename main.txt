@@ -38,6 +38,9 @@
 - DOMAIN,doh.pub,CNS
 - DOMAIN,dot.pub,CNS
 - DOMAIN,dns.pub,CNS
+# > Personal Services
+- DOMAIN-SUFFIX,op.liofoil.com,Personal
+- IP-CIDR,8.209.245.15/32,Personal
 # > Data Transmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
@@ -348,6 +351,9 @@
 - DOMAIN-SUFFIX,hivemc.com,Games
 - DOMAIN-SUFFIX,playhive.com,Games
 - DOMAIN-SUFFIX,hivebedrock.network,Games
+- DOMAIN-SUFFIX,mineplex.com,Games
+- DOMAIN-SUFFIX,cubecraft.net,Games
+- DOMAIN-SUFFIX,galaxite.net,Games
 - DOMAIN-SUFFIX,lbsg.net,Games
 - DOMAIN-SUFFIX,minecraft.net,Games
 - DOMAIN-SUFFIX,minecraftshop.com,Games
@@ -1061,7 +1067,9 @@
 - DOMAIN-SUFFIX,smartmailcloud.com,MAIN
 - DOMAIN-SUFFIX,smehost.net,MAIN
 - DOMAIN-SUFFIX,shuziyimin.org,MAIN
+- DOMAIN-SUFFIX,shields.io,MAIN
 - DOMAIN-SUFFIX,thetvdb.com,MAIN
+- DOMAIN-SUFFIX,themoviedb.org,MAIN
 - DOMAIN-SUFFIX,tnt.com,MAIN
 - DOMAIN-SUFFIX,typekit.net,MAIN
 - DOMAIN-SUFFIX,ups.com,MAIN
@@ -1165,6 +1173,7 @@
 # > Google
 - DOMAIN-SUFFIX,app-measurement.com,Google
 - DOMAIN-SUFFIX,google.com,Google
+- DOMAIN-SUFFIX,google.internal,Google
 - DOMAIN-SUFFIX,googlevideo.com,Google
 - DOMAIN-SUFFIX,youtube.com,Google
 - DOMAIN-SUFFIX,youtube-nocookie.com,Google
@@ -1262,6 +1271,7 @@
 - DOMAIN-KEYWORD,www.google.,Google
 # > Microsoft
 - DOMAIN-SUFFIX,1drv.com,Microsoft
+- DOMAIN-SUFFIX,a-msedge.net,Microsoft
 - DOMAIN-SUFFIX,aadrm.com,Microsoft
 - DOMAIN-SUFFIX,acompli.com,Microsoft
 - DOMAIN-SUFFIX,acompli.net,Microsoft
@@ -1278,6 +1288,7 @@
 - DOMAIN-SUFFIX,azurewebsites.net,Microsoft
 - DOMAIN-SUFFIX,bing.com,Microsoft
 - DOMAIN-SUFFIX,bing.net,Microsoft
+- DOMAIN-SUFFIX,bingapis.com,Microsoft
 - DOMAIN-SUFFIX,cloudapp.net,Microsoft
 - DOMAIN-SUFFIX,cloudappsecurity.com,Microsoft
 - DOMAIN-SUFFIX,cortana.ai,Microsoft
@@ -1367,6 +1378,7 @@
 - DOMAIN-SUFFIX,gamepass.com,Microsoft
 - DOMAIN-SUFFIX,msgamestudios.com,Microsoft
 - DOMAIN-SUFFIX,orithegame.com,Microsoft
+- DOMAIN-SUFFIX,playfabapi.com,Microsoft
 - DOMAIN-SUFFIX,renovacionxboxlive.com,Microsoft
 - DOMAIN-SUFFIX,tellmewhygame.com,Microsoft
 - DOMAIN-SUFFIX,xbob.cn,Microsoft
@@ -4290,6 +4302,8 @@
 - DOMAIN-SUFFIX,digicert.com,MAIN
 - DOMAIN-SUFFIX,digitalcertvalidation.com,MAIN
 - DOMAIN-SUFFIX,entrust.com,MAIN
+- DOMAIN-SUFFIX,entrust.net,MAIN
+- DOMAIN-SUFFIX,entrustdatacard.com,MAIN
 - DOMAIN-SUFFIX,verisign.net,MAIN
 - DOMAIN-SUFFIX,onetrust.com,MAIN
 - DOMAIN-SUFFIX,omniroot.com,MAIN
