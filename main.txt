@@ -40,7 +40,7 @@
 - DOMAIN,dns.pub,CNS
 # > Personal Services
 - DOMAIN-SUFFIX,op.liofoil.com,Personal
-- IP-CIDR,8.209.245.15/32,Personal
+- IP-CIDR,8.209.245.15/32,Personal,no-resolve
 # > Data Transmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
