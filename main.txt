@@ -348,6 +348,7 @@
 - DOMAIN-SUFFIX,pornhubpremium.com,MAIN
 # > GAME Filters
 ## minecraft servers
+- DOMAIN-SUFFIX,inpvp.net,Games
 - DOMAIN-SUFFIX,hivemc.com,Games
 - DOMAIN-SUFFIX,playhive.com,Games
 - DOMAIN-SUFFIX,hivebedrock.network,Games
@@ -1306,6 +1307,7 @@
 - DOMAIN-SUFFIX,lync.com,Microsoft
 - DOMAIN-SUFFIX,mesh.com,Microsoft
 - DOMAIN-SUFFIX,microsoft.com,Microsoft
+- DOMAIN-SUFFIX,microsoft.net,Microsoft
 - DOMAIN-SUFFIX,microsoftonline.com,Microsoft
 - DOMAIN-SUFFIX,microsoftonline-p.com,Microsoft
 - DOMAIN-SUFFIX,microsoft-tst.com,Microsoft
@@ -1313,6 +1315,7 @@
 - DOMAIN-SUFFIX,msappproxy.net,Microsoft
 - DOMAIN-SUFFIX,msauth.net,Microsoft
 - DOMAIN-SUFFIX,msauthimages.net,Microsoft
+- DOMAIN-SUFFIX,mceserv.net,Microsoft
 - DOMAIN-SUFFIX,msecnd.net,Microsoft
 - DOMAIN-SUFFIX,msedge.net,Microsoft
 - DOMAIN-SUFFIX,msft.net,Microsoft

@@ -1,0 +1,267 @@
+port: 3333
+socks-port: 23456
+redir-port: 23457
+tproxy-port: 23458
+mixed-port: 23459
+allow-lan: true
+tproxy: true
+mode: rule
+log-level: warning
+external-controller: 192.168.50.1:9990
+experimental:
+  ignore-resolve-fail: true
+external-ui: dashboard
+secret: "clash"
+hosts:
+  router.asus.com: 192.168.50.1
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 23453
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16 
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - 'swscan.apple.com'
+    - 'mesu.apple.com'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    # === NTP Service ===
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time.*.edu.cn'
+    - 'time.*.apple.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    # === Music Service ===
+    ## NetEase
+    - '+.music.163.com'
+    - '+.126.net'
+    ## Baidu
+    - 'musicapi.taihe.com'
+    - 'music.taihe.com'
+    ## Kugou
+    - 'songsearch.kugou.com'
+    - 'trackercdn.kugou.com'
+    ## Kuwo
+    - '*.kuwo.cn'
+    ## JOOX
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'joox.com'
+    ## QQ
+    - '+.music.tc.qq.com'
+    - 'aqqmusic.tc.qq.com'
+    - '+.stream.qqmusic.qq.com'
+    ## Xiami
+    - '+.xiami.com'
+    ## Migu
+    - '+.music.migu.cn'
+    # === Game Service ===
+    ## Nintendo Switch
+    - '+.srv.nintendo.net'
+    ## Sony PlayStation
+    - '+.stun.playstation.net'
+    ## Microsoft Xbox
+    - 'xbox.*.microsoft.com'
+    - '+.xboxlive.com'
+    # === Other ===
+    ## QQ Quick Login
+    - 'localhost.ptlogin2.qq.com'
+    ## Golang
+    - 'proxy.golang.org'
+    ## STUN Server
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    # === 国内 ===
+    - '+.qq.com'
+    - '+.baidu.com'
+    - '+.163.com'
+    - '+.126.net'
+    - '+.taobao.com'
+    - '+.jd.com'
+    - '+.tmall.com'
+    ## facebook
+    - '+.facebook.com'
+    - '+.facebook.net'
+    - '+.fb.com'
+    - '+.fb.me'
+    - '+.fbaddins.com'
+    - '+.fbcdn.net'
+    - '+.fbcdn.com'
+    - '+.fbsbx.com'
+    - '+.fbworkmail.com'
+    - '+.facebookmail.com'
+    - '+.instagram.com'
+    - '+.instagr.am'
+    - '+.cdninstagram.com'
+    - '+.m.me'
+    - '+.messenger.com'
+    - '+.oculus.com'
+    - '+.oculuscdn.com'
+    - '+.rocksdb.org'
+    - '+.whatsapp.com'
+    - '+.whatsapp.net'
+    - '+.whatsapp.biz'
+    - '+.bintray.com'
+    ## bilibili
+    - '+.acg.tv'
+    - '+.acgvideo.com'
+    - '+.b23.tv'
+    - '+.baka.im'
+    - '+.bigfun.cn'
+    - '+.bigfunapp.cn'
+    - '+.bili22.cn'
+    - '+.bili2233.cn'
+    - '+.bili23.cn'
+    - '+.bili33.cn'
+    - '+.biliapi.com'
+    - '+.biliapi.net'
+    - '+.bilicdn2.com'
+    - '+.bilibili.cc'
+    - '+.bilibili.cn'
+    - '+.bilibili.co'
+    - '+.bilibili.com'
+    - '+.bilibili.tv'
+    - '+.bilibiligame.cn'
+    - '+.bilibiligame.net'
+    - '+.bilibilipay.cn'
+    - '+.bilibilipay.com'
+    - '+.biligame.cn'
+    - '+.biligame.com'
+    - '+.biligame.net'
+    - '+.biliplus.com'
+    - '+.bilivideo.cn'
+    - '+.bilivideo.com'
+    - '+.bilivideo.net'
+    - '+.corari.com'
+    - '+.dyhgames.com'
+    - '+.hdslb.com'
+    - '+.hdslb.net'
+    - '+.hdslb.org'
+    - '+.im9.com'
+    - '+.mcbbs.net'
+    - '+.mincdn.com'
+    - '+.sharejoytech.com'
+    - '+.smtcdns.net'
+    - '+.yo9.com'
+  nameserver:
+    - 112.4.0.55
+    - 119.29.29.29
+  fallback:
+    - tls://1.1.1.1:853
+    - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      #amazon
+      - '+.amazonaws.com'
+      - '+.amazon'
+      #astrill
+      - '+.astrill.com'
+      - '+.asn247.net'
+      - '+.astrill.org'
+      #fb
+      - '+.facebook.com'
+      - '+.facebook.net'
+      - '+.fb.com'
+      - '+.fb.me'
+      - '+.fbaddins.com'
+      - '+.fbcdn.net'
+      - '+.fbcdn.com'
+      - '+.fbsbx.com'
+      - '+.fbworkmail.com'
+      - '+.facebookmail.com'
+      - '+.instagram.com'
+      - '+.instagr.am'
+      - '+.cdninstagram.com'
+      - '+.m.me'
+      - '+.messenger.com'
+      - '+.oculus.com'
+      - '+.oculuscdn.com'
+      - '+.rocksdb.org'
+      - '+.whatsapp.com'
+      - '+.whatsapp.net'
+      - '+.whatsapp.biz'
+      - '+.bintray.com'
+      #github
+      - '+.gitbook.io'
+      - '+.gitbook.com'
+      - '+.github.io'
+      - '+.github.com'
+      - '+.githubusercontent.com'
+      - '+.githubassets.com'
+      - '+.githubapp.com'
+      #google
+      - '+.ampproject.org'
+      - '+.appspot.com'
+      - '+.blogger.com'
+      - '+.google.com'
+      - '+.google.cn'
+      - '+.googleusercontent.com'
+      - '+.googleapis.com'
+      - '+.googleapis.cn'
+      - '+.gstatic.com'
+      - '+.ggpht.com'
+      - '+.gmail.com'
+      - '+.gvt1.com'
+      - '+.gvt2.com'
+      - '+.youtu.be'
+      - '+.yt.be'
+      - '+.ytimg.com'
+      - '+.googlevideo.com'
+      - '+.youtube.com'
+      #mega
+      - '+.mega.co.nz'
+      - '+.mega.nz'
+      #protonmail
+      - '+.protonmail.ch'
+      - '+.protonmail.com'
+      - '+.protonstatus.com'
+      - '+.recruitee.com'
+      - '+.w.org'
+      #rfa
+      - '+.rfa.org'
+      #twitter
+      - '+.twitter.com'
+      - '+.pscp.tv'
+      - '+.periscope.tv'
+      - '+.t.co'
+      - '+.twimg.co'
+      - '+.twimg.com'
+      - '+.twitpic.com'
+      - '+.vine.co'
+      #whoer
+      - '+.whoer.net'
+      - '+.whrq.net'
+      #wiki
+      - '+.wikimapia.org'
+      - '+.wikimedia.org'
+      - '+.wikipedia.org'
+      - '+.wikiquote.org'
+      - '+.wikiwand.com'
+ipv6: false

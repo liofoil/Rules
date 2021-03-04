@@ -3,7 +3,6 @@ socks-port: 23456
 redir-port: 23457
 tproxy-port: 23458
 mixed-port: 23459
-ipv6: false
 allow-lan: true
 tproxy: true
 mode: rule
@@ -15,7 +14,6 @@ external-ui: dashboard
 secret: "clash"
 hosts:
   router.asus.com: 192.168.50.1
-
 profile:
   store-selected: true
 dns:

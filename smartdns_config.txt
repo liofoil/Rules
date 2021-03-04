@@ -322,6 +322,7 @@ nameserver /pornhub.com/MNS
 nameserver /pornhubpremium.com/MNS
 # > GAME Filters
 ## minecraft servers
+nameserver /inpvp.net/MNS
 nameserver /hivemc.com/MNS
 nameserver /playhive.com/MNS
 nameserver /hivebedrock.network/MNS
@@ -1248,6 +1249,7 @@ nameserver /livefilestore.com/MNS
 nameserver /lync.com/MNS
 nameserver /mesh.com/MNS
 nameserver /microsoft.com/MNS
+nameserver /microsoft.net/MNS
 nameserver /microsoftonline.com/MNS
 nameserver /microsoftonline-p.com/MNS
 nameserver /microsoft-tst.com/MNS
@@ -1255,6 +1257,7 @@ nameserver /microsoftcrmportals.com/MNS
 nameserver /msappproxy.net/MNS
 nameserver /msauth.net/MNS
 nameserver /msauthimages.net/MNS
+nameserver /mceserv.net/MNS
 nameserver /msecnd.net/MNS
 nameserver /msedge.net/MNS
 nameserver /msft.net/MNS
@@ -4609,6 +4612,7 @@ domain-rules /phncdn.com/ -speed-check-mode none
 domain-rules /phprcdn.com/ -speed-check-mode none
 domain-rules /pornhub.com/ -speed-check-mode none
 domain-rules /pornhubpremium.com/ -speed-check-mode none
+domain-rules /inpvp.net/ -speed-check-mode none
 domain-rules /hivemc.com/ -speed-check-mode none
 domain-rules /playhive.com/ -speed-check-mode none
 domain-rules /hivebedrock.network/ -speed-check-mode none
@@ -5490,6 +5494,7 @@ domain-rules /livefilestore.com/ -speed-check-mode none
 domain-rules /lync.com/ -speed-check-mode none
 domain-rules /mesh.com/ -speed-check-mode none
 domain-rules /microsoft.com/ -speed-check-mode none
+domain-rules /microsoft.net/ -speed-check-mode none
 domain-rules /microsoftonline.com/ -speed-check-mode none
 domain-rules /microsoftonline-p.com/ -speed-check-mode none
 domain-rules /microsoft-tst.com/ -speed-check-mode none
@@ -5497,6 +5502,7 @@ domain-rules /microsoftcrmportals.com/ -speed-check-mode none
 domain-rules /msappproxy.net/ -speed-check-mode none
 domain-rules /msauth.net/ -speed-check-mode none
 domain-rules /msauthimages.net/ -speed-check-mode none
+domain-rules /mceserv.net/ -speed-check-mode none
 domain-rules /msecnd.net/ -speed-check-mode none
 domain-rules /msedge.net/ -speed-check-mode none
 domain-rules /msft.net/ -speed-check-mode none
