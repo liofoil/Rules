@@ -25,6 +25,7 @@ nameserver /dns.pub/CNS
 nameserver /op.liofoil.com/SECD
 # > Data Transmission Services
 nameserver /nbclouds.co/DIRECT
+nameserver /nxnodes.net/DIRECT
 nameserver /globalacceleration.net/DIRECT
 nameserver /internetworld.cloud/DIRECT
 nameserver /ssr.ac/SECB
@@ -4330,6 +4331,7 @@ domain-rules /dot.pub/ -speed-check-mode none
 domain-rules /dns.pub/ -speed-check-mode none
 domain-rules /op.liofoil.com/ -speed-check-mode none
 domain-rules /nbclouds.co/ -speed-check-mode none
+domain-rules /nxnodes.net/ -speed-check-mode none
 domain-rules /globalacceleration.net/ -speed-check-mode none
 domain-rules /internetworld.cloud/ -speed-check-mode none
 domain-rules /ssr.ac/ -speed-check-mode none

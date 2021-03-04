@@ -43,6 +43,7 @@
 - IP-CIDR,8.209.245.15/32,Personal,no-resolve
 # > Data Transmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
+- DOMAIN-SUFFIX,nxnodes.net,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
 - DOMAIN-SUFFIX,internetworld.cloud,DIRECT
 - DOMAIN-SUFFIX,ssr.ac,MAYI
