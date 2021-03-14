@@ -1,28 +1,25 @@
 
 ## ISP DIRECT
-server 112.4.0.55:53 -group DIRECT -exclude-default-group
-server 221.131.143.69:53 -group DIRECT -exclude-default-group
+server 218.2.2.2:53 -group DIRECT -exclude-default-group
 ## Domestic
-server-https https://doh.pub/dns-query -group CNS -exclude-default-group
 server-tls dot.pub -group CNS -exclude-default-group
-server 119.29.29.29:53 -group CNS -exclude-default-group
+server 180.76.76.76:53 -group CNS -group DIRECT -exclude-default-group
+server 218.4.4.4:53 -group CNS -group DIRECT -exclude-default-group
 server-tls 223.5.5.5 -group CNS -exclude-default-group
-server-https https://223.6.6.6/dns-query -group CNS -exclude-default-group
 ## Global
 server-tls 1.1.1.1 -group MNS -exclude-default-group
-# server-tls dns1.dnsfilter.com -group MNS -exclude-default-group
 server-tls 8.8.8.8 -group MNS -exclude-default-group
 server-tls 9.9.9.9 -group MNS -exclude-default-group
 ## HK
 server-tls 1.0.0.1 -group SECA -exclude-default-group
+server-tls 149.112.112.112 -group SECA -exclude-default-group
 ## US
-# server-tls dns2.dnsfilter.com -group SECB -exclude-default-group
 server-tls 149.112.112.11 -group SECB -exclude-default-group
+server-tls 8.8.4.4 -group SECB -exclude-default-group
 ## SG
-server-tls 149.112.112.112 -group SECC -exclude-default-group
-server-tls 8.8.4.4 -group SECD -exclude-default-group
-## backup
-server-tls 9.9.9.11 -group SECD -exclude-default-group
+server-tls 9.9.9.11 -group SECC -exclude-default-group
+## TW
+server-https https://dns.twnic.tw/dns-query -group SECD -exclude-default-group
 server-tls 101.101.101.101 -group SECD -exclude-default-group
 ## mixed
 server 127.0.0.1:9988 -group geomixed

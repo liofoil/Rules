@@ -2,37 +2,42 @@
 ## Regional
 ### HK
 ### US
-nameserver /dns2.dnsfilter.com/SECB
 ### SG
 ### Backup TW
+nameserver /twnic.tw/SECD
 ## MAIN
-nameserver /dns1.dnsfilter.com/MNS
 nameserver /dnsfilter.com/MNS
 nameserver /opendns.com/MNS
 nameserver /one.one.one.one/MNS
 nameserver /cloudflare-dns.com/MNS
 nameserver /dns.google/MNS
 nameserver /dns.google.com/MNS
-nameserver /dns.quad9.net/MNS
+nameserver /quad9.net/MNS
 nameserver /arpa/MNS
 # > CN DNS
 nameserver /global-idc.net/CNS
-nameserver /dns.alidns.com/CNS
+nameserver /alidns.com/CNS
+nameserver /114dns.com/CNS
 nameserver /doh.pub/CNS
 nameserver /dot.pub/CNS
 nameserver /dns.pub/CNS
 # > Personal Services
-nameserver /op.liofoil.com/SECD
+nameserver /op.liofoil.com/MNS
 # > Data Transmission Services
 nameserver /nbclouds.co/DIRECT
 nameserver /nxnodes.net/DIRECT
+nameserver /miceat.info/DIRECT
+nameserver /dronri.info/DIRECT
 nameserver /globalacceleration.net/DIRECT
 nameserver /internetworld.cloud/DIRECT
+nameserver /nodelist.org/DIRECT
+nameserver /nameless13.com/MNS
 nameserver /ssr.ac/SECB
 nameserver /ssr.sh/SECB
 nameserver /ssr.sx/SECB
 nameserver /maying.io/SECB
 nameserver /nenode.best/SECA
+nameserver /oxygenplaza.net/SECA
 nameserver /amytele.com/SECA
 nameserver /maying.co/SECB
 nameserver /emby.maying.club/SECB
@@ -1377,6 +1382,7 @@ nameserver /amazonaws.co.uk/MNS
 nameserver /amazon.co.jp/MNS
 nameserver /amazon.com/MNS
 nameserver /amazontrust.com/MNS
+nameserver /amazon-adsystem.com/MNS
 nameserver /aiv-cdn.net/MNS
 nameserver /aiv-delivery.net/MNS
 nameserver /amazonvideo.com/MNS
@@ -2736,6 +2742,7 @@ nameserver /jiathis.com/CNS
 nameserver /jmstatic.com/CNS
 nameserver /jumei.com/CNS
 nameserver /jpush.cn/CNS
+nameserver /jpush.io/CNS
 nameserver /kaola.com/CNS
 nameserver /kfc.com.cn/CNS
 nameserver /4008823823.com.cn/CNS
@@ -4088,6 +4095,7 @@ nameserver /mxhichina.com/DIRECT
 nameserver /sandload.cn/DIRECT
 nameserver /taobaocdn.com/DIRECT
 nameserver /tbcache.com/DIRECT
+nameserver /tb.cn/DIRECT
 nameserver /tbcdn.com/DIRECT
 nameserver /tbcdn.cn/DIRECT
 nameserver /taobao.com/DIRECT
@@ -4104,8 +4112,11 @@ nameserver /xiami.com/DIRECT
 nameserver /xiami.net/DIRECT
 nameserver /sm.cn/DIRECT
 nameserver /mmstat.com/DIRECT
+## ddos
+nameserver /aliyunddos1026.com/DIRECT
 ## alikunlun
 nameserver /alikunlun.com/DIRECT
+nameserver /alikunlun.net/DIRECT
 nameserver /kunlunno.com/DIRECT
 nameserver /kunlunar.com/DIRECT
 nameserver /kunlunhuf.com/DIRECT
@@ -4314,31 +4325,36 @@ nameserver /us/MNS
 # > Bank&Phone
 ## ChinaUnicom
 # > Domestic
-domain-rules /dns2.dnsfilter.com/ -speed-check-mode none
-domain-rules /dns1.dnsfilter.com/ -speed-check-mode none
+domain-rules /twnic.tw/ -speed-check-mode none
 domain-rules /dnsfilter.com/ -speed-check-mode none
 domain-rules /opendns.com/ -speed-check-mode none
 domain-rules /one.one.one.one/ -speed-check-mode none
 domain-rules /cloudflare-dns.com/ -speed-check-mode none
 domain-rules /dns.google/ -speed-check-mode none
 domain-rules /dns.google.com/ -speed-check-mode none
-domain-rules /dns.quad9.net/ -speed-check-mode none
+domain-rules /quad9.net/ -speed-check-mode none
 domain-rules /arpa/ -speed-check-mode none
 domain-rules /global-idc.net/ -speed-check-mode none
-domain-rules /dns.alidns.com/ -speed-check-mode none
+domain-rules /alidns.com/ -speed-check-mode none
+domain-rules /114dns.com/ -speed-check-mode none
 domain-rules /doh.pub/ -speed-check-mode none
 domain-rules /dot.pub/ -speed-check-mode none
 domain-rules /dns.pub/ -speed-check-mode none
 domain-rules /op.liofoil.com/ -speed-check-mode none
 domain-rules /nbclouds.co/ -speed-check-mode none
 domain-rules /nxnodes.net/ -speed-check-mode none
+domain-rules /miceat.info/ -speed-check-mode none
+domain-rules /dronri.info/ -speed-check-mode none
 domain-rules /globalacceleration.net/ -speed-check-mode none
 domain-rules /internetworld.cloud/ -speed-check-mode none
+domain-rules /nodelist.org/ -speed-check-mode none
+domain-rules /nameless13.com/ -speed-check-mode none
 domain-rules /ssr.ac/ -speed-check-mode none
 domain-rules /ssr.sh/ -speed-check-mode none
 domain-rules /ssr.sx/ -speed-check-mode none
 domain-rules /maying.io/ -speed-check-mode none
 domain-rules /nenode.best/ -speed-check-mode none
+domain-rules /oxygenplaza.net/ -speed-check-mode none
 domain-rules /amytele.com/ -speed-check-mode none
 domain-rules /maying.co/ -speed-check-mode none
 domain-rules /emby.maying.club/ -speed-check-mode none
@@ -5618,6 +5634,7 @@ domain-rules /amazonaws.co.uk/ -speed-check-mode none
 domain-rules /amazon.co.jp/ -speed-check-mode none
 domain-rules /amazon.com/ -speed-check-mode none
 domain-rules /amazontrust.com/ -speed-check-mode none
+domain-rules /amazon-adsystem.com/ -speed-check-mode none
 domain-rules /aiv-cdn.net/ -speed-check-mode none
 domain-rules /aiv-delivery.net/ -speed-check-mode none
 domain-rules /amazonvideo.com/ -speed-check-mode none
@@ -7064,6 +7081,7 @@ domain-rules /mxhichina.com/ -speed-check-mode none
 domain-rules /sandload.cn/ -speed-check-mode none
 domain-rules /taobaocdn.com/ -speed-check-mode none
 domain-rules /tbcache.com/ -speed-check-mode none
+domain-rules /tb.cn/ -speed-check-mode none
 domain-rules /tbcdn.com/ -speed-check-mode none
 domain-rules /tbcdn.cn/ -speed-check-mode none
 domain-rules /taobao.com/ -speed-check-mode none
@@ -7080,7 +7098,9 @@ domain-rules /xiami.com/ -speed-check-mode none
 domain-rules /xiami.net/ -speed-check-mode none
 domain-rules /sm.cn/ -speed-check-mode none
 domain-rules /mmstat.com/ -speed-check-mode none
+domain-rules /aliyunddos1026.com/ -speed-check-mode none
 domain-rules /alikunlun.com/ -speed-check-mode none
+domain-rules /alikunlun.net/ -speed-check-mode none
 domain-rules /kunlunno.com/ -speed-check-mode none
 domain-rules /kunlunar.com/ -speed-check-mode none
 domain-rules /kunlunhuf.com/ -speed-check-mode none

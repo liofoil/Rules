@@ -20,5 +20,5 @@ dns:
   listen: 127.0.0.1:7874
   enhanced-mode: redir-host
   nameserver:
-  - tcp://127.0.0.1:9999
+  - 127.0.0.1:9999
 tun: {}

@@ -2,19 +2,16 @@
 ## Regional
 ### HK
 - IP-CIDR,1.0.0.1/32,SECA,no-resolve
+- IP-CIDR,149.112.112.112/32,SECA,no-resolve
 ### US
-- DOMAIN,dns2.dnsfilter.com,SECB
-- IP-CIDR,103.247.37.37/32,SECB,no-resolve
 - IP-CIDR,149.112.112.11/32,SECB,no-resolve
+- IP-CIDR,8.8.4.4/32,SECB,no-resolve
 ### SG
-- IP-CIDR,149.112.112.112/32,SECC,no-resolve
-- IP-CIDR,8.8.4.4/32,SECC,no-resolve
+- IP-CIDR,9.9.9.11/32,SECC,no-resolve
 ### Backup TW
 - IP-CIDR,101.101.101.101/32,SECD,no-resolve
-- IP-CIDR,9.9.9.11/32,SECD,no-resolve
+- DOMAIN-SUFFIX,twnic.tw,SECD
 ## MAIN
-- DOMAIN,dns1.dnsfilter.com,MNS
-- IP-CIDR,103.247.36.36/32,MNS,no-resolve
 - IP-CIDR,1.1.1.1/32,MNS,no-resolve
 - IP-CIDR,8.8.8.8/32,MNS,no-resolve
 - IP-CIDR,9.9.9.9/32,MNS,no-resolve
@@ -24,7 +21,7 @@
 - DOMAIN-SUFFIX,cloudflare-dns.com,MNS
 - DOMAIN,dns.google,MNS
 - DOMAIN,dns.google.com,MNS
-- DOMAIN,dns.quad9.net,MNS
+- DOMAIN-SUFFIX,quad9.net,MNS
 - DOMAIN-SUFFIX,arpa,MNS
 # > CN DNS
 - IP-CIDR,223.5.5.5/32,CNS,no-resolve
@@ -34,7 +31,8 @@
 - IP-CIDR,119.29.29.29/32,CNS,no-resolve
 - IP-CIDR,180.76.76.76/32,CNS,no-resolve
 - DOMAIN-SUFFIX,global-idc.net,CNS
-- DOMAIN,dns.alidns.com,CNS
+- DOMAIN-SUFFIX,alidns.com,CNS
+- DOMAIN-SUFFIX,114dns.com,CNS
 - DOMAIN,doh.pub,CNS
 - DOMAIN,dot.pub,CNS
 - DOMAIN,dns.pub,CNS
@@ -44,13 +42,18 @@
 # > Data Transmission Services
 - DOMAIN-SUFFIX,nbclouds.co,DIRECT
 - DOMAIN-SUFFIX,nxnodes.net,DIRECT
+- DOMAIN-SUFFIX,miceat.info,DIRECT
+- DOMAIN-SUFFIX,dronri.info,DIRECT
 - DOMAIN-SUFFIX,globalacceleration.net,DIRECT
 - DOMAIN-SUFFIX,internetworld.cloud,DIRECT
+- DOMAIN-SUFFIX,nodelist.org,DIRECT
+- DOMAIN-SUFFIX,nameless13.com,MAIN
 - DOMAIN-SUFFIX,ssr.ac,MAYI
 - DOMAIN-SUFFIX,ssr.sh,MAYI
 - DOMAIN-SUFFIX,ssr.sx,MAYI
 - DOMAIN-SUFFIX,maying.io,MAYI
 - DOMAIN-SUFFIX,nenode.best,NEXI
+- DOMAIN-SUFFIX,oxygenplaza.net,NEXI
 - DOMAIN-SUFFIX,amytele.com,NEXI
 - DOMAIN-SUFFIX,maying.co,MAYI
 - DOMAIN,emby.maying.club,MAYI
@@ -1049,6 +1052,7 @@
 - DOMAIN-SUFFIX,apache.org,MAIN
 - DOMAIN-SUFFIX,cnzz.com,MAIN
 - DOMAIN-SUFFIX,crisp.chat,MAIN
+- DOMAIN-KEYWORD,crossutility.com,MAIN
 - DOMAIN-SUFFIX,dhl.com,MAIN
 - DOMAIN-SUFFIX,duckduckgo.com,MAIN
 - DOMAIN-SUFFIX,elastic.co,MAIN
@@ -1440,6 +1444,7 @@
 - DOMAIN-SUFFIX,amazon.co.jp,Amazon
 - DOMAIN-SUFFIX,amazon.com,Amazon
 - DOMAIN-SUFFIX,amazontrust.com,Amazon
+- DOMAIN-SUFFIX,amazon-adsystem.com,Amazon
 - DOMAIN-SUFFIX,aiv-cdn.net,Amazon
 - DOMAIN-SUFFIX,aiv-delivery.net,Amazon
 - DOMAIN-SUFFIX,amazonvideo.com,Amazon
@@ -2813,6 +2818,7 @@
 - DOMAIN-SUFFIX,jmstatic.com,CNS
 - DOMAIN-SUFFIX,jumei.com,CNS
 - DOMAIN-SUFFIX,jpush.cn,CNS
+- DOMAIN-SUFFIX,jpush.io,CNS
 - DOMAIN-SUFFIX,kaola.com,CNS
 - DOMAIN-SUFFIX,kfc.com.cn,CNS
 - DOMAIN-SUFFIX,4008823823.com.cn,CNS
@@ -4165,6 +4171,7 @@
 - DOMAIN-SUFFIX,sandload.cn,DIRECT
 - DOMAIN-SUFFIX,taobaocdn.com,DIRECT
 - DOMAIN-SUFFIX,tbcache.com,DIRECT
+- DOMAIN-SUFFIX,tb.cn,DIRECT
 - DOMAIN-SUFFIX,tbcdn.com,DIRECT
 - DOMAIN-SUFFIX,tbcdn.cn,DIRECT
 - DOMAIN-SUFFIX,taobao.com,DIRECT
@@ -4181,8 +4188,11 @@
 - DOMAIN-SUFFIX,xiami.net,DIRECT
 - DOMAIN-SUFFIX,sm.cn,DIRECT
 - DOMAIN-SUFFIX,mmstat.com,DIRECT
+## ddos
+- DOMAIN-SUFFIX,aliyunddos1026.com,DIRECT
 ## alikunlun
 - DOMAIN-SUFFIX,alikunlun.com,DIRECT
+- DOMAIN-SUFFIX,alikunlun.net,DIRECT
 - DOMAIN-SUFFIX,kunlunno.com,DIRECT
 - DOMAIN-SUFFIX,kunlunar.com,DIRECT
 - DOMAIN-SUFFIX,kunlunhuf.com,DIRECT
