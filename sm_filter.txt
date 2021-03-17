@@ -1,16 +1,17 @@
 
+
 ## ISP DIRECT
 server 218.2.2.2:53 -group DIRECT -exclude-default-group
 ## Domestic
 server-tls dot.pub -group CNS -exclude-default-group
 server 180.76.76.76:53 -group CNS -group DIRECT -exclude-default-group
 server 218.4.4.4:53 -group CNS -group DIRECT -exclude-default-group
-server-tls 223.5.5.5 -group CNS -exclude-default-group
+server-https https://dns.alidns.com/dns-query -group CNS -exclude-default-group
 ## Global
-server-tls 1.1.1.1 -group MNS -exclude-default-group
+server-tls 1.1.1.1 -group MNS - group Fallback -exclude-default-group
 server-tls 8.8.8.8 -group MNS -exclude-default-group
 server-tls 9.9.9.9 -group MNS -exclude-default-group
-## HK
+## JP
 server-tls 1.0.0.1 -group SECA -exclude-default-group
 server-tls 149.112.112.112 -group SECA -exclude-default-group
 ## US
@@ -22,5 +23,5 @@ server-tls 9.9.9.11 -group SECC -exclude-default-group
 server-https https://dns.twnic.tw/dns-query -group SECD -exclude-default-group
 server-tls 101.101.101.101 -group SECD -exclude-default-group
 ## mixed
-server 127.0.0.1:9988 -group geomixed
-server-tls 223.6.6.6 -group geomixed
+server 127.0.0.1:9988
+server-tls 223.5.5.5 -group Fallback -exclude-default-group
